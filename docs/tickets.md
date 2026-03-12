@@ -255,7 +255,8 @@ Reference: technical-blueprint.md §3.2
 
 ---
 
-## [ ] T-006 — League standings page (home)
+## [x] T-006 — League standings page (home)
+> DONE 2026-03-12 — Full standings table with rank changes, stat cards, GW performance cards. Maurits highlighted.
 
 **Phase:** 1 (MVP)
 **Component:** Frontend
