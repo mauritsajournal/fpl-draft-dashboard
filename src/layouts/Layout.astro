@@ -25,6 +25,15 @@ const navItems = [
 ];
 
 const currentPath = Astro.url.pathname;
+
+// Load last updated timestamp from dashboard data
+let lastUpdated = '';
+try {
+  const mod = await import('../../data/dashboard.json');
+  lastUpdated = mod.default?.meta?.lastUpdated ?? '';
+} catch {
+  // Data not available yet
+}
 ---
 
 <!doctype html>
@@ -111,13 +120,29 @@ const currentPath = Astro.url.pathname;
       </div>
     </footer>
 
-    <script>
+    <script is:inline define:vars={{ lastUpdated }}>
       // Mobile menu toggle
       const btn = document.getElementById('mobile-menu-btn');
       const menu = document.getElementById('mobile-menu');
       btn?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
       });
+
+      // Update "Last updated" with relative time
+      const el = document.getElementById('last-updated');
+      if (el && lastUpdated) {
+        const diff = Date.now() - new Date(lastUpdated).getTime();
+        const hours = Math.floor(diff / 3600000);
+        const mins = Math.floor((diff % 3600000) / 60000);
+        if (hours > 24) {
+          el.textContent = Math.floor(hours / 24) + 'd ago';
+          el.style.color = '#e90052'; // warning: stale data
+        } else if (hours > 0) {
+          el.textContent = hours + 'h ' + mins + 'm ago';
+        } else {
+          el.textContent = mins + 'm ago';
+        }
+      }
     </script>
   </body>
 </html>
