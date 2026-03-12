@@ -803,7 +803,8 @@ Simple Svelte component with reactive state. Can be a range input or custom butt
 
 ---
 
-## [ ] T-022 — Initial data seed run
+## [x] T-022 — Initial data seed run
+> DONE 2026-03-12 — Full seed of GW1-29 data committed. All JSON files valid, dashboard.json generated.
 
 **Phase:** 1 (MVP)
 **Component:** Data Pipeline
