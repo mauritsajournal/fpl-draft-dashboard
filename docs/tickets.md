@@ -138,7 +138,8 @@ Reference: technical-blueprint.md §3.2, §4.1, §5.1-5.8
 
 ---
 
-## [ ] T-004 — Data fetch scripts for all API endpoints
+## [x] T-004 — Data fetch scripts for all API endpoints
+> DONE 2026-03-12 — All 8 fetch scripts + orchestrator with incremental caching, exponential backoff. Verified against live API.
 
 **Phase:** 1 (MVP)
 **Component:** Data Pipeline
