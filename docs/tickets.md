@@ -421,7 +421,8 @@ Reference: technical-blueprint.md §3.3
 
 ---
 
-## [ ] T-010 — Gameweek trend charts
+## [x] T-010 — Gameweek trend charts
+> DONE 2026-03-12 — Three interactive Chart.js line charts: position, cumulative pts, pts per GW.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
