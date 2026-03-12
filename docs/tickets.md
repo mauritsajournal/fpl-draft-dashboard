@@ -835,7 +835,8 @@ Run locally or trigger via `workflow_dispatch`.
 
 ---
 
-## [ ] T-023 — Responsive navigation and mobile layout
+## [x] T-023 — Responsive navigation and mobile layout
+> DONE 2026-03-12 — Hamburger menu, active page, league name header, live last-updated footer.
 
 **Phase:** 1 (MVP)
 **Component:** Frontend
