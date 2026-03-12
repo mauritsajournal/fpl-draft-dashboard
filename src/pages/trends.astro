@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import LineChart from '../components/LineChart.svelte';
+import BenchAnalysis from '../components/BenchAnalysis.svelte';
 
 let dashboardData: any = null;
 try {
@@ -11,6 +12,7 @@ try {
 const gwHistory = dashboardData?.gameweekHistory ?? [];
 const managers = dashboardData?.managers ?? [];
 const standings = dashboardData?.standings ?? [];
+const benchAnalysis = dashboardData?.benchAnalysis ?? [];
 
 // Build manager name lookup
 const managerNames = new Map<number, string>();
@@ -53,6 +55,19 @@ const gwPointsData = {
     }),
   })),
 };
+
+// Bench analysis data
+const benchChartData = benchAnalysis.length > 0 ? {
+  labels: benchAnalysis[0]?.perGameweek?.map((gw: any) => `GW${gw.gw}`) ?? [],
+  managers: benchAnalysis
+    .sort((a: any, b: any) => b.totalBenchPoints - a.totalBenchPoints)
+    .map((b: any) => ({
+      name: managerNames.get(b.leagueEntryId) ?? b.playerName?.split(' ')[0] ?? 'Unknown',
+      totalBenchPoints: b.totalBenchPoints,
+      perGw: b.perGameweek.map((gw: any) => gw.benchPoints),
+      isMaurits: b.leagueEntryId === 27137,
+    })),
+} : null;
 ---
 
 <Layout title="Trends — FC Driegangendiner">
@@ -83,6 +98,19 @@ const gwPointsData = {
           title="Points Per Gameweek"
         />
       </div>
+
+      {benchChartData && (
+        <div class="mt-12">
+          <div class="mb-8">
+            <h2 class="text-2xl font-bold text-fpl-green mb-1">Bench Analysis</h2>
+            <p class="text-gray-400 text-sm">Points left on the bench each gameweek</p>
+          </div>
+          <BenchAnalysis
+            client:visible
+            data={JSON.stringify(benchChartData)}
+          />
+        </div>
+      )}
     </>
   ) : (
     <div class="text-center py-20">
