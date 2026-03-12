@@ -867,7 +867,8 @@ Use Tailwind responsive classes (`md:`, `lg:`). The hamburger menu can be a simp
 
 ---
 
-## [ ] T-024 — Documentation and CLAUDE.md setup
+## [x] T-024 — Documentation and CLAUDE.md setup
+> DONE 2026-03-12 — CLAUDE.md with full project context, README updated with quick start and scripts.
 
 **Phase:** 1 (MVP)
 **Component:** Documentation
