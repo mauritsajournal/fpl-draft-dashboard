@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fpl-purple: #37003c;
+  --color-fpl-green: #00ff87;
+  --color-fpl-cyan: #04f5ff;
+  --color-fpl-pink: #e90052;
+  --color-fpl-blue: #2dbaff;
+  --color-fpl-dark: #1a1a2e;
+  --color-fpl-card: #16213e;
+  --color-fpl-surface: #0f3460;
+}
+
+body {
+  @apply bg-fpl-dark text-white min-h-screen;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+a {
+  @apply text-fpl-cyan hover:text-fpl-green transition-colors;
+}

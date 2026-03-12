@@ -1,0 +1,123 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'FC Driegangendiner — FPL Draft Dashboard',
+  description = 'Auto-updating dashboard for FPL Draft League 820 with standings, head-to-head comparisons, and gameweek trends.'
+} = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL;
+
+const navItems = [
+  { href: `${baseUrl}`, label: 'Standings' },
+  { href: `${baseUrl}h2h/`, label: 'H2H' },
+  { href: `${baseUrl}teams/`, label: 'Teams' },
+  { href: `${baseUrl}players/`, label: 'Players' },
+  { href: `${baseUrl}trends/`, label: 'Trends' },
+  { href: `${baseUrl}predictions/`, label: 'Predictions' },
+  { href: `${baseUrl}transfers/`, label: 'Transfers' },
+  { href: `${baseUrl}free-agents/`, label: 'Free Agents' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
+    <title>{title}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="bg-fpl-purple border-b border-fpl-green/20">
+      <div class="max-w-7xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href={baseUrl} class="text-xl font-bold text-fpl-green hover:text-fpl-cyan no-underline">
+            FC Driegangendiner
+          </a>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-white hover:text-fpl-green"
+            aria-label="Toggle navigation"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex gap-1">
+            {navItems.map(item => (
+              <a
+                href={item.href}
+                class:list={[
+                  'px-3 py-1.5 rounded text-sm font-medium no-underline transition-colors',
+                  currentPath === item.href || (item.href !== baseUrl && currentPath.startsWith(item.href))
+                    ? 'bg-fpl-green/20 text-fpl-green'
+                    : 'text-gray-300 hover:text-white hover:bg-white/10'
+                ]}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        <!-- Mobile nav -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-white/10 pt-3">
+          <div class="flex flex-col gap-1">
+            {navItems.map(item => (
+              <a
+                href={item.href}
+                class:list={[
+                  'px-3 py-2 rounded text-sm font-medium no-underline',
+                  currentPath === item.href || (item.href !== baseUrl && currentPath.startsWith(item.href))
+                    ? 'bg-fpl-green/20 text-fpl-green'
+                    : 'text-gray-300 hover:text-white hover:bg-white/10'
+                ]}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
+      <slot />
+    </main>
+
+    <footer class="border-t border-white/10 py-4 text-center text-sm text-gray-500">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <span>Last updated: <span id="last-updated">--</span></span>
+        <div class="flex gap-4">
+          <a href={`${baseUrl}status/`} class="hover:text-gray-300">Status</a>
+          <a href="https://github.com/mauritsajournal/fpl-draft-dashboard" target="_blank" rel="noopener" class="hover:text-gray-300">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      btn?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
