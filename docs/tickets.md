@@ -99,7 +99,8 @@ Reference: technical-blueprint.md §7.2
 
 ---
 
-## [ ] T-003 — TypeScript types for FPL Draft API responses
+## [x] T-003 — TypeScript types for FPL Draft API responses
+> DONE 2026-03-12 — All API and dashboard types defined with runtime validation helper.
 
 **Phase:** 1 (MVP)
 **Component:** Data Pipeline
