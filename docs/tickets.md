@@ -203,7 +203,8 @@ Reference: technical-blueprint.md §3.1, §5.0-5.8
 
 ---
 
-## [ ] T-005 — Data transformation layer (transform.ts)
+## [x] T-005 — Data transformation layer (transform.ts)
+> DONE 2026-03-12 — Full transform pipeline producing dashboard.json with all sections. Tested against live data.
 
 **Phase:** 1 (MVP)
 **Component:** Data Pipeline
