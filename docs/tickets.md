@@ -379,7 +379,8 @@ Reference: technical-blueprint.md §3.3, §3.4
 
 ---
 
-## [ ] T-009 — Team rosters and squad viewer
+## [x] T-009 — Team rosters and squad viewer
+> DONE 2026-03-12 — Team overview cards + dynamic slug detail pages with full squad by position.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
