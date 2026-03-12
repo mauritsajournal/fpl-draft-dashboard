@@ -11,7 +11,8 @@
 
 ---
 
-## [ ] T-001 — Project scaffolding with Astro, Tailwind, and TypeScript
+## [x] T-001 — Project scaffolding with Astro, Tailwind, and TypeScript
+> DONE 2026-03-12 — Scaffolded Astro 5 + Svelte 5 + Tailwind 4 + Vitest. All pages stubbed, build passes.
 
 **Phase:** 1 (MVP)
 **Component:** Project setup
