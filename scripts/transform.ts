@@ -26,6 +26,7 @@ import type {
   DraftPickDisplay,
   Prediction,
   BenchData,
+  WhatIfResult,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -125,6 +126,10 @@ function main(): void {
   const benchAnalysis = buildBenchAnalysis(league, entryMap, picksMap, liveMap, completedGws);
   console.log(`  Bench Analysis: ${benchAnalysis.length} entries`);
 
+  // ---- What-If Analysis ----
+  const whatIf = buildWhatIf(league, entryMap, standings, completedGws);
+  console.log(`  What-If Analysis: ${whatIf.length} entries`);
+
   // ---- Assemble Dashboard ----
   const dashboard: DashboardData = {
     meta: {
@@ -146,6 +151,7 @@ function main(): void {
     draftPicks,
     predictions,
     benchAnalysis,
+    whatIf,
   };
 
   writeJson('dashboard.json', dashboard);
@@ -703,6 +709,132 @@ function buildBenchAnalysis(
   }
 
   return results.sort((a, b) => b.totalBenchPoints - a.totalBenchPoints);
+}
+
+function buildWhatIf(
+  league: LeagueResponse,
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  standings: Standing[],
+  completedGws: number[]
+): WhatIfResult[] {
+  if (completedGws.length === 0) return [];
+
+  const entries = league.league_entries;
+
+  // Build each manager's actual GW scores
+  // gwScores[leagueEntryId][gw] = points scored that GW
+  const gwScores: Record<number, Record<number, number>> = {};
+  for (const e of entries) {
+    gwScores[e.id] = {};
+  }
+  for (const match of league.matches) {
+    if (!match.finished) continue;
+    gwScores[match.league_entry_1] = gwScores[match.league_entry_1] ?? {};
+    gwScores[match.league_entry_2] = gwScores[match.league_entry_2] ?? {};
+    gwScores[match.league_entry_1][match.event] = match.league_entry_1_points;
+    gwScores[match.league_entry_2][match.event] = match.league_entry_2_points;
+  }
+
+  // Build each manager's actual schedule: who they faced each GW
+  // schedule[leagueEntryId][gw] = opponent leagueEntryId
+  const schedule: Record<number, Record<number, number>> = {};
+  for (const e of entries) {
+    schedule[e.id] = {};
+  }
+  for (const match of league.matches) {
+    if (!match.finished) continue;
+    schedule[match.league_entry_1][match.event] = match.league_entry_2;
+    schedule[match.league_entry_2][match.event] = match.league_entry_1;
+  }
+
+  // For each manager M, simulate: what if M played schedule S (for all S)?
+  // Use M's actual GW scores, but face the opponents from S's schedule.
+  const results: WhatIfResult[] = [];
+
+  for (const manager of entries) {
+    const mId = manager.id;
+    const mScores = gwScores[mId];
+    const scheduleResults: WhatIfResult['schedules'] = [];
+
+    for (const scheduleOwner of entries) {
+      const sId = scheduleOwner.id;
+      const sSchedule = schedule[sId];
+
+      let wins = 0;
+      let draws = 0;
+      let losses = 0;
+
+      for (const gw of completedGws) {
+        const myPoints = mScores[gw];
+        const opponentId = sSchedule[gw];
+        if (myPoints === undefined || opponentId === undefined) continue;
+        const opponentPoints = gwScores[opponentId]?.[gw];
+        if (opponentPoints === undefined) continue;
+
+        if (myPoints > opponentPoints) wins++;
+        else if (myPoints === opponentPoints) draws++;
+        else losses++;
+      }
+
+      const leaguePoints = wins * 3 + draws;
+      scheduleResults.push({
+        asScheduleOf: sId,
+        asScheduleOfName: `${scheduleOwner.player_first_name} ${scheduleOwner.player_last_name}`,
+        wins,
+        draws,
+        losses,
+        leaguePoints,
+        rank: 0, // will be computed after
+      });
+    }
+
+    // Compute rank for each simulated schedule by comparing against all other managers'
+    // actual league points (this is a simplification — a full simulation would re-rank everyone)
+    // Instead, we rank based on the simulated league points relative to actual standings
+    for (const sim of scheduleResults) {
+      let rank = 1;
+      for (const st of standings) {
+        if (st.leagueEntryId !== mId && st.leaguePoints > sim.leaguePoints) {
+          rank++;
+        } else if (st.leagueEntryId !== mId && st.leaguePoints === sim.leaguePoints) {
+          // Tiebreak by points for (use actual points for)
+          const actualStanding = standings.find(s => s.leagueEntryId === mId);
+          if (actualStanding && st.pointsFor > actualStanding.pointsFor) {
+            rank++;
+          }
+        }
+      }
+      sim.rank = rank;
+    }
+
+    const actualStanding = standings.find(s => s.leagueEntryId === mId);
+    const actualRank = actualStanding?.rank ?? 0;
+    const actualLP = actualStanding?.leaguePoints ?? 0;
+
+    const avgRank = scheduleResults.reduce((sum, s) => sum + s.rank, 0) / scheduleResults.length;
+    const bestRank = Math.min(...scheduleResults.map(s => s.rank));
+    const worstRank = Math.max(...scheduleResults.map(s => s.rank));
+    const avgPoints = scheduleResults.reduce((sum, s) => sum + s.leaguePoints, 0) / scheduleResults.length;
+
+    // Luck: positive means actual rank is better (lower number) than average simulated rank
+    const luck = Math.round((avgRank - actualRank) * 10) / 10;
+
+    results.push({
+      leagueEntryId: mId,
+      teamName: manager.entry_name,
+      playerName: `${manager.player_first_name} ${manager.player_last_name}`,
+      actualRank,
+      actualLeaguePoints: actualLP,
+      averageWhatIfRank: Math.round(avgRank * 10) / 10,
+      bestWhatIfRank: bestRank,
+      worstWhatIfRank: worstRank,
+      averageWhatIfPoints: Math.round(avgPoints * 10) / 10,
+      luck,
+      schedules: scheduleResults,
+    });
+  }
+
+  return results.sort((a, b) => b.luck - a.luck);
 }
 
 // Run

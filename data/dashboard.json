@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-12T23:01:08.335Z",
+    "lastUpdated": "2026-03-12T23:50:13.241Z",
     "currentGameweek": 29,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -13,9 +13,7 @@
       "fixtures": true,
       "ownership": true
     },
-    "fetchErrors": [
-      "transactions: [transactions] Expected array response"
-    ]
+    "fetchErrors": []
   },
   "standings": [
     {
@@ -21126,6 +21124,696 @@
         {
           "gw": 29,
           "benchPoints": 1
+        }
+      ]
+    }
+  ],
+  "whatIf": [
+    {
+      "leagueEntryId": 2273,
+      "teamName": "Gibbs-White Walkers",
+      "playerName": "Sam vd V",
+      "actualRank": 2,
+      "actualLeaguePoints": 51,
+      "averageWhatIfRank": 3.8,
+      "bestWhatIfRank": 2,
+      "worstWhatIfRank": 6,
+      "averageWhatIfPoints": 43.5,
+      "luck": 1.8,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 17,
+          "draws": 0,
+          "losses": 12,
+          "leaguePoints": 51,
+          "rank": 2
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 10,
+          "draws": 4,
+          "losses": 15,
+          "leaguePoints": 34,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 15,
+          "draws": 4,
+          "losses": 10,
+          "leaguePoints": 49,
+          "rank": 2
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 14,
+          "draws": 4,
+          "losses": 11,
+          "leaguePoints": 46,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 14,
+          "draws": 5,
+          "losses": 10,
+          "leaguePoints": 47,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 10,
+          "draws": 5,
+          "losses": 14,
+          "leaguePoints": 35,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 75126,
+      "teamName": "Oscar is de Bobb",
+      "playerName": "Maximiliaan de Goede",
+      "actualRank": 1,
+      "actualLeaguePoints": 63,
+      "averageWhatIfRank": 2,
+      "bestWhatIfRank": 1,
+      "worstWhatIfRank": 5,
+      "averageWhatIfPoints": 54.6,
+      "luck": 1,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 19,
+          "draws": 4,
+          "losses": 6,
+          "leaguePoints": 61,
+          "rank": 1
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 14,
+          "draws": 4,
+          "losses": 11,
+          "leaguePoints": 46,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 20,
+          "draws": 4,
+          "losses": 5,
+          "leaguePoints": 64,
+          "rank": 1
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 20,
+          "draws": 4,
+          "losses": 5,
+          "leaguePoints": 64,
+          "rank": 1
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 14,
+          "draws": 6,
+          "losses": 9,
+          "leaguePoints": 48,
+          "rank": 2
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 12,
+          "draws": 5,
+          "losses": 12,
+          "leaguePoints": 41,
+          "rank": 5
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 21,
+          "draws": 0,
+          "losses": 8,
+          "leaguePoints": 63,
+          "rank": 1
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 15,
+          "draws": 5,
+          "losses": 9,
+          "leaguePoints": 50,
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 4815,
+      "teamName": "Eze come Eze go",
+      "playerName": "Pieter van Gemert",
+      "actualRank": 3,
+      "actualLeaguePoints": 48,
+      "averageWhatIfRank": 3.9,
+      "bestWhatIfRank": 3,
+      "worstWhatIfRank": 6,
+      "averageWhatIfPoints": 43.6,
+      "luck": 0.9,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 14,
+          "draws": 4,
+          "losses": 11,
+          "leaguePoints": 46,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 9,
+          "draws": 5,
+          "losses": 15,
+          "leaguePoints": 32,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 16,
+          "draws": 0,
+          "losses": 13,
+          "leaguePoints": 48,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 14,
+          "draws": 5,
+          "losses": 10,
+          "leaguePoints": 47,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 5
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 15,
+          "draws": 5,
+          "losses": 9,
+          "leaguePoints": 50,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 27137,
+      "teamName": "Dikke Saka veel grip",
+      "playerName": "Maurits Koot",
+      "actualRank": 4,
+      "actualLeaguePoints": 45,
+      "averageWhatIfRank": 4.9,
+      "bestWhatIfRank": 3,
+      "worstWhatIfRank": 6,
+      "averageWhatIfPoints": 40.9,
+      "luck": 0.9,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 15,
+          "draws": 4,
+          "losses": 10,
+          "leaguePoints": 49,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 10,
+          "draws": 4,
+          "losses": 15,
+          "leaguePoints": 34,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 11,
+          "draws": 4,
+          "losses": 14,
+          "leaguePoints": 37,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 13,
+          "draws": 5,
+          "losses": 11,
+          "leaguePoints": 44,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 15,
+          "draws": 0,
+          "losses": 14,
+          "leaguePoints": 45,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 5
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 12,
+          "draws": 5,
+          "losses": 12,
+          "leaguePoints": 41,
+          "rank": 5
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 10,
+          "draws": 4,
+          "losses": 15,
+          "leaguePoints": 34,
+          "rank": 6
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 8630,
+      "teamName": "Hannies bal met brie",
+      "playerName": "Marc Streng",
+      "actualRank": 7,
+      "actualLeaguePoints": 31,
+      "averageWhatIfRank": 7.3,
+      "bestWhatIfRank": 7,
+      "worstWhatIfRank": 8,
+      "averageWhatIfPoints": 29.5,
+      "luck": 0.3,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 9,
+          "draws": 4,
+          "losses": 16,
+          "leaguePoints": 31,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 7,
+          "draws": 4,
+          "losses": 18,
+          "leaguePoints": 25,
+          "rank": 8
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 9,
+          "draws": 5,
+          "losses": 15,
+          "leaguePoints": 32,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 10,
+          "draws": 1,
+          "losses": 18,
+          "leaguePoints": 31,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 9,
+          "draws": 4,
+          "losses": 16,
+          "leaguePoints": 31,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 9,
+          "draws": 4,
+          "losses": 16,
+          "leaguePoints": 31,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 8,
+          "draws": 4,
+          "losses": 17,
+          "leaguePoints": 28,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 7,
+          "draws": 6,
+          "losses": 16,
+          "leaguePoints": 27,
+          "rank": 8
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 34059,
+      "teamName": "Steen, Papier, Schar",
+      "playerName": "Salomon van Megen",
+      "actualRank": 6,
+      "actualLeaguePoints": 39,
+      "averageWhatIfRank": 6,
+      "bestWhatIfRank": 6,
+      "worstWhatIfRank": 6,
+      "averageWhatIfPoints": 38.9,
+      "luck": 0,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 12,
+          "draws": 6,
+          "losses": 11,
+          "leaguePoints": 42,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 9,
+          "draws": 5,
+          "losses": 15,
+          "leaguePoints": 32,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 11,
+          "draws": 5,
+          "losses": 13,
+          "leaguePoints": 38,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 13,
+          "draws": 0,
+          "losses": 16,
+          "leaguePoints": 39,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 6
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 85079,
+      "teamName": "Shake Dias",
+      "playerName": "Robert van Gemert",
+      "actualRank": 5,
+      "actualLeaguePoints": 43,
+      "averageWhatIfRank": 4.1,
+      "bestWhatIfRank": 2,
+      "worstWhatIfRank": 6,
+      "averageWhatIfPoints": 45.6,
+      "luck": -0.9,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 14,
+          "draws": 4,
+          "losses": 11,
+          "leaguePoints": 46,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 10,
+          "draws": 5,
+          "losses": 14,
+          "leaguePoints": 35,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 5
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 14,
+          "draws": 6,
+          "losses": 9,
+          "leaguePoints": 48,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 14,
+          "draws": 4,
+          "losses": 11,
+          "leaguePoints": 46,
+          "rank": 4
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 15,
+          "draws": 4,
+          "losses": 10,
+          "leaguePoints": 49,
+          "rank": 3
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 17,
+          "draws": 4,
+          "losses": 8,
+          "leaguePoints": 55,
+          "rank": 2
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 14,
+          "draws": 1,
+          "losses": 14,
+          "leaguePoints": 43,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "leagueEntryId": 2569,
+      "teamName": "I Baleba I Can Fly",
+      "playerName": "Tim van Duinen",
+      "actualRank": 8,
+      "actualLeaguePoints": 27,
+      "averageWhatIfRank": 6.9,
+      "bestWhatIfRank": 6,
+      "worstWhatIfRank": 8,
+      "averageWhatIfPoints": 35.6,
+      "luck": -1.1,
+      "schedules": [
+        {
+          "asScheduleOf": 2273,
+          "asScheduleOfName": "Sam vd V",
+          "wins": 11,
+          "draws": 5,
+          "losses": 13,
+          "leaguePoints": 38,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 2569,
+          "asScheduleOfName": "Tim van Duinen",
+          "wins": 9,
+          "draws": 0,
+          "losses": 20,
+          "leaguePoints": 27,
+          "rank": 8
+        },
+        {
+          "asScheduleOf": 4815,
+          "asScheduleOfName": "Pieter van Gemert",
+          "wins": 10,
+          "draws": 6,
+          "losses": 13,
+          "leaguePoints": 36,
+          "rank": 7
+        },
+        {
+          "asScheduleOf": 8630,
+          "asScheduleOfName": "Marc Streng",
+          "wins": 13,
+          "draws": 4,
+          "losses": 12,
+          "leaguePoints": 43,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 27137,
+          "asScheduleOfName": "Maurits Koot",
+          "wins": 12,
+          "draws": 5,
+          "losses": 12,
+          "leaguePoints": 41,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 34059,
+          "asScheduleOfName": "Salomon van Megen",
+          "wins": 8,
+          "draws": 4,
+          "losses": 17,
+          "leaguePoints": 28,
+          "rank": 8
+        },
+        {
+          "asScheduleOf": 75126,
+          "asScheduleOfName": "Maximiliaan de Goede",
+          "wins": 12,
+          "draws": 4,
+          "losses": 13,
+          "leaguePoints": 40,
+          "rank": 6
+        },
+        {
+          "asScheduleOf": 85079,
+          "asScheduleOfName": "Robert van Gemert",
+          "wins": 9,
+          "draws": 5,
+          "losses": 15,
+          "leaguePoints": 32,
+          "rank": 7
         }
       ]
     }

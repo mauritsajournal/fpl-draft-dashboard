@@ -164,6 +164,28 @@ export interface BenchData {
   }[];
 }
 
+export interface WhatIfResult {
+  leagueEntryId: number;
+  teamName: string;
+  playerName: string;
+  actualRank: number;
+  actualLeaguePoints: number;
+  averageWhatIfRank: number;
+  bestWhatIfRank: number;
+  worstWhatIfRank: number;
+  averageWhatIfPoints: number;
+  luck: number; // positive = lucky (actual rank better than average what-if), negative = unlucky
+  schedules: {
+    asScheduleOf: number; // leagueEntryId whose schedule was used
+    asScheduleOfName: string;
+    wins: number;
+    draws: number;
+    losses: number;
+    leaguePoints: number;
+    rank: number;
+  }[];
+}
+
 export interface DashboardData {
   meta: DashboardMeta;
   standings: Standing[];
@@ -177,4 +199,5 @@ export interface DashboardData {
   draftPicks: DraftPickDisplay[];
   predictions: Prediction[];
   benchAnalysis: BenchData[];
+  whatIf: WhatIfResult[];
 }
