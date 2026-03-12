@@ -334,7 +334,8 @@ Reference: technical-blueprint.md §8.1
 
 ---
 
-## [ ] T-008 — Head-to-head comparison view
+## [x] T-008 — Head-to-head comparison view
+> DONE 2026-03-12 — H2H matrix with color coding, manager comparison cards with stats.
 
 **Phase:** 1 (MVP)
 **Component:** Frontend
