@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -47,6 +48,7 @@ try {
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class="flex flex-col min-h-screen">
     <header class="bg-fpl-purple border-b border-fpl-green/20">
@@ -106,7 +108,7 @@ try {
       </div>
     </header>
 
-    <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
+    <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-6" transition:animate="fade">
       <slot />
     </main>
 
@@ -121,28 +123,36 @@ try {
     </footer>
 
     <script is:inline define:vars={{ lastUpdated }}>
-      // Mobile menu toggle
-      const btn = document.getElementById('mobile-menu-btn');
-      const menu = document.getElementById('mobile-menu');
-      btn?.addEventListener('click', () => {
-        menu?.classList.toggle('hidden');
-      });
+      function initPage() {
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn?.addEventListener('click', () => {
+          menu?.classList.toggle('hidden');
+        });
 
-      // Update "Last updated" with relative time
-      const el = document.getElementById('last-updated');
-      if (el && lastUpdated) {
-        const diff = Date.now() - new Date(lastUpdated).getTime();
-        const hours = Math.floor(diff / 3600000);
-        const mins = Math.floor((diff % 3600000) / 60000);
-        if (hours > 24) {
-          el.textContent = Math.floor(hours / 24) + 'd ago';
-          el.style.color = '#e90052'; // warning: stale data
-        } else if (hours > 0) {
-          el.textContent = hours + 'h ' + mins + 'm ago';
-        } else {
-          el.textContent = mins + 'm ago';
+        // Close mobile menu on navigation
+        menu?.classList.add('hidden');
+
+        // Update "Last updated" with relative time
+        const el = document.getElementById('last-updated');
+        if (el && lastUpdated) {
+          const diff = Date.now() - new Date(lastUpdated).getTime();
+          const hours = Math.floor(diff / 3600000);
+          const mins = Math.floor((diff % 3600000) / 60000);
+          if (hours > 24) {
+            el.textContent = Math.floor(hours / 24) + 'd ago';
+            el.style.color = '#e90052'; // warning: stale data
+          } else if (hours > 0) {
+            el.textContent = hours + 'h ' + mins + 'm ago';
+          } else {
+            el.textContent = mins + 'm ago';
+          }
         }
       }
+
+      initPage();
+      document.addEventListener('astro:after-swap', initPage);
     </script>
   </body>
 </html>
