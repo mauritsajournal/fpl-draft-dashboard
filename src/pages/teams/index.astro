@@ -1,8 +1,111 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {}
+
+const managers = dashboardData?.managers ?? [];
+const standings = dashboardData?.standings ?? [];
+const playerStats = dashboardData?.playerStats ?? [];
+
+// Build team rosters from player stats
+const teamRosters = new Map<number, any[]>();
+for (const p of playerStats) {
+  if (p.ownerLeagueEntryId !== null) {
+    const existing = teamRosters.get(p.ownerLeagueEntryId) ?? [];
+    existing.push(p);
+    teamRosters.set(p.ownerLeagueEntryId, existing);
+  }
+}
+
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Teams — FC Driegangendiner">
-  <h1 class="text-2xl font-bold text-fpl-green mb-6">Teams</h1>
-  <p class="text-gray-400">Team rosters will appear here once the data pipeline is configured.</p>
+  {dashboardData ? (
+    <>
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-fpl-green mb-1">Teams</h1>
+        <p class="text-gray-400 text-sm">All 8 squads in FC Driegangendiner</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {managers
+          .sort((a: any, b: any) => {
+            const aStanding = standings.find((s: any) => s.leagueEntryId === a.leagueEntryId);
+            const bStanding = standings.find((s: any) => s.leagueEntryId === b.leagueEntryId);
+            return (aStanding?.rank ?? 99) - (bStanding?.rank ?? 99);
+          })
+          .map((m: any) => {
+            const standing = standings.find((s: any) => s.leagueEntryId === m.leagueEntryId);
+            const roster = (teamRosters.get(m.leagueEntryId) ?? [])
+              .sort((a: any, b: any) => a.positionId - b.positionId || b.totalPoints - a.totalPoints);
+            const slug = slugify(m.teamName);
+
+            return (
+              <a href={`${baseUrl}teams/${slug}/`} class="block bg-fpl-card rounded-lg p-5 border border-white/5 hover:border-fpl-green/30 transition-colors no-underline">
+                <div class="flex justify-between items-start mb-4">
+                  <div>
+                    <div class="text-xs text-gray-500 uppercase">#{standing?.rank ?? '?'}</div>
+                    <h2 class="text-lg font-bold text-white">{m.teamName}</h2>
+                    <p class="text-sm text-gray-400">{m.playerName}</p>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-2xl font-bold text-fpl-cyan">{m.totalPoints}</div>
+                    <div class="text-xs text-gray-500">total pts</div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-2 text-center text-xs mb-4">
+                  <div>
+                    <div class="text-green-400 font-bold">{m.wins}W</div>
+                  </div>
+                  <div>
+                    <div class="text-gray-400 font-bold">{m.draws}D</div>
+                  </div>
+                  <div>
+                    <div class="text-red-400 font-bold">{m.losses}L</div>
+                  </div>
+                  <div>
+                    <div class="text-fpl-cyan font-bold">{m.leaguePoints}pts</div>
+                  </div>
+                </div>
+
+                <div class="border-t border-white/5 pt-3">
+                  <div class="text-xs text-gray-500 mb-2">Squad ({roster.length} players)</div>
+                  <div class="flex flex-wrap gap-1">
+                    {roster.slice(0, 11).map((p: any) => (
+                      <span class:list={[
+                        'text-xs px-1.5 py-0.5 rounded',
+                        p.position === 'GK' ? 'bg-yellow-900/30 text-yellow-300' :
+                        p.position === 'DEF' ? 'bg-blue-900/30 text-blue-300' :
+                        p.position === 'MID' ? 'bg-green-900/30 text-green-300' :
+                        'bg-red-900/30 text-red-300'
+                      ]}>
+                        {p.webName}
+                      </span>
+                    ))}
+                    {roster.length > 11 && (
+                      <span class="text-xs text-gray-500">+{roster.length - 11} bench</span>
+                    )}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+      </div>
+    </>
+  ) : (
+    <div class="text-center py-20">
+      <h1 class="text-2xl font-bold text-fpl-green mb-4">Teams</h1>
+      <p class="text-gray-400">Data not yet available.</p>
+    </div>
+  )}
 </Layout>
