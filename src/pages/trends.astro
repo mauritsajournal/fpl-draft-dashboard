@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import LineChart from '../components/LineChart.svelte';
 import BenchAnalysis from '../components/BenchAnalysis.svelte';
 import WhatIfAnalysis from '../components/WhatIfAnalysis.svelte';
+import EmptyState from '../components/EmptyState.astro';
 
 let dashboardData: any = null;
 try {
@@ -128,9 +129,6 @@ const benchChartData = benchAnalysis.length > 0 ? {
       )}
     </>
   ) : (
-    <div class="text-center py-20">
-      <h1 class="text-2xl font-bold text-fpl-green mb-4">Gameweek Trends</h1>
-      <p class="text-gray-400">Data not yet available.</p>
-    </div>
+    <EmptyState title="Gameweek Trends" />
   )}
 </Layout>

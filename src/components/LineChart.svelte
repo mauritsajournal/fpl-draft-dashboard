@@ -106,6 +106,14 @@
 {#if title}
   <h3 class="text-lg font-bold text-white mb-3">{title}</h3>
 {/if}
-<div class="bg-fpl-card rounded-lg p-4 border border-white/5" style="height: 400px">
-  <canvas bind:this={canvas}></canvas>
+<div class="bg-fpl-card rounded-lg p-4 border border-white/5 relative" style="height: 400px">
+  {#if !chart}
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="flex flex-col items-center gap-3">
+        <div class="w-8 h-8 border-2 border-fpl-green/30 border-t-fpl-green rounded-full animate-spin"></div>
+        <span class="text-sm text-gray-500">Loading chart...</span>
+      </div>
+    </div>
+  {/if}
+  <canvas bind:this={canvas} class={!chart ? 'opacity-0' : 'opacity-100 transition-opacity duration-300'}></canvas>
 </div>

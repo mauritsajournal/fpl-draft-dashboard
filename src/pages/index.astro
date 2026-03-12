@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import StandingsTable from '../components/StandingsTable.astro';
 import GameweekResults from '../components/GameweekResults.astro';
 import StatCard from '../components/StatCard.astro';
+import EmptyState from '../components/EmptyState.astro';
 
 let dashboardData: any = null;
 try {
@@ -134,9 +135,6 @@ const MAURITS_ENTRY_ID = 27628;
       />
     </>
   ) : (
-    <div class="text-center py-20">
-      <h1 class="text-2xl font-bold text-fpl-green mb-4">League Standings</h1>
-      <p class="text-gray-400">Data not yet available. The pipeline needs to run first.</p>
-    </div>
+    <EmptyState title="League Standings" />
   )}
 </Layout>

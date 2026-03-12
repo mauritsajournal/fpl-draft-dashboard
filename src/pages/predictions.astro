@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import EmptyState from '../components/EmptyState.astro';
 
 let dashboardData: any = null;
 try {
@@ -66,9 +67,6 @@ const nextGw = currentGw + 1;
       </div>
     </>
   ) : (
-    <div class="text-center py-20">
-      <h1 class="text-2xl font-bold text-fpl-green mb-4">Predictions</h1>
-      <p class="text-gray-400">No prediction data available for the next gameweek.</p>
-    </div>
+    <EmptyState title="Predictions" message="No prediction data available for the next gameweek." />
   )}
 </Layout>
