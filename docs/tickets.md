@@ -56,7 +56,8 @@ Reference: technical-blueprint.md §2.1, §2.2, §3.3, §3.5
 
 ---
 
-## [ ] T-002 — GitHub Actions workflow: fetch-and-deploy
+## [x] T-002 — GitHub Actions workflow: fetch-and-deploy
+> DONE 2026-03-12 — Created fetch-and-deploy, deploy-on-code-change, and keepalive workflows.
 
 **Phase:** 1 (MVP)
 **Component:** CI/CD
