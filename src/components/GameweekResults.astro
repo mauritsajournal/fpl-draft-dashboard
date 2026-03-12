@@ -1,0 +1,50 @@
+---
+interface Props {
+  gameweek: number;
+  standings: any[];
+  managers: any[];
+}
+
+const { gameweek, standings, managers } = Astro.props;
+
+// Build matchup data from manager current form (last GW points)
+// We need league.json match data — but for now we show form from managers
+const managerMap = new Map(managers.map((m: any) => [m.leagueEntryId, m]));
+---
+
+<div class="mt-8">
+  <h2 class="text-xl font-bold text-white mb-4">GW{gameweek} Performance</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    {managers
+      .sort((a: any, b: any) => {
+        const aLast = a.currentForm?.[a.currentForm.length - 1] ?? 0;
+        const bLast = b.currentForm?.[b.currentForm.length - 1] ?? 0;
+        return bLast - aLast;
+      })
+      .map((m: any) => {
+        const gwPoints = m.currentForm?.[m.currentForm.length - 1] ?? 0;
+        return (
+          <div class="bg-fpl-card rounded-lg p-4 border border-white/5">
+            <div class="flex justify-between items-start mb-1">
+              <span class="text-sm text-gray-400">{m.playerName.split(' ')[0]}</span>
+              <span class="text-2xl font-bold text-fpl-cyan">{gwPoints}</span>
+            </div>
+            <div class="text-xs text-gray-500 truncate">{m.teamName}</div>
+            <div class="mt-2 flex gap-1">
+              {(m.currentForm ?? []).map((pts: number) => (
+                <div
+                  class:list={[
+                    'flex-1 h-1 rounded-full',
+                    pts >= 60 ? 'bg-green-400' :
+                    pts >= 40 ? 'bg-yellow-400' :
+                    'bg-red-400'
+                  ]}
+                  title={`${pts} pts`}
+                />
+              ))}
+            </div>
+          </div>
+        );
+      })}
+  </div>
+</div>

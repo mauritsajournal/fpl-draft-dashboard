@@ -1,8 +1,108 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import StandingsTable from '../components/StandingsTable.astro';
+import GameweekResults from '../components/GameweekResults.astro';
+import StatCard from '../components/StatCard.astro';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {
+  // Data not yet available
+}
+
+const standings = dashboardData?.standings ?? [];
+const managers = dashboardData?.managers ?? [];
+const meta = dashboardData?.meta;
+const currentGw = meta?.currentGameweek ?? 0;
+
+// Find current GW matchups from gameweekHistory
+const gwHistory = dashboardData?.gameweekHistory ?? [];
+const latestGw = gwHistory.length > 0 ? gwHistory[gwHistory.length - 1] : null;
+
+// Find best GW scorer
+let topScorerThisGw = { name: '--', points: 0 };
+if (managers.length > 0) {
+  for (const m of managers) {
+    const lastFormPoint = m.currentForm?.[m.currentForm.length - 1] ?? 0;
+    if (lastFormPoint > topScorerThisGw.points) {
+      topScorerThisGw = { name: m.playerName.split(' ')[0], points: lastFormPoint };
+    }
+  }
+}
+
+// Find longest winning streak
+function getLongestStreak(matches: any[], entryId: number): number {
+  let maxStreak = 0;
+  let current = 0;
+  const sorted = matches
+    .filter((m: any) => m.finished && (m.league_entry_1 === entryId || m.league_entry_2 === entryId))
+    .sort((a: any, b: any) => a.event - b.event);
+
+  for (const m of sorted) {
+    if (m.winning_league_entry === entryId) {
+      current++;
+      maxStreak = Math.max(maxStreak, current);
+    } else {
+      current = 0;
+    }
+  }
+  return maxStreak;
+}
+
+// Maurits Koot's entry_id for highlighting
+const MAURITS_ENTRY_ID = 27628;
 ---
 
 <Layout title="Standings — FC Driegangendiner">
-  <h1 class="text-2xl font-bold text-fpl-green mb-6">League Standings</h1>
-  <p class="text-gray-400">Standings data will appear here once the data pipeline is configured.</p>
+  {dashboardData ? (
+    <>
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-fpl-green mb-1">League Standings</h1>
+        <p class="text-gray-400 text-sm">
+          GW {currentGw} of 38 &middot; {meta.leagueName} &middot; Season {meta.season}
+        </p>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <StatCard
+          label="GW Leader"
+          value={topScorerThisGw.name}
+          detail={`${topScorerThisGw.points} pts in GW${currentGw}`}
+        />
+        <StatCard
+          label="League Leader"
+          value={standings[0]?.playerName?.split(' ')[0] ?? '--'}
+          detail={`${standings[0]?.leaguePoints ?? 0} league pts`}
+        />
+        <StatCard
+          label="Highest Points For"
+          value={standings.reduce((max: any, s: any) => s.pointsFor > max.pointsFor ? s : max, standings[0])?.playerName?.split(' ')[0] ?? '--'}
+          detail={`${Math.max(...standings.map((s: any) => s.pointsFor))} total pts`}
+        />
+        <StatCard
+          label="Most Wins"
+          value={standings.reduce((max: any, s: any) => s.won > max.won ? s : max, standings[0])?.playerName?.split(' ')[0] ?? '--'}
+          detail={`${Math.max(...standings.map((s: any) => s.won))} wins`}
+        />
+      </div>
+
+      <!-- Standings Table -->
+      <StandingsTable standings={standings} highlightEntryId={MAURITS_ENTRY_ID} />
+
+      <!-- Current GW Results -->
+      <GameweekResults
+        gameweek={currentGw}
+        standings={standings}
+        managers={managers}
+      />
+    </>
+  ) : (
+    <div class="text-center py-20">
+      <h1 class="text-2xl font-bold text-fpl-green mb-4">League Standings</h1>
+      <p class="text-gray-400">Data not yet available. The pipeline needs to run first.</p>
+    </div>
+  )}
 </Layout>

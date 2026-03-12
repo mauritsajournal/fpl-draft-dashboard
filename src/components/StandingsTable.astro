@@ -1,0 +1,89 @@
+---
+interface Standing {
+  rank: number;
+  lastRank: number;
+  leagueEntryId: number;
+  entryId: number;
+  teamName: string;
+  playerName: string;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  pointsFor: number;
+  pointsAgainst: number;
+  leaguePoints: number;
+}
+
+interface Props {
+  standings: Standing[];
+  highlightEntryId?: number;
+}
+
+const { standings, highlightEntryId } = Astro.props;
+
+function getRankChange(current: number, last: number): string {
+  if (last === 0) return '';
+  const diff = last - current;
+  if (diff > 0) return `+${diff}`;
+  if (diff < 0) return `${diff}`;
+  return '=';
+}
+
+function getRankColor(current: number, last: number): string {
+  if (last === 0) return 'text-gray-500';
+  const diff = last - current;
+  if (diff > 0) return 'text-green-400';
+  if (diff < 0) return 'text-red-400';
+  return 'text-gray-500';
+}
+---
+
+<div class="overflow-x-auto mb-8">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="text-gray-400 border-b border-white/10 text-left">
+        <th class="py-3 px-2 w-8">#</th>
+        <th class="py-3 px-2"></th>
+        <th class="py-3 px-2">Team</th>
+        <th class="py-3 px-2 hidden sm:table-cell">Manager</th>
+        <th class="py-3 px-2 text-center">P</th>
+        <th class="py-3 px-2 text-center">W</th>
+        <th class="py-3 px-2 text-center">D</th>
+        <th class="py-3 px-2 text-center">L</th>
+        <th class="py-3 px-2 text-center hidden md:table-cell">PF</th>
+        <th class="py-3 px-2 text-center hidden md:table-cell">PA</th>
+        <th class="py-3 px-2 text-center font-bold">Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      {standings.map((s) => {
+        const isHighlighted = s.entryId === highlightEntryId;
+        const rankChange = getRankChange(s.rank, s.lastRank);
+        const rankColor = getRankColor(s.rank, s.lastRank);
+
+        return (
+          <tr class:list={[
+            'border-b border-white/5 hover:bg-white/5 transition-colors',
+            isHighlighted && 'bg-fpl-green/10 border-l-2 border-l-fpl-green'
+          ]}>
+            <td class="py-3 px-2 font-bold text-white">{s.rank}</td>
+            <td class={`py-3 px-1 text-xs ${rankColor}`}>{rankChange}</td>
+            <td class="py-3 px-2">
+              <span class="font-medium text-white">{s.teamName}</span>
+              <span class="sm:hidden text-gray-500 text-xs block">{s.playerName}</span>
+            </td>
+            <td class="py-3 px-2 text-gray-400 hidden sm:table-cell">{s.playerName}</td>
+            <td class="py-3 px-2 text-center text-gray-300">{s.played}</td>
+            <td class="py-3 px-2 text-center text-green-400">{s.won}</td>
+            <td class="py-3 px-2 text-center text-gray-400">{s.drawn}</td>
+            <td class="py-3 px-2 text-center text-red-400">{s.lost}</td>
+            <td class="py-3 px-2 text-center text-gray-300 hidden md:table-cell">{s.pointsFor}</td>
+            <td class="py-3 px-2 text-center text-gray-300 hidden md:table-cell">{s.pointsAgainst}</td>
+            <td class="py-3 px-2 text-center font-bold text-fpl-cyan">{s.leaguePoints}</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
