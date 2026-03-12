@@ -58,15 +58,18 @@ export interface BootstrapEvent {
   name: string;
   deadline_time: string;
   finished: boolean;
-  is_current: boolean;
-  is_next: boolean;
-  is_previous: boolean;
+}
+
+export interface BootstrapEvents {
+  current: number;
+  next: number;
+  data: BootstrapEvent[];
 }
 
 export interface BootstrapResponse {
   elements: BootstrapPlayer[];
   teams: BootstrapTeam[];
-  events: BootstrapEvent[];
+  events: BootstrapEvents;
   element_types: { id: number; singular_name: string; plural_name: string }[];
 }
 
@@ -202,17 +205,20 @@ export interface LiveEventResponse {
 // === Transactions ===
 export interface Transaction {
   id: number;
+  added: string; // ISO timestamp
   entry: number; // league_entry id
   event: number;
   element_in: number;
   element_out: number;
   kind: 'w' | 'f'; // w = waiver, f = free agent
   result: 'a' | 'di' | 'do'; // a = accepted, di = rejected (higher priority), do = rejected (other)
-  priority: number;
-  index: number;
+  priority: number | null;
+  index: number | null;
 }
 
-export type TransactionsResponse = Transaction[];
+export interface TransactionsResponse {
+  transactions: Transaction[];
+}
 
 // === Draft Choices ===
 export interface DraftChoice {
