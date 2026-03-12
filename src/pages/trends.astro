@@ -1,8 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LineChart from '../components/LineChart.svelte';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {}
+
+const gwHistory = dashboardData?.gameweekHistory ?? [];
+const managers = dashboardData?.managers ?? [];
+const standings = dashboardData?.standings ?? [];
+
+// Build manager name lookup
+const managerNames = new Map<number, string>();
+for (const m of managers) {
+  managerNames.set(m.leagueEntryId, m.playerName.split(' ')[0]);
+}
+
+// Position over time data
+const positionData = {
+  labels: gwHistory.map((snap: any) => `GW${snap.gameweek}`),
+  datasets: standings.map((s: any) => ({
+    label: managerNames.get(s.leagueEntryId) ?? 'Unknown',
+    data: gwHistory.map((snap: any) => {
+      const entry = snap.standings.find((st: any) => st.leagueEntryId === s.leagueEntryId);
+      return entry?.rank ?? null;
+    }),
+  })),
+};
+
+// Cumulative points over time
+const cumulativeData = {
+  labels: gwHistory.map((snap: any) => `GW${snap.gameweek}`),
+  datasets: standings.map((s: any) => ({
+    label: managerNames.get(s.leagueEntryId) ?? 'Unknown',
+    data: gwHistory.map((snap: any) => {
+      const entry = snap.standings.find((st: any) => st.leagueEntryId === s.leagueEntryId);
+      return entry?.cumulativePoints ?? 0;
+    }),
+  })),
+};
+
+// Points per GW
+const gwPointsData = {
+  labels: gwHistory.map((snap: any) => `GW${snap.gameweek}`),
+  datasets: standings.map((s: any) => ({
+    label: managerNames.get(s.leagueEntryId) ?? 'Unknown',
+    data: gwHistory.map((snap: any) => {
+      const entry = snap.standings.find((st: any) => st.leagueEntryId === s.leagueEntryId);
+      return entry?.gwPoints ?? 0;
+    }),
+  })),
+};
 ---
 
 <Layout title="Trends — FC Driegangendiner">
-  <h1 class="text-2xl font-bold text-fpl-green mb-6">Gameweek Trends</h1>
-  <p class="text-gray-400">Trend charts will appear here once the data pipeline is configured.</p>
+  {gwHistory.length > 0 ? (
+    <>
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-fpl-green mb-1">Gameweek Trends</h1>
+        <p class="text-gray-400 text-sm">How positions and points have evolved over the season</p>
+      </div>
+
+      <div class="space-y-8">
+        <LineChart
+          client:visible
+          data={JSON.stringify(positionData)}
+          title="League Position Over Time"
+          yReverse={true}
+        />
+
+        <LineChart
+          client:visible
+          data={JSON.stringify(cumulativeData)}
+          title="Cumulative Points"
+        />
+
+        <LineChart
+          client:visible
+          data={JSON.stringify(gwPointsData)}
+          title="Points Per Gameweek"
+        />
+      </div>
+    </>
+  ) : (
+    <div class="text-center py-20">
+      <h1 class="text-2xl font-bold text-fpl-green mb-4">Gameweek Trends</h1>
+      <p class="text-gray-400">Data not yet available.</p>
+    </div>
+  )}
 </Layout>
