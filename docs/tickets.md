@@ -458,7 +458,8 @@ Reference: technical-blueprint.md §3.4
 
 ---
 
-## [ ] T-011 — Player statistics view
+## [x] T-011 — Player statistics view
+> DONE 2026-03-12 — Top 200 players table with all stats, Maurits highlighting, ownership.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
@@ -490,7 +491,8 @@ Reference: technical-blueprint.md §3.4
 
 ---
 
-## [ ] T-012 — Point predictions view
+## [x] T-012 — Point predictions view
+> DONE 2026-03-12 — Prediction cards with expected pts, player breakdown, matchup display.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
@@ -524,7 +526,8 @@ Reference: technical-blueprint.md §3.3, §3.4
 
 ---
 
-## [ ] T-013 — Power rankings view
+## [x] T-013 — Power rankings view
+> DONE 2026-03-12 — Integrated into home page with ranked list and stacked bar breakdown.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
@@ -552,7 +555,8 @@ Reference: technical-blueprint.md §3.2 (power ranking algorithm)
 
 ---
 
-## [ ] T-014 — Waiver/trade history and draft recap
+## [x] T-014 — Waiver/trade history and draft recap
+> DONE 2026-03-12 — Transfer timeline, draft recap table, transfer stats by manager.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
@@ -583,7 +587,8 @@ Reference: technical-blueprint.md §3.3
 
 ---
 
-## [ ] T-015 — Free agents comparison view
+## [x] T-015 — Free agents comparison view
+> DONE 2026-03-12 — Waiver gems section, top 100 free agents table with full stats.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
@@ -612,7 +617,8 @@ Reference: technical-blueprint.md §3.3
 
 ---
 
-## [ ] T-016 — Data health / status page
+## [x] T-016 — Data health / status page
+> DONE 2026-03-12 — Freshness indicator, data availability, fetch errors, troubleshooting links.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
