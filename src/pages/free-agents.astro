@@ -1,8 +1,113 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {}
+
+const freeAgents = dashboardData?.freeAgents ?? [];
+
+const positions = ['All', 'GK', 'DEF', 'MID', 'FWD'];
+
+// Waiver gems: high form, unowned
+const waiverGems = freeAgents
+  .filter((p: any) => p.form >= 5 && p.minutes > 200)
+  .slice(0, 10);
 ---
 
 <Layout title="Free Agents — FC Driegangendiner">
-  <h1 class="text-2xl font-bold text-fpl-green mb-6">Free Agents</h1>
-  <p class="text-gray-400">Available players will appear here once the data pipeline is configured.</p>
+  {dashboardData ? (
+    <>
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-fpl-green mb-1">Free Agents</h1>
+        <p class="text-gray-400 text-sm">
+          Best unowned players available for waiver pickup
+        </p>
+      </div>
+
+      <!-- Waiver Gems -->
+      {waiverGems.length > 0 && (
+        <div class="mb-8">
+          <h2 class="text-lg font-bold text-fpl-pink mb-3">Waiver Gems</h2>
+          <p class="text-xs text-gray-500 mb-3">Unowned players with high recent form (5.0+) and significant minutes</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {waiverGems.map((p: any) => (
+              <div class="bg-fpl-card rounded-lg p-4 border border-fpl-pink/20">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <div class="font-bold text-white">{p.webName}</div>
+                    <div class="text-xs text-gray-400">{p.team} &middot; {p.position}</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-fpl-cyan">{p.totalPoints}</div>
+                    <div class="text-xs text-fpl-pink">Form: {p.form.toFixed(1)}</div>
+                  </div>
+                </div>
+                <div class="flex gap-3 mt-2 text-xs text-gray-400">
+                  <span>{p.goalsScored}G</span>
+                  <span>{p.assists}A</span>
+                  <span>xG:{p.xG.toFixed(1)}</span>
+                  <span>xA:{p.xA.toFixed(1)}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Full Free Agents Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-gray-400 border-b border-white/10 text-left">
+              <th class="py-2 px-2">#</th>
+              <th class="py-2 px-2">Player</th>
+              <th class="py-2 px-2 hidden sm:table-cell">Team</th>
+              <th class="py-2 px-2">Pos</th>
+              <th class="py-2 px-2 text-center">Pts</th>
+              <th class="py-2 px-2 text-center">Form</th>
+              <th class="py-2 px-2 text-center hidden md:table-cell">G</th>
+              <th class="py-2 px-2 text-center hidden md:table-cell">A</th>
+              <th class="py-2 px-2 text-center hidden lg:table-cell">xG</th>
+              <th class="py-2 px-2 text-center hidden lg:table-cell">xA</th>
+              <th class="py-2 px-2 text-center hidden md:table-cell">Min</th>
+            </tr>
+          </thead>
+          <tbody>
+            {freeAgents.slice(0, 100).map((p: any, i: number) => (
+              <tr class="border-b border-white/5 hover:bg-white/5">
+                <td class="py-2 px-2 text-gray-500">{i + 1}</td>
+                <td class="py-2 px-2">
+                  <span class="text-white font-medium">{p.webName}</span>
+                  <span class="sm:hidden text-xs text-gray-500 block">{p.team}</span>
+                </td>
+                <td class="py-2 px-2 text-gray-400 hidden sm:table-cell">{p.team}</td>
+                <td class:list={[
+                  'py-2 px-2 text-xs font-medium',
+                  p.position === 'GK' ? 'text-yellow-300' :
+                  p.position === 'DEF' ? 'text-blue-300' :
+                  p.position === 'MID' ? 'text-green-300' :
+                  'text-red-300'
+                ]}>{p.position}</td>
+                <td class="py-2 px-2 text-center font-bold text-fpl-cyan">{p.totalPoints}</td>
+                <td class="py-2 px-2 text-center text-gray-300">{p.form.toFixed(1)}</td>
+                <td class="py-2 px-2 text-center text-gray-300 hidden md:table-cell">{p.goalsScored}</td>
+                <td class="py-2 px-2 text-center text-gray-300 hidden md:table-cell">{p.assists}</td>
+                <td class="py-2 px-2 text-center text-gray-300 hidden lg:table-cell">{p.xG.toFixed(1)}</td>
+                <td class="py-2 px-2 text-center text-gray-300 hidden lg:table-cell">{p.xA.toFixed(1)}</td>
+                <td class="py-2 px-2 text-center text-gray-400 hidden md:table-cell">{p.minutes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  ) : (
+    <div class="text-center py-20">
+      <h1 class="text-2xl font-bold text-fpl-green mb-4">Free Agents</h1>
+      <p class="text-gray-400">Data not yet available.</p>
+    </div>
+  )}
 </Layout>

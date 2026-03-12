@@ -1,8 +1,99 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {}
+
+// Combine owned and free agents for the full player view
+const playerStats = dashboardData?.playerStats ?? [];
+const freeAgents = dashboardData?.freeAgents ?? [];
+const allPlayers = [...playerStats, ...freeAgents]
+  .sort((a: any, b: any) => b.totalPoints - a.totalPoints)
+  .slice(0, 200);
+
+// Maurits Koot's league entry ID for highlighting
+const MAURITS_LEAGUE_ENTRY = 27137;
 ---
 
 <Layout title="Players — FC Driegangendiner">
-  <h1 class="text-2xl font-bold text-fpl-green mb-6">Player Statistics</h1>
-  <p class="text-gray-400">Player stats will appear here once the data pipeline is configured.</p>
+  {dashboardData ? (
+    <>
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-fpl-green mb-1">Player Statistics</h1>
+        <p class="text-gray-400 text-sm">
+          Top 200 players by total points &middot; {playerStats.length} owned, {freeAgents.length} available
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-gray-400 border-b border-white/10 text-left">
+              <th class="py-2 px-2">#</th>
+              <th class="py-2 px-2">Player</th>
+              <th class="py-2 px-2">Pos</th>
+              <th class="py-2 px-2 hidden sm:table-cell">Team</th>
+              <th class="py-2 px-2 hidden md:table-cell">Owner</th>
+              <th class="py-2 px-2 text-center">Pts</th>
+              <th class="py-2 px-2 text-center hidden sm:table-cell">G</th>
+              <th class="py-2 px-2 text-center hidden sm:table-cell">A</th>
+              <th class="py-2 px-2 text-center hidden md:table-cell">xG</th>
+              <th class="py-2 px-2 text-center hidden md:table-cell">xA</th>
+              <th class="py-2 px-2 text-center hidden lg:table-cell">Form</th>
+              <th class="py-2 px-2 text-center hidden lg:table-cell">Min</th>
+            </tr>
+          </thead>
+          <tbody>
+            {allPlayers.map((p: any, i: number) => {
+              const isMauritsPlayer = p.ownerLeagueEntryId === MAURITS_LEAGUE_ENTRY;
+              return (
+                <tr class:list={[
+                  'border-b border-white/5 hover:bg-white/5',
+                  isMauritsPlayer && 'bg-fpl-green/5'
+                ]}>
+                  <td class="py-2 px-2 text-gray-500">{i + 1}</td>
+                  <td class="py-2 px-2">
+                    <span class="text-white font-medium">{p.webName}</span>
+                  </td>
+                  <td class:list={[
+                    'py-2 px-2 text-xs font-medium',
+                    p.position === 'GK' ? 'text-yellow-300' :
+                    p.position === 'DEF' ? 'text-blue-300' :
+                    p.position === 'MID' ? 'text-green-300' :
+                    'text-red-300'
+                  ]}>{p.position}</td>
+                  <td class="py-2 px-2 text-gray-400 hidden sm:table-cell">{p.team}</td>
+                  <td class="py-2 px-2 hidden md:table-cell">
+                    {p.owner ? (
+                      <span class:list={[
+                        'text-sm',
+                        isMauritsPlayer ? 'text-fpl-green font-medium' : 'text-gray-400'
+                      ]}>{p.owner.split(' ')[0]}</span>
+                    ) : (
+                      <span class="text-xs text-fpl-blue">Available</span>
+                    )}
+                  </td>
+                  <td class="py-2 px-2 text-center font-bold text-fpl-cyan">{p.totalPoints}</td>
+                  <td class="py-2 px-2 text-center text-gray-300 hidden sm:table-cell">{p.goalsScored}</td>
+                  <td class="py-2 px-2 text-center text-gray-300 hidden sm:table-cell">{p.assists}</td>
+                  <td class="py-2 px-2 text-center text-gray-300 hidden md:table-cell">{p.xG.toFixed(1)}</td>
+                  <td class="py-2 px-2 text-center text-gray-300 hidden md:table-cell">{p.xA.toFixed(1)}</td>
+                  <td class="py-2 px-2 text-center text-gray-300 hidden lg:table-cell">{p.form.toFixed(1)}</td>
+                  <td class="py-2 px-2 text-center text-gray-400 hidden lg:table-cell">{p.minutes}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
+  ) : (
+    <div class="text-center py-20">
+      <h1 class="text-2xl font-bold text-fpl-green mb-4">Player Statistics</h1>
+      <p class="text-gray-400">Data not yet available.</p>
+    </div>
+  )}
 </Layout>
