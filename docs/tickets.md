@@ -296,7 +296,8 @@ Reference: technical-blueprint.md §3.3
 
 ---
 
-## [ ] T-007 — Unit tests for transformation logic
+## [x] T-007 — Unit tests for transformation logic
+> DONE 2026-03-12 — 34 tests covering all dashboard sections. All pass against real data.
 
 **Phase:** 1 (MVP)
 **Component:** Testing
