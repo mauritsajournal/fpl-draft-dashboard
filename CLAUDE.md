@@ -68,6 +68,20 @@ npm run test         # Run Vitest tests
 - Draft choices: `GET https://draft.premierleague.com/api/draft/820/choices`
 - Fixtures: `GET https://fantasy.premierleague.com/api/fixtures/`
 
+## ESPN Premier League API (no auth needed)
+Used for the "Draft x PL" page that combines real PL data with FPL draft data.
+- Teams: `GET https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams`
+- Team roster: `GET https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/{espnTeamId}/roster`
+- Team stats: `GET https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/seasons/2025/types/1/teams/{espnTeamId}/statistics`
+- Player stats: `GET https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/seasons/2025/types/1/teams/{espnTeamId}/athletes/{athleteId}/statistics`
+- Standings: `GET https://site.web.api.espn.com/apis/v2/sports/soccer/eng.1/standings?season=2025`
+- Data cached in `data/espn/` (team-stats.json, player-stats.json, rosters.json, standings.json, player-mapping.json)
+- Fetch script: `scripts/fetch-espn.ts` (run via `npm run fetch:espn`)
+- Transform: `scripts/lib/espn-transform.ts` (produces `draftXPL` section in dashboard.json)
+- FPL team ID -> ESPN team ID mapping in fetch-espn.ts `FPL_TO_ESPN` constant
+- Player matching uses fuzzy name matching (last name, normalized accents, hyphenated names)
+- ESPN stat fields use `name` property (camelCase, e.g., `totalGoals`, `shotsOnTarget`, `foulsCommitted`)
+
 ## Important API Notes
 - Draft API `events` is `{ current, next, data: [...] }` (NOT a flat array)
 - Transactions response is `{ transactions: [...] }` (NOT a bare array)

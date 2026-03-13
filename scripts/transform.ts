@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { readJson, writeJson } from './lib/fetch-utils.js';
 import { PlayerResolver } from './lib/player-resolver.js';
+import { buildDraftXPL } from './lib/espn-transform.js';
 import type {
   BootstrapResponse,
   LeagueResponse,
@@ -150,6 +151,15 @@ function main(): void {
   const creativeStats = buildCreativeStats(league, entryMap, standings, managers, completedGws, h2hMatrix, ownedPlayers, draftPicks, resolver);
   console.log(`  Creative Stats: luck=${creativeStats.luckIndex.length}, consistency=${creativeStats.consistencyScores.length}, streaks=${creativeStats.streaks.length}`);
 
+  // ---- ESPN Integration (Draft x PL) ----
+  console.log('  Building Draft x PL stats...');
+  const draftXPL = buildDraftXPL();
+  if (draftXPL) {
+    console.log(`  Draft x PL: ${draftXPL.managerProfiles.length} managers, ${draftXPL.awards.goldBoot?.name ?? 'N/A'} top scorer`);
+  } else {
+    console.log('  Draft x PL: skipped (ESPN data not available)');
+  }
+
   // ---- Assemble Dashboard ----
   const dashboard: DashboardData = {
     meta: {
@@ -173,6 +183,7 @@ function main(): void {
     benchAnalysis,
     whatIf,
     creativeStats,
+    draftXPL,
   };
 
   writeJson('dashboard.json', dashboard);

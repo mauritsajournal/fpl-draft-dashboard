@@ -33,10 +33,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch API data
+      - name: Fetch FPL API data
         run: npx tsx scripts/fetch-all.ts
 
-      - name: Transform data
+      - name: Transform FPL data
+        run: npx tsx scripts/transform.ts
+
+      - name: Fetch ESPN data
+        run: npx tsx scripts/fetch-espn.ts
+        continue-on-error: true
+
+      - name: Re-transform with ESPN data
         run: npx tsx scripts/transform.ts
 
       - name: Check for data changes

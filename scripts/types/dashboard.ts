@@ -302,4 +302,5 @@ export interface DashboardData {
   benchAnalysis: BenchData[];
   whatIf: WhatIfResult[];
   creativeStats: CreativeStats;
+  draftXPL: import('../lib/espn-transform.js').DraftXPLStats | null;
 }

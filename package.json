@@ -12,6 +12,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "fetch": "tsx scripts/fetch-all.ts",
+    "fetch:espn": "tsx scripts/fetch-espn.ts",
     "transform": "tsx scripts/transform.ts"
   },
   "dependencies": {

@@ -968,6 +968,111 @@ The "P" column in the standings table shows 38 for all managers, but only 29 gam
 
 ---
 
+## Phase 5 — ESPN Integration (Draft x Premier League)
+
+> Added 2026-03-13. Combines ESPN real-world PL data with FPL Draft data.
+
+---
+
+## [x] T-025 — ESPN API data fetch script
+> DONE 2026-03-13 — scripts/fetch-espn.ts fetches team stats, rosters, player stats, standings. 118/120 players matched.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** Data Pipeline
+**Priority:** P0
+
+**Description:**
+Create fetch script for ESPN Premier League API. Fetch team stats (20 teams), rosters, individual player stats (for owned FPL players), and standings. Save to data/espn/.
+
+---
+
+## [x] T-026 — FPL-to-ESPN player name matching
+> DONE 2026-03-13 — Fuzzy matching via normalize + multi-pass: exact last name, web name cleanup, substring, hyphenated. 119/120 matched.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** Data Pipeline
+**Priority:** P0
+
+**Description:**
+Build fuzzy player name matcher to cross-reference FPL Draft players with ESPN roster players. Handle accent normalization, abbreviated names (B.Fernandes), single-name players (Gabriel), and hyphenated names (Gibbs-White).
+
+---
+
+## [x] T-027 — ESPN transform: compute 15 combined statistics
+> DONE 2026-03-13 — scripts/lib/espn-transform.ts with buildDraftXPL() producing all 15 stats plus awards.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** Data Pipeline
+**Priority:** P0
+
+**Description:**
+Create transform module that combines ESPN real-world data with FPL draft data to compute 15 creative statistics:
+1. Real vs Fantasy (PL team rank vs draft rank)
+2. Card Collector
+3. Pass Master vs Long Ball
+4. Shooting Efficiency
+5. Defensive Wall
+6. Foul Merchant
+7. Benchwarmer Index
+8. Team Diversity
+9. Big Club Bias
+10. Goal Involvement Kings
+11. The Chaos Index
+12. Minutes Monster
+13. Fantasy vs Reality
+14. Draft Pick Hit Rate
+15. Awards Ceremony
+
+---
+
+## [x] T-028 — Draft x PL page with glassmorphism design
+> DONE 2026-03-13 — src/pages/draft-x-pl.astro with all 15 stats, awards ceremony, quick nav, responsive design.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** Frontend
+**Priority:** P0
+
+**Description:**
+Build the "Draft x Premier League" page as the most impressive page on the dashboard. Features:
+- Awards ceremony section with 10 awards (Golden Boot, Playmaker, Iron Man, etc.)
+- Real vs Fantasy comparison cards
+- Goal Involvement rankings with top contributors
+- Shooting Efficiency table
+- Card Collector and Chaos Index side-by-side
+- Defensive Wall rankings
+- Pass Style and Foul Merchant side-by-side
+- Minutes Monster and Benchwarmer Index side-by-side
+- Team Diversity and Big Club Bias side-by-side
+- Fantasy vs Reality cards
+- Draft Pick Hit Rate with expandable round tables
+- Quick navigation anchors
+
+---
+
+## [x] T-029 — Nav integration and GitHub Actions update
+> DONE 2026-03-13 — Added "Draft x PL" to nav, updated fetch-and-deploy.yml to include ESPN fetch step.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** CI/CD + Frontend
+**Priority:** P1
+
+**Description:**
+Add "Draft x PL" nav item to the layout. Update the fetch-and-deploy GitHub Actions workflow to include ESPN data fetch (with continue-on-error) and re-transform.
+
+---
+
+## [x] T-030 — CLAUDE.md and documentation update
+> DONE 2026-03-13 — Added ESPN API section to CLAUDE.md, updated package.json scripts.
+
+**Phase:** 5 (ESPN Integration)
+**Component:** Documentation
+**Priority:** P1
+
+**Description:**
+Update CLAUDE.md with ESPN API endpoints, data flow, and configuration. Add fetch:espn script to package.json.
+
+---
+
 ## Summary
 
 | Phase | Tickets | P0 | P1 | P2 | Effort Breakdown |
@@ -976,4 +1081,5 @@ The "P" column in the standings table shows 38 for all managers, but only 29 gam
 | Phase 2 (Full) | T-009 to T-016, T-021 | 0 | 7 | 2 | 3S + 5M + 1L |
 | Phase 3 (Polish) | T-017 to T-020 | 0 | 0 | 4 | 0S + 3M + 1L |
 | Phase 4 (Bugs) | BUG-001 to BUG-004 | 2 | 2 | 0 | 4S |
-| **Total** | **28** | **10** | **11** | **7** | **9S + 13M + 4L + 1XL** |
+| Phase 5 (ESPN) | T-025 to T-030 | 3 | 2 | 0 | 2S + 2M + 2L |
+| **Total** | **34** | **13** | **13** | **7** | **11S + 15M + 6L + 1XL** |
