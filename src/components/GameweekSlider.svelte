@@ -35,13 +35,13 @@
   }
 </script>
 
-<div class="flex items-center gap-3 bg-fpl-card rounded-lg px-4 py-2 border border-white/5">
-  <span class="text-sm text-gray-400 whitespace-nowrap">{label}</span>
+<div class="glass-card-sm flex items-center gap-3 px-4 py-3">
+  <span class="text-sm text-slate-400 whitespace-nowrap font-medium">{label}</span>
 
   <button
     onclick={prev}
     disabled={currentGw <= minGw}
-    class="w-8 h-8 flex items-center justify-center rounded bg-fpl-surface text-white hover:bg-fpl-green hover:text-fpl-purple disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+    class="w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-emerald-500/20 hover:text-emerald-400 disabled:opacity-20 disabled:cursor-not-allowed transition-all"
     aria-label="Previous gameweek"
   >
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,9 +56,9 @@
       max={maxGw}
       value={currentGw}
       oninput={onInput}
-      class="flex-1 h-1.5 bg-fpl-surface rounded-full appearance-none cursor-pointer accent-fpl-green [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-fpl-green [&::-webkit-slider-thumb]:cursor-pointer"
+      class="flex-1 h-1 bg-white/10 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-400 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb]:shadow-emerald-400/30"
     />
-    <span class="text-lg font-bold text-fpl-green tabular-nums min-w-[3ch] text-center">
+    <span class="text-lg font-bold text-emerald-400 tabular-nums min-w-[3ch] text-center">
       {currentGw}
     </span>
   </div>
@@ -66,7 +66,7 @@
   <button
     onclick={next}
     disabled={currentGw >= maxGw}
-    class="w-8 h-8 flex items-center justify-center rounded bg-fpl-surface text-white hover:bg-fpl-green hover:text-fpl-purple disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+    class="w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-emerald-500/20 hover:text-emerald-400 disabled:opacity-20 disabled:cursor-not-allowed transition-all"
     aria-label="Next gameweek"
   >
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
