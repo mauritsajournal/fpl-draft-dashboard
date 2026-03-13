@@ -9,7 +9,8 @@ const {
   message = 'Data not yet available. The data pipeline needs to run first.'
 } = Astro.props;
 
-const baseUrl = import.meta.env.BASE_URL;
+const rawBase = import.meta.env.BASE_URL;
+const baseUrl = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
 
 <div class="flex flex-col items-center justify-center py-20 text-center">

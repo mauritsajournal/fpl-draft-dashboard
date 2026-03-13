@@ -47,7 +47,7 @@ const positionColors: Record<string, string> = {
 
 <Layout title={`${manager.teamName} — FC Driegangendiner`}>
   <div class="mb-6">
-    <a href={`${import.meta.env.BASE_URL}teams/`} class="text-sm text-gray-400 hover:text-fpl-green mb-2 inline-block">&larr; All Teams</a>
+    <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}teams/`} class="text-sm text-gray-400 hover:text-fpl-green mb-2 inline-block">&larr; All Teams</a>
     <div class="flex flex-col sm:flex-row justify-between items-start gap-4">
       <div>
         <h1 class="text-2xl font-bold text-white">{manager.teamName}</h1>
