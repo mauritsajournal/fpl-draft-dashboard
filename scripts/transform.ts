@@ -38,6 +38,10 @@ import type {
   PositionalBreakdown,
   StreakData,
   DraftValueEntry,
+  RequestedStats,
+  RecommendedXI,
+  RecommendedPlayer,
+  OpponentAvgAgainst,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -160,6 +164,17 @@ function main(): void {
     console.log('  Draft x PL: skipped (ESPN data not available)');
   }
 
+  // ---- Requested Stats (Recommended XI + Opponent Avg Against) ----
+  const requestedStats = buildRequestedStats(
+    league, entryMap, entryIdToLeagueId, ownership, resolver,
+    bootstrap, fixtures, liveMap, picksMap, h2hMatrix, completedGws, currentGw, freeAgents
+  );
+  if (requestedStats) {
+    console.log(`  Requested Stats: ${requestedStats.recommendedXIs.length} recommended XIs, ${requestedStats.opponentAvgAgainst.length} opponent avg records`);
+  } else {
+    console.log('  Requested Stats: skipped (insufficient data)');
+  }
+
   // ---- Assemble Dashboard ----
   const dashboard: DashboardData = {
     meta: {
@@ -184,6 +199,7 @@ function main(): void {
     whatIf,
     creativeStats,
     draftXPL,
+    requestedStats,
   };
 
   writeJson('dashboard.json', dashboard);
@@ -1432,6 +1448,404 @@ function buildDraftValue(
   }
 
   return results;
+}
+
+// ---- Requested Stats: Recommended XI + Opponent Avg Against ----
+
+const VALID_FORMATIONS: [number, number, number][] = [
+  [3, 4, 3], [3, 5, 2], [4, 3, 3], [4, 4, 2], [4, 5, 1], [5, 3, 2], [5, 4, 1],
+];
+
+function buildRequestedStats(
+  league: LeagueResponse,
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  entryIdToLeagueId: Map<number, number>,
+  ownership: ElementStatusResponse | null,
+  resolver: PlayerResolver,
+  bootstrap: BootstrapResponse,
+  fixtures: Fixture[] | null,
+  liveMap: Map<number, LiveEventResponse>,
+  picksMap: Map<number, Record<string, EntryEventResponse>>,
+  h2hMatrix: H2HRecord[],
+  completedGws: number[],
+  currentGw: number,
+  freeAgentStats: PlayerStat[],
+): RequestedStats | null {
+  if (!ownership || !fixtures || completedGws.length === 0) return null;
+
+  // ========== Shared: compute team-level stats from live data ==========
+
+  // Player -> team mapping
+  const playerTeamMap = new Map<number, number>();
+  for (const p of bootstrap.elements) {
+    playerTeamMap.set(p.id, p.team);
+  }
+
+  // Team name/short lookups
+  const teamNameMap = new Map<number, string>();
+  const teamShortMap = new Map<number, string>();
+  for (const t of bootstrap.teams) {
+    teamNameMap.set(t.id, t.name);
+    teamShortMap.set(t.id, t.short_name);
+  }
+
+  // Compute team goals conceded and goals scored over last 5 GWs
+  const last5Gws = completedGws.slice(-5);
+  const teamGoalsConceded: Record<number, number[]> = {};
+  const teamGoalsScored: Record<number, number[]> = {};
+  const teamCleanSheets: Record<number, number> = {};
+
+  for (const gw of last5Gws) {
+    const gwLive = liveMap.get(gw);
+    if (!gwLive) continue;
+
+    // Track per-team stats for this GW
+    const gwTeamGC: Record<number, number> = {};
+    const gwTeamGoals: Record<number, number> = {};
+    const gwTeamCS: Record<number, boolean> = {};
+
+    for (const [idStr, el] of Object.entries(gwLive.elements)) {
+      const teamId = playerTeamMap.get(parseInt(idStr));
+      if (!teamId || el.stats.minutes === 0) continue;
+
+      // Goals conceded: take max per team (all players on same team concede same)
+      gwTeamGC[teamId] = Math.max(gwTeamGC[teamId] ?? 0, el.stats.goals_conceded);
+      gwTeamGoals[teamId] = (gwTeamGoals[teamId] ?? 0) + el.stats.goals_scored;
+      if (el.stats.clean_sheets > 0) gwTeamCS[teamId] = true;
+    }
+
+    // Deduplicate goals scored (sum across players is correct since only scorers get credit)
+    for (const [teamStr, gc] of Object.entries(gwTeamGC)) {
+      const teamId = parseInt(teamStr);
+      if (!teamGoalsConceded[teamId]) teamGoalsConceded[teamId] = [];
+      teamGoalsConceded[teamId].push(gc);
+    }
+    for (const [teamStr, goals] of Object.entries(gwTeamGoals)) {
+      const teamId = parseInt(teamStr);
+      if (!teamGoalsScored[teamId]) teamGoalsScored[teamId] = [];
+      teamGoalsScored[teamId].push(goals);
+    }
+    for (const teamStr of Object.keys(gwTeamCS)) {
+      const teamId = parseInt(teamStr);
+      teamCleanSheets[teamId] = (teamCleanSheets[teamId] ?? 0) + 1;
+    }
+  }
+
+  // Average xGC per team (goals conceded per GW over last 5)
+  const teamAvgGC: Record<number, number> = {};
+  for (const [teamStr, gcs] of Object.entries(teamGoalsConceded)) {
+    const teamId = parseInt(teamStr);
+    teamAvgGC[teamId] = gcs.reduce((a, b) => a + b, 0) / gcs.length;
+  }
+
+  // Average goals scored per team over last 5
+  const teamAvgGoals: Record<number, number> = {};
+  for (const [teamStr, goals] of Object.entries(teamGoalsScored)) {
+    const teamId = parseInt(teamStr);
+    teamAvgGoals[teamId] = goals.reduce((a, b) => a + b, 0) / goals.length;
+  }
+
+  // Compute player last-5-GW points
+  const playerLast5Points = new Map<number, number>();
+  for (const gw of last5Gws) {
+    const gwLive = liveMap.get(gw);
+    if (!gwLive) continue;
+    for (const [idStr, el] of Object.entries(gwLive.elements)) {
+      const pid = parseInt(idStr);
+      playerLast5Points.set(pid, (playerLast5Points.get(pid) ?? 0) + el.stats.total_points);
+    }
+  }
+
+  // Next GW fixtures: team -> { opponentTeamId, isHome, difficulty }
+  const nextGwNum = currentGw + 1;
+  const nextFixtures = fixtures.filter(f => f.event === nextGwNum);
+  const teamNextFixture = new Map<number, { opponent: number; isHome: boolean; difficulty: number }>();
+  for (const fix of nextFixtures) {
+    teamNextFixture.set(fix.team_h, {
+      opponent: fix.team_a,
+      isHome: true,
+      difficulty: fix.team_h_difficulty,
+    });
+    teamNextFixture.set(fix.team_a, {
+      opponent: fix.team_h,
+      isHome: false,
+      difficulty: fix.team_a_difficulty,
+    });
+  }
+
+  // ========== T-031: Recommended XI ==========
+
+  // Build player-to-owner mapping
+  const playerOwner = new Map<number, number>();
+  if (ownership) {
+    for (const es of ownership.element_status) {
+      if (es.owner !== null) {
+        const leagueId = entryIdToLeagueId.get(es.owner) ?? es.owner;
+        playerOwner.set(es.element, leagueId);
+      }
+    }
+  }
+
+  // Group players by owner
+  const ownerPlayers = new Map<number, typeof bootstrap.elements>();
+  for (const p of bootstrap.elements) {
+    const owner = playerOwner.get(p.id);
+    if (owner !== undefined) {
+      const existing = ownerPlayers.get(owner) ?? [];
+      existing.push(p);
+      ownerPlayers.set(owner, existing);
+    }
+  }
+
+  // Score a single player for starting XI recommendation
+  function scorePlayer(p: typeof bootstrap.elements[0]): RecommendedPlayer {
+    const teamId = p.team;
+    const fix = teamNextFixture.get(teamId);
+    const positionId = p.element_type;
+    const position = resolver.getPosition(positionId);
+
+    // 1. Fixture score (35%): lower opponent strength + lower team xGC = better
+    let fixtureScore = 5; // default middle
+    if (fix) {
+      // Difficulty is 1-5 where 5 is hardest. Invert for score.
+      const diffScore = (6 - fix.difficulty) * 2; // 2-10 range
+      // Team xGC factor: lower opponent goals scored = easier
+      const oppGoals = teamAvgGoals[fix.opponent] ?? 1.5;
+      const xGCFactor = Math.max(0, 10 - oppGoals * 4); // 0-10 range
+      fixtureScore = (diffScore + xGCFactor) / 2; // 0-10
+    }
+
+    // 2. Form score (35%): last 5 GW points
+    const last5Pts = playerLast5Points.get(p.id) ?? 0;
+    const formScore = Math.min(last5Pts / 5, 10); // avg pts per GW, capped at 10
+
+    // 3. Special score (20%): CS history for GK/DEF, xGI for MID/FWD
+    let specialScore = 0;
+    if (positionId <= 2) {
+      // GK or DEF: clean sheet probability based on team's last 5 GWs
+      const csCount = teamCleanSheets[teamId] ?? 0;
+      const csRate = csCount / Math.max(last5Gws.length, 1);
+      // Also factor in opponent's goalscoring
+      const oppGoals = fix ? (teamAvgGoals[fix.opponent] ?? 1.5) : 1.5;
+      specialScore = csRate * 6 + Math.max(0, (2 - oppGoals)) * 2; // 0-10
+    } else {
+      // MID or FWD: xGI form
+      const xGI = parseFloat(p.expected_goal_involvements) || 0;
+      specialScore = Math.min(xGI * 1.5, 10); // roughly 0-10
+    }
+
+    // 4. Season score (10%): total points normalized
+    const seasonScore = Math.min(p.total_points / 20, 10); // 200pts = 10
+
+    // Weighted total
+    const startScore = Math.round(
+      (fixtureScore * 0.35 + formScore * 0.35 + specialScore * 0.20 + seasonScore * 0.10) * 100
+    ) / 100;
+
+    return {
+      playerId: p.id,
+      webName: p.web_name,
+      position,
+      positionId,
+      team: teamNameMap.get(teamId) ?? 'Unknown',
+      teamShort: teamShortMap.get(teamId) ?? '???',
+      opponent: fix ? (teamNameMap.get(fix.opponent) ?? 'Unknown') : 'TBD',
+      opponentShort: fix ? (teamShortMap.get(fix.opponent) ?? '???') : 'TBD',
+      isHome: fix?.isHome ?? false,
+      startScore,
+      breakdown: {
+        fixtureScore: Math.round(fixtureScore * 100) / 100,
+        formScore: Math.round(formScore * 100) / 100,
+        specialScore: Math.round(specialScore * 100) / 100,
+        seasonScore: Math.round(seasonScore * 100) / 100,
+      },
+      isStarter: false, // will be set during formation optimization
+      status: p.status,
+    };
+  }
+
+  // Find optimal formation for a squad
+  function findBestFormation(squad: RecommendedPlayer[]): { formation: string; starters: RecommendedPlayer[]; bench: RecommendedPlayer[] } {
+    const gks = squad.filter(p => p.positionId === 1).sort((a, b) => b.startScore - a.startScore);
+    const defs = squad.filter(p => p.positionId === 2).sort((a, b) => b.startScore - a.startScore);
+    const mids = squad.filter(p => p.positionId === 3).sort((a, b) => b.startScore - a.startScore);
+    const fwds = squad.filter(p => p.positionId === 4).sort((a, b) => b.startScore - a.startScore);
+
+    let bestScore = -1;
+    let bestFormation = '4-4-2';
+    let bestStarters: RecommendedPlayer[] = [];
+
+    for (const [numDef, numMid, numFwd] of VALID_FORMATIONS) {
+      if (defs.length < numDef || mids.length < numMid || fwds.length < numFwd || gks.length < 1) continue;
+
+      const starters = [
+        gks[0],
+        ...defs.slice(0, numDef),
+        ...mids.slice(0, numMid),
+        ...fwds.slice(0, numFwd),
+      ];
+
+      const totalScore = starters.reduce((sum, p) => sum + p.startScore, 0);
+
+      if (totalScore > bestScore) {
+        bestScore = totalScore;
+        bestFormation = `${numDef}-${numMid}-${numFwd}`;
+        bestStarters = starters;
+      }
+    }
+
+    const starterIds = new Set(bestStarters.map(p => p.playerId));
+    const bench = squad.filter(p => !starterIds.has(p.playerId))
+      .sort((a, b) => b.startScore - a.startScore);
+
+    // Mark starters
+    for (const p of bestStarters) {
+      p.isStarter = true;
+    }
+
+    return { formation: bestFormation, starters: bestStarters, bench };
+  }
+
+  const recommendedXIs: RecommendedXI[] = [];
+
+  for (const entry of league.league_entries) {
+    const players = ownerPlayers.get(entry.id) ?? [];
+    if (players.length === 0) continue;
+
+    // Score all players
+    const scored = players.map(p => scorePlayer(p));
+
+    // Find best formation
+    const { formation, starters, bench } = findBestFormation(scored);
+    const totalStartScore = Math.round(starters.reduce((sum, p) => sum + p.startScore, 0) * 100) / 100;
+
+    // Transfer suggestion: find free agent who outscores weakest starter
+    let transferSuggestion: RecommendedXI['transferSuggestion'] = null;
+    if (freeAgentStats.length > 0 && starters.length > 0) {
+      const weakestStarter = starters.reduce((min, p) => p.startScore < min.startScore ? p : min, starters[0]);
+
+      // Find best free agent of same position
+      const samePosFAs = freeAgentStats
+        .filter(fa => fa.positionId === weakestStarter.positionId && fa.minutes > 0);
+
+      if (samePosFAs.length > 0) {
+        // Score the top free agents
+        const topFA = samePosFAs.slice(0, 10)
+          .map(fa => {
+            const bp = bootstrap.elements.find(e => e.id === fa.id);
+            return bp ? scorePlayer(bp) : null;
+          })
+          .filter((p): p is RecommendedPlayer => p !== null)
+          .sort((a, b) => b.startScore - a.startScore)[0];
+
+        if (topFA && topFA.startScore > weakestStarter.startScore) {
+          transferSuggestion = {
+            playerOut: weakestStarter.webName,
+            playerOutScore: weakestStarter.startScore,
+            playerIn: topFA.webName,
+            playerInScore: topFA.startScore,
+            improvement: Math.round((topFA.startScore - weakestStarter.startScore) * 100) / 100,
+          };
+        }
+      }
+    }
+
+    recommendedXIs.push({
+      leagueEntryId: entry.id,
+      entryId: entry.entry_id,
+      teamName: entry.entry_name,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      formation,
+      totalStartScore,
+      players: [...starters, ...bench],
+      transferSuggestion,
+    });
+  }
+
+  // Sort by total start score (highest first)
+  recommendedXIs.sort((a, b) => b.totalStartScore - a.totalStartScore);
+
+  // ========== T-032: Opponent Average Score Against ==========
+
+  const opponentAvgAgainst: OpponentAvgAgainst[] = [];
+
+  for (const entry of league.league_entries) {
+    const mId = entry.id;
+    const perOpponent: OpponentAvgAgainst['perOpponent'] = [];
+
+    // Collect all opponent scores when facing this manager
+    const allOpponentScores: number[] = [];
+
+    for (const match of league.matches) {
+      if (!match.finished) continue;
+
+      let oppScore: number | undefined;
+      let oppId: number | undefined;
+
+      if (match.league_entry_1 === mId) {
+        oppScore = match.league_entry_2_points;
+        oppId = match.league_entry_2;
+      } else if (match.league_entry_2 === mId) {
+        oppScore = match.league_entry_1_points;
+        oppId = match.league_entry_1;
+      }
+
+      if (oppScore !== undefined && oppId !== undefined) {
+        allOpponentScores.push(oppScore);
+
+        // Track per-opponent
+        let oppRecord = perOpponent.find(r => r.opponentLeagueEntryId === oppId);
+        if (!oppRecord) {
+          const oppEntry = entryMap.get(oppId);
+          oppRecord = {
+            opponentLeagueEntryId: oppId,
+            opponentName: oppEntry ? `${oppEntry.player_first_name} ${oppEntry.player_last_name}` : 'Unknown',
+            avgScore: 0,
+            matches: 0,
+          };
+          perOpponent.push(oppRecord);
+        }
+        oppRecord.avgScore += oppScore;
+        oppRecord.matches++;
+      }
+    }
+
+    // Finalize per-opponent averages
+    for (const rec of perOpponent) {
+      rec.avgScore = Math.round((rec.avgScore / rec.matches) * 10) / 10;
+    }
+    perOpponent.sort((a, b) => b.avgScore - a.avgScore);
+
+    const avgOpponentScore = allOpponentScores.length > 0
+      ? Math.round((allOpponentScores.reduce((a, b) => a + b, 0) / allOpponentScores.length) * 10) / 10
+      : 0;
+
+    opponentAvgAgainst.push({
+      leagueEntryId: mId,
+      entryId: entry.entry_id,
+      teamName: entry.entry_name,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      avgOpponentScore,
+      totalMatches: allOpponentScores.length,
+      perOpponent,
+    });
+  }
+
+  // Sort by highest opponent avg (unluckiest first)
+  opponentAvgAgainst.sort((a, b) => b.avgOpponentScore - a.avgOpponentScore);
+
+  // League average
+  const leagueAvgOpponentScore = opponentAvgAgainst.length > 0
+    ? Math.round(
+        (opponentAvgAgainst.reduce((sum, r) => sum + r.avgOpponentScore, 0) / opponentAvgAgainst.length) * 10
+      ) / 10
+    : 0;
+
+  return {
+    recommendedXIs,
+    opponentAvgAgainst,
+    leagueAvgOpponentScore,
+  };
 }
 
 // Run

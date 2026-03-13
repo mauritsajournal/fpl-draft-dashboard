@@ -287,6 +287,67 @@ export interface CreativeStats {
   draftValue: DraftValueEntry[];
 }
 
+// ---- Requested Stats Types ----
+
+export interface RecommendedPlayer {
+  playerId: number;
+  webName: string;
+  position: string; // GK, DEF, MID, FWD
+  positionId: number;
+  team: string;
+  teamShort: string;
+  opponent: string;
+  opponentShort: string;
+  isHome: boolean;
+  startScore: number;
+  breakdown: {
+    fixtureScore: number;   // 35% weight: fixture difficulty + team xGC
+    formScore: number;      // 35% weight: last 5 GW points
+    specialScore: number;   // 20% weight: CS history (GK/DEF) or xGI (MID/FWD)
+    seasonScore: number;    // 10% weight: season total
+  };
+  isStarter: boolean;
+  status: string;           // availability status
+}
+
+export interface RecommendedXI {
+  leagueEntryId: number;
+  entryId: number;
+  teamName: string;
+  playerName: string;
+  formation: string;         // e.g. "4-4-2"
+  totalStartScore: number;
+  players: RecommendedPlayer[];
+  transferSuggestion: {
+    playerOut: string;
+    playerOutScore: number;
+    playerIn: string;
+    playerInScore: number;
+    improvement: number;
+  } | null;
+}
+
+export interface OpponentAvgAgainst {
+  leagueEntryId: number;
+  entryId: number;
+  teamName: string;
+  playerName: string;
+  avgOpponentScore: number;
+  totalMatches: number;
+  perOpponent: {
+    opponentLeagueEntryId: number;
+    opponentName: string;
+    avgScore: number;
+    matches: number;
+  }[];
+}
+
+export interface RequestedStats {
+  recommendedXIs: RecommendedXI[];
+  opponentAvgAgainst: OpponentAvgAgainst[];
+  leagueAvgOpponentScore: number;
+}
+
 export interface DashboardData {
   meta: DashboardMeta;
   standings: Standing[];
@@ -303,4 +364,5 @@ export interface DashboardData {
   whatIf: WhatIfResult[];
   creativeStats: CreativeStats;
   draftXPL: import('../lib/espn-transform.js').DraftXPLStats | null;
+  requestedStats: RequestedStats | null;
 }
