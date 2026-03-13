@@ -27,6 +27,16 @@ import type {
   Prediction,
   BenchData,
   WhatIfResult,
+  CreativeStats,
+  LuckIndex,
+  ConsistencyScore,
+  FormRating,
+  ClutchScore,
+  RivalryDetail,
+  WeeklyAwards,
+  PositionalBreakdown,
+  StreakData,
+  DraftValueEntry,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -136,6 +146,10 @@ function main(): void {
   const whatIf = buildWhatIf(league, entryMap, standings, completedGws);
   console.log(`  What-If Analysis: ${whatIf.length} entries`);
 
+  // ---- Creative Stats ----
+  const creativeStats = buildCreativeStats(league, entryMap, standings, managers, completedGws, h2hMatrix, ownedPlayers, draftPicks, resolver);
+  console.log(`  Creative Stats: luck=${creativeStats.luckIndex.length}, consistency=${creativeStats.consistencyScores.length}, streaks=${creativeStats.streaks.length}`);
+
   // ---- Assemble Dashboard ----
   const dashboard: DashboardData = {
     meta: {
@@ -158,6 +172,7 @@ function main(): void {
     predictions,
     benchAnalysis,
     whatIf,
+    creativeStats,
   };
 
   writeJson('dashboard.json', dashboard);
@@ -307,12 +322,12 @@ function buildGameweekHistory(
       gwPointsMap[match.league_entry_1] = match.league_entry_1_points;
       gwPointsMap[match.league_entry_2] = match.league_entry_2_points;
 
-      // League points
-      if (match.winning_league_entry === match.league_entry_1) {
+      // League points — infer winner from points (winning_league_entry is often null in Draft API)
+      if (match.league_entry_1_points > match.league_entry_2_points) {
         leaguePoints[match.league_entry_1] = (leaguePoints[match.league_entry_1] ?? 0) + 3;
-      } else if (match.winning_league_entry === match.league_entry_2) {
+      } else if (match.league_entry_2_points > match.league_entry_1_points) {
         leaguePoints[match.league_entry_2] = (leaguePoints[match.league_entry_2] ?? 0) + 3;
-      } else if (match.winning_league_entry === null && match.finished) {
+      } else if (match.finished) {
         // Draw
         leaguePoints[match.league_entry_1] = (leaguePoints[match.league_entry_1] ?? 0) + 1;
         leaguePoints[match.league_entry_2] = (leaguePoints[match.league_entry_2] ?? 0) + 1;
@@ -846,6 +861,566 @@ function buildWhatIf(
   }
 
   return results.sort((a, b) => b.luck - a.luck);
+}
+
+// ---- Creative Stats ----
+
+function buildCreativeStats(
+  league: LeagueResponse,
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  standings: Standing[],
+  managers: Manager[],
+  completedGws: number[],
+  h2hMatrix: H2HRecord[],
+  ownedPlayers: PlayerStat[],
+  draftPicks: DraftPickDisplay[],
+  resolver: PlayerResolver,
+): CreativeStats {
+  const entries = league.league_entries;
+
+  // Build GW scores per manager
+  const gwScores: Record<number, Record<number, number>> = {};
+  for (const e of entries) gwScores[e.id] = {};
+  for (const match of league.matches) {
+    if (!match.finished) continue;
+    gwScores[match.league_entry_1] = gwScores[match.league_entry_1] ?? {};
+    gwScores[match.league_entry_2] = gwScores[match.league_entry_2] ?? {};
+    gwScores[match.league_entry_1][match.event] = match.league_entry_1_points;
+    gwScores[match.league_entry_2][match.event] = match.league_entry_2_points;
+  }
+
+  // 1. Luck Index
+  const luckIndex = buildLuckIndex(league, entries, entryMap, gwScores, completedGws);
+
+  // 2. Consistency Score
+  const consistencyScores = buildConsistencyScores(entries, entryMap, gwScores, completedGws);
+
+  // 3. Form Rating
+  const formRatings = buildFormRatings(entries, entryMap, gwScores, completedGws);
+
+  // 4. Clutch Score
+  const clutchScores = buildClutchScores(league, entries, entryMap);
+
+  // 5. Rivalry Matrix
+  const rivalryMatrix = buildRivalryMatrix(h2hMatrix, entryMap);
+
+  // 6. Weekly Awards
+  const weeklyAwards = buildWeeklyAwards(entries, entryMap, gwScores, completedGws);
+
+  // 7. Positional Breakdown
+  const positionalBreakdown = buildPositionalBreakdown(entries, entryMap, ownedPlayers, completedGws);
+
+  // 8. Streaks
+  const streaks = buildStreaks(league, entries, entryMap);
+
+  // 9. Draft Value
+  const draftValue = buildDraftValue(draftPicks, resolver, ownedPlayers);
+
+  return {
+    luckIndex,
+    consistencyScores,
+    formRatings,
+    clutchScores,
+    rivalryMatrix,
+    weeklyAwards,
+    positionalBreakdown,
+    streaks,
+    draftValue,
+  };
+}
+
+function buildLuckIndex(
+  league: LeagueResponse,
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  gwScores: Record<number, Record<number, number>>,
+  completedGws: number[],
+): LuckIndex[] {
+  const results: LuckIndex[] = [];
+
+  for (const entry of entries) {
+    const mId = entry.id;
+    let actualWins = 0;
+    let expectedWins = 0;
+
+    for (const gw of completedGws) {
+      const myPoints = gwScores[mId]?.[gw];
+      if (myPoints === undefined) continue;
+
+      // Actual result from the match (winning_league_entry is often null in Draft API, so infer from points)
+      const gwMatches = league.matches.filter(m => m.finished && m.event === gw);
+      for (const match of gwMatches) {
+        if (match.league_entry_1 === mId && match.league_entry_1_points > match.league_entry_2_points) actualWins++;
+        if (match.league_entry_2 === mId && match.league_entry_2_points > match.league_entry_1_points) actualWins++;
+      }
+
+      // Expected: how many of the other 7 managers would this score beat?
+      let winsIfPlayedAll = 0;
+      let gamesIfPlayedAll = 0;
+      for (const other of entries) {
+        if (other.id === mId) continue;
+        const otherPoints = gwScores[other.id]?.[gw];
+        if (otherPoints === undefined) continue;
+        gamesIfPlayedAll++;
+        if (myPoints > otherPoints) winsIfPlayedAll++;
+        else if (myPoints === otherPoints) winsIfPlayedAll += 0.5;
+      }
+      // Expected win rate for this GW = winsIfPlayedAll / gamesIfPlayedAll
+      if (gamesIfPlayedAll > 0) {
+        expectedWins += winsIfPlayedAll / gamesIfPlayedAll;
+      }
+    }
+
+    const luckScore = Math.round((actualWins - expectedWins) * 10) / 10;
+
+    results.push({
+      leagueEntryId: mId,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      actualWins,
+      expectedWins: Math.round(expectedWins * 10) / 10,
+      luckScore,
+    });
+  }
+
+  return results.sort((a, b) => b.luckScore - a.luckScore);
+}
+
+function buildConsistencyScores(
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  gwScores: Record<number, Record<number, number>>,
+  completedGws: number[],
+): ConsistencyScore[] {
+  const results: ConsistencyScore[] = [];
+
+  for (const entry of entries) {
+    const points = completedGws
+      .map(gw => gwScores[entry.id]?.[gw])
+      .filter((p): p is number => p !== undefined);
+
+    if (points.length === 0) continue;
+
+    const mean = points.reduce((a, b) => a + b, 0) / points.length;
+    const variance = points.reduce((sum, p) => sum + (p - mean) ** 2, 0) / points.length;
+    const stdDev = Math.round(Math.sqrt(variance) * 10) / 10;
+
+    let label: string;
+    if (stdDev < 8) label = 'Rock Solid';
+    else if (stdDev < 12) label = 'Consistent';
+    else if (stdDev < 16) label = 'Streaky';
+    else label = 'Wildcard';
+
+    results.push({
+      leagueEntryId: entry.id,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      stdDev,
+      label,
+      allPoints: points,
+    });
+  }
+
+  return results.sort((a, b) => a.stdDev - b.stdDev); // most consistent first
+}
+
+function buildFormRatings(
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  gwScores: Record<number, Record<number, number>>,
+  completedGws: number[],
+): FormRating[] {
+  const results: FormRating[] = [];
+
+  for (const entry of entries) {
+    const allPoints = completedGws
+      .map(gw => gwScores[entry.id]?.[gw])
+      .filter((p): p is number => p !== undefined);
+
+    if (allPoints.length === 0) continue;
+
+    const last5 = allPoints.slice(-5);
+    const seasonAvg = allPoints.reduce((a, b) => a + b, 0) / allPoints.length;
+    const formAvg = last5.reduce((a, b) => a + b, 0) / last5.length;
+
+    let trend: 'up' | 'down' | 'stable';
+    if (formAvg > seasonAvg * 1.05) trend = 'up';
+    else if (formAvg < seasonAvg * 0.95) trend = 'down';
+    else trend = 'stable';
+
+    results.push({
+      leagueEntryId: entry.id,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      last5Points: last5,
+      formAvg: Math.round(formAvg * 10) / 10,
+      seasonAvg: Math.round(seasonAvg * 10) / 10,
+      trend,
+    });
+  }
+
+  return results.sort((a, b) => b.formAvg - a.formAvg);
+}
+
+function buildClutchScores(
+  league: LeagueResponse,
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+): ClutchScore[] {
+  const CLOSE_MARGIN = 5;
+  const results: ClutchScore[] = [];
+
+  for (const entry of entries) {
+    let closeGames = 0;
+    let closeWins = 0;
+    let closeLosses = 0;
+
+    for (const match of league.matches) {
+      if (!match.finished) continue;
+
+      let myPoints: number | null = null;
+      let oppPoints: number | null = null;
+
+      if (match.league_entry_1 === entry.id) {
+        myPoints = match.league_entry_1_points;
+        oppPoints = match.league_entry_2_points;
+      } else if (match.league_entry_2 === entry.id) {
+        myPoints = match.league_entry_2_points;
+        oppPoints = match.league_entry_1_points;
+      }
+
+      if (myPoints === null || oppPoints === null) continue;
+      const margin = Math.abs(myPoints - oppPoints);
+      if (margin <= CLOSE_MARGIN) {
+        closeGames++;
+        if (myPoints > oppPoints) closeWins++;
+        else if (myPoints < oppPoints) closeLosses++;
+      }
+    }
+
+    const closeWinPct = closeGames > 0 ? (closeWins / closeGames) * 100 : 50;
+
+    let label: string;
+    if (closeWinPct >= 70) label = 'Clutch King';
+    else if (closeWinPct >= 50) label = 'Ice Cold';
+    else if (closeWinPct >= 30) label = 'Nervy';
+    else label = 'Choke Artist';
+
+    results.push({
+      leagueEntryId: entry.id,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      closeGames,
+      closeWins,
+      closeLosses,
+      closeWinPct: Math.round(closeWinPct * 10) / 10,
+      label,
+    });
+  }
+
+  return results.sort((a, b) => b.closeWinPct - a.closeWinPct);
+}
+
+function buildRivalryMatrix(
+  h2hMatrix: H2HRecord[],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+): RivalryDetail[] {
+  const results: RivalryDetail[] = [];
+
+  for (const rec of h2hMatrix) {
+    const entryA = entryMap.get(rec.managerA);
+    const entryB = entryMap.get(rec.managerB);
+    if (!entryA || !entryB) continue;
+
+    // Biggest win (from A's perspective)
+    let biggestWin: string | null = null;
+    let biggestWinMargin = 0;
+    let closestMatch: string | null = null;
+    let closestMargin = Infinity;
+
+    for (const m of rec.matches) {
+      const margin = Math.abs(m.pointsA - m.pointsB);
+      if (m.pointsA > m.pointsB && margin > biggestWinMargin) {
+        biggestWinMargin = margin;
+        biggestWin = `${m.pointsA}-${m.pointsB} (GW${m.gw})`;
+      }
+      if (margin > 0 && margin < closestMargin) {
+        closestMargin = margin;
+        closestMatch = `${m.pointsA}-${m.pointsB} (GW${m.gw})`;
+      }
+    }
+
+    results.push({
+      managerA: rec.managerA,
+      managerAName: `${entryA.player_first_name} ${entryA.player_last_name}`,
+      managerB: rec.managerB,
+      managerBName: `${entryB.player_first_name} ${entryB.player_last_name}`,
+      record: `${rec.wins}-${rec.draws}-${rec.losses}`,
+      biggestWin,
+      closestMatch,
+      pointsDiff: rec.pointsFor - rec.pointsAgainst,
+    });
+  }
+
+  // Sort by total matches played (most active rivalries first)
+  return results.sort((a, b) => {
+    const aTotal = parseInt(a.record.split('-').reduce((sum, n) => String(parseInt(sum) + parseInt(n))));
+    const bTotal = parseInt(b.record.split('-').reduce((sum, n) => String(parseInt(sum) + parseInt(n))));
+    return bTotal - aTotal;
+  });
+}
+
+function buildWeeklyAwards(
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  gwScores: Record<number, Record<number, number>>,
+  completedGws: number[],
+): WeeklyAwards {
+  const motwCount: Record<number, number> = {};
+  const woodenSpoonCount: Record<number, number> = {};
+  const perGameweek: WeeklyAwards['perGameweek'] = [];
+
+  for (const gw of completedGws) {
+    let highest = { id: 0, points: -Infinity, name: '' };
+    let lowest = { id: 0, points: Infinity, name: '' };
+
+    for (const entry of entries) {
+      const pts = gwScores[entry.id]?.[gw];
+      if (pts === undefined) continue;
+      const name = `${entry.player_first_name} ${entry.player_last_name}`;
+
+      if (pts > highest.points) highest = { id: entry.id, points: pts, name };
+      if (pts < lowest.points) lowest = { id: entry.id, points: pts, name };
+    }
+
+    if (highest.id > 0) {
+      motwCount[highest.id] = (motwCount[highest.id] ?? 0) + 1;
+      woodenSpoonCount[lowest.id] = (woodenSpoonCount[lowest.id] ?? 0) + 1;
+
+      perGameweek.push({
+        gw,
+        motw: { name: highest.name, leagueEntryId: highest.id, points: highest.points },
+        woodenSpoon: { name: lowest.name, leagueEntryId: lowest.id, points: lowest.points },
+      });
+    }
+  }
+
+  // Find the manager with most MotW and most wooden spoons
+  let mostMotW: WeeklyAwards['mostMotW'] = null;
+  let maxMotW = 0;
+  for (const [idStr, count] of Object.entries(motwCount)) {
+    if (count > maxMotW) {
+      maxMotW = count;
+      const id = parseInt(idStr);
+      const entry = entryMap.get(id);
+      mostMotW = {
+        name: entry ? `${entry.player_first_name} ${entry.player_last_name}` : 'Unknown',
+        leagueEntryId: id,
+        count,
+      };
+    }
+  }
+
+  let mostWoodenSpoons: WeeklyAwards['mostWoodenSpoons'] = null;
+  let maxWS = 0;
+  for (const [idStr, count] of Object.entries(woodenSpoonCount)) {
+    if (count > maxWS) {
+      maxWS = count;
+      const id = parseInt(idStr);
+      const entry = entryMap.get(id);
+      mostWoodenSpoons = {
+        name: entry ? `${entry.player_first_name} ${entry.player_last_name}` : 'Unknown',
+        leagueEntryId: id,
+        count,
+      };
+    }
+  }
+
+  return { mostMotW, mostWoodenSpoons, perGameweek };
+}
+
+function buildPositionalBreakdown(
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  ownedPlayers: PlayerStat[],
+  completedGws: number[],
+): PositionalBreakdown[] {
+  const gwCount = completedGws.length || 1;
+  const results: PositionalBreakdown[] = [];
+
+  for (const entry of entries) {
+    const myPlayers = ownedPlayers.filter(p => p.ownerLeagueEntryId === entry.id);
+    const positions: Record<string, { totalPoints: number; avgPoints: number; playerCount: number }> = {};
+
+    for (const pos of ['GK', 'DEF', 'MID', 'FWD']) {
+      const posPlayers = myPlayers.filter(p => p.position === pos);
+      const totalPoints = posPlayers.reduce((sum, p) => sum + p.totalPoints, 0);
+      positions[pos] = {
+        totalPoints,
+        avgPoints: Math.round((totalPoints / gwCount) * 10) / 10,
+        playerCount: posPlayers.length,
+      };
+    }
+
+    results.push({
+      leagueEntryId: entry.id,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      positions,
+    });
+  }
+
+  return results;
+}
+
+function buildStreaks(
+  league: LeagueResponse,
+  entries: LeagueResponse['league_entries'],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+): StreakData[] {
+  const results: StreakData[] = [];
+
+  for (const entry of entries) {
+    const matchResults: ('W' | 'D' | 'L')[] = [];
+
+    // Get all finished matches for this entry, sorted by event
+    const myMatches = league.matches
+      .filter(m => m.finished && (m.league_entry_1 === entry.id || m.league_entry_2 === entry.id))
+      .sort((a, b) => a.event - b.event);
+
+    for (const match of myMatches) {
+      // Infer winner from points (winning_league_entry is often null in Draft API)
+      let myPts: number;
+      let oppPts: number;
+      if (match.league_entry_1 === entry.id) {
+        myPts = match.league_entry_1_points;
+        oppPts = match.league_entry_2_points;
+      } else {
+        myPts = match.league_entry_2_points;
+        oppPts = match.league_entry_1_points;
+      }
+
+      if (myPts > oppPts) matchResults.push('W');
+      else if (myPts === oppPts) matchResults.push('D');
+      else matchResults.push('L');
+    }
+
+    // Current streak
+    let currentStreak = 0;
+    if (matchResults.length > 0) {
+      const lastResult = matchResults[matchResults.length - 1];
+      for (let i = matchResults.length - 1; i >= 0; i--) {
+        if (matchResults[i] === lastResult) {
+          currentStreak++;
+        } else {
+          break;
+        }
+      }
+      if (lastResult === 'L') currentStreak = -currentStreak;
+      if (lastResult === 'D') currentStreak = 0;
+    }
+
+    // Longest win streak
+    let longestWinStreak = 0;
+    let currentWin = 0;
+    for (const r of matchResults) {
+      if (r === 'W') {
+        currentWin++;
+        longestWinStreak = Math.max(longestWinStreak, currentWin);
+      } else {
+        currentWin = 0;
+      }
+    }
+
+    // Longest loss streak
+    let longestLossStreak = 0;
+    let currentLoss = 0;
+    for (const r of matchResults) {
+      if (r === 'L') {
+        currentLoss++;
+        longestLossStreak = Math.max(longestLossStreak, currentLoss);
+      } else {
+        currentLoss = 0;
+      }
+    }
+
+    results.push({
+      leagueEntryId: entry.id,
+      playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+      teamName: entry.entry_name,
+      currentStreak,
+      longestWinStreak,
+      longestLossStreak,
+    });
+  }
+
+  return results.sort((a, b) => b.currentStreak - a.currentStreak);
+}
+
+function buildDraftValue(
+  draftPicks: DraftPickDisplay[],
+  resolver: PlayerResolver,
+  ownedPlayers: PlayerStat[],
+): DraftValueEntry[] {
+  if (draftPicks.length === 0) return [];
+
+  // Create a lookup of player ID -> total points
+  const playerPointsMap = new Map<number, number>();
+  for (const p of ownedPlayers) {
+    playerPointsMap.set(p.id, p.totalPoints);
+  }
+
+  // Also check all players from resolver for those no longer owned
+  const allPlayerPoints = new Map<number, number>();
+  // Merge owned player points
+  for (const p of ownedPlayers) {
+    allPlayerPoints.set(p.id, p.totalPoints);
+  }
+
+  const results: DraftValueEntry[] = [];
+
+  for (const pick of draftPicks) {
+    const totalPoints = allPlayerPoints.get(pick.playerId) ?? 0;
+
+    // Value rating based on pick position vs points generated
+    // Earlier picks should produce more points
+    const expectedRank = pick.pick; // pick 1 should be best, etc.
+    // Rank all drafted players by points to see where this pick actually ranks
+    const allPickPoints = draftPicks.map(p => ({
+      pick: p.pick,
+      round: p.round,
+      points: allPlayerPoints.get(p.playerId) ?? 0,
+    }));
+
+    // Only evaluate round 1-3 picks meaningfully
+    const sameRoundPicks = allPickPoints
+      .filter(p => p.round === pick.round)
+      .sort((a, b) => b.points - a.points);
+
+    const actualRankInRound = sameRoundPicks.findIndex(p => p.pick === pick.pick) + 1;
+    const totalInRound = sameRoundPicks.length;
+    const percentile = totalInRound > 0 ? actualRankInRound / totalInRound : 0.5;
+
+    let valueRating: string;
+    if (percentile <= 0.15) valueRating = 'Steal';
+    else if (percentile <= 0.35) valueRating = 'Good Value';
+    else if (percentile <= 0.65) valueRating = 'Fair';
+    else if (percentile <= 0.85) valueRating = 'Overpaid';
+    else valueRating = 'Bust';
+
+    results.push({
+      pick: pick.pick,
+      round: pick.round,
+      playerName: pick.playerName,
+      playerId: pick.playerId,
+      managerName: pick.managerName,
+      leagueEntryId: pick.leagueEntryId,
+      totalPoints,
+      valueRating,
+    });
+  }
+
+  return results;
 }
 
 // Run

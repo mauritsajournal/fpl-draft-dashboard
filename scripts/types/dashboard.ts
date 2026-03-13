@@ -186,6 +186,107 @@ export interface WhatIfResult {
   }[];
 }
 
+// ---- Creative Stats Types ----
+
+export interface LuckIndex {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  actualWins: number;
+  expectedWins: number;
+  luckScore: number; // actualWins - expectedWins
+}
+
+export interface ConsistencyScore {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  stdDev: number;
+  label: string; // "Rock Solid", "Consistent", "Streaky", "Wildcard"
+  allPoints: number[];
+}
+
+export interface FormRating {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  last5Points: number[];
+  formAvg: number;
+  seasonAvg: number;
+  trend: 'up' | 'down' | 'stable';
+}
+
+export interface ClutchScore {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  closeGames: number;
+  closeWins: number;
+  closeLosses: number;
+  closeWinPct: number;
+  label: string; // "Clutch King", "Ice Cold", "Choke Artist"
+}
+
+export interface RivalryDetail {
+  managerA: number;
+  managerAName: string;
+  managerB: number;
+  managerBName: string;
+  record: string; // e.g. "3-1-2"
+  biggestWin: string | null;
+  closestMatch: string | null;
+  pointsDiff: number;
+}
+
+export interface WeeklyAwards {
+  mostMotW: { name: string; leagueEntryId: number; count: number } | null;
+  mostWoodenSpoons: { name: string; leagueEntryId: number; count: number } | null;
+  perGameweek: {
+    gw: number;
+    motw: { name: string; leagueEntryId: number; points: number };
+    woodenSpoon: { name: string; leagueEntryId: number; points: number };
+  }[];
+}
+
+export interface PositionalBreakdown {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  positions: Record<string, { totalPoints: number; avgPoints: number; playerCount: number }>;
+}
+
+export interface StreakData {
+  leagueEntryId: number;
+  playerName: string;
+  teamName: string;
+  currentStreak: number; // positive = win streak, negative = loss streak
+  longestWinStreak: number;
+  longestLossStreak: number;
+}
+
+export interface DraftValueEntry {
+  pick: number;
+  round: number;
+  playerName: string;
+  playerId: number;
+  managerName: string;
+  leagueEntryId: number;
+  totalPoints: number;
+  valueRating: string; // "Steal", "Good Value", "Fair", "Overpaid", "Bust"
+}
+
+export interface CreativeStats {
+  luckIndex: LuckIndex[];
+  consistencyScores: ConsistencyScore[];
+  formRatings: FormRating[];
+  clutchScores: ClutchScore[];
+  rivalryMatrix: RivalryDetail[];
+  weeklyAwards: WeeklyAwards;
+  positionalBreakdown: PositionalBreakdown[];
+  streaks: StreakData[];
+  draftValue: DraftValueEntry[];
+}
+
 export interface DashboardData {
   meta: DashboardMeta;
   standings: Standing[];
@@ -200,4 +301,5 @@ export interface DashboardData {
   predictions: Prediction[];
   benchAnalysis: BenchData[];
   whatIf: WhatIfResult[];
+  creativeStats: CreativeStats;
 }
