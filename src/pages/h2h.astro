@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import EmptyState from '../components/EmptyState.astro';
+import GameweekMatchups from '../components/GameweekMatchups.svelte';
 
 let dashboardData: any = null;
+let leagueData: any = null;
 try {
   const mod = await import('../../data/dashboard.json');
   dashboardData = mod.default;
+  const leagueMod = await import('../../data/league.json');
+  leagueData = leagueMod.default;
 } catch {
   // Data not yet available
 }
@@ -13,6 +17,7 @@ try {
 const h2hMatrix = dashboardData?.h2hMatrix ?? [];
 const managers = dashboardData?.managers ?? [];
 const standings = dashboardData?.standings ?? [];
+const currentGw = dashboardData?.meta?.currentGameweek ?? 1;
 
 // Build manager name lookup
 const managerNames = new Map<number, string>();
@@ -48,6 +53,26 @@ function getCellColor(wins: number, losses: number): string {
 // Pass data to client as JSON for the comparison feature
 const h2hJson = JSON.stringify(h2hMatrix);
 const managersJson = JSON.stringify(managers);
+
+// Build GW matchup data for the slider
+const gwMatchups = (leagueData?.matches ?? [])
+  .filter((m: any) => m.finished)
+  .map((m: any) => {
+    const e1 = leagueData.league_entries.find((e: any) => e.id === m.league_entry_1);
+    const e2 = leagueData.league_entries.find((e: any) => e.id === m.league_entry_2);
+    return {
+      event: m.event,
+      entry1: m.league_entry_1,
+      entry1Name: e1 ? `${e1.player_first_name} ${e1.player_last_name}` : 'Unknown',
+      entry1Team: e1?.entry_name ?? '',
+      entry1Points: m.league_entry_1_points,
+      entry2: m.league_entry_2,
+      entry2Name: e2 ? `${e2.player_first_name} ${e2.player_last_name}` : 'Unknown',
+      entry2Team: e2?.entry_name ?? '',
+      entry2Points: m.league_entry_2_points,
+      winner: m.winning_league_entry,
+    };
+  });
 ---
 
 <Layout title="Head-to-Head — FC Driegangendiner">
@@ -57,6 +82,18 @@ const managersJson = JSON.stringify(managers);
         <h1 class="text-2xl font-bold text-fpl-green mb-1">Head-to-Head Records</h1>
         <p class="text-gray-400 text-sm">All-time H2H records between managers</p>
       </div>
+
+      <!-- GW Matchup Results -->
+      {gwMatchups.length > 0 && (
+        <div class="mb-10">
+          <h2 class="text-xl font-bold text-white mb-4">Gameweek Results</h2>
+          <GameweekMatchups
+            client:visible
+            matches={JSON.stringify(gwMatchups)}
+            maxGw={currentGw}
+          />
+        </div>
+      )}
 
       <!-- H2H Matrix -->
       <div class="overflow-x-auto mb-10">
