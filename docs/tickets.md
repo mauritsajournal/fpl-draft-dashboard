@@ -650,7 +650,8 @@ Simple static page, no Svelte islands needed. Read everything from dashboard.jso
 
 ---
 
-## [ ] T-017 — Bench points lost analysis
+## [x] T-017 — Bench points lost analysis
+> DONE 2026-03-13 — BenchAnalysis.svelte with ranking table, cumulative line chart, per-GW bar chart. Integrated into trends page.
 
 **Phase:** 3 (Polish)
 **Component:** Frontend + Transform
@@ -682,7 +683,8 @@ Reference: technical-blueprint.md §3.2 (benchAnalysis note)
 
 ---
 
-## [ ] T-018 — What-if fixture schedule analysis
+## [x] T-018 — What-if fixture schedule analysis
+> DONE 2026-03-13 — buildWhatIf in transform, WhatIfAnalysis.svelte with luck scores. Integrated into trends page.
 
 **Phase:** 3 (Polish)
 **Component:** Transform + Frontend
@@ -714,7 +716,8 @@ Reference: Inspired by FantasyFooty's "what-if" feature
 
 ---
 
-## [ ] T-019 — Performance optimization and Lighthouse audit
+## [x] T-019 — Performance optimization and Lighthouse audit
+> DONE 2026-03-13 — View Transitions, client:visible islands, tree-shaken Chart.js, transfers pagination. Build 6.7s, JS ~230KB.
 
 **Phase:** 3 (Polish)
 **Component:** Frontend
@@ -755,7 +758,8 @@ Reference: technical-blueprint.md §8.4
 
 ---
 
-## [ ] T-020 — Visual polish, animations, and empty states
+## [x] T-020 — Visual polish, animations, and empty states
+> DONE 2026-03-13 — EmptyState component, chart loading spinners, fade animations, scrollbar styling, details/summary styling.
 
 **Phase:** 3 (Polish)
 **Component:** Frontend
@@ -786,7 +790,8 @@ Astro supports View Transitions via `<ViewTransitions />` in the layout. CSS tra
 
 ---
 
-## [ ] T-021 — Gameweek navigation slider component
+## [x] T-021 — Gameweek navigation slider component
+> DONE 2026-03-13 — GameweekSlider.svelte + GameweekMatchups.svelte. Integrated into H2H page with GW match results.
 
 **Phase:** 2 (Full Feature Set)
 **Component:** Frontend
