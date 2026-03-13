@@ -32,8 +32,8 @@
   let { data }: Props = $props();
   let barCanvas: HTMLCanvasElement;
   let lineCanvas: HTMLCanvasElement;
-  let barChart: Chart | null = null;
-  let lineChart: Chart | null = null;
+  let barChart: Chart | null = $state(null);
+  let lineChart: Chart | null = $state(null);
 
   const COLORS = [
     '#00ff87', '#04f5ff', '#e90052', '#2dbaff',

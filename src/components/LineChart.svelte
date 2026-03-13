@@ -31,7 +31,7 @@
 
   let { data, title = '', yReverse = false }: Props = $props();
   let canvas: HTMLCanvasElement;
-  let chart: Chart | null = null;
+  let chart: Chart | null = $state(null);
 
   const COLORS = [
     '#00ff87', '#04f5ff', '#e90052', '#2dbaff',
