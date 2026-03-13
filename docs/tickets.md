@@ -907,6 +907,67 @@ CLAUDE.md should help an autonomous engineer agent understand the project withou
 
 ---
 
+---
+
+## Phase 4 — Bug Fixes
+
+> Added by site audit on 2026-03-13
+
+---
+
+## [x] BUG-001 — Chart loading spinners never resolve on Trends page
+> DONE 2026-03-13 — Changed chart variables from plain `let` to `$state()` in LineChart.svelte and BenchAnalysis.svelte
+
+**Page:** /trends/
+**Component:** LineChart.svelte, BenchAnalysis.svelte
+**Priority:** P0
+
+**Description:**
+All chart components (3 line charts + 2 bench charts) show "Loading chart..." spinner forever. The canvas is hidden with `opacity-0` and never transitions to visible.
+
+**Root cause:** In Svelte 5, `let chart: Chart | null = null` is not reactive. When `onMount` assigns the Chart.js instance, `{#if !chart}` never re-evaluates. The variable must use `$state(null)` for template reactivity.
+
+---
+
+## [x] BUG-002 — Broken team detail links on Teams index page
+> DONE 2026-03-13 — Added trailing slash normalization to `baseUrl` in teams/index.astro
+
+**Page:** /teams/
+**Priority:** P1
+
+**Description:**
+All 8 team card links on the Teams index page are broken. They render as `/fpl-draft-dashboardteams/slug/` (missing slash between base path and `teams/`).
+
+**Root cause:** `import.meta.env.BASE_URL` returns `/fpl-draft-dashboard` (no trailing slash). The teams index page used it directly without normalizing, unlike Layout.astro and other pages which add a trailing slash.
+
+---
+
+## [x] BUG-003 — Player ownership data missing for 6 of 8 managers
+> DONE 2026-03-13 — Fixed entry_id to league_entry_id mapping in transform.ts buildPlayerStats and buildPredictions
+
+**Pages:** /teams/[slug]/, /players/, /predictions/
+**Priority:** P0
+
+**Description:**
+Team detail pages show "Squad (0 players)" for 6 of 8 managers. Only Sam and Tim have players assigned. The Players page shows most players as "Available" when they should be owned. Predictions are based on incomplete rosters.
+
+**Root cause:** The FPL Draft API ownership endpoint returns `entry_id` as the owner value, but the transform script looked up owners using `league_entry_id` (the `id` field from `league_entries`). For managers where `id !== entry_id` (6 of 8), the lookup returned null. Added an `entryIdToLeagueId` mapping to translate correctly.
+
+---
+
+## [x] BUG-004 — Standings "Played" column shows 38 instead of actual matches played
+> DONE 2026-03-13 — Changed `played` calculation from `matches_played` (API total scheduled) to `won + drawn + lost`
+
+**Page:** / (Standings)
+**Priority:** P1
+
+**Description:**
+The "P" column in the standings table shows 38 for all managers, but only 29 gameweeks have been played. This is misleading as it suggests the season is over.
+
+**Root cause:** The API field `matches_played` actually means total scheduled matches (always 38), not matches completed. The correct value is `won + drawn + lost`.
+
+---
+
 ## Summary
 
 | Phase | Tickets | P0 | P1 | P2 | Effort Breakdown |
@@ -914,4 +975,5 @@ CLAUDE.md should help an autonomous engineer agent understand the project withou
 | Phase 1 (MVP) | T-001 to T-008, T-022, T-023, T-024 | 8 | 2 | 1 | 2S + 5M + 2L + 1XL |
 | Phase 2 (Full) | T-009 to T-016, T-021 | 0 | 7 | 2 | 3S + 5M + 1L |
 | Phase 3 (Polish) | T-017 to T-020 | 0 | 0 | 4 | 0S + 3M + 1L |
-| **Total** | **24** | **8** | **9** | **7** | **5S + 13M + 4L + 1XL** |
+| Phase 4 (Bugs) | BUG-001 to BUG-004 | 2 | 2 | 0 | 4S |
+| **Total** | **28** | **10** | **11** | **7** | **9S + 13M + 4L + 1XL** |
