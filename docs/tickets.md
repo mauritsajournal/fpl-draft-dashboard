@@ -1079,7 +1079,8 @@ Update CLAUDE.md with ESPN API endpoints, data flow, and configuration. Add fetc
 
 ---
 
-## [ ] T-031 — Recommended XI: optimal lineup advice for all 8 managers
+## [x] T-031 — Recommended XI: optimal lineup advice for all 8 managers
+> DONE 2026-03-13 — Implemented formation optimizer with weighted scoring (fixture 35%, form 35%, CS/xGI 20%, season 10%). All 7 valid formations tried. Transfer suggestions from free agents included. New /requested-stats/ page with pitch-layout cards.
 
 **Phase:** 6 (Requested Stats)
 **Component:** Data Pipeline + Frontend
@@ -1142,7 +1143,8 @@ Data sources (all already fetched):
 
 ---
 
-## [ ] T-032 — Opponent Average Score Against: "how much do opponents score vs me?"
+## [x] T-032 — Opponent Average Score Against: "how much do opponents score vs me?"
+> DONE 2026-03-13 — Computed avg opponent score against each manager from H2H match data. Sorted unluckiest-first with league avg reference. Per-opponent breakdown included. Color-coded lucky/unlucky badges.
 
 **Phase:** 6 (Requested Stats)
 **Component:** Data Pipeline + Frontend
