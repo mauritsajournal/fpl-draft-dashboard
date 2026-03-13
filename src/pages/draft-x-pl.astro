@@ -1,0 +1,847 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EmptyState from '../components/EmptyState.astro';
+
+let dashboardData: any = null;
+try {
+  const mod = await import('../../data/dashboard.json');
+  dashboardData = mod.default;
+} catch {
+  // Data not yet available
+}
+
+const dxpl = dashboardData?.draftXPL;
+const managers = dashboardData?.managers ?? [];
+
+// Manager color map — consistent across the dashboard
+const MANAGER_COLORS: Record<number, string> = {};
+const COLOR_PALETTE = [
+  '#00ff87', '#04f5ff', '#f59e0b', '#ec4899', '#8b5cf6',
+  '#ef4444', '#3b82f6', '#10b981'
+];
+managers.forEach((m: any, i: number) => {
+  MANAGER_COLORS[m.leagueEntryId] = COLOR_PALETTE[i % COLOR_PALETTE.length];
+});
+
+function shortName(name: string): string {
+  return name.split(' ')[0];
+}
+
+function medal(i: number): string {
+  if (i === 0) return '🥇';
+  if (i === 1) return '🥈';
+  if (i === 2) return '🥉';
+  return `#${i + 1}`;
+}
+---
+
+<Layout title="Draft x Premier League — FC Driegangendiner">
+  {dxpl ? (
+    <>
+      <!-- Hero Section -->
+      <div class="mb-12 animate-fade-in-up">
+        <div class="text-center">
+          <h1 class="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-fpl-green via-fpl-cyan to-fpl-pink bg-clip-text text-transparent mb-3">
+            Draft x Premier League
+          </h1>
+          <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+            Where fantasy meets reality. How do your draft picks perform in the actual Premier League?
+          </p>
+          <div class="flex justify-center gap-4 mt-4 text-sm text-slate-500">
+            <span class="glass-card-sm px-3 py-1">Matchday {dxpl.plMatchday}</span>
+            <span class="glass-card-sm px-3 py-1">Season {dxpl.season}</span>
+            <span class="glass-card-sm px-3 py-1">{dxpl.managerProfiles.length} Managers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick nav -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12 text-xs">
+        <a href="#awards" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🏆 Awards</a>
+        <a href="#real-vs-fantasy" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">📊 Real vs Fantasy</a>
+        <a href="#shooting" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🎯 Shooting</a>
+        <a href="#cards" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🟨 Cards</a>
+        <a href="#chaos" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🔥 Chaos</a>
+        <a href="#defense" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🛡️ Defense</a>
+        <a href="#passing" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">🎯 Passing</a>
+        <a href="#draft" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">📋 Draft</a>
+      </div>
+
+      <!-- ===== AWARDS CEREMONY ===== -->
+      <section id="awards" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-2xl font-bold text-white">🏆 Season Awards</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-fpl-green/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">Based on real Premier League performance data from ESPN</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {dxpl.awards.goldBoot && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">⚽</div>
+              <div class="section-label mb-1">Golden Boot</div>
+              <div class="text-lg font-bold text-amber-400">{dxpl.awards.goldBoot.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.goldBoot.goals}</div>
+              <div class="text-xs text-slate-500">goals in PL</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.goldBoot.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.playmaker && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">🎯</div>
+              <div class="section-label mb-1">Playmaker</div>
+              <div class="text-lg font-bold text-fpl-cyan">{dxpl.awards.playmaker.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.playmaker.assists}</div>
+              <div class="text-xs text-slate-500">assists in PL</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.playmaker.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.ironMan && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">🦾</div>
+              <div class="section-label mb-1">Iron Man</div>
+              <div class="text-lg font-bold text-emerald-400">{dxpl.awards.ironMan.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.ironMan.minutes.toLocaleString()}</div>
+              <div class="text-xs text-slate-500">minutes played</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.ironMan.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.cardMagnet && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">🟨</div>
+              <div class="section-label mb-1">Card Magnet</div>
+              <div class="text-lg font-bold text-yellow-400">{dxpl.awards.cardMagnet.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.cardMagnet.cards}</div>
+              <div class="text-xs text-slate-500">cards received</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.cardMagnet.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.foulKing && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">💪</div>
+              <div class="section-label mb-1">Foul King</div>
+              <div class="text-lg font-bold text-rose-400">{dxpl.awards.foulKing.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.foulKing.fouls}</div>
+              <div class="text-xs text-slate-500">fouls committed</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.foulKing.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.passKing && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">📡</div>
+              <div class="section-label mb-1">Pass King</div>
+              <div class="text-lg font-bold text-blue-400">{dxpl.awards.passKing.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.passKing.passes.toLocaleString()}</div>
+              <div class="text-xs text-slate-500">passes completed</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.passKing.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.tackleKing && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">🦵</div>
+              <div class="section-label mb-1">Tackle King</div>
+              <div class="text-lg font-bold text-green-400">{dxpl.awards.tackleKing.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.tackleKing.tackles}</div>
+              <div class="text-xs text-slate-500">tackles made</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.tackleKing.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.cleanSheetKing && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">🧤</div>
+              <div class="section-label mb-1">Clean Sheet King</div>
+              <div class="text-lg font-bold text-indigo-400">{dxpl.awards.cleanSheetKing.name}</div>
+              <div class="text-2xl font-extrabold text-white tabular-nums">{dxpl.awards.cleanSheetKing.cleanSheets}</div>
+              <div class="text-xs text-slate-500">clean sheets</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.cleanSheetKing.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.shotShy && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">👻</div>
+              <div class="section-label mb-1">Shot Shy</div>
+              <div class="text-lg font-bold text-slate-400">{dxpl.awards.shotShy.name}</div>
+              <div class="text-sm text-white tabular-nums">{dxpl.awards.shotShy.shots} shots in {dxpl.awards.shotShy.minutes.toLocaleString()} mins</div>
+              <div class="text-xs text-slate-500">fewest shots per 90</div>
+              <div class="text-xs text-slate-600 mt-1">({dxpl.awards.shotShy.manager})</div>
+            </div>
+          )}
+          {dxpl.awards.ghostPlayer && dxpl.awards.ghostPlayer.length > 0 && (
+            <div class="glass-card p-5 text-center card-interactive">
+              <div class="text-3xl mb-2">👤</div>
+              <div class="section-label mb-1">Ghost Players</div>
+              <div class="text-lg font-bold text-slate-500">{dxpl.awards.ghostPlayer.length}</div>
+              <div class="text-xs text-slate-500">drafted players with 0 mins</div>
+              {dxpl.awards.ghostPlayer.slice(0, 3).map((g: any) => (
+                <div class="text-xs text-slate-600">{g.name} ({g.manager})</div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      <!-- ===== REAL VS FANTASY ===== -->
+      <section id="real-vs-fantasy" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">📊 Real vs Fantasy</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-fpl-cyan/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          Does drafting players from top PL teams mean fantasy success? Compare each manager's average PL team ranking vs their draft league position.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {dxpl.realVsFantasy.map((r: any, i: number) => (
+            <div class:list={[
+              'glass-card-sm p-5',
+              i === 0 ? 'glow-green' : ''
+            ]}>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <div class="text-lg font-bold text-white">{shortName(r.managerName)}</div>
+                  <div class="text-xs text-slate-500">{r.verdict}</div>
+                </div>
+                <div class:list={[
+                  'text-2xl font-extrabold tabular-nums',
+                  r.rankDelta > 0 ? 'text-emerald-400' : r.rankDelta < -1 ? 'text-rose-400' : 'text-slate-400'
+                ]}>
+                  {r.rankDelta > 0 ? '+' : ''}{r.rankDelta}
+                </div>
+              </div>
+              <div class="flex gap-6 text-sm">
+                <div>
+                  <div class="section-label">Fantasy Rank</div>
+                  <div class="text-white font-bold text-lg">#{r.fantasyRank}</div>
+                </div>
+                <div>
+                  <div class="section-label">Avg PL Team Rank</div>
+                  <div class="text-slate-300 font-bold text-lg">~{r.weightedPlRank}</div>
+                </div>
+              </div>
+              <div class="mt-3 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div
+                  class:list={[
+                    'h-full rounded-full transition-all',
+                    r.rankDelta > 0 ? 'bg-gradient-to-r from-emerald-500 to-emerald-400' : 'bg-gradient-to-r from-rose-500 to-rose-400'
+                  ]}
+                  style={`width: ${Math.min(Math.abs(r.rankDelta) * 12, 100)}%`}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- ===== GOAL INVOLVEMENT ===== -->
+      <section id="goals" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">⚽ Goal Involvement Kings</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-amber-500/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          Which manager's squad has the most real-world goals and assists combined?
+        </p>
+
+        <div class="space-y-3">
+          {dxpl.goalInvolvement.map((g: any, i: number) => {
+            const maxGI = dxpl.goalInvolvement[0]?.totalGoalInvolvements ?? 1;
+            return (
+              <div class:list={['glass-card-sm p-4 animate-fade-in-up', `stagger-${i + 1}`]}>
+                <div class="flex items-center gap-4">
+                  <span class:list={[
+                    'inline-flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold shrink-0',
+                    i === 0 ? 'bg-amber-400/15 text-amber-400' :
+                    i === 1 ? 'bg-slate-300/15 text-slate-300' :
+                    i === 2 ? 'bg-amber-600/15 text-amber-600' :
+                    'bg-white/5 text-slate-400'
+                  ]}>{medal(i)}</span>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-baseline">
+                      <span class="text-sm font-semibold text-white">{shortName(g.managerName)}</span>
+                      <span class="text-xs text-slate-500">{g.title}</span>
+                    </div>
+                    <div class="flex gap-4 text-xs mt-1">
+                      <span class="text-emerald-400">{g.goals} goals</span>
+                      <span class="text-fpl-cyan">{g.assists} assists</span>
+                      <span class="text-slate-500">{g.minsPerGI} mins/GI</span>
+                    </div>
+                    <div class="mt-2 h-2 bg-white/5 rounded-full overflow-hidden flex">
+                      <div class="bg-emerald-400/60 rounded-l-full" style={`width: ${(g.goals / maxGI) * 100}%`} />
+                      <div class="bg-fpl-cyan/60 rounded-r-full" style={`width: ${(g.assists / maxGI) * 100}%`} />
+                    </div>
+                  </div>
+                  <div class="text-right shrink-0">
+                    <div class="text-2xl font-extrabold text-amber-400 tabular-nums">{g.totalGoalInvolvements}</div>
+                    <div class="text-xs text-slate-500">G+A</div>
+                  </div>
+                </div>
+                {g.topContributors.length > 0 && (
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    {g.topContributors.slice(0, 3).map((tc: any) => (
+                      <span class="text-xs glass-card-sm px-2 py-0.5 text-slate-400">
+                        {tc.name} ({tc.goals}G {tc.assists}A)
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <!-- ===== SHOOTING EFFICIENCY ===== -->
+      <section id="shooting" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">🎯 Shooting Efficiency</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-fpl-pink/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          Who drafted the clinical finishers vs the spray-and-pray merchants?
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-xs text-slate-500 uppercase tracking-wider border-b border-white/5">
+                <th class="text-left py-3 px-3">#</th>
+                <th class="text-left py-3 px-3">Manager</th>
+                <th class="text-right py-3 px-3">Goals</th>
+                <th class="text-right py-3 px-3">Shots</th>
+                <th class="text-right py-3 px-3">On Target</th>
+                <th class="text-right py-3 px-3">Accuracy</th>
+                <th class="text-right py-3 px-3">Conv. Rate</th>
+                <th class="text-right py-3 px-3">Shots/Goal</th>
+                <th class="text-left py-3 px-3">Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              {dxpl.shootingEfficiency.map((s: any, i: number) => (
+                <tr class="border-b border-white/5 table-row-hover">
+                  <td class="py-3 px-3 text-slate-500">{medal(i)}</td>
+                  <td class="py-3 px-3 font-medium text-white">{shortName(s.managerName)}</td>
+                  <td class="py-3 px-3 text-right tabular-nums text-emerald-400 font-bold">{s.goals}</td>
+                  <td class="py-3 px-3 text-right tabular-nums text-slate-400">{s.totalShots}</td>
+                  <td class="py-3 px-3 text-right tabular-nums text-slate-300">{s.shotsOnTarget}</td>
+                  <td class="py-3 px-3 text-right tabular-nums text-fpl-cyan">{s.shotAccuracy}%</td>
+                  <td class:list={[
+                    'py-3 px-3 text-right tabular-nums font-bold',
+                    s.conversionRate >= 15 ? 'text-emerald-400' :
+                    s.conversionRate >= 10 ? 'text-fpl-cyan' : 'text-rose-400'
+                  ]}>{s.conversionRate}%</td>
+                  <td class="py-3 px-3 text-right tabular-nums text-slate-400">{s.shotsPerGoal}</td>
+                  <td class="py-3 px-3 text-xs text-slate-500">{s.title}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ===== TWO-COLUMN: CARDS + CHAOS ===== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <!-- Card Collector -->
+        <section id="cards" class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">🟨 Card Collector</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-yellow-500/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Who drafted the dirtiest squad?</p>
+
+          <div class="space-y-2">
+            {dxpl.cardCollector.map((c: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(c.managerName)}</span>
+                      <span class="text-xs text-slate-600 ml-2">{c.title}</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-yellow-400 text-sm font-bold tabular-nums">{c.yellows}🟨</span>
+                    {c.reds > 0 && <span class="text-red-400 text-sm font-bold tabular-nums">{c.reds}🟥</span>}
+                  </div>
+                </div>
+                <div class="flex gap-1 mt-2">
+                  {c.dirtiest3.map((d: any) => (
+                    <span class="text-xs glass-card-sm px-1.5 py-0.5 text-slate-500">
+                      {d.name} {d.yellows}Y{d.reds > 0 ? ` ${d.reds}R` : ''}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Chaos Index -->
+        <section id="chaos" class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">🔥 The Chaos Index</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-rose-500/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Cards + fouls = pure chaos energy</p>
+
+          <div class="space-y-2">
+            {dxpl.chaosIndex.map((c: any, i: number) => {
+              const maxChaos = dxpl.chaosIndex[0]?.chaosScore ?? 1;
+              return (
+                <div class="glass-card-sm p-3">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <span class="text-sm">{medal(i)}</span>
+                      <div>
+                        <span class="text-sm font-medium text-white">{shortName(c.managerName)}</span>
+                        <span class="text-xs text-slate-600 ml-2">{c.title}</span>
+                      </div>
+                    </div>
+                    <div class="text-xl font-extrabold text-rose-400 tabular-nums">{c.chaosScore}</div>
+                  </div>
+                  <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-full"
+                      style={`width: ${(c.chaosScore / maxChaos) * 100}%`}
+                    />
+                  </div>
+                  <div class="flex gap-4 mt-1 text-xs text-slate-600">
+                    <span>{c.yellows} yellows</span>
+                    <span>{c.reds} reds</span>
+                    <span>{c.fouls} fouls</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== DEFENSIVE WALL ===== -->
+      <section id="defense" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">🛡️ Defensive Wall</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-blue-500/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          Who built the tightest backline? Total defensive actions = tackles + interceptions + clearances + blocks.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {dxpl.defensiveWall.map((d: any, i: number) => (
+            <div class:list={['glass-card-sm p-5', i === 0 ? 'glow-cyan' : '']}>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <span class="text-sm mr-2">{medal(i)}</span>
+                  <span class="text-lg font-bold text-white">{shortName(d.managerName)}</span>
+                  <div class="text-xs text-slate-500 mt-1">{d.title}</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-extrabold text-blue-400 tabular-nums">{d.defensiveActions}</div>
+                  <div class="text-xs text-slate-500">total actions</div>
+                </div>
+              </div>
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div>
+                  <div class="text-lg font-bold text-emerald-400 tabular-nums">{d.tacklesWon}</div>
+                  <div class="text-xs text-slate-600">Tackles</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-fpl-cyan tabular-nums">{d.interceptions}</div>
+                  <div class="text-xs text-slate-600">Intercepts</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-blue-400 tabular-nums">{d.clearances}</div>
+                  <div class="text-xs text-slate-600">Clearances</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-purple-400 tabular-nums">{d.shotsBlocked}</div>
+                  <div class="text-xs text-slate-600">Blocks</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- ===== TWO-COLUMN: PASSING + FOULS ===== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <!-- Pass Style -->
+        <section id="passing" class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">🎯 Pass Master vs Long Ball</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-blue-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Tiki-taka or route one? Based on real PL pass accuracy.</p>
+
+          <div class="space-y-2">
+            {dxpl.passStyle.map((ps: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(ps.managerName)}</span>
+                      <span class:list={[
+                        'text-xs ml-2 px-1.5 py-0.5 rounded',
+                        ps.style === 'Tiki-Taka' ? 'bg-fpl-cyan/15 text-fpl-cyan' :
+                        ps.style === 'Controlled' ? 'bg-blue-400/15 text-blue-400' :
+                        ps.style === 'Balanced' ? 'bg-slate-400/15 text-slate-400' :
+                        'bg-orange-400/15 text-orange-400'
+                      ]}>{ps.style}</span>
+                    </div>
+                  </div>
+                  <div class="text-xl font-extrabold text-fpl-cyan tabular-nums">{ps.passAccuracy}%</div>
+                </div>
+                <div class="mt-2 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-fpl-cyan to-blue-400 rounded-full" style={`width: ${ps.passAccuracy}%`} />
+                </div>
+                <div class="text-xs text-slate-600 mt-1">{ps.totalPasses.toLocaleString()} passes, {ps.longBallRatio}% long balls</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Foul Merchant -->
+        <section class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">💪 Foul Merchant</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-rose-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Whose players can't keep their feet to themselves?</p>
+
+          <div class="space-y-2">
+            {dxpl.foulMerchant.map((f: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between mb-1">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(f.managerName)}</span>
+                      <span class="text-xs text-slate-600 ml-2">{f.title}</span>
+                    </div>
+                  </div>
+                  <div class="text-xl font-extrabold text-rose-400 tabular-nums">{f.foulsCommitted}</div>
+                </div>
+                <div class="flex gap-1 mt-1">
+                  {f.dirtiest.map((d: any) => (
+                    <span class="text-xs glass-card-sm px-1.5 py-0.5 text-slate-500">{d.name}: {d.fouls}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== TWO-COLUMN: MINUTES + BENCHWARMER ===== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <!-- Minutes Monster -->
+        <section class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">⏱️ Minutes Monster</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-emerald-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Did you draft starters or bench warmers?</p>
+
+          <div class="space-y-2">
+            {dxpl.minutesMonster.map((m: any, i: number) => {
+              const maxMins = dxpl.minutesMonster[0]?.totalMinutes ?? 1;
+              return (
+                <div class="glass-card-sm p-3">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <span class="text-sm">{medal(i)}</span>
+                      <div>
+                        <span class="text-sm font-medium text-white">{shortName(m.managerName)}</span>
+                        <span class="text-xs text-slate-600 ml-2">{m.title}</span>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-lg font-extrabold text-emerald-400 tabular-nums">{m.totalMinutes.toLocaleString()}</div>
+                      <div class="text-xs text-slate-600">{m.avgMinutesPerPlayer} avg/player</div>
+                    </div>
+                  </div>
+                  <div class="mt-2 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full" style={`width: ${(m.totalMinutes / maxMins) * 100}%`} />
+                  </div>
+                  {m.ironMan && (
+                    <div class="text-xs text-slate-600 mt-1">Iron man: {m.ironMan.name} ({m.ironMan.minutes.toLocaleString()} mins)</div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        <!-- Benchwarmer Index -->
+        <section class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">👻 The Benchwarmer Index</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-slate-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">How many drafted players are actually playing?</p>
+
+          <div class="space-y-2">
+            {dxpl.benchwarmerIndex.map((b: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(b.managerName)}</span>
+                      <span class="text-xs text-slate-600 ml-2">{b.title}</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-emerald-400 font-bold tabular-nums">{b.playersWithMinutes}</span>
+                    <span class="text-slate-600">/</span>
+                    <span class="text-slate-400 tabular-nums">{b.totalPlayers}</span>
+                    {b.playersWithZeroMinutes > 0 && (
+                      <span class="text-xs text-rose-400">({b.playersWithZeroMinutes} ghosts)</span>
+                    )}
+                  </div>
+                </div>
+                {b.ghosts.length > 0 && (
+                  <div class="flex gap-1 mt-2 flex-wrap">
+                    {b.ghosts.map((g: any) => (
+                      <span class="text-xs glass-card-sm px-1.5 py-0.5 text-slate-600">👤 {g.name} ({g.team})</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== TWO-COLUMN: DIVERSITY + BIG CLUB BIAS ===== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <!-- Team Diversity -->
+        <section class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">🌍 Team Diversity</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-purple-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">Players from how many different PL clubs?</p>
+
+          <div class="space-y-2">
+            {dxpl.teamDiversity.map((td: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(td.managerName)}</span>
+                      <span class="text-xs text-slate-600 ml-2">{td.title}</span>
+                    </div>
+                  </div>
+                  <div class="text-lg font-extrabold text-purple-400 tabular-nums">{td.uniqueTeams} clubs</div>
+                </div>
+                <div class="flex flex-wrap gap-1">
+                  {td.distribution.slice(0, 6).map((d: any) => (
+                    <span class="text-xs glass-card-sm px-1.5 py-0.5 text-slate-500">{d.team}: {d.count}</span>
+                  ))}
+                  {td.distribution.length > 6 && (
+                    <span class="text-xs text-slate-600">+{td.distribution.length - 6} more</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Big Club Bias -->
+        <section class="animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-xl font-bold text-white">👑 Big Club Bias</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-amber-400/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-xs mb-4">What % of your squad plays for a top-6 PL club?</p>
+
+          <div class="space-y-2">
+            {dxpl.bigClubBias.map((bc: any, i: number) => (
+              <div class="glass-card-sm p-3">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm">{medal(i)}</span>
+                    <div>
+                      <span class="text-sm font-medium text-white">{shortName(bc.managerName)}</span>
+                      <span class="text-xs text-slate-600 ml-2">{bc.title}</span>
+                    </div>
+                  </div>
+                  <div class="text-lg font-extrabold text-amber-400 tabular-nums">{bc.top6Pct}%</div>
+                </div>
+                <div class="h-2 bg-white/5 rounded-full overflow-hidden flex">
+                  <div class="bg-gradient-to-r from-amber-400 to-amber-500 rounded-l-full" style={`width: ${bc.top6Pct}%`} title={`Top 6: ${bc.top6Count}`} />
+                  <div class="bg-slate-500/30 flex-1 rounded-r-full" title={`Others`} />
+                </div>
+                <div class="flex justify-between text-xs text-slate-600 mt-1">
+                  <span>Top 6: {bc.top6Count} players</span>
+                  <span>Bottom 6: {bc.bottom6Count} players</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== FANTASY VS REALITY ===== -->
+      <section class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">🎭 Fantasy vs Reality</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-fpl-cyan/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          How many FPL points does each manager earn per real-world goal involvement? Higher = fantasy overperformer.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {dxpl.fantasyVsReality.map((fvr: any, i: number) => (
+            <div class:list={['glass-card-sm p-5', i === 0 ? 'glow-green' : '']}>
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <span class="text-sm mr-2">{medal(i)}</span>
+                  <span class="text-lg font-bold text-white">{shortName(fvr.managerName)}</span>
+                  <div class="text-xs text-slate-500 mt-1">{fvr.title}</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-extrabold text-fpl-cyan tabular-nums">{fvr.pointsPerRealGI}</div>
+                  <div class="text-xs text-slate-500">pts per G+A</div>
+                </div>
+              </div>
+              <div class="flex gap-6 text-xs">
+                <div>
+                  <span class="text-slate-500">Real G+A: </span>
+                  <span class="text-emerald-400 font-bold">{fvr.realGI}</span>
+                </div>
+                <div>
+                  <span class="text-slate-500">FPL pts: </span>
+                  <span class="text-fpl-cyan font-bold">{fvr.fantasyPoints}</span>
+                </div>
+              </div>
+              {fvr.overperformers.length > 0 && (
+                <div class="mt-3">
+                  <div class="text-xs text-slate-600 mb-1">Best value:</div>
+                  <div class="flex gap-1 flex-wrap">
+                    {fvr.overperformers.map((op: any) => (
+                      <span class="text-xs glass-card-sm px-1.5 py-0.5 text-emerald-400/80">
+                        {op.name} ({op.fplPts}pts, {op.realGI}GI)
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- ===== DRAFT HIT RATE ===== -->
+      <section id="draft" class="mb-16 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-bold text-white">📋 Draft Pick Hit Rate</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-fpl-green/30 to-transparent"></div>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">
+          Which draft picks became stars and which were busts? Based on FPL points and real PL performance.
+        </p>
+
+        {dxpl.draftHitRate.slice(0, 5).map((round: any) => (
+          <details class="mb-4 glass-card-sm">
+            <summary class="p-4 cursor-pointer">
+              <span class="text-white font-bold">Round {round.round}</span>
+              <span class="text-slate-500 text-sm ml-3">Avg: {round.avgPoints} FPL pts</span>
+            </summary>
+            <div class="px-4 pb-4">
+              <div class="overflow-x-auto">
+                <table class="w-full text-xs">
+                  <thead>
+                    <tr class="text-slate-600 uppercase tracking-wider border-b border-white/5">
+                      <th class="text-left py-2 px-2">Pick</th>
+                      <th class="text-left py-2 px-2">Player</th>
+                      <th class="text-left py-2 px-2">Manager</th>
+                      <th class="text-right py-2 px-2">FPL pts</th>
+                      <th class="text-right py-2 px-2">Goals</th>
+                      <th class="text-right py-2 px-2">Assists</th>
+                      <th class="text-right py-2 px-2">Mins</th>
+                      <th class="text-left py-2 px-2">Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {round.picks.map((pick: any) => (
+                      <tr class="border-b border-white/5 table-row-hover">
+                        <td class="py-2 px-2 text-slate-500">#{pick.pick}</td>
+                        <td class="py-2 px-2 font-medium text-white">{pick.playerName}</td>
+                        <td class="py-2 px-2 text-slate-400">{shortName(pick.managerName)}</td>
+                        <td class="py-2 px-2 text-right tabular-nums text-fpl-cyan font-bold">{pick.fplPoints}</td>
+                        <td class="py-2 px-2 text-right tabular-nums text-emerald-400">{pick.espnGoals}</td>
+                        <td class="py-2 px-2 text-right tabular-nums text-blue-400">{pick.espnAssists}</td>
+                        <td class="py-2 px-2 text-right tabular-nums text-slate-400">{pick.espnMinutes.toLocaleString()}</td>
+                        <td class="py-2 px-2">
+                          <span class:list={[
+                            'px-1.5 py-0.5 rounded text-xs font-medium',
+                            pick.rating === 'Star' ? 'bg-amber-400/15 text-amber-400' :
+                            pick.rating === 'Hit' ? 'bg-emerald-400/15 text-emerald-400' :
+                            pick.rating === 'Miss' ? 'bg-slate-400/15 text-slate-400' :
+                            'bg-rose-400/15 text-rose-400'
+                          ]}>{pick.rating}</span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </details>
+        ))}
+
+        {dxpl.draftHitRate.length > 5 && (
+          <details class="glass-card-sm">
+            <summary class="p-4 cursor-pointer text-slate-400 text-sm">
+              Show rounds {6}-{dxpl.draftHitRate.length} ...
+            </summary>
+            <div class="px-4 pb-4 space-y-4">
+              {dxpl.draftHitRate.slice(5).map((round: any) => (
+                <div>
+                  <div class="text-white font-bold text-sm mb-2">Round {round.round} <span class="text-slate-500 font-normal ml-2">Avg: {round.avgPoints} pts</span></div>
+                  <div class="overflow-x-auto">
+                    <table class="w-full text-xs">
+                      <tbody>
+                        {round.picks.map((pick: any) => (
+                          <tr class="border-b border-white/5 table-row-hover">
+                            <td class="py-1.5 px-2 text-slate-500 w-10">#{pick.pick}</td>
+                            <td class="py-1.5 px-2 text-white">{pick.playerName}</td>
+                            <td class="py-1.5 px-2 text-slate-400">{shortName(pick.managerName)}</td>
+                            <td class="py-1.5 px-2 text-right tabular-nums text-fpl-cyan">{pick.fplPoints}</td>
+                            <td class="py-1.5 px-2">
+                              <span class:list={[
+                                'px-1.5 py-0.5 rounded text-xs',
+                                pick.rating === 'Star' ? 'text-amber-400' :
+                                pick.rating === 'Hit' ? 'text-emerald-400' :
+                                pick.rating === 'Miss' ? 'text-slate-400' :
+                                'text-rose-400'
+                              ]}>{pick.rating}</span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
+        )}
+      </section>
+
+      <!-- ===== FOOTER NOTE ===== -->
+      <div class="text-center text-xs text-slate-600 mt-8 mb-4">
+        <p>Player data from ESPN's Premier League API. Fantasy data from FPL Draft API.</p>
+        <p>Last updated: {new Date(dxpl.lastUpdated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+      </div>
+    </>
+  ) : (
+    <EmptyState title="Draft x Premier League" />
+  )}
+</Layout>
