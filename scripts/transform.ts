@@ -81,6 +81,12 @@ function main(): void {
     league.league_entries.map((e) => [e.id, e])
   );
 
+  // Map entry_id -> league_entry id (they differ for some managers)
+  // The ownership API returns entry_id as the owner, not league_entry id
+  const entryIdToLeagueId = new Map(
+    league.league_entries.map((e) => [e.entry_id, e.id])
+  );
+
   // ---- Standings ----
   const standings = buildStandings(league, entryMap);
   console.log(`  Standings: ${standings.length} entries`);
@@ -98,7 +104,7 @@ function main(): void {
   console.log(`  H2H Matrix: ${h2hMatrix.length} records`);
 
   // ---- Player Stats ----
-  const playerStats = buildPlayerStats(bootstrap, ownership, resolver, entryMap);
+  const playerStats = buildPlayerStats(bootstrap, ownership, resolver, entryMap, entryIdToLeagueId);
   const ownedPlayers = playerStats.filter((p) => p.owner !== null);
   const freeAgents = playerStats
     .filter((p) => p.owner === null)
@@ -119,7 +125,7 @@ function main(): void {
   console.log(`  Draft Picks: ${draftPicks.length} entries`);
 
   // ---- Predictions ----
-  const predictions = buildPredictions(league, entryMap, ownership, resolver, bootstrap, fixtures, currentGw);
+  const predictions = buildPredictions(league, entryMap, entryIdToLeagueId, ownership, resolver, bootstrap, fixtures, currentGw);
   console.log(`  Predictions: ${predictions.length} entries`);
 
   // ---- Bench Analysis ----
@@ -200,7 +206,7 @@ function buildStandings(
           ? `${entry.player_first_name} ${entry.player_last_name}`
           : 'Unknown',
         shortName: entry?.short_name ?? '???',
-        played: s.matches_played,
+        played: s.matches_won + s.matches_drawn + s.matches_lost,
         won: s.matches_won,
         drawn: s.matches_drawn,
         lost: s.matches_lost,
@@ -401,12 +407,15 @@ function buildPlayerStats(
   bootstrap: BootstrapResponse,
   ownership: ElementStatusResponse | null,
   resolver: PlayerResolver,
-  entryMap: Map<number, LeagueResponse['league_entries'][0]>
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  entryIdToLeagueId: Map<number, number>
 ): PlayerStat[] {
   const ownerMap = new Map<number, number | null>();
   if (ownership) {
     for (const es of ownership.element_status) {
-      ownerMap.set(es.element, es.owner);
+      // ownership.owner is entry_id, translate to league_entry id
+      const leagueId = es.owner !== null ? (entryIdToLeagueId.get(es.owner) ?? null) : null;
+      ownerMap.set(es.element, leagueId);
     }
   }
 
@@ -567,6 +576,7 @@ function buildDraftPicks(
 function buildPredictions(
   league: LeagueResponse,
   entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  entryIdToLeagueId: Map<number, number>,
   ownership: ElementStatusResponse | null,
   resolver: PlayerResolver,
   bootstrap: BootstrapResponse,
@@ -579,17 +589,18 @@ function buildPredictions(
 
   if (nextMatches.length === 0) return [];
 
-  // Build player-to-owner mapping
+  // Build player-to-owner mapping (translate entry_id -> league_entry id)
   const playerOwner = new Map<number, number>();
   if (ownership) {
     for (const es of ownership.element_status) {
       if (es.owner !== null) {
-        playerOwner.set(es.element, es.owner);
+        const leagueId = entryIdToLeagueId.get(es.owner) ?? es.owner;
+        playerOwner.set(es.element, leagueId);
       }
     }
   }
 
-  // Group players by owner
+  // Group players by owner (keyed by league_entry id)
   const ownerPlayers = new Map<number, typeof bootstrap.elements>();
   for (const p of bootstrap.elements) {
     const owner = playerOwner.get(p.id);
