@@ -1073,6 +1073,119 @@ Update CLAUDE.md with ESPN API endpoints, data flow, and configuration. Add fetc
 
 ---
 
+## Phase 6 — Requested Stats (New Tab)
+
+> Added 2026-03-13. User-requested custom analytics on a new "My Stats" page.
+
+---
+
+## [ ] T-031 — Recommended XI: optimal lineup advice for all 8 managers
+
+**Phase:** 6 (Requested Stats)
+**Component:** Data Pipeline + Frontend
+**Depends on:** None
+**Estimated effort:** L
+**Priority:** P0
+
+**Description:**
+Build a "Recommended XI" section on a new page that advises each of the 8 managers which 11 players to start in a valid football formation. Squad composition is always: 2 GK, 5 DEF, 5 MID, 3 FWD (15 total). Valid formations: 3-4-3, 3-5-2, 4-3-3, 4-4-2, 4-5-1, 5-3-2, 5-4-1 (always 1 GK).
+
+The recommendation engine should consider (using only existing data — no extra APIs):
+
+1. **Fixture difficulty** — use bootstrap `teams[].strength` ratings + upcoming fixture from `data/fixtures.json`
+2. **Team xGC (expected goals conceded)** — compute from live GW data: goals conceded by each PL team over last 5 GWs
+3. **Opponent xG** — goals scored by the opponent team over last 5 GWs
+4. **Last 5 gameweeks of individual player form** — recent FPL points, not season averages
+5. **Clean sheet history** — player's team clean sheets in last 5 GWs (for GK/DEF)
+6. **xG/xA form** — player's own xG and xA from bootstrap data
+
+The algorithm should:
+- For each manager, look at their full 15-player squad
+- Compute a "start score" for each player combining the factors above
+- Select the best valid formation (1 GK + valid outfield combo) that maximizes total start score
+- Show the reasoning per player: fixture, form, score breakdown
+- If data allows, suggest a transfer: scan free agents who'd improve the weakest starter
+
+Data sources (all already fetched):
+- `data/picks/` — each manager's current squad
+- `data/bootstrap.json` — player xG, xA, form, team assignments, fixture difficulty ratings
+- `data/live/` — recent GW performance for computing team-level xGC
+- `data/fixtures.json` — upcoming fixtures
+- `data/ownership.json` — who owns whom
+- Player `element_type`: 1=GK, 2=DEF, 3=MID, 4=FWD
+
+**Acceptance criteria:**
+- [ ] New page "Requested Stats" at `/requested-stats/` with glassmorphism design
+- [ ] Added to navigation dropdown
+- [ ] "Recommended XI" section showing all 8 managers (default view: Maurits expanded, others collapsed)
+- [ ] Each manager's card shows: recommended formation, 11 starters with reasoning, 4 bench players
+- [ ] Each recommendation shows: player name, team, opponent, start score breakdown
+- [ ] Uses last 5 GWs of form (not season average)
+- [ ] Considers fixture difficulty, team xGC, opponent xG, clean sheet odds
+- [ ] Valid football formation enforced (not just "top 11 by score")
+- [ ] Optional: transfer suggestion if a free agent outscores the weakest starter
+- [ ] Transform step computes the data; frontend is render-only
+- [ ] Maurits (entry_id 27628) highlighted/expanded by default
+
+**Technical notes:**
+- Add a `requestedStats` section to `DashboardData` in `scripts/types/dashboard.ts`
+- Compute in `scripts/transform.ts`
+- Formation optimizer: try all valid formations, pick the one with highest total start score
+- Weight suggestion: 35% fixture difficulty (opponent strength + team xGC), 35% recent form (last 5 GW points), 20% clean sheet history (GK/DEF) or xGI (MID/FWD), 10% season total
+- For team-level stats (xGC, goals scored): aggregate from live GW data for last 5 GWs
+
+**Files likely affected:**
+- `scripts/types/dashboard.ts` (new types)
+- `scripts/transform.ts` (new computation)
+- `src/pages/requested-stats.astro` (new page)
+- `src/layouts/Layout.astro` (nav update)
+
+---
+
+## [ ] T-032 — Opponent Average Score Against: "how much do opponents score vs me?"
+
+**Phase:** 6 (Requested Stats)
+**Component:** Data Pipeline + Frontend
+**Depends on:** T-031 (shares the new page)
+**Estimated effort:** M
+**Priority:** P0
+
+**Description:**
+For each manager, calculate the average points their H2H opponents scored **against them** across all played gameweeks. This is a different luck metric: if opponents consistently have big weeks when facing you, you're unlucky regardless of your own score.
+
+Example: If Maurits played 10 H2H matches and his opponents scored 50, 40, 60, 55, 45, 70, 35, 48, 52, 65 against him, the average is 52.0. Compare this to the league average of ~47. Maurits's opponents over-perform against him → unlucky.
+
+Display:
+- Table/cards showing each manager's "Opponent Avg Against" metric
+- Sorted from highest (unluckiest — opponents score most vs you) to lowest (luckiest)
+- Show comparison to league-wide average opponent score
+- Color code: red if above average (unlucky), green if below (lucky)
+- Optional: show per-opponent breakdown (e.g., "When Sam plays you, he averages 55 pts")
+
+This should appear as a second section on the same "My Stats" / "Requested Stats" page created in T-031.
+
+**Acceptance criteria:**
+- [ ] Card/table on the Requested Stats page showing opponent avg score against each manager
+- [ ] Sorted from unluckiest (highest opponent avg) to luckiest
+- [ ] League average opponent score shown as reference line
+- [ ] Color-coded: above avg = red/rose, below avg = green/emerald
+- [ ] Optional per-opponent breakdown expandable
+- [ ] Maurits (entry_id 27628) highlighted in the list
+- [ ] Data computed in transform step
+
+**Technical notes:**
+- Use `h2hMatrix` data that already exists — it has all match results per pair
+- For each manager: collect all opponent scores from their H2H matches, compute mean
+- League average = mean of all managers' opponent averages (should be roughly equal to overall avg GW score)
+- Add to `requestedStats` section in dashboard.json
+
+**Files likely affected:**
+- `scripts/types/dashboard.ts` (add to requestedStats types)
+- `scripts/transform.ts` (compute opponent avg)
+- `src/pages/requested-stats.astro` (add section)
+
+---
+
 ## Summary
 
 | Phase | Tickets | P0 | P1 | P2 | Effort Breakdown |
@@ -1082,4 +1195,5 @@ Update CLAUDE.md with ESPN API endpoints, data flow, and configuration. Add fetc
 | Phase 3 (Polish) | T-017 to T-020 | 0 | 0 | 4 | 0S + 3M + 1L |
 | Phase 4 (Bugs) | BUG-001 to BUG-004 | 2 | 2 | 0 | 4S |
 | Phase 5 (ESPN) | T-025 to T-030 | 3 | 2 | 0 | 2S + 2M + 2L |
-| **Total** | **34** | **13** | **13** | **7** | **11S + 15M + 6L + 1XL** |
+| Phase 6 (Requested) | T-031 to T-032 | 2 | 0 | 0 | 1L + 1M |
+| **Total** | **36** | **15** | **13** | **7** | **11S + 16M + 7L + 1XL** |
