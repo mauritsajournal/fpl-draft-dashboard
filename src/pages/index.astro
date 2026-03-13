@@ -18,10 +18,10 @@ const managers = dashboardData?.managers ?? [];
 const powerRankings = dashboardData?.powerRankings ?? [];
 const meta = dashboardData?.meta;
 const currentGw = meta?.currentGameweek ?? 0;
+const creativeStats = dashboardData?.creativeStats;
 
 // Find current GW matchups from gameweekHistory
 const gwHistory = dashboardData?.gameweekHistory ?? [];
-const latestGw = gwHistory.length > 0 ? gwHistory[gwHistory.length - 1] : null;
 
 // Find best GW scorer
 let topScorerThisGw = { name: '--', points: 0 };
@@ -34,23 +34,36 @@ if (managers.length > 0) {
   }
 }
 
-// Find longest winning streak
-function getLongestStreak(matches: any[], entryId: number): number {
-  let maxStreak = 0;
-  let current = 0;
-  const sorted = matches
-    .filter((m: any) => m.finished && (m.league_entry_1 === entryId || m.league_entry_2 === entryId))
-    .sort((a: any, b: any) => a.event - b.event);
-
-  for (const m of sorted) {
-    if (m.winning_league_entry === entryId) {
-      current++;
-      maxStreak = Math.max(maxStreak, current);
-    } else {
-      current = 0;
-    }
+// Build highest single GW score
+let highestGwScore = { name: '--', points: 0, gw: 0 };
+for (const m of managers) {
+  if (m.bestGw && m.bestGw.points > highestGwScore.points) {
+    highestGwScore = { name: m.playerName.split(' ')[0], points: m.bestGw.points, gw: m.bestGw.gw };
   }
-  return maxStreak;
+}
+
+// Build form data for standings table
+const formDataMap: Record<number, { form: number[]; formRating: number; trend: string }> = {};
+if (creativeStats?.formRatings) {
+  for (const fr of creativeStats.formRatings) {
+    formDataMap[fr.leagueEntryId] = {
+      form: fr.last5Points,
+      formRating: fr.formAvg,
+      trend: fr.trend,
+    };
+  }
+} else {
+  // Fallback: use manager currentForm
+  for (const m of managers) {
+    const form = m.currentForm ?? [];
+    const seasonAvg = m.averagePoints ?? 0;
+    const formAvg = form.length > 0 ? form.reduce((a: number, b: number) => a + b, 0) / form.length : 0;
+    formDataMap[m.leagueEntryId] = {
+      form,
+      formRating: formAvg,
+      trend: formAvg > seasonAvg * 1.05 ? 'up' : formAvg < seasonAvg * 0.95 ? 'down' : 'stable',
+    };
+  }
 }
 
 // Maurits Koot's entry_id for highlighting
@@ -60,65 +73,169 @@ const MAURITS_ENTRY_ID = 27628;
 <Layout title="Standings — FC Driegangendiner">
   {dashboardData ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">League Standings</h1>
-        <p class="text-gray-400 text-sm">
-          GW {currentGw} of 38 &middot; {meta.leagueName} &middot; Season {meta.season}
-        </p>
+      <!-- Hero Section -->
+      <div class="mb-10 animate-fade-in-up">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-fpl-green via-emerald-300 to-fpl-cyan bg-clip-text text-transparent">
+              FC Driegangendiner
+            </h1>
+            <p class="text-slate-400 text-sm mt-2">
+              GW {currentGw} of 38 &middot; {meta.season}
+            </p>
+          </div>
+          <div class="glass-card-sm px-4 py-2 text-xs text-slate-400 hidden sm:block">
+            FPL Draft League 820
+          </div>
+        </div>
       </div>
 
       <!-- Stats Cards -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
         <StatCard
           label="GW Leader"
           value={topScorerThisGw.name}
           detail={`${topScorerThisGw.points} pts in GW${currentGw}`}
+          accent="green"
         />
         <StatCard
           label="League Leader"
           value={standings[0]?.playerName?.split(' ')[0] ?? '--'}
           detail={`${standings[0]?.leaguePoints ?? 0} league pts`}
+          accent="cyan"
         />
         <StatCard
-          label="Highest Points For"
-          value={standings.reduce((max: any, s: any) => s.pointsFor > max.pointsFor ? s : max, standings[0])?.playerName?.split(' ')[0] ?? '--'}
-          detail={`${Math.max(...standings.map((s: any) => s.pointsFor))} total pts`}
+          label="Best Single GW"
+          value={highestGwScore.name}
+          detail={`${highestGwScore.points} pts (GW${highestGwScore.gw})`}
+          accent="amber"
         />
         <StatCard
           label="Most Wins"
           value={standings.reduce((max: any, s: any) => s.won > max.won ? s : max, standings[0])?.playerName?.split(' ')[0] ?? '--'}
           detail={`${Math.max(...standings.map((s: any) => s.won))} wins`}
+          accent="green"
         />
       </div>
 
       <!-- Standings Table -->
-      <StandingsTable standings={standings} highlightEntryId={MAURITS_ENTRY_ID} />
+      <div class="mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">League Standings</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
+        <StandingsTable standings={standings} highlightEntryId={MAURITS_ENTRY_ID} formData={formDataMap} />
+      </div>
+
+      <!-- Creative Stats: Luck Index + Consistency -->
+      {creativeStats && (
+        <div class="mb-10 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Season Insights</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Luck Index */}
+            {creativeStats.luckIndex && creativeStats.luckIndex.slice(0, 3).map((li: any, i: number) => (
+              <div class="glass-card-sm p-5">
+                <div class="section-label mb-2">
+                  {i === 0 ? 'Luckiest' : i === 1 ? '2nd Luckiest' : '3rd Luckiest'}
+                </div>
+                <div class="text-lg font-bold text-white">{li.playerName.split(' ')[0]}</div>
+                <div class:list={[
+                  'text-2xl font-extrabold tabular-nums mt-1',
+                  li.luckScore > 0 ? 'text-emerald-400' : li.luckScore < 0 ? 'text-rose-400' : 'text-slate-400'
+                ]}>
+                  {li.luckScore > 0 ? '+' : ''}{li.luckScore}
+                </div>
+                <div class="text-xs text-slate-500 mt-1">
+                  {li.actualWins}W actual vs {li.expectedWins.toFixed(1)}W expected
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Weekly Awards -->
+      {creativeStats?.weeklyAwards && (
+        <div class="mb-10 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Season Awards</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass-card-sm p-5 text-center">
+              <div class="section-label mb-2">Most MotW</div>
+              <div class="text-lg font-bold text-amber-400">
+                {creativeStats.weeklyAwards.mostMotW?.name?.split(' ')[0] ?? '--'}
+              </div>
+              <div class="text-xs text-slate-500 mt-1">{creativeStats.weeklyAwards.mostMotW?.count ?? 0}x Manager of the Week</div>
+            </div>
+            <div class="glass-card-sm p-5 text-center">
+              <div class="section-label mb-2">Most Wooden Spoons</div>
+              <div class="text-lg font-bold text-rose-400">
+                {creativeStats.weeklyAwards.mostWoodenSpoons?.name?.split(' ')[0] ?? '--'}
+              </div>
+              <div class="text-xs text-slate-500 mt-1">{creativeStats.weeklyAwards.mostWoodenSpoons?.count ?? 0}x lowest scorer</div>
+            </div>
+            <div class="glass-card-sm p-5 text-center">
+              <div class="section-label mb-2">Most Consistent</div>
+              <div class="text-lg font-bold text-fpl-cyan">
+                {creativeStats.consistencyScores?.[0]?.playerName?.split(' ')[0] ?? '--'}
+              </div>
+              <div class="text-xs text-slate-500 mt-1">{creativeStats.consistencyScores?.[0]?.label ?? ''}</div>
+            </div>
+            <div class="glass-card-sm p-5 text-center">
+              <div class="section-label mb-2">Clutch King</div>
+              <div class="text-lg font-bold text-emerald-400">
+                {creativeStats.clutchScores?.[0]?.playerName?.split(' ')[0] ?? '--'}
+              </div>
+              <div class="text-xs text-slate-500 mt-1">{creativeStats.clutchScores?.[0]?.closeWinPct?.toFixed(0) ?? 0}% close wins</div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <!-- Power Rankings -->
       {powerRankings.length > 0 && (
-        <div class="mt-8">
-          <h2 class="text-xl font-bold text-white mb-4">Power Rankings</h2>
-          <div class="space-y-2">
+        <div class="mb-10 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Power Rankings</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
+          <div class="space-y-3">
             {powerRankings.map((r: any, i: number) => {
               const maxScore = powerRankings[0]?.score ?? 100;
               return (
-                <div class="bg-fpl-card rounded-lg p-3 border border-white/5">
-                  <div class="flex items-center gap-3 mb-2">
-                    <span class="text-sm font-bold text-gray-400 w-6">#{i + 1}</span>
-                    <span class="text-sm font-medium text-white flex-1">{r.teamName}</span>
-                    <span class="text-lg font-bold text-fpl-cyan">{r.score}</span>
+                <div class:list={[
+                  'glass-card-sm p-4 animate-fade-in-up',
+                  `stagger-${i + 1}`
+                ]}>
+                  <div class="flex items-center gap-4 mb-3">
+                    <span class:list={[
+                      'inline-flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold',
+                      i === 0 ? 'bg-amber-400/15 text-amber-400' :
+                      i === 1 ? 'bg-slate-300/15 text-slate-300' :
+                      i === 2 ? 'bg-amber-600/15 text-amber-600' :
+                      'bg-white/5 text-slate-400'
+                    ]}>
+                      #{i + 1}
+                    </span>
+                    <span class="text-sm font-semibold text-white flex-1">{r.teamName}</span>
+                    <span class="text-2xl font-extrabold text-fpl-cyan tabular-nums">{r.score}</span>
                   </div>
-                  <div class="flex h-2 rounded-full overflow-hidden bg-fpl-dark">
-                    <div class="bg-fpl-green/60 rounded-l" style={`width: ${(r.breakdown.form / maxScore) * 100}%`} title={`Form: ${r.breakdown.form}`} />
-                    <div class="bg-fpl-cyan/60" style={`width: ${(r.breakdown.xGI / maxScore) * 100}%`} title={`xGI: ${r.breakdown.xGI}`} />
-                    <div class="bg-fpl-blue/60" style={`width: ${(r.breakdown.totalPoints / maxScore) * 100}%`} title={`Points: ${r.breakdown.totalPoints}`} />
-                    <div class="bg-fpl-pink/60 rounded-r" style={`width: ${(r.breakdown.fixtureDifficulty / maxScore) * 100}%`} title={`Fixtures: ${r.breakdown.fixtureDifficulty}`} />
+                  <div class="flex h-1.5 rounded-full overflow-hidden bg-white/5 gap-px">
+                    <div class="bg-emerald-400/50 rounded-l-full" style={`width: ${(r.breakdown.form / maxScore) * 100}%`} title={`Form: ${r.breakdown.form}`} />
+                    <div class="bg-cyan-400/50" style={`width: ${(r.breakdown.xGI / maxScore) * 100}%`} title={`xGI: ${r.breakdown.xGI}`} />
+                    <div class="bg-blue-400/50" style={`width: ${(r.breakdown.totalPoints / maxScore) * 100}%`} title={`Points: ${r.breakdown.totalPoints}`} />
+                    <div class="bg-rose-400/50 rounded-r-full" style={`width: ${(r.breakdown.fixtureDifficulty / maxScore) * 100}%`} title={`Fixtures: ${r.breakdown.fixtureDifficulty}`} />
                   </div>
-                  <div class="flex gap-4 mt-1 text-xs text-gray-500">
-                    <span class="text-fpl-green">Form</span>
-                    <span class="text-fpl-cyan">xGI</span>
-                    <span class="text-fpl-blue">Points</span>
-                    <span class="text-fpl-pink">Fixtures</span>
+                  <div class="flex gap-4 mt-2 text-xs text-slate-600">
+                    <span class="text-emerald-400/70">Form</span>
+                    <span class="text-cyan-400/70">xGI</span>
+                    <span class="text-blue-400/70">Points</span>
+                    <span class="text-rose-400/70">Fixtures</span>
                   </div>
                 </div>
               );

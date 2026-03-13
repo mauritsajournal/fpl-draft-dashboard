@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import LineChart from '../components/LineChart.svelte';
 import BenchAnalysis from '../components/BenchAnalysis.svelte';
 import WhatIfAnalysis from '../components/WhatIfAnalysis.svelte';
+import BumpChart from '../components/BumpChart.svelte';
 import EmptyState from '../components/EmptyState.astro';
 
 let dashboardData: any = null;
@@ -16,6 +17,7 @@ const managers = dashboardData?.managers ?? [];
 const standings = dashboardData?.standings ?? [];
 const benchAnalysis = dashboardData?.benchAnalysis ?? [];
 const whatIf = dashboardData?.whatIf ?? [];
+const creativeStats = dashboardData?.creativeStats;
 
 // Build manager name lookup
 const managerNames = new Map<number, string>();
@@ -23,8 +25,8 @@ for (const m of managers) {
   managerNames.set(m.leagueEntryId, m.playerName.split(' ')[0]);
 }
 
-// Position over time data
-const positionData = {
+// Position over time data (bump chart data)
+const bumpData = {
   labels: gwHistory.map((snap: any) => `GW${snap.gameweek}`),
   datasets: standings.map((s: any) => ({
     label: managerNames.get(s.leagueEntryId) ?? 'Unknown',
@@ -76,38 +78,49 @@ const benchChartData = benchAnalysis.length > 0 ? {
 <Layout title="Trends — FC Driegangendiner">
   {gwHistory.length > 0 ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">Gameweek Trends</h1>
-        <p class="text-gray-400 text-sm">How positions and points have evolved over the season</p>
+      <div class="mb-10 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">Gameweek Trends</h1>
+        <p class="text-slate-400 text-sm mt-2">How positions and points have evolved over the season</p>
       </div>
 
-      <div class="space-y-8">
-        <LineChart
+      <!-- Season Timeline / Bump Chart -->
+      <div class="mb-12 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">Season Timeline</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
+        <p class="text-sm text-slate-500 mb-4">Rank changes over the season -- the most telling visualization of the league's story</p>
+        <BumpChart
           client:visible
-          data={JSON.stringify(positionData)}
-          title="League Position Over Time"
-          yReverse={true}
+          data={JSON.stringify(bumpData)}
         />
+      </div>
 
-        <LineChart
-          client:visible
-          data={JSON.stringify(cumulativeData)}
-          title="Cumulative Points"
-        />
+      <div class="space-y-12">
+        <div class="animate-fade-in-up">
+          <LineChart
+            client:visible
+            data={JSON.stringify(cumulativeData)}
+            title="Cumulative Points"
+          />
+        </div>
 
-        <LineChart
-          client:visible
-          data={JSON.stringify(gwPointsData)}
-          title="Points Per Gameweek"
-        />
+        <div class="animate-fade-in-up">
+          <LineChart
+            client:visible
+            data={JSON.stringify(gwPointsData)}
+            title="Points Per Gameweek"
+          />
+        </div>
       </div>
 
       {benchChartData && (
-        <div class="mt-12">
-          <div class="mb-8">
-            <h2 class="text-2xl font-bold text-fpl-green mb-1">Bench Analysis</h2>
-            <p class="text-gray-400 text-sm">Points left on the bench each gameweek</p>
+        <div class="mt-12 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Bench Analysis</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
           </div>
+          <p class="text-slate-400 text-sm mb-4">Points left on the bench each gameweek</p>
           <BenchAnalysis
             client:visible
             data={JSON.stringify(benchChartData)}
@@ -116,11 +129,12 @@ const benchChartData = benchAnalysis.length > 0 ? {
       )}
 
       {whatIf.length > 0 && (
-        <div class="mt-12">
-          <div class="mb-8">
-            <h2 class="text-2xl font-bold text-fpl-green mb-1">Fixture Luck Analysis</h2>
-            <p class="text-gray-400 text-sm">What if every manager played every other manager's schedule?</p>
+        <div class="mt-12 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Fixture Luck Analysis</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
           </div>
+          <p class="text-slate-400 text-sm mb-4">What if every manager played every other manager's schedule?</p>
           <WhatIfAnalysis
             client:visible
             data={JSON.stringify(whatIf)}

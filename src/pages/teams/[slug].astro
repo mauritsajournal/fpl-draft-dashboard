@@ -28,6 +28,7 @@ try {
 const standings = dashboardData?.standings ?? [];
 const playerStats = dashboardData?.playerStats ?? [];
 const benchAnalysis = dashboardData?.benchAnalysis ?? [];
+const creativeStats = dashboardData?.creativeStats;
 
 const standing = standings.find((s: any) => s.leagueEntryId === manager.leagueEntryId);
 const roster = playerStats
@@ -36,115 +37,198 @@ const roster = playerStats
 
 const bench = benchAnalysis.find((b: any) => b.leagueEntryId === manager.leagueEntryId);
 
+// Find manager-specific creative stats
+const managerLuck = creativeStats?.luckIndex?.find((l: any) => l.leagueEntryId === manager.leagueEntryId);
+const managerConsistency = creativeStats?.consistencyScores?.find((c: any) => c.leagueEntryId === manager.leagueEntryId);
+const managerClutch = creativeStats?.clutchScores?.find((c: any) => c.leagueEntryId === manager.leagueEntryId);
+const managerStreak = creativeStats?.streaks?.find((s: any) => s.leagueEntryId === manager.leagueEntryId);
+const managerPositional = creativeStats?.positionalBreakdown?.find((p: any) => p.leagueEntryId === manager.leagueEntryId);
+
 const positions = ['GK', 'DEF', 'MID', 'FWD'];
 const positionColors: Record<string, string> = {
-  GK: 'bg-yellow-900/30 text-yellow-300 border-yellow-700/30',
-  DEF: 'bg-blue-900/30 text-blue-300 border-blue-700/30',
-  MID: 'bg-green-900/30 text-green-300 border-green-700/30',
-  FWD: 'bg-red-900/30 text-red-300 border-red-700/30',
+  GK: 'bg-amber-500/10 text-amber-300 border-amber-500/15',
+  DEF: 'bg-blue-500/10 text-blue-300 border-blue-500/15',
+  MID: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/15',
+  FWD: 'bg-rose-500/10 text-rose-300 border-rose-500/15',
 };
 ---
 
 <Layout title={`${manager.teamName} — FC Driegangendiner`}>
-  <div class="mb-6">
-    <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}teams/`} class="text-sm text-gray-400 hover:text-fpl-green mb-2 inline-block">&larr; All Teams</a>
-    <div class="flex flex-col sm:flex-row justify-between items-start gap-4">
+  <div class="mb-8 animate-fade-in-up">
+    <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}teams/`} class="text-sm text-slate-500 hover:text-emerald-400 mb-3 inline-flex items-center gap-1 no-underline transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      All Teams
+    </a>
+    <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mt-2">
       <div>
-        <h1 class="text-2xl font-bold text-white">{manager.teamName}</h1>
-        <p class="text-gray-400">{manager.playerName}</p>
+        <h1 class="text-3xl font-extrabold text-white">{manager.teamName}</h1>
+        <p class="text-slate-400 mt-1">{manager.playerName}</p>
       </div>
-      <div class="flex gap-4 text-center">
+      <div class="flex gap-5 text-center">
         <div>
-          <div class="text-2xl font-bold text-fpl-cyan">{standing?.rank ?? '?'}</div>
-          <div class="text-xs text-gray-500">Rank</div>
+          <div class:list={[
+            'text-3xl font-extrabold tabular-nums',
+            (standing?.rank ?? 99) <= 3 ? 'text-amber-400' : 'text-fpl-cyan'
+          ]}>{standing?.rank ?? '?'}</div>
+          <div class="text-xs text-slate-600">Rank</div>
         </div>
         <div>
-          <div class="text-2xl font-bold text-white">{manager.totalPoints}</div>
-          <div class="text-xs text-gray-500">Total Pts</div>
+          <div class="text-3xl font-extrabold text-white tabular-nums">{manager.totalPoints}</div>
+          <div class="text-xs text-slate-600">Total Pts</div>
         </div>
         <div>
-          <div class="text-2xl font-bold text-fpl-green">{manager.leaguePoints}</div>
-          <div class="text-xs text-gray-500">League Pts</div>
+          <div class="text-3xl font-extrabold text-emerald-400 tabular-nums">{manager.leaguePoints}</div>
+          <div class="text-xs text-slate-600">League Pts</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Stats Grid -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-    <div class="bg-fpl-card rounded-lg p-3 border border-white/5 text-center">
-      <div class="text-lg font-bold text-green-400">{manager.wins}</div>
-      <div class="text-xs text-gray-500">Wins</div>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 animate-fade-in-up">
+    <div class="glass-card-sm p-4 text-center">
+      <div class="text-2xl font-extrabold text-emerald-400 tabular-nums">{manager.wins}</div>
+      <div class="text-xs text-slate-600">Wins</div>
     </div>
-    <div class="bg-fpl-card rounded-lg p-3 border border-white/5 text-center">
-      <div class="text-lg font-bold text-gray-400">{manager.draws}</div>
-      <div class="text-xs text-gray-500">Draws</div>
+    <div class="glass-card-sm p-4 text-center">
+      <div class="text-2xl font-extrabold text-slate-400 tabular-nums">{manager.draws}</div>
+      <div class="text-xs text-slate-600">Draws</div>
     </div>
-    <div class="bg-fpl-card rounded-lg p-3 border border-white/5 text-center">
-      <div class="text-lg font-bold text-red-400">{manager.losses}</div>
-      <div class="text-xs text-gray-500">Losses</div>
+    <div class="glass-card-sm p-4 text-center">
+      <div class="text-2xl font-extrabold text-rose-400 tabular-nums">{manager.losses}</div>
+      <div class="text-xs text-slate-600">Losses</div>
     </div>
-    <div class="bg-fpl-card rounded-lg p-3 border border-white/5 text-center">
-      <div class="text-lg font-bold text-white">{manager.averagePoints}</div>
-      <div class="text-xs text-gray-500">Avg/GW</div>
+    <div class="glass-card-sm p-4 text-center">
+      <div class="text-2xl font-extrabold text-white tabular-nums">{manager.averagePoints}</div>
+      <div class="text-xs text-slate-600">Avg/GW</div>
     </div>
   </div>
 
-  <!-- Best/Worst -->
-  <div class="grid grid-cols-2 gap-3 mb-8">
-    <div class="bg-fpl-card rounded-lg p-4 border border-white/5">
-      <div class="text-xs text-gray-500 mb-1">Best Gameweek</div>
-      <div class="text-xl font-bold text-green-400">{manager.bestGw.points} pts</div>
-      <div class="text-sm text-gray-400">GW{manager.bestGw.gw}</div>
+  <!-- Best/Worst + Extra Stats -->
+  <div class="grid grid-cols-2 gap-3 mb-8 animate-fade-in-up">
+    <div class="glass-card-sm p-4">
+      <div class="section-label mb-1">Best Gameweek</div>
+      <div class="text-2xl font-extrabold text-emerald-400 tabular-nums">{manager.bestGw.points} pts</div>
+      <div class="text-sm text-slate-500">GW{manager.bestGw.gw}</div>
     </div>
-    <div class="bg-fpl-card rounded-lg p-4 border border-white/5">
-      <div class="text-xs text-gray-500 mb-1">Worst Gameweek</div>
-      <div class="text-xl font-bold text-red-400">{manager.worstGw.points} pts</div>
-      <div class="text-sm text-gray-400">GW{manager.worstGw.gw}</div>
+    <div class="glass-card-sm p-4">
+      <div class="section-label mb-1">Worst Gameweek</div>
+      <div class="text-2xl font-extrabold text-rose-400 tabular-nums">{manager.worstGw.points} pts</div>
+      <div class="text-sm text-slate-500">GW{manager.worstGw.gw}</div>
     </div>
   </div>
+
+  <!-- Creative Stats for this manager -->
+  {(managerLuck || managerConsistency || managerClutch || managerStreak) && (
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 animate-fade-in-up">
+      {managerLuck && (
+        <div class="glass-card-sm p-4 text-center">
+          <div class="section-label mb-1">Luck Index</div>
+          <div class:list={[
+            'text-2xl font-extrabold tabular-nums',
+            managerLuck.luckScore > 0 ? 'text-emerald-400' : managerLuck.luckScore < 0 ? 'text-rose-400' : 'text-slate-400'
+          ]}>
+            {managerLuck.luckScore > 0 ? '+' : ''}{managerLuck.luckScore}
+          </div>
+        </div>
+      )}
+      {managerConsistency && (
+        <div class="glass-card-sm p-4 text-center">
+          <div class="section-label mb-1">Consistency</div>
+          <div class="text-sm font-bold text-fpl-cyan">{managerConsistency.label}</div>
+          <div class="text-xs text-slate-500 mt-0.5">SD: {managerConsistency.stdDev.toFixed(1)}</div>
+        </div>
+      )}
+      {managerClutch && (
+        <div class="glass-card-sm p-4 text-center">
+          <div class="section-label mb-1">Clutch Score</div>
+          <div class="text-2xl font-extrabold text-amber-400 tabular-nums">{managerClutch.closeWinPct.toFixed(0)}%</div>
+          <div class="text-xs text-slate-500">{managerClutch.label}</div>
+        </div>
+      )}
+      {managerStreak && (
+        <div class="glass-card-sm p-4 text-center">
+          <div class="section-label mb-1">Current Streak</div>
+          <div class:list={[
+            'text-2xl font-extrabold tabular-nums',
+            managerStreak.currentStreak > 0 ? 'text-emerald-400' : managerStreak.currentStreak < 0 ? 'text-rose-400' : 'text-slate-400'
+          ]}>
+            {managerStreak.currentStreak > 0 ? `${managerStreak.currentStreak}W` : managerStreak.currentStreak < 0 ? `${Math.abs(managerStreak.currentStreak)}L` : '0'}
+          </div>
+        </div>
+      )}
+    </div>
+  )}
 
   {bench && (
-    <div class="bg-fpl-card rounded-lg p-4 border border-white/5 mb-8">
-      <div class="text-xs text-gray-500 mb-1">Bench Points (Season Total)</div>
-      <div class="text-xl font-bold text-fpl-pink">{bench.totalBenchPoints} pts left on bench</div>
+    <div class="glass-card-sm p-4 mb-8 animate-fade-in-up">
+      <div class="section-label mb-1">Bench Points (Season Total)</div>
+      <div class="text-2xl font-extrabold text-rose-400 tabular-nums">{bench.totalBenchPoints} pts left on bench</div>
+    </div>
+  )}
+
+  <!-- Positional Breakdown -->
+  {managerPositional && (
+    <div class="mb-8 animate-fade-in-up">
+      <div class="flex items-center gap-3 mb-4">
+        <h2 class="text-xl font-bold text-white">Points by Position</h2>
+        <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+      </div>
+      <div class="grid grid-cols-4 gap-3">
+        {positions.map((pos) => {
+          const data = managerPositional.positions?.[pos];
+          if (!data) return null;
+          return (
+            <div class:list={['glass-card-sm p-4 text-center border', positionColors[pos]]}>
+              <div class="text-xs font-semibold uppercase tracking-wider mb-1">{pos}</div>
+              <div class="text-xl font-extrabold text-white tabular-nums">{data.totalPoints}</div>
+              <div class="text-xs text-slate-500 mt-0.5">avg {data.avgPoints.toFixed(1)}/GW</div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   )}
 
   <!-- Squad by Position -->
-  <h2 class="text-xl font-bold text-white mb-4">Squad ({roster.length} players)</h2>
-  {positions.map((pos) => {
-    const posPlayers = roster.filter((p: any) => p.position === pos);
-    if (posPlayers.length === 0) return null;
-    return (
-      <div class="mb-6">
-        <h3 class={`text-sm font-bold mb-2 ${positionColors[pos]?.split(' ')[1] ?? 'text-gray-400'}`}>
-          {pos === 'GK' ? 'Goalkeepers' : pos === 'DEF' ? 'Defenders' : pos === 'MID' ? 'Midfielders' : 'Forwards'}
-        </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-          {posPlayers.map((p: any) => (
-            <div class={`rounded-lg p-3 border ${positionColors[pos]}`}>
-              <div class="flex justify-between items-start">
-                <div>
-                  <div class="font-bold text-white text-sm">{p.webName}</div>
-                  <div class="text-xs text-gray-400">{p.team}</div>
+  <div class="animate-fade-in-up">
+    <div class="flex items-center gap-3 mb-4">
+      <h2 class="text-xl font-bold text-white">Squad ({roster.length} players)</h2>
+      <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+    </div>
+    {positions.map((pos) => {
+      const posPlayers = roster.filter((p: any) => p.position === pos);
+      if (posPlayers.length === 0) return null;
+      return (
+        <div class="mb-6">
+          <h3 class={`text-sm font-bold mb-3 ${positionColors[pos]?.split(' ')[1] ?? 'text-slate-400'}`}>
+            {pos === 'GK' ? 'Goalkeepers' : pos === 'DEF' ? 'Defenders' : pos === 'MID' ? 'Midfielders' : 'Forwards'}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {posPlayers.map((p: any) => (
+              <div class={`glass-card-sm p-3 border ${positionColors[pos]}`}>
+                <div class="flex justify-between items-start">
+                  <div>
+                    <div class="font-bold text-white text-sm">{p.webName}</div>
+                    <div class="text-xs text-slate-500">{p.team}</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="font-extrabold text-fpl-cyan tabular-nums">{p.totalPoints}</div>
+                    <div class="text-xs text-slate-600">pts</div>
+                  </div>
                 </div>
-                <div class="text-right">
-                  <div class="font-bold text-fpl-cyan">{p.totalPoints}</div>
-                  <div class="text-xs text-gray-500">pts</div>
+                <div class="flex gap-3 mt-2 text-xs text-slate-500">
+                  <span>{p.goalsScored}G</span>
+                  <span>{p.assists}A</span>
+                  <span>xG:{p.xG.toFixed(1)}</span>
+                  <span>xA:{p.xA.toFixed(1)}</span>
+                  <span>Form:{p.form.toFixed(1)}</span>
                 </div>
               </div>
-              <div class="flex gap-3 mt-2 text-xs text-gray-400">
-                <span>{p.goalsScored}G</span>
-                <span>{p.assists}A</span>
-                <span>xG:{p.xG.toFixed(1)}</span>
-                <span>xA:{p.xA.toFixed(1)}</span>
-                <span>Form:{p.form.toFixed(1)}</span>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    );
-  })}
+      );
+    })}
+  </div>
 </Layout>

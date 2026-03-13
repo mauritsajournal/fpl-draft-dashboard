@@ -18,6 +18,7 @@ const h2hMatrix = dashboardData?.h2hMatrix ?? [];
 const managers = dashboardData?.managers ?? [];
 const standings = dashboardData?.standings ?? [];
 const currentGw = dashboardData?.meta?.currentGameweek ?? 1;
+const creativeStats = dashboardData?.creativeStats;
 
 // Build manager name lookup
 const managerNames = new Map<number, string>();
@@ -45,14 +46,10 @@ for (const rec of h2hMatrix) {
 }
 
 function getCellColor(wins: number, losses: number): string {
-  if (wins > losses) return 'bg-green-900/40 text-green-300';
-  if (losses > wins) return 'bg-red-900/40 text-red-300';
-  return 'bg-gray-800/40 text-gray-300';
+  if (wins > losses) return 'bg-emerald-500/10 text-emerald-300';
+  if (losses > wins) return 'bg-rose-500/10 text-rose-300';
+  return 'bg-white/5 text-slate-300';
 }
-
-// Pass data to client as JSON for the comparison feature
-const h2hJson = JSON.stringify(h2hMatrix);
-const managersJson = JSON.stringify(managers);
 
 // Build GW matchup data for the slider
 const gwMatchups = (leagueData?.matches ?? [])
@@ -73,20 +70,26 @@ const gwMatchups = (leagueData?.matches ?? [])
       winner: m.winning_league_entry,
     };
   });
+
+// Rivalry data
+const rivalryData = creativeStats?.rivalryMatrix ?? [];
 ---
 
 <Layout title="Head-to-Head — FC Driegangendiner">
   {dashboardData ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">Head-to-Head Records</h1>
-        <p class="text-gray-400 text-sm">All-time H2H records between managers</p>
+      <div class="mb-10 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">Head-to-Head Records</h1>
+        <p class="text-slate-400 text-sm mt-2">All-time H2H records between managers</p>
       </div>
 
       <!-- GW Matchup Results -->
       {gwMatchups.length > 0 && (
-        <div class="mb-10">
-          <h2 class="text-xl font-bold text-white mb-4">Gameweek Results</h2>
+        <div class="mb-12 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Gameweek Results</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
           <GameweekMatchups
             client:visible
             matches={JSON.stringify(gwMatchups)}
@@ -95,93 +98,183 @@ const gwMatchups = (leagueData?.matches ?? [])
         </div>
       )}
 
-      <!-- H2H Matrix -->
-      <div class="overflow-x-auto mb-10">
-        <table class="text-xs sm:text-sm">
-          <thead>
-            <tr>
-              <th class="p-2 text-left text-gray-400 sticky left-0 bg-fpl-dark z-10">vs</th>
-              {orderedIds.map((id: number) => (
-                <th class="p-2 text-center text-gray-400 min-w-[70px]">
-                  {managerNames.get(id)}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {orderedIds.map((rowId: number) => (
-              <tr class="border-b border-white/5">
-                <td class="p-2 font-medium text-white sticky left-0 bg-fpl-dark z-10 whitespace-nowrap">
-                  {managerNames.get(rowId)}
-                </td>
-                {orderedIds.map((colId: number) => {
-                  if (rowId === colId) {
-                    return <td class="p-2 text-center bg-white/5 text-gray-600">-</td>;
-                  }
-                  const rec = h2hLookup.get(`${rowId}-${colId}`);
-                  if (!rec) return <td class="p-2 text-center">?</td>;
-                  return (
-                    <td class={`p-2 text-center rounded ${getCellColor(rec.wins, rec.losses)}`}>
-                      <div class="font-bold">{rec.wins}-{rec.draws}-{rec.losses}</div>
-                    </td>
-                  );
-                })}
-              </tr>
+      <!-- H2H Streaks -->
+      {creativeStats?.streaks && creativeStats.streaks.length > 0 && (
+        <div class="mb-12 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Win/Loss Streaks</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {creativeStats.streaks.map((s: any) => (
+              <div class="glass-card-sm p-4">
+                <div class="text-sm font-semibold text-white">{s.playerName.split(' ')[0]}</div>
+                <div class="flex items-center gap-3 mt-2">
+                  <div>
+                    <div class="text-xs text-slate-500">Current</div>
+                    <div class:list={[
+                      'text-lg font-bold tabular-nums',
+                      s.currentStreak > 0 ? 'text-emerald-400' : s.currentStreak < 0 ? 'text-rose-400' : 'text-slate-400'
+                    ]}>
+                      {s.currentStreak > 0 ? `${s.currentStreak}W` : s.currentStreak < 0 ? `${Math.abs(s.currentStreak)}L` : '0'}
+                    </div>
+                  </div>
+                  <div class="h-8 w-px bg-white/10"></div>
+                  <div>
+                    <div class="text-xs text-slate-500">Best</div>
+                    <div class="text-lg font-bold text-emerald-400 tabular-nums">{s.longestWinStreak}W</div>
+                  </div>
+                  <div class="h-8 w-px bg-white/10"></div>
+                  <div>
+                    <div class="text-xs text-slate-500">Worst</div>
+                    <div class="text-lg font-bold text-rose-400 tabular-nums">{s.longestLossStreak}L</div>
+                  </div>
+                </div>
+                {(s.currentStreak >= 3 || s.currentStreak <= -3) && (
+                  <div class:list={[
+                    'text-xs font-semibold mt-2 px-2 py-0.5 rounded-full inline-block',
+                    s.currentStreak >= 3 ? 'bg-emerald-500/15 text-emerald-400' : 'bg-rose-500/15 text-rose-400'
+                  ]}>
+                    {s.currentStreak >= 3 ? 'HOT STREAK' : 'COLD STREAK'}
+                  </div>
+                )}
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
+      )}
+
+      <!-- H2H Matrix -->
+      <div class="mb-12 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">H2H Matrix</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
+        <div class="glass-card overflow-x-auto">
+          <table class="text-xs sm:text-sm">
+            <thead>
+              <tr>
+                <th class="p-3 text-left text-slate-500 sticky left-0 bg-[#0d1020] z-10 font-medium">vs</th>
+                {orderedIds.map((id: number) => (
+                  <th class="p-3 text-center text-slate-500 min-w-[70px] font-medium">
+                    {managerNames.get(id)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5">
+              {orderedIds.map((rowId: number) => (
+                <tr>
+                  <td class="p-3 font-semibold text-white sticky left-0 bg-[#0d1020] z-10 whitespace-nowrap">
+                    {managerNames.get(rowId)}
+                  </td>
+                  {orderedIds.map((colId: number) => {
+                    if (rowId === colId) {
+                      return <td class="p-3 text-center bg-white/[0.02] text-slate-700">-</td>;
+                    }
+                    const rec = h2hLookup.get(`${rowId}-${colId}`);
+                    if (!rec) return <td class="p-3 text-center">?</td>;
+                    return (
+                      <td class={`p-3 text-center rounded-lg ${getCellColor(rec.wins, rec.losses)}`}>
+                        <div class="font-bold tabular-nums">{rec.wins}-{rec.draws}-{rec.losses}</div>
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- Manager Comparison Section -->
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-4">Manager Comparison</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Rivalry Details -->
+      {rivalryData.length > 0 && (
+        <div class="mb-12 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="text-xl font-bold text-white">Rivalry Details</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {rivalryData.slice(0, 6).map((r: any) => (
+              <div class="glass-card-sm p-4">
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-sm font-semibold text-white">{r.managerAName.split(' ')[0]}</span>
+                  <span class="text-xs text-slate-500 font-mono">{r.record}</span>
+                  <span class="text-sm font-semibold text-white">{r.managerBName.split(' ')[0]}</span>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-xs text-center">
+                  <div>
+                    <div class="text-slate-500">Biggest Win</div>
+                    <div class="text-emerald-400 font-mono font-semibold">{r.biggestWin ?? '--'}</div>
+                  </div>
+                  <div>
+                    <div class="text-slate-500">Closest</div>
+                    <div class="text-amber-400 font-mono font-semibold">{r.closestMatch ?? '--'}</div>
+                  </div>
+                  <div>
+                    <div class="text-slate-500">Pts Diff</div>
+                    <div class="text-fpl-cyan font-mono font-semibold">{r.pointsDiff > 0 ? '+' : ''}{r.pointsDiff}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Manager Comparison -->
+      <div class="mb-10 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">Manager Profiles</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           {managers
             .sort((a: any, b: any) => b.leaguePoints - a.leaguePoints)
-            .map((m: any) => (
-            <div class="bg-fpl-card rounded-lg p-5 border border-white/5">
-              <div class="flex justify-between items-start mb-3">
+            .map((m: any, i: number) => (
+            <div class:list={['glass-card-sm p-5 card-interactive animate-fade-in-up', `stagger-${i + 1}`]}>
+              <div class="flex justify-between items-start mb-4">
                 <div>
                   <h3 class="text-lg font-bold text-white">{m.playerName}</h3>
-                  <p class="text-sm text-gray-400">{m.teamName}</p>
+                  <p class="text-sm text-slate-500">{m.teamName}</p>
                 </div>
                 <div class="text-right">
-                  <div class="text-2xl font-bold text-fpl-cyan">{m.leaguePoints}</div>
-                  <div class="text-xs text-gray-500">league pts</div>
+                  <div class="text-3xl font-extrabold text-fpl-cyan tabular-nums">{m.leaguePoints}</div>
+                  <div class="text-xs text-slate-600">league pts</div>
                 </div>
               </div>
 
               <div class="grid grid-cols-3 gap-3 text-center text-sm">
                 <div>
-                  <div class="text-green-400 font-bold">{m.wins}</div>
-                  <div class="text-xs text-gray-500">Wins</div>
+                  <div class="text-emerald-400 font-bold tabular-nums">{m.wins}</div>
+                  <div class="text-xs text-slate-600">Wins</div>
                 </div>
                 <div>
-                  <div class="text-gray-400 font-bold">{m.draws}</div>
-                  <div class="text-xs text-gray-500">Draws</div>
+                  <div class="text-slate-400 font-bold tabular-nums">{m.draws}</div>
+                  <div class="text-xs text-slate-600">Draws</div>
                 </div>
                 <div>
-                  <div class="text-red-400 font-bold">{m.losses}</div>
-                  <div class="text-xs text-gray-500">Losses</div>
+                  <div class="text-rose-400 font-bold tabular-nums">{m.losses}</div>
+                  <div class="text-xs text-slate-600">Losses</div>
                 </div>
               </div>
 
-              <div class="mt-3 pt-3 border-t border-white/5 grid grid-cols-2 gap-3 text-sm">
+              <div class="mt-4 pt-4 border-t border-white/5 grid grid-cols-2 gap-3 text-sm">
                 <div>
-                  <span class="text-gray-500">Total pts:</span>
-                  <span class="text-white ml-1 font-medium">{m.totalPoints}</span>
+                  <span class="text-slate-600">Total pts:</span>
+                  <span class="text-white ml-1 font-semibold tabular-nums">{m.totalPoints}</span>
                 </div>
                 <div>
-                  <span class="text-gray-500">Avg/GW:</span>
-                  <span class="text-white ml-1 font-medium">{m.averagePoints}</span>
+                  <span class="text-slate-600">Avg/GW:</span>
+                  <span class="text-white ml-1 font-semibold tabular-nums">{m.averagePoints}</span>
                 </div>
                 <div>
-                  <span class="text-gray-500">Best GW:</span>
-                  <span class="text-green-400 ml-1 font-medium">{m.bestGw.points} (GW{m.bestGw.gw})</span>
+                  <span class="text-slate-600">Best GW:</span>
+                  <span class="text-emerald-400 ml-1 font-semibold tabular-nums">{m.bestGw.points} <span class="text-slate-600">(GW{m.bestGw.gw})</span></span>
                 </div>
                 <div>
-                  <span class="text-gray-500">Worst GW:</span>
-                  <span class="text-red-400 ml-1 font-medium">{m.worstGw.points} (GW{m.worstGw.gw})</span>
+                  <span class="text-slate-600">Worst GW:</span>
+                  <span class="text-rose-400 ml-1 font-semibold tabular-nums">{m.worstGw.points} <span class="text-slate-600">(GW{m.worstGw.gw})</span></span>
                 </div>
               </div>
             </div>

@@ -33,69 +33,82 @@ const baseUrl = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 <Layout title="Teams — FC Driegangendiner">
   {dashboardData ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">Teams</h1>
-        <p class="text-gray-400 text-sm">All 8 squads in FC Driegangendiner</p>
+      <div class="mb-10 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">Teams</h1>
+        <p class="text-slate-400 text-sm mt-2">All 8 squads in FC Driegangendiner</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         {managers
           .sort((a: any, b: any) => {
             const aStanding = standings.find((s: any) => s.leagueEntryId === a.leagueEntryId);
             const bStanding = standings.find((s: any) => s.leagueEntryId === b.leagueEntryId);
             return (aStanding?.rank ?? 99) - (bStanding?.rank ?? 99);
           })
-          .map((m: any) => {
+          .map((m: any, i: number) => {
             const standing = standings.find((s: any) => s.leagueEntryId === m.leagueEntryId);
             const roster = (teamRosters.get(m.leagueEntryId) ?? [])
               .sort((a: any, b: any) => a.positionId - b.positionId || b.totalPoints - a.totalPoints);
             const slug = slugify(m.teamName);
+            const rank = standing?.rank ?? 99;
 
             return (
-              <a href={`${baseUrl}teams/${slug}/`} class="block bg-fpl-card rounded-lg p-5 border border-white/5 hover:border-fpl-green/30 transition-colors no-underline">
+              <a href={`${baseUrl}teams/${slug}/`} class:list={[
+                'block glass-card-sm p-5 card-interactive no-underline animate-fade-in-up',
+                `stagger-${i + 1}`,
+                rank <= 3 && (rank === 1 ? 'rank-gold' : rank === 2 ? 'rank-silver' : 'rank-bronze')
+              ]}>
                 <div class="flex justify-between items-start mb-4">
                   <div>
-                    <div class="text-xs text-gray-500 uppercase">#{standing?.rank ?? '?'}</div>
+                    <span class:list={[
+                      'inline-flex items-center justify-center w-7 h-7 rounded-lg text-xs font-bold mb-2',
+                      rank === 1 ? 'bg-amber-400/15 text-amber-400' :
+                      rank === 2 ? 'bg-slate-300/15 text-slate-300' :
+                      rank === 3 ? 'bg-amber-600/15 text-amber-600' :
+                      'bg-white/5 text-slate-500'
+                    ]}>
+                      #{rank}
+                    </span>
                     <h2 class="text-lg font-bold text-white">{m.teamName}</h2>
-                    <p class="text-sm text-gray-400">{m.playerName}</p>
+                    <p class="text-sm text-slate-500">{m.playerName}</p>
                   </div>
                   <div class="text-right">
-                    <div class="text-2xl font-bold text-fpl-cyan">{m.totalPoints}</div>
-                    <div class="text-xs text-gray-500">total pts</div>
+                    <div class="text-3xl font-extrabold text-fpl-cyan tabular-nums">{m.totalPoints}</div>
+                    <div class="text-xs text-slate-600">total pts</div>
                   </div>
                 </div>
 
                 <div class="grid grid-cols-4 gap-2 text-center text-xs mb-4">
                   <div>
-                    <div class="text-green-400 font-bold">{m.wins}W</div>
+                    <div class="text-emerald-400 font-bold tabular-nums">{m.wins}W</div>
                   </div>
                   <div>
-                    <div class="text-gray-400 font-bold">{m.draws}D</div>
+                    <div class="text-slate-400 font-bold tabular-nums">{m.draws}D</div>
                   </div>
                   <div>
-                    <div class="text-red-400 font-bold">{m.losses}L</div>
+                    <div class="text-rose-400 font-bold tabular-nums">{m.losses}L</div>
                   </div>
                   <div>
-                    <div class="text-fpl-cyan font-bold">{m.leaguePoints}pts</div>
+                    <div class="text-fpl-cyan font-bold tabular-nums">{m.leaguePoints}pts</div>
                   </div>
                 </div>
 
                 <div class="border-t border-white/5 pt-3">
-                  <div class="text-xs text-gray-500 mb-2">Squad ({roster.length} players)</div>
+                  <div class="text-xs text-slate-600 mb-2">Squad ({roster.length} players)</div>
                   <div class="flex flex-wrap gap-1">
                     {roster.slice(0, 11).map((p: any) => (
                       <span class:list={[
-                        'text-xs px-1.5 py-0.5 rounded',
-                        p.position === 'GK' ? 'bg-yellow-900/30 text-yellow-300' :
-                        p.position === 'DEF' ? 'bg-blue-900/30 text-blue-300' :
-                        p.position === 'MID' ? 'bg-green-900/30 text-green-300' :
-                        'bg-red-900/30 text-red-300'
+                        'text-xs px-1.5 py-0.5 rounded-md',
+                        p.position === 'GK' ? 'bg-amber-500/10 text-amber-300' :
+                        p.position === 'DEF' ? 'bg-blue-500/10 text-blue-300' :
+                        p.position === 'MID' ? 'bg-emerald-500/10 text-emerald-300' :
+                        'bg-rose-500/10 text-rose-300'
                       ]}>
                         {p.webName}
                       </span>
                     ))}
                     {roster.length > 11 && (
-                      <span class="text-xs text-gray-500">+{roster.length - 11} bench</span>
+                      <span class="text-xs text-slate-600">+{roster.length - 11} bench</span>
                     )}
                   </div>
                 </div>

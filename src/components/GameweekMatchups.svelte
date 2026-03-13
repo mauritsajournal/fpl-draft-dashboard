@@ -23,7 +23,6 @@
   let currentGw = $state(maxGw);
 
   $effect(() => {
-    // keep currentGw in bounds
     if (currentGw < 1) currentGw = 1;
     if (currentGw > maxGw) currentGw = maxGw;
   });
@@ -41,13 +40,13 @@
 
 <div class="space-y-4">
   <!-- Slider -->
-  <div class="flex items-center gap-3 bg-fpl-card rounded-lg px-4 py-2 border border-white/5">
-    <span class="text-sm text-gray-400 whitespace-nowrap">Gameweek</span>
+  <div class="glass-card-sm flex items-center gap-3 px-4 py-3">
+    <span class="text-sm text-slate-400 whitespace-nowrap font-medium">Gameweek</span>
 
     <button
       onclick={prev}
       disabled={currentGw <= 1}
-      class="w-8 h-8 flex items-center justify-center rounded bg-fpl-surface text-white hover:bg-fpl-green hover:text-fpl-purple disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      class="w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-emerald-500/20 hover:text-emerald-400 disabled:opacity-20 disabled:cursor-not-allowed transition-all"
       aria-label="Previous gameweek"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,9 +60,9 @@
         min="1"
         max={maxGw}
         bind:value={currentGw}
-        class="flex-1 h-1.5 bg-fpl-surface rounded-full appearance-none cursor-pointer accent-fpl-green [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-fpl-green [&::-webkit-slider-thumb]:cursor-pointer"
+        class="flex-1 h-1 bg-white/10 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-400 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb]:shadow-emerald-400/30"
       />
-      <span class="text-lg font-bold text-fpl-green tabular-nums min-w-[3ch] text-center">
+      <span class="text-lg font-bold text-emerald-400 tabular-nums min-w-[3ch] text-center">
         {currentGw}
       </span>
     </div>
@@ -71,7 +70,7 @@
     <button
       onclick={next}
       disabled={currentGw >= maxGw}
-      class="w-8 h-8 flex items-center justify-center rounded bg-fpl-surface text-white hover:bg-fpl-green hover:text-fpl-purple disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      class="w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-emerald-500/20 hover:text-emerald-400 disabled:opacity-20 disabled:cursor-not-allowed transition-all"
       aria-label="Next gameweek"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,36 +82,36 @@
   <!-- Match Results -->
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     {#each gwMatches as match}
-      <div class="bg-fpl-card rounded-lg p-4 border border-white/5">
+      <div class="glass-card-sm p-4">
         <div class="flex items-center justify-between gap-2">
           <!-- Manager 1 -->
-          <div class="flex-1 text-left {match.entry1Points > match.entry2Points ? 'opacity-100' : 'opacity-60'}">
-            <div class="text-sm font-bold text-white">{match.entry1Name}</div>
-            <div class="text-xs text-gray-500">{match.entry1Team}</div>
+          <div class="flex-1 text-left {match.entry1Points > match.entry2Points ? 'opacity-100' : 'opacity-50'}">
+            <div class="text-sm font-semibold text-white">{match.entry1Name}</div>
+            <div class="text-xs text-slate-600">{match.entry1Team}</div>
           </div>
 
           <!-- Score -->
           <div class="flex items-center gap-2 px-3">
-            <span class="text-xl font-bold {match.entry1Points > match.entry2Points ? 'text-fpl-green' : match.entry1Points === match.entry2Points ? 'text-gray-400' : 'text-gray-500'}">
+            <span class="text-xl font-extrabold tabular-nums {match.entry1Points > match.entry2Points ? 'text-emerald-400' : match.entry1Points === match.entry2Points ? 'text-slate-400' : 'text-slate-600'}">
               {match.entry1Points}
             </span>
-            <span class="text-gray-600 text-xs">v</span>
-            <span class="text-xl font-bold {match.entry2Points > match.entry1Points ? 'text-fpl-green' : match.entry2Points === match.entry1Points ? 'text-gray-400' : 'text-gray-500'}">
+            <span class="text-slate-700 text-xs font-medium">v</span>
+            <span class="text-xl font-extrabold tabular-nums {match.entry2Points > match.entry1Points ? 'text-emerald-400' : match.entry2Points === match.entry1Points ? 'text-slate-400' : 'text-slate-600'}">
               {match.entry2Points}
             </span>
           </div>
 
           <!-- Manager 2 -->
-          <div class="flex-1 text-right {match.entry2Points > match.entry1Points ? 'opacity-100' : 'opacity-60'}">
-            <div class="text-sm font-bold text-white">{match.entry2Name}</div>
-            <div class="text-xs text-gray-500">{match.entry2Team}</div>
+          <div class="flex-1 text-right {match.entry2Points > match.entry1Points ? 'opacity-100' : 'opacity-50'}">
+            <div class="text-sm font-semibold text-white">{match.entry2Name}</div>
+            <div class="text-xs text-slate-600">{match.entry2Team}</div>
           </div>
         </div>
       </div>
     {/each}
 
     {#if gwMatches.length === 0}
-      <div class="col-span-full text-center py-8 text-gray-500">
+      <div class="col-span-full text-center py-8 text-slate-500">
         No matches found for Gameweek {currentGw}
       </div>
     {/if}

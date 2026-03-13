@@ -6,25 +6,79 @@
   --color-fpl-cyan: #04f5ff;
   --color-fpl-pink: #e90052;
   --color-fpl-blue: #2dbaff;
-  --color-fpl-dark: #1a1a2e;
-  --color-fpl-card: #16213e;
+  --color-fpl-dark: #0b0e1a;
+  --color-fpl-card: rgba(255, 255, 255, 0.05);
   --color-fpl-surface: #0f3460;
 }
 
 body {
-  @apply bg-fpl-dark text-white min-h-screen;
-  font-family: system-ui, -apple-system, sans-serif;
+  @apply text-white min-h-screen;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #0b0e1a 0%, #111633 40%, #0d1526 70%, #0b0e1a 100%);
+  background-attachment: fixed;
+}
+
+/* Ambient gradient orbs */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(120px);
+}
+
+body::before {
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+}
+
+body::after {
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+}
+
+/* Ensure content sits above the ambient orbs */
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 a {
   @apply text-fpl-cyan hover:text-fpl-green transition-colors;
 }
 
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card-sm {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Smooth reveal animation for cards and sections */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -33,7 +87,26 @@ a {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.3s ease-out both;
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }
+.stagger-7 { animation-delay: 0.35s; }
+.stagger-8 { animation-delay: 0.4s; }
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 135, 0.15);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(4, 245, 255, 0.15);
 }
 
 /* Details/summary styling */
@@ -57,21 +130,59 @@ details[open] summary::before {
   transform: rotate(90deg);
 }
 
+/* Table row hover */
+.table-row-hover {
+  transition: background-color 0.15s ease;
+}
+.table-row-hover:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Rank badge styles */
+.rank-gold { border-left: 3px solid #fbbf24; }
+.rank-silver { border-left: 3px solid #94a3b8; }
+.rank-bronze { border-left: 3px solid #d97706; }
+
 /* Scrollbar styling for dark theme */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-fpl-dark);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-fpl-surface);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-fpl-card);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Interactive card hover */
+.card-interactive {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-interactive:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Section label */
+.section-label {
+  @apply text-xs uppercase tracking-wider text-slate-500 font-medium;
+}
+
+/* Stat number */
+.stat-number {
+  @apply text-4xl font-bold tabular-nums;
 }

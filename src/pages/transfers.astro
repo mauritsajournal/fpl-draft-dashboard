@@ -31,79 +31,73 @@ for (const p of draftPicks) {
   picksByRound.set(p.round, existing);
 }
 
-// Accepted transactions only
 const acceptedTx = transactions.filter((t: any) => t.result === 'accepted');
 const rejectedTx = transactions.filter((t: any) => t.result === 'rejected');
 
-// Count by manager
 const txByManager = new Map<string, number>();
 for (const t of acceptedTx) {
   txByManager.set(t.managerName, (txByManager.get(t.managerName) ?? 0) + 1);
 }
 
-// Auto-pick count in draft
 const autoPicks = draftPicks.filter((p: any) => p.wasAuto).length;
 ---
 
 <Layout title="Transfers & Draft — FC Driegangendiner">
   {dashboardData ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">Transfers & Draft</h1>
-        <p class="text-gray-400 text-sm">
+      <div class="mb-10 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">Transfers & Draft</h1>
+        <p class="text-slate-400 text-sm mt-2">
           {acceptedTx.length} accepted transfers &middot; {rejectedTx.length} rejected &middot; {draftPicks.length} draft picks
         </p>
       </div>
 
-      <!-- Tabs -->
-      <div class="flex gap-4 mb-6 border-b border-white/10 pb-2">
-        <a href="#transfers" class="text-fpl-green font-bold text-sm border-b-2 border-fpl-green pb-2 no-underline">Transfers</a>
-        <a href="#draft" class="text-gray-400 hover:text-white text-sm pb-2 no-underline">Draft Recap</a>
-      </div>
-
       <!-- Transfer Activity by Manager -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 animate-fade-in-up">
         {[...txByManager.entries()]
           .sort((a, b) => b[1] - a[1])
-          .map(([name, count]) => (
-          <div class="bg-fpl-card rounded-lg p-3 border border-white/5 text-center">
-            <div class="text-lg font-bold text-fpl-cyan">{count}</div>
-            <div class="text-xs text-gray-400">{name.split(' ')[0]}</div>
+          .map(([name, count], i) => (
+          <div class:list={['glass-card-sm p-4 text-center animate-fade-in-up', `stagger-${i + 1}`]}>
+            <div class="text-2xl font-extrabold text-fpl-cyan tabular-nums">{count}</div>
+            <div class="text-xs text-slate-500 mt-1">{name.split(' ')[0]}</div>
           </div>
         ))}
       </div>
 
       <!-- Transfer Timeline -->
-      <div id="transfers" class="mb-12">
-        <h2 class="text-xl font-bold text-white mb-4">Transfer Timeline</h2>
+      <div id="transfers" class="mb-12 animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">Transfer Timeline</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
         {recentGws.map((gw) => {
           const gwTxs = txByGw.get(gw) ?? [];
           return (
             <div class="mb-6">
-              <h3 class="text-sm font-bold text-gray-400 mb-2 sticky top-0 bg-fpl-dark py-1 z-10">
+              <h3 class="text-sm font-bold text-slate-400 mb-2 sticky top-16 py-1 z-10" style="background: linear-gradient(135deg, #0b0e1a 0%, #111633 100%);">
                 Gameweek {gw}
-                <span class="text-gray-600 font-normal ml-2">({gwTxs.length} transfers)</span>
+                <span class="text-slate-600 font-normal ml-2">({gwTxs.length} transfers)</span>
               </h3>
-              <div class="space-y-1">
+              <div class="space-y-1.5">
                 {gwTxs.map((t: any) => (
                   <div class:list={[
-                    'flex items-center gap-3 px-3 py-2 rounded text-sm',
-                    t.result === 'accepted' ? 'bg-fpl-card' : 'bg-fpl-card/50 opacity-60'
+                    'flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm',
+                    t.result === 'accepted' ? 'glass-card-sm' : 'bg-white/[0.02] opacity-50'
                   ]}>
                     <span class:list={[
-                      'text-xs px-1.5 py-0.5 rounded font-medium',
-                      t.type === 'waiver' ? 'bg-purple-900/40 text-purple-300' : 'bg-blue-900/40 text-blue-300'
+                      'text-xs px-2 py-0.5 rounded-md font-semibold',
+                      t.type === 'waiver' ? 'bg-purple-500/15 text-purple-300' : 'bg-blue-500/15 text-blue-300'
                     ]}>
                       {t.type === 'waiver' ? 'W' : 'FA'}
                     </span>
-                    <span class="text-gray-400 w-24 truncate">{t.managerName.split(' ')[0]}</span>
-                    <span class="text-green-400">{t.playerIn}</span>
-                    <span class="text-gray-600">in</span>
-                    <span class="text-red-400">{t.playerOut}</span>
-                    <span class="text-gray-600">out</span>
+                    <span class="text-slate-400 w-24 truncate">{t.managerName.split(' ')[0]}</span>
+                    <span class="text-emerald-400 font-medium">{t.playerIn}</span>
+                    <span class="text-slate-700">in</span>
+                    <span class="text-rose-400">{t.playerOut}</span>
+                    <span class="text-slate-700">out</span>
                     <span class:list={[
-                      'ml-auto text-xs px-1.5 py-0.5 rounded',
-                      t.result === 'accepted' ? 'bg-green-900/40 text-green-300' : 'bg-red-900/40 text-red-300'
+                      'ml-auto text-xs px-2 py-0.5 rounded-md font-medium',
+                      t.result === 'accepted' ? 'bg-emerald-500/15 text-emerald-300' : 'bg-rose-500/15 text-rose-300'
                     ]}>
                       {t.result}
                     </span>
@@ -116,7 +110,7 @@ const autoPicks = draftPicks.filter((p: any) => p.wasAuto).length;
 
         {olderGws.length > 0 && (
           <details class="mt-4">
-            <summary class="cursor-pointer text-fpl-cyan hover:text-fpl-green text-sm font-medium py-2 px-3 bg-fpl-card rounded-lg border border-white/5">
+            <summary class="cursor-pointer text-fpl-cyan hover:text-fpl-green text-sm font-medium py-2.5 px-4 glass-card-sm">
               Show older gameweeks ({olderGws.length} more, {olderGws.reduce((sum, gw) => sum + (txByGw.get(gw)?.length ?? 0), 0)} transfers)
             </summary>
             <div class="mt-4">
@@ -124,30 +118,30 @@ const autoPicks = draftPicks.filter((p: any) => p.wasAuto).length;
                 const gwTxs = txByGw.get(gw) ?? [];
                 return (
                   <div class="mb-6">
-                    <h3 class="text-sm font-bold text-gray-400 mb-2 sticky top-0 bg-fpl-dark py-1 z-10">
+                    <h3 class="text-sm font-bold text-slate-400 mb-2 sticky top-16 py-1 z-10" style="background: linear-gradient(135deg, #0b0e1a 0%, #111633 100%);">
                       Gameweek {gw}
-                      <span class="text-gray-600 font-normal ml-2">({gwTxs.length} transfers)</span>
+                      <span class="text-slate-600 font-normal ml-2">({gwTxs.length} transfers)</span>
                     </h3>
-                    <div class="space-y-1">
+                    <div class="space-y-1.5">
                       {gwTxs.map((t: any) => (
                         <div class:list={[
-                          'flex items-center gap-3 px-3 py-2 rounded text-sm',
-                          t.result === 'accepted' ? 'bg-fpl-card' : 'bg-fpl-card/50 opacity-60'
+                          'flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm',
+                          t.result === 'accepted' ? 'glass-card-sm' : 'bg-white/[0.02] opacity-50'
                         ]}>
                           <span class:list={[
-                            'text-xs px-1.5 py-0.5 rounded font-medium',
-                            t.type === 'waiver' ? 'bg-purple-900/40 text-purple-300' : 'bg-blue-900/40 text-blue-300'
+                            'text-xs px-2 py-0.5 rounded-md font-semibold',
+                            t.type === 'waiver' ? 'bg-purple-500/15 text-purple-300' : 'bg-blue-500/15 text-blue-300'
                           ]}>
                             {t.type === 'waiver' ? 'W' : 'FA'}
                           </span>
-                          <span class="text-gray-400 w-24 truncate">{t.managerName.split(' ')[0]}</span>
-                          <span class="text-green-400">{t.playerIn}</span>
-                          <span class="text-gray-600">in</span>
-                          <span class="text-red-400">{t.playerOut}</span>
-                          <span class="text-gray-600">out</span>
+                          <span class="text-slate-400 w-24 truncate">{t.managerName.split(' ')[0]}</span>
+                          <span class="text-emerald-400 font-medium">{t.playerIn}</span>
+                          <span class="text-slate-700">in</span>
+                          <span class="text-rose-400">{t.playerOut}</span>
+                          <span class="text-slate-700">out</span>
                           <span class:list={[
-                            'ml-auto text-xs px-1.5 py-0.5 rounded',
-                            t.result === 'accepted' ? 'bg-green-900/40 text-green-300' : 'bg-red-900/40 text-red-300'
+                            'ml-auto text-xs px-2 py-0.5 rounded-md font-medium',
+                            t.result === 'accepted' ? 'bg-emerald-500/15 text-emerald-300' : 'bg-rose-500/15 text-rose-300'
                           ]}>
                             {t.result}
                           </span>
@@ -163,38 +157,43 @@ const autoPicks = draftPicks.filter((p: any) => p.wasAuto).length;
       </div>
 
       <!-- Draft Recap -->
-      <div id="draft">
-        <h2 class="text-xl font-bold text-white mb-2">Draft Recap</h2>
-        <p class="text-sm text-gray-400 mb-4">
+      <div id="draft" class="animate-fade-in-up">
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-white">Draft Recap</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">
           {draftPicks.length} picks across {picksByRound.size} rounds
           {autoPicks > 0 && ` (${autoPicks} auto-picks)`}
         </p>
 
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="text-gray-400 border-b border-white/10 text-left">
-                <th class="py-2 px-2">Round</th>
-                <th class="py-2 px-2">Pick</th>
-                <th class="py-2 px-2">Player</th>
-                <th class="py-2 px-2">Manager</th>
-                <th class="py-2 px-2 text-center">Auto</th>
-              </tr>
-            </thead>
-            <tbody>
-              {draftPicks.map((p: any) => (
-                <tr class="border-b border-white/5 hover:bg-white/5">
-                  <td class="py-2 px-2 text-gray-400">{p.round}</td>
-                  <td class="py-2 px-2 text-gray-400">{p.pick}</td>
-                  <td class="py-2 px-2 text-white font-medium">{p.playerName}</td>
-                  <td class="py-2 px-2 text-gray-300">{p.managerName}</td>
-                  <td class="py-2 px-2 text-center">
-                    {p.wasAuto && <span class="text-yellow-400 text-xs">AUTO</span>}
-                  </td>
+        <div class="glass-card overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="text-slate-500 border-b border-white/5 text-left">
+                  <th class="py-3 px-3 font-medium">Round</th>
+                  <th class="py-3 px-3 font-medium">Pick</th>
+                  <th class="py-3 px-3 font-medium">Player</th>
+                  <th class="py-3 px-3 font-medium">Manager</th>
+                  <th class="py-3 px-3 text-center font-medium">Auto</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                {draftPicks.map((p: any) => (
+                  <tr class="table-row-hover">
+                    <td class="py-2.5 px-3 text-slate-500 tabular-nums">{p.round}</td>
+                    <td class="py-2.5 px-3 text-slate-500 tabular-nums">{p.pick}</td>
+                    <td class="py-2.5 px-3 text-white font-semibold">{p.playerName}</td>
+                    <td class="py-2.5 px-3 text-slate-300">{p.managerName}</td>
+                    <td class="py-2.5 px-3 text-center">
+                      {p.wasAuto && <span class="text-amber-400 text-xs font-semibold bg-amber-400/10 px-1.5 py-0.5 rounded">AUTO</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </>

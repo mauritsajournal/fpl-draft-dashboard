@@ -16,48 +16,51 @@ const nextGw = currentGw + 1;
 <Layout title="Predictions — FC Driegangendiner">
   {dashboardData && predictions.length > 0 ? (
     <>
-      <div class="mb-8">
-        <h1 class="text-2xl font-bold text-fpl-green mb-1">GW{nextGw} Predictions</h1>
-        <p class="text-gray-400 text-sm">
+      <div class="mb-10 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">GW{nextGw} Predictions</h1>
+        <p class="text-slate-400 text-sm mt-2">
           Expected points based on player form, xG, and xA
         </p>
-        <p class="text-xs text-fpl-pink mt-1">
-          Disclaimer: these are rough estimates based on historical performance, not a prediction model.
+        <p class="text-xs text-rose-400/70 mt-1">
+          Disclaimer: rough estimates based on historical performance, not a prediction model.
         </p>
       </div>
 
-      <!-- Prediction Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 animate-fade-in-up">
         {predictions.map((pred: any, i: number) => (
-          <div class="bg-fpl-card rounded-lg p-5 border border-white/5">
+          <div class:list={[
+            'glass-card-sm p-5 card-interactive animate-fade-in-up',
+            `stagger-${i + 1}`,
+            i === 0 && 'glow-cyan'
+          ]}>
             <div class="flex justify-between items-start mb-3">
               <div>
-                <div class="text-xs text-gray-500">#{i + 1}</div>
+                <div class="section-label mb-1">#{i + 1}</div>
                 <h3 class="text-lg font-bold text-white">{pred.teamName}</h3>
-                <p class="text-sm text-gray-400">{pred.playerName}</p>
+                <p class="text-sm text-slate-500">{pred.playerName}</p>
               </div>
               <div class="text-right">
-                <div class="text-3xl font-bold text-fpl-cyan">{pred.predictedPoints.toFixed(0)}</div>
-                <div class="text-xs text-gray-500">expected pts</div>
+                <div class="text-4xl font-extrabold text-fpl-cyan tabular-nums">{pred.predictedPoints.toFixed(0)}</div>
+                <div class="text-xs text-slate-600">expected pts</div>
               </div>
             </div>
 
             {pred.opponent && (
-              <div class="text-sm text-gray-400 mb-3">
-                vs <span class="text-white">{pred.opponent.teamName}</span>
+              <div class="text-sm text-slate-400 mb-3">
+                vs <span class="text-white font-medium">{pred.opponent.teamName}</span>
               </div>
             )}
 
             <div class="border-t border-white/5 pt-3">
-              <div class="text-xs text-gray-500 mb-2">Top contributors</div>
-              <div class="space-y-1">
+              <div class="section-label mb-2">Top contributors</div>
+              <div class="space-y-1.5">
                 {pred.playerBreakdown
                   .sort((a: any, b: any) => b.expectedPoints - a.expectedPoints)
                   .slice(0, 5)
                   .map((p: any) => (
                   <div class="flex justify-between text-xs">
-                    <span class="text-gray-300">{p.playerName}</span>
-                    <span class="text-fpl-cyan font-medium">{p.expectedPoints.toFixed(1)}</span>
+                    <span class="text-slate-300">{p.playerName}</span>
+                    <span class="text-fpl-cyan font-semibold tabular-nums">{p.expectedPoints.toFixed(1)}</span>
                   </div>
                 ))}
               </div>

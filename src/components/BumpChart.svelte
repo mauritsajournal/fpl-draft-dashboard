@@ -9,7 +9,6 @@
     CategoryScale,
     Tooltip,
     Legend,
-    Filler,
   } from 'chart.js';
 
   Chart.register(
@@ -19,17 +18,14 @@
     LinearScale,
     CategoryScale,
     Tooltip,
-    Legend,
-    Filler
+    Legend
   );
 
   interface Props {
     data: string;
-    title?: string;
-    yReverse?: boolean;
   }
 
-  let { data, title = '', yReverse = false }: Props = $props();
+  let { data }: Props = $props();
   let canvas: HTMLCanvasElement;
   let chart: Chart | null = $state(null);
 
@@ -49,14 +45,15 @@
           label: ds.label,
           data: ds.data,
           borderColor: COLORS[i % COLORS.length],
-          backgroundColor: COLORS[i % COLORS.length] + '15',
-          borderWidth: 2.5,
-          pointRadius: 0,
-          pointHoverRadius: 6,
-          pointHoverBorderWidth: 2,
+          backgroundColor: COLORS[i % COLORS.length],
+          borderWidth: 3,
+          pointRadius: 4,
+          pointHoverRadius: 8,
+          pointBorderWidth: 2,
+          pointBorderColor: '#0b0e1a',
           pointHoverBorderColor: '#fff',
-          pointHoverBackgroundColor: COLORS[i % COLORS.length],
-          tension: 0.3,
+          pointHoverBorderWidth: 2,
+          tension: 0.35,
           fill: false,
         })),
       },
@@ -75,7 +72,7 @@
               boxWidth: 10,
               boxHeight: 10,
               padding: 16,
-              font: { size: 11, family: 'Inter, system-ui, sans-serif' },
+              font: { size: 12, family: 'Inter, system-ui, sans-serif', weight: 'bold' as any },
               usePointStyle: true,
               pointStyle: 'circle',
             },
@@ -86,10 +83,15 @@
             bodyColor: '#94a3b8',
             borderColor: 'rgba(255, 255, 255, 0.1)',
             borderWidth: 1,
-            padding: 12,
+            padding: 14,
             cornerRadius: 8,
-            titleFont: { size: 12, weight: 'bold' as const, family: 'Inter, system-ui, sans-serif' },
-            bodyFont: { size: 11, family: 'Inter, system-ui, sans-serif' },
+            titleFont: { size: 13, weight: 'bold' as const, family: 'Inter, system-ui, sans-serif' },
+            bodyFont: { size: 12, family: 'Inter, system-ui, sans-serif' },
+            callbacks: {
+              label: function(ctx: any) {
+                return `${ctx.dataset.label}: #${ctx.parsed.y}`;
+              },
+            },
           },
         },
         scales: {
@@ -99,8 +101,17 @@
             border: { color: 'rgba(255, 255, 255, 0.05)' },
           },
           y: {
-            reverse: yReverse,
-            ticks: { color: '#475569', font: { size: 10, family: 'Inter, system-ui, sans-serif' } },
+            reverse: true,
+            min: 1,
+            max: 8,
+            ticks: {
+              stepSize: 1,
+              color: '#475569',
+              font: { size: 11, family: 'Inter, system-ui, sans-serif' },
+              callback: function(value: any) {
+                return '#' + value;
+              },
+            },
             grid: { color: 'rgba(255, 255, 255, 0.03)' },
             border: { color: 'rgba(255, 255, 255, 0.05)' },
           },
@@ -114,15 +125,12 @@
   });
 </script>
 
-{#if title}
-  <h3 class="text-lg font-bold text-white mb-3">{title}</h3>
-{/if}
-<div class="glass-card p-5 relative" style="height: 420px">
+<div class="glass-card p-5 relative" style="height: 480px">
   {#if !chart}
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="flex flex-col items-center gap-3">
         <div class="w-8 h-8 border-2 border-emerald-500/30 border-t-emerald-500 rounded-full animate-spin"></div>
-        <span class="text-sm text-slate-500">Loading chart...</span>
+        <span class="text-sm text-slate-500">Loading bump chart...</span>
       </div>
     </div>
   {/if}
