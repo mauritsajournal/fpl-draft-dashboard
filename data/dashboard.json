@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-19T19:42:36.043Z",
+    "lastUpdated": "2026-03-20T03:27:40.393Z",
     "currentGameweek": 30,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -4985,28 +4985,6 @@
       "bonus": 10
     },
     {
-      "id": 121,
-      "webName": "Damsgaard",
-      "firstName": "Mikkel",
-      "lastName": "Damsgaard",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Brentford",
-      "teamId": 5,
-      "owner": "Salomon van Megen",
-      "ownerLeagueEntryId": 34059,
-      "totalPoints": 87,
-      "form": 6,
-      "goalsScored": 3,
-      "assists": 4,
-      "xG": 1.85,
-      "xA": 4.13,
-      "xGI": 5.98,
-      "minutes": 1566,
-      "cleanSheets": 3,
-      "bonus": 6
-    },
-    {
       "id": 110,
       "webName": "Kayode",
       "firstName": "Michael",
@@ -5293,6 +5271,28 @@
       "bonus": 6
     },
     {
+      "id": 54,
+      "webName": "McGinn",
+      "firstName": "John",
+      "lastName": "McGinn",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": "Salomon van Megen",
+      "ownerLeagueEntryId": 34059,
+      "totalPoints": 73,
+      "form": 0.5,
+      "goalsScored": 3,
+      "assists": 2,
+      "xG": 2.58,
+      "xA": 2.21,
+      "xGI": 4.79,
+      "minutes": 1651,
+      "cleanSheets": 7,
+      "bonus": 4
+    },
+    {
       "id": 526,
       "webName": "Igor Jesus",
       "firstName": "Igor Jesus",
@@ -5334,6 +5334,28 @@
       "xGI": 1.59,
       "minutes": 1951,
       "cleanSheets": 6,
+      "bonus": 4
+    },
+    {
+      "id": 473,
+      "webName": "Hall",
+      "firstName": "Lewis",
+      "lastName": "Hall",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": "Salomon van Megen",
+      "ownerLeagueEntryId": 34059,
+      "totalPoints": 71,
+      "form": 3.8,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 0.73,
+      "xA": 2.02,
+      "xGI": 2.75,
+      "minutes": 1659,
+      "cleanSheets": 4,
       "bonus": 4
     },
     {
@@ -5401,28 +5423,6 @@
       "minutes": 1151,
       "cleanSheets": 5,
       "bonus": 6
-    },
-    {
-      "id": 714,
-      "webName": "A.Jimenez",
-      "firstName": "Álex",
-      "lastName": "Jiménez Sánchez",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Salomon van Megen",
-      "ownerLeagueEntryId": 34059,
-      "totalPoints": 64,
-      "form": 4.2,
-      "goalsScored": 1,
-      "assists": 2,
-      "xG": 1.04,
-      "xA": 1.53,
-      "xGI": 2.57,
-      "minutes": 1884,
-      "cleanSheets": 5,
-      "bonus": 2
     },
     {
       "id": 718,
@@ -6351,6 +6351,28 @@
       "bonus": 6
     },
     {
+      "id": 121,
+      "webName": "Damsgaard",
+      "firstName": "Mikkel",
+      "lastName": "Damsgaard",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brentford",
+      "teamId": 5,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 87,
+      "form": 6,
+      "goalsScored": 3,
+      "assists": 4,
+      "xG": 1.85,
+      "xA": 4.13,
+      "xGI": 5.98,
+      "minutes": 1566,
+      "cleanSheets": 3,
+      "bonus": 6
+    },
+    {
       "id": 505,
       "webName": "Milenković",
       "firstName": "Nikola",
@@ -7055,28 +7077,6 @@
       "bonus": 2
     },
     {
-      "id": 54,
-      "webName": "McGinn",
-      "firstName": "John",
-      "lastName": "McGinn",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 73,
-      "form": 0.5,
-      "goalsScored": 3,
-      "assists": 2,
-      "xG": 2.58,
-      "xA": 2.21,
-      "xGI": 4.79,
-      "minutes": 1651,
-      "cleanSheets": 7,
-      "bonus": 4
-    },
-    {
       "id": 633,
       "webName": "H.Bueno",
       "firstName": "Hugo",
@@ -7163,28 +7163,6 @@
       "minutes": 2313,
       "cleanSheets": 4,
       "bonus": 0
-    },
-    {
-      "id": 473,
-      "webName": "Hall",
-      "firstName": "Lewis",
-      "lastName": "Hall",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 71,
-      "form": 3.8,
-      "goalsScored": 1,
-      "assists": 2,
-      "xG": 0.73,
-      "xA": 2.02,
-      "xGI": 2.75,
-      "minutes": 1659,
-      "cleanSheets": 4,
-      "bonus": 4
     },
     {
       "id": 491,
@@ -7691,6 +7669,28 @@
       "minutes": 992,
       "cleanSheets": 1,
       "bonus": 7
+    },
+    {
+      "id": 714,
+      "webName": "A.Jimenez",
+      "firstName": "Álex",
+      "lastName": "Jiménez Sánchez",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 64,
+      "form": 4.2,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 1.04,
+      "xA": 1.53,
+      "xGI": 2.57,
+      "minutes": 1884,
+      "cleanSheets": 5,
+      "bonus": 2
     },
     {
       "id": 733,
@@ -21331,6 +21331,30 @@
       "playerOutId": 74,
       "type": "waiver",
       "result": "rejected"
+    },
+    {
+      "id": 49785477,
+      "gameweek": 31,
+      "managerName": "Unknown",
+      "leagueEntryId": 34964,
+      "playerIn": "McGinn",
+      "playerInId": 54,
+      "playerOut": "Damsgaard",
+      "playerOutId": 121,
+      "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 49785845,
+      "gameweek": 31,
+      "managerName": "Unknown",
+      "leagueEntryId": 34964,
+      "playerIn": "Hall",
+      "playerInId": 473,
+      "playerOut": "A.Jimenez",
+      "playerOutId": 714,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -22498,7 +22522,7 @@
       "leagueEntryId": 34059,
       "teamName": "Steen, Papier, Schar",
       "playerName": "Salomon van Megen",
-      "predictedPoints": 111.3,
+      "predictedPoints": 108.9,
       "playerBreakdown": [
         {
           "playerId": 82,
@@ -22561,9 +22585,9 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 121,
-          "playerName": "Damsgaard",
-          "expectedPoints": 12.6,
+          "playerId": 720,
+          "playerName": "Hincapie",
+          "expectedPoints": 10.2,
           "fixtureDifficulty": 3
         }
       ],
@@ -26175,13 +26199,13 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 390,
-            "avgPoints": 13,
+            "totalPoints": 397,
+            "avgPoints": 13.2,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 575,
-            "avgPoints": 19.2,
+            "totalPoints": 561,
+            "avgPoints": 18.7,
             "playerCount": 5
           },
           "FWD": {
@@ -26961,7 +26985,7 @@
         "managerName": "Eze come Eze go",
         "leagueEntryId": 4813,
         "totalPoints": 0,
-        "valueRating": "Fair"
+        "valueRating": "Overpaid"
       },
       {
         "pick": 2,
@@ -26991,7 +27015,7 @@
         "managerName": "I Baleba I Can Fly",
         "leagueEntryId": 2569,
         "totalPoints": 0,
-        "valueRating": "Overpaid"
+        "valueRating": "Bust"
       },
       {
         "pick": 5,
@@ -27030,8 +27054,8 @@
         "playerId": 473,
         "managerName": "Oscar is de Bobb",
         "leagueEntryId": 77537,
-        "totalPoints": 0,
-        "valueRating": "Bust"
+        "totalPoints": 71,
+        "valueRating": "Fair"
       },
       {
         "pick": 1,
@@ -27516,7 +27540,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-03-19T19:42:35.335Z",
+    "lastUpdated": "2026-03-20T03:27:39.671Z",
     "season": "2025",
     "plMatchday": 31,
     "managerProfiles": [
@@ -29659,33 +29683,33 @@
         "fantasyPoints": 1279,
         "squadStats": {
           "totalGoals": 59,
-          "totalAssists": 29,
-          "totalShots": 354,
-          "shotsOnTarget": 132,
-          "shotAccuracy": 0.3728813559322034,
-          "totalPasses": 11120,
-          "accuratePasses": 8797,
-          "passAccuracy": 0.7910971223021582,
-          "foulsCommitted": 298,
-          "foulsSuffered": 243,
-          "yellowCards": 52,
+          "totalAssists": 28,
+          "totalShots": 353,
+          "shotsOnTarget": 129,
+          "shotAccuracy": 0.3654390934844193,
+          "totalPasses": 11306,
+          "accuratePasses": 9041,
+          "passAccuracy": 0.7996638952768441,
+          "foulsCommitted": 297,
+          "foulsSuffered": 282,
+          "yellowCards": 50,
           "redCards": 0,
-          "totalCards": 52,
-          "tacklesWon": 257,
+          "totalCards": 50,
+          "tacklesWon": 232,
           "tacklesLost": 149,
-          "interceptions": 189,
-          "clearances": 616,
-          "shotsBlocked": 93,
-          "cleanSheets": 67,
-          "goalsConceded": 393,
+          "interceptions": 184,
+          "clearances": 646,
+          "shotsBlocked": 95,
+          "cleanSheets": 68,
+          "goalsConceded": 386,
           "saves": 169,
-          "totalMinutes": 28165,
-          "appearances": 362,
-          "headedGoals": 6,
-          "goalInvolvement": 88,
-          "minutesPerGoalInvolvement": 320.0568181818182,
-          "disciplinaryPoints": 52,
-          "shotAssists": 252
+          "totalMinutes": 28026,
+          "appearances": 356,
+          "headedGoals": 5,
+          "goalInvolvement": 87,
+          "minutesPerGoalInvolvement": 322.13793103448273,
+          "disciplinaryPoints": 50,
+          "shotAssists": 250
         },
         "plTeamDistribution": [
           {
@@ -29701,22 +29725,10 @@
             "fplTeamId": 8
           },
           {
-            "teamName": "Bournemouth",
-            "count": 2,
-            "plRank": 10,
-            "fplTeamId": 4
-          },
-          {
             "teamName": "Arsenal",
             "count": 2,
             "plRank": 1,
             "fplTeamId": 1
-          },
-          {
-            "teamName": "Brentford",
-            "count": 2,
-            "plRank": 7,
-            "fplTeamId": 5
           },
           {
             "teamName": "Liverpool",
@@ -29731,6 +29743,18 @@
             "fplTeamId": 9
           },
           {
+            "teamName": "Bournemouth",
+            "count": 1,
+            "plRank": 10,
+            "fplTeamId": 4
+          },
+          {
+            "teamName": "Brentford",
+            "count": 1,
+            "plRank": 7,
+            "fplTeamId": 5
+          },
+          {
             "teamName": "Brighton",
             "count": 1,
             "plRank": 12,
@@ -29741,6 +29765,18 @@
             "count": 1,
             "plRank": 11,
             "fplTeamId": 10
+          },
+          {
+            "teamName": "Aston Villa",
+            "count": 1,
+            "plRank": 4,
+            "fplTeamId": 2
+          },
+          {
+            "teamName": "Newcastle",
+            "count": 1,
+            "plRank": 9,
+            "fplTeamId": 15
           },
           {
             "teamName": "Wolves",
@@ -29971,28 +30007,6 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "Damsgaard",
-            "espnName": "Mikkel Damsgaard",
-            "plTeam": "Brentford",
-            "plTeamRank": 7,
-            "fplPoints": 87,
-            "espnGoals": 3,
-            "espnAssists": 4,
-            "espnMinutes": 1578,
-            "espnYellows": 0,
-            "espnReds": 0,
-            "espnFouls": 16,
-            "espnPasses": 684,
-            "espnPassPct": 0.753,
-            "espnShots": 20,
-            "espnShotsOnTarget": 9,
-            "espnTackles": 44,
-            "espnInterceptions": 19,
-            "espnCleanSheets": 2,
-            "position": "MID",
-            "isBenchwarmer": false
-          },
-          {
             "fplName": "Hincapie",
             "espnName": "Piero Hincapié",
             "plTeam": "Arsenal",
@@ -30015,24 +30029,46 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "A.Jimenez",
-            "espnName": "Álex Jiménez",
-            "plTeam": "Bournemouth",
-            "plTeamRank": 10,
-            "fplPoints": 64,
-            "espnGoals": 1,
-            "espnAssists": 0,
-            "espnMinutes": 1891,
-            "espnYellows": 8,
+            "fplName": "McGinn",
+            "espnName": "John McGinn",
+            "plTeam": "Aston Villa",
+            "plTeamRank": 4,
+            "fplPoints": 73,
+            "espnGoals": 3,
+            "espnAssists": 2,
+            "espnMinutes": 1668,
+            "espnYellows": 3,
             "espnReds": 0,
             "espnFouls": 25,
-            "espnPasses": 670,
-            "espnPassPct": 0.801,
+            "espnPasses": 569,
+            "espnPassPct": 0.817,
             "espnShots": 19,
-            "espnShotsOnTarget": 4,
-            "espnTackles": 54,
-            "espnInterceptions": 21,
+            "espnShotsOnTarget": 7,
+            "espnTackles": 27,
+            "espnInterceptions": 11,
             "espnCleanSheets": 2,
+            "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
+            "fplName": "Hall",
+            "espnName": "Lewis Hall",
+            "plTeam": "Newcastle",
+            "plTeamRank": 9,
+            "fplPoints": 71,
+            "espnGoals": 1,
+            "espnAssists": 1,
+            "espnMinutes": 1662,
+            "espnYellows": 3,
+            "espnReds": 0,
+            "espnFouls": 15,
+            "espnPasses": 971,
+            "espnPassPct": 0.856,
+            "espnShots": 19,
+            "espnShotsOnTarget": 3,
+            "espnTackles": 46,
+            "espnInterceptions": 24,
+            "espnCleanSheets": 3,
             "position": "DEF",
             "isBenchwarmer": false
           },
@@ -30965,9 +31001,9 @@
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
         "fantasyRank": 6,
-        "avgPlTeamRank": 8.27,
-        "weightedPlRank": 8.18,
-        "rankDelta": 2.18,
+        "avgPlTeamRank": 8,
+        "weightedPlRank": 7.92,
+        "rankDelta": 1.92,
         "verdict": "Slight overperformer"
       },
       {
@@ -31095,32 +31131,6 @@
         "title": "Dirty Dozen"
       },
       {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "yellows": 52,
-        "reds": 0,
-        "totalCards": 52,
-        "disciplinaryPoints": 52,
-        "dirtiest3": [
-          {
-            "name": "A.Jimenez",
-            "yellows": 8,
-            "reds": 0
-          },
-          {
-            "name": "Semenyo",
-            "yellows": 6,
-            "reds": 0
-          },
-          {
-            "name": "Dewsbury-Hall",
-            "yellows": 6,
-            "reds": 0
-          }
-        ],
-        "title": "Dirty Dozen"
-      },
-      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "yellows": 47,
@@ -31141,6 +31151,32 @@
           {
             "name": "Donnarumma",
             "yellows": 6,
+            "reds": 0
+          }
+        ],
+        "title": "Dirty Dozen"
+      },
+      {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "yellows": 50,
+        "reds": 0,
+        "totalCards": 50,
+        "disciplinaryPoints": 50,
+        "dirtiest3": [
+          {
+            "name": "Semenyo",
+            "yellows": 6,
+            "reds": 0
+          },
+          {
+            "name": "Dewsbury-Hall",
+            "yellows": 6,
+            "reds": 0
+          },
+          {
+            "name": "Muñoz",
+            "yellows": 5,
             "reds": 0
           }
         ],
@@ -31251,22 +31287,22 @@
         "title": "The Pragmatist"
       },
       {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "passAccuracy": 79.97,
+        "totalPasses": 11306,
+        "accuratePasses": 9041,
+        "longBallRatio": 10.53,
+        "style": "Balanced",
+        "title": "The Pragmatist"
+      },
+      {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "passAccuracy": 79.68,
         "totalPasses": 11832,
         "accuratePasses": 9428,
         "longBallRatio": 10.02,
-        "style": "Balanced",
-        "title": "The Pragmatist"
-      },
-      {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "passAccuracy": 79.11,
-        "totalPasses": 11120,
-        "accuratePasses": 8797,
-        "longBallRatio": 10.98,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
@@ -31285,12 +31321,12 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "totalShots": 354,
-        "shotsOnTarget": 132,
+        "totalShots": 353,
+        "shotsOnTarget": 129,
         "goals": 59,
-        "shotAccuracy": 37.29,
-        "conversionRate": 16.67,
-        "shotsPerGoal": 6,
+        "shotAccuracy": 36.54,
+        "conversionRate": 16.71,
+        "shotsPerGoal": 5.98,
         "title": "Clinical Finisher"
       },
       {
@@ -31447,13 +31483,13 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "tacklesWon": 257,
-        "interceptions": 189,
-        "clearances": 616,
-        "shotsBlocked": 93,
-        "defensiveActions": 1155,
-        "cleanSheets": 67,
-        "goalsConceded": 393,
+        "tacklesWon": 232,
+        "interceptions": 184,
+        "clearances": 646,
+        "shotsBlocked": 95,
+        "defensiveActions": 1157,
+        "cleanSheets": 68,
+        "goalsConceded": 386,
         "title": "The Great Wall"
       },
       {
@@ -31517,9 +31553,9 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "foulsCommitted": 298,
-        "foulsSuffered": 243,
-        "foulRatio": 1.23,
+        "foulsCommitted": 297,
+        "foulsSuffered": 282,
+        "foulRatio": 1.05,
         "dirtiest": [
           {
             "name": "Semenyo",
@@ -31719,7 +31755,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 1878,
+        "avgMinutesPerPlayer": 1868,
         "ghosts": [],
         "title": "All Business"
       },
@@ -31735,6 +31771,77 @@
       }
     ],
     "teamDiversity": [
+      {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "uniqueTeams": 12,
+        "maxFromOneTeam": 2,
+        "maxTeamName": "Man City",
+        "diversityScore": 52,
+        "distribution": [
+          {
+            "team": "Man City",
+            "count": 2,
+            "plRank": 2
+          },
+          {
+            "team": "Crystal Palace",
+            "count": 2,
+            "plRank": 14
+          },
+          {
+            "team": "Arsenal",
+            "count": 2,
+            "plRank": 1
+          },
+          {
+            "team": "Liverpool",
+            "count": 1,
+            "plRank": 5
+          },
+          {
+            "team": "Everton",
+            "count": 1,
+            "plRank": 8
+          },
+          {
+            "team": "Bournemouth",
+            "count": 1,
+            "plRank": 10
+          },
+          {
+            "team": "Brentford",
+            "count": 1,
+            "plRank": 7
+          },
+          {
+            "team": "Brighton",
+            "count": 1,
+            "plRank": 12
+          },
+          {
+            "team": "Fulham",
+            "count": 1,
+            "plRank": 11
+          },
+          {
+            "team": "Aston Villa",
+            "count": 1,
+            "plRank": 4
+          },
+          {
+            "team": "Newcastle",
+            "count": 1,
+            "plRank": 9
+          },
+          {
+            "team": "Wolves",
+            "count": 1,
+            "plRank": 20
+          }
+        ],
+        "title": "The Diversifier"
+      },
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
@@ -31924,67 +32031,6 @@
             "team": "Crystal Palace",
             "count": 1,
             "plRank": 14
-          }
-        ],
-        "title": "Well Spread"
-      },
-      {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "uniqueTeams": 10,
-        "maxFromOneTeam": 2,
-        "maxTeamName": "Man City",
-        "diversityScore": 43.33,
-        "distribution": [
-          {
-            "team": "Man City",
-            "count": 2,
-            "plRank": 2
-          },
-          {
-            "team": "Crystal Palace",
-            "count": 2,
-            "plRank": 14
-          },
-          {
-            "team": "Bournemouth",
-            "count": 2,
-            "plRank": 10
-          },
-          {
-            "team": "Arsenal",
-            "count": 2,
-            "plRank": 1
-          },
-          {
-            "team": "Brentford",
-            "count": 2,
-            "plRank": 7
-          },
-          {
-            "team": "Liverpool",
-            "count": 1,
-            "plRank": 5
-          },
-          {
-            "team": "Everton",
-            "count": 1,
-            "plRank": 8
-          },
-          {
-            "team": "Brighton",
-            "count": 1,
-            "plRank": 12
-          },
-          {
-            "team": "Fulham",
-            "count": 1,
-            "plRank": 11
-          },
-          {
-            "team": "Wolves",
-            "count": 1,
-            "plRank": 20
           }
         ],
         "title": "Well Spread"
@@ -32217,6 +32263,15 @@
         "title": "Star Chaser"
       },
       {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "top6Count": 6,
+        "top6Pct": 40,
+        "bottom6Count": 1,
+        "totalPlayers": 15,
+        "title": "Star Chaser"
+      },
+      {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "top6Count": 6,
@@ -32228,15 +32283,6 @@
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "top6Count": 5,
-        "top6Pct": 33.33,
-        "bottom6Count": 1,
-        "totalPlayers": 15,
-        "title": "Balanced Portfolio"
-      },
-      {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
         "top6Count": 5,
         "top6Pct": 33.33,
         "bottom6Count": 1,
@@ -32339,10 +32385,10 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "totalGoalInvolvements": 88,
+        "totalGoalInvolvements": 87,
         "goals": 59,
-        "assists": 29,
-        "minsPerGI": 320,
+        "assists": 28,
+        "minsPerGI": 322,
         "topContributors": [
           {
             "name": "Semenyo",
@@ -32614,10 +32660,10 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "chaosScore": 402,
-        "yellows": 52,
+        "chaosScore": 397,
+        "yellows": 50,
         "reds": 0,
-        "fouls": 298,
+        "fouls": 297,
         "title": "Agent of Chaos"
       },
       {
@@ -32727,8 +32773,8 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "totalMinutes": 28165,
-        "avgMinutesPerPlayer": 1878,
+        "totalMinutes": 28026,
+        "avgMinutesPerPlayer": 1868,
         "ironMan": {
           "name": "Verbruggen",
           "minutes": 2700
@@ -32919,14 +32965,14 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "realGI": 88,
+        "realGI": 87,
         "fantasyPoints": 1279,
-        "pointsPerRealGI": 14.53,
+        "pointsPerRealGI": 14.7,
         "overperformers": [
           {
-            "name": "A.Jimenez",
-            "fplPts": 64,
-            "realGI": 1
+            "name": "Hall",
+            "fplPts": 71,
+            "realGI": 2
           },
           {
             "name": "Scott",
@@ -33923,14 +33969,14 @@
             "playerName": "Hall",
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
-            "fplPoints": 0,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
-            "rating": "Bust"
+            "fplPoints": 71,
+            "espnGoals": 1,
+            "espnAssists": 1,
+            "espnMinutes": 1662,
+            "rating": "Hit"
           }
         ],
-        "avgPoints": 52.63
+        "avgPoints": 61.5
       },
       {
         "round": 10,
@@ -35512,7 +35558,7 @@
         "teamName": "Steen, Papier, Schar",
         "playerName": "Salomon van Megen",
         "formation": "3-5-2",
-        "totalStartScore": 62.36,
+        "totalStartScore": 61.22,
         "players": [
           {
             "playerId": 253,
@@ -35555,6 +35601,26 @@
             "status": "a"
           },
           {
+            "playerId": 473,
+            "webName": "Hall",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Newcastle",
+            "teamShort": "NEW",
+            "opponent": "Sunderland",
+            "opponentShort": "SUN",
+            "isHome": true,
+            "startScore": 5,
+            "breakdown": {
+              "fixtureScore": 7.8,
+              "formScore": 3.2,
+              "specialScore": 4,
+              "seasonScore": 3.55
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
             "playerId": 402,
             "webName": "Aït-Nouri",
             "position": "DEF",
@@ -35570,26 +35636,6 @@
               "formScore": 5.4,
               "specialScore": 3.4,
               "seasonScore": 2.2
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 106,
-            "webName": "Collins",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Brentford",
-            "teamShort": "BRE",
-            "opponent": "Leeds",
-            "opponentShort": "LEE",
-            "isHome": false,
-            "startScore": 4.17,
-            "breakdown": {
-              "fixtureScore": 6.8,
-              "formScore": 1.4,
-              "specialScore": 4,
-              "seasonScore": 4.95
             },
             "isStarter": true,
             "status": "a"
@@ -35635,26 +35681,6 @@
             "status": "a"
           },
           {
-            "playerId": 121,
-            "webName": "Damsgaard",
-            "position": "MID",
-            "positionId": 3,
-            "team": "Brentford",
-            "teamShort": "BRE",
-            "opponent": "Leeds",
-            "opponentShort": "LEE",
-            "isHome": false,
-            "startScore": 6.36,
-            "breakdown": {
-              "fixtureScore": 6.8,
-              "formScore": 5,
-              "specialScore": 8.97,
-              "seasonScore": 4.35
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
             "playerId": 242,
             "webName": "Dewsbury-Hall",
             "position": "MID",
@@ -35690,6 +35716,26 @@
               "formScore": 4,
               "specialScore": 7.44,
               "seasonScore": 5.3
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 54,
+            "webName": "McGinn",
+            "position": "MID",
+            "positionId": 3,
+            "team": "Aston Villa",
+            "teamShort": "AVL",
+            "opponent": "West Ham",
+            "opponentShort": "WHU",
+            "isHome": true,
+            "startScore": 4.39,
+            "breakdown": {
+              "fixtureScore": 7,
+              "formScore": 0.4,
+              "specialScore": 7.19,
+              "seasonScore": 3.65
             },
             "isStarter": true,
             "status": "a"
@@ -35755,21 +35801,21 @@
             "status": "a"
           },
           {
-            "playerId": 714,
-            "webName": "A.Jimenez",
+            "playerId": 106,
+            "webName": "Collins",
             "position": "DEF",
             "positionId": 2,
-            "team": "Bournemouth",
-            "teamShort": "BOU",
-            "opponent": "Man Utd",
-            "opponentShort": "MUN",
-            "isHome": true,
-            "startScore": 4.14,
+            "team": "Brentford",
+            "teamShort": "BRE",
+            "opponent": "Leeds",
+            "opponentShort": "LEE",
+            "isHome": false,
+            "startScore": 4.17,
             "breakdown": {
-              "fixtureScore": 4.8,
-              "formScore": 3.6,
-              "specialScore": 4.4,
-              "seasonScore": 3.2
+              "fixtureScore": 6.8,
+              "formScore": 1.4,
+              "specialScore": 4,
+              "seasonScore": 4.95
             },
             "isStarter": false,
             "status": "a"
@@ -35816,11 +35862,11 @@
           }
         ],
         "transferSuggestion": {
-          "playerOut": "Collins",
-          "playerOutScore": 4.17,
-          "playerIn": "Truffert",
-          "playerInScore": 5.67,
-          "improvement": 1.5
+          "playerOut": "McGinn",
+          "playerOutScore": 4.39,
+          "playerIn": "Anthony",
+          "playerInScore": 6.29,
+          "improvement": 1.9
         }
       },
       {
@@ -37080,7 +37126,7 @@
               "seasonScore": 5
             },
             "isStarter": false,
-            "status": "d"
+            "status": "a"
           }
         ],
         "transferSuggestion": {
