@@ -14,6 +14,7 @@ const opponentAvg = rs?.opponentAvgAgainst ?? [];
 const leagueAvg = rs?.leagueAvgOpponentScore ?? 0;
 const mascotte = rs?.mascotte ?? [];
 const periodChampionship = rs?.periodChampionship ?? [];
+const periodAlternatives = rs?.periodAlternatives ?? [];
 const currentGw = dashboardData?.meta?.currentGameweek ?? 0;
 const nextGw = currentGw + 1;
 
@@ -527,6 +528,43 @@ function formationDisplay(formation: string): string {
               );
             })}
           </div>
+
+          {/* Alternative splits */}
+          {periodAlternatives.length > 0 && (
+            <div class="mt-6 glass-card p-4">
+              <div class="section-label mb-2">What if the periods were split differently?</div>
+              <p class="text-xs text-slate-500 mb-3">Current split: 9-10-10-9. Only showing splits where at least one champion changes.</p>
+              <div class="space-y-2">
+                {periodAlternatives.map((alt: any) => (
+                  <div class="glass-card-sm p-3">
+                    <div class="text-sm font-semibold text-slate-300 mb-1.5">
+                      Split {alt.label}
+                    </div>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                      {alt.gwRanges.map((range: number[], i: number) => {
+                        const isDiff = alt.differences.includes(i);
+                        const champion = alt.champions[i];
+                        if (champion === '—') return null;
+                        return (
+                          <div class:list={[
+                            'flex items-center gap-1.5',
+                            isDiff ? 'text-amber-400' : 'text-slate-500'
+                          ]}>
+                            <span class="text-slate-600">P{i + 1}</span>
+                            <span class="text-slate-600">(GW{range[0]}-{range[1]})</span>
+                            <span class:list={[isDiff ? 'font-semibold text-amber-400' : 'text-slate-400']}>
+                              {champion}
+                            </span>
+                            {isDiff && <span class="text-amber-500/60 text-[10px]">changed</span>}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       )}
     </>

@@ -376,12 +376,20 @@ export interface PeriodResult {
   standings: PeriodManagerResult[];
 }
 
+export interface PeriodAlternative {
+  label: string;                    // e.g. "10-10-10-8"
+  gwRanges: [number, number][];     // the 4 period ranges
+  champions: string[];              // team name per period
+  differences: number[];            // which period indices differ from current
+}
+
 export interface RequestedStats {
   recommendedXIs: RecommendedXI[];
   opponentAvgAgainst: OpponentAvgAgainst[];
   leagueAvgOpponentScore: number;
   mascotte: MascotteEntry[];
   periodChampionship: PeriodResult[];
+  periodAlternatives: PeriodAlternative[];
 }
 
 export interface DashboardData {

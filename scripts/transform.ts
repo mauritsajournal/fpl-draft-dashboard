@@ -45,6 +45,7 @@ import type {
   MascotteEntry,
   PeriodResult,
   PeriodManagerResult,
+  PeriodAlternative,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -1461,20 +1462,8 @@ function buildPeriodChampionship(
   entryMap: Map<number, LeagueResponse['league_entries'][0]>,
   gameweekHistory: GameweekSnapshot[],
   completedGws: number[],
-): PeriodResult[] {
-  if (completedGws.length === 0) return [];
-
-  // Define 4 periods across 38 GWs
-  const periods: { period: number; label: string; gwRange: [number, number] }[] = [
-    { period: 1, label: 'Period 1', gwRange: [1, 9] },
-    { period: 2, label: 'Period 2', gwRange: [10, 19] },
-    { period: 3, label: 'Period 3', gwRange: [20, 29] },
-    { period: 4, label: 'Period 4', gwRange: [30, 38] },
-  ];
-
-  // Build per-GW league points (diff from cumulative)
-  const gwMap = new Map<number, GameweekSnapshot>();
-  for (const gw of gameweekHistory) gwMap.set(gw.gameweek, gw);
+): { periods: PeriodResult[]; alternatives: PeriodAlternative[] } {
+  if (completedGws.length === 0) return { periods: [], alternatives: [] };
 
   // Get per-GW match results from league matches
   const gwMatchResults = new Map<number, Map<number, { points: number; lp: number }>>();
@@ -1495,22 +1484,35 @@ function buildPeriodChampionship(
 
   const managerIds = [...entryMap.keys()];
 
-  const results: PeriodResult[] = [];
-
-  for (const { period, label, gwRange } of periods) {
-    const [gwStart, gwEnd] = gwRange;
+  // Helper: compute champion team name for a given GW range
+  function getChampion(gwStart: number, gwEnd: number): string {
     const periodGws = completedGws.filter(gw => gw >= gwStart && gw <= gwEnd);
-    if (periodGws.length === 0) continue;
+    if (periodGws.length === 0) return '—';
+
+    const scores = managerIds.map(id => {
+      let lp = 0, pts = 0;
+      for (const gw of periodGws) {
+        const r = gwMatchResults.get(gw)?.get(id);
+        if (r) { lp += r.lp; pts += r.points; }
+      }
+      return { id, lp, pts };
+    });
+    scores.sort((a, b) => b.lp - a.lp || b.pts - a.pts);
+    return entryMap.get(scores[0].id)?.entry_name ?? '?';
+  }
+
+  // Helper: build full standings for a period
+  function buildPeriodStandings(gwStart: number, gwEnd: number): { standings: PeriodManagerResult[]; maxGw: number } {
+    const periodGws = completedGws.filter(gw => gw >= gwStart && gw <= gwEnd);
+    if (periodGws.length === 0) return { standings: [], maxGw: gwEnd };
 
     const standings: PeriodManagerResult[] = managerIds.map(leagueEntryId => {
       const entry = entryMap.get(leagueEntryId)!;
-      let totalPoints = 0;
-      let leaguePoints = 0;
+      let totalPoints = 0, leaguePoints = 0;
       let wins = 0, draws = 0, losses = 0;
 
       for (const gw of periodGws) {
-        const gwResults = gwMatchResults.get(gw);
-        const result = gwResults?.get(leagueEntryId);
+        const result = gwMatchResults.get(gw)?.get(leagueEntryId);
         if (result) {
           totalPoints += result.points;
           leaguePoints += result.lp;
@@ -1527,25 +1529,65 @@ function buildPeriodChampionship(
         playerName: `${entry.player_first_name} ${entry.player_last_name}`,
         totalPoints,
         leaguePoints,
-        wins,
-        draws,
-        losses,
+        wins, draws, losses,
         avgPoints: periodGws.length > 0 ? Math.round((totalPoints / periodGws.length) * 10) / 10 : 0,
       };
     });
 
-    // Sort by league points desc, then total points desc as tiebreaker
     standings.sort((a, b) => b.leaguePoints - a.leaguePoints || b.totalPoints - a.totalPoints);
+    return { standings, maxGw: Math.max(...periodGws) };
+  }
 
-    results.push({
-      period,
-      label,
-      gwRange: [gwStart, Math.min(gwEnd, Math.max(...periodGws))],
+  // Current split: 9-10-10-9
+  const currentRanges: [number, number][] = [[1, 9], [10, 19], [20, 29], [30, 38]];
+
+  const periods: PeriodResult[] = [];
+  const currentChampions: string[] = [];
+
+  for (let i = 0; i < currentRanges.length; i++) {
+    const [gwStart, gwEnd] = currentRanges[i];
+    const { standings, maxGw } = buildPeriodStandings(gwStart, gwEnd);
+    if (standings.length === 0) continue;
+    currentChampions.push(standings[0].teamName);
+    periods.push({
+      period: i + 1,
+      label: `Period ${i + 1}`,
+      gwRange: [gwStart, Math.min(gwEnd, maxGw)],
       standings,
     });
   }
 
-  return results;
+  // Alternative splits
+  const altSplits: { label: string; ranges: [number, number][] }[] = [
+    { label: '10-10-10-8', ranges: [[1, 10], [11, 20], [21, 30], [31, 38]] },
+    { label: '10-9-10-9',  ranges: [[1, 10], [11, 19], [20, 29], [30, 38]] },
+    { label: '9-10-9-10',  ranges: [[1, 9], [10, 19], [20, 28], [29, 38]] },
+    { label: '10-10-9-9',  ranges: [[1, 10], [11, 20], [21, 29], [30, 38]] },
+    { label: '8-10-10-10', ranges: [[1, 8], [9, 18], [19, 28], [29, 38]] },
+  ];
+
+  const alternatives: PeriodAlternative[] = [];
+
+  for (const alt of altSplits) {
+    const champions = alt.ranges.map(([s, e]) => getChampion(s, e));
+    const differences: number[] = [];
+    for (let i = 0; i < Math.min(champions.length, currentChampions.length); i++) {
+      if (champions[i] !== currentChampions[i] && champions[i] !== '—') {
+        differences.push(i);
+      }
+    }
+    // Only include if there's at least one difference
+    if (differences.length > 0) {
+      alternatives.push({
+        label: alt.label,
+        gwRanges: alt.ranges,
+        champions,
+        differences,
+      });
+    }
+  }
+
+  return { periods, alternatives };
 }
 
 // ---- Mascotte: rank each manager's 15th (last) draft pick ----
@@ -2008,7 +2050,7 @@ function buildRequestedStats(
   const mascotte = buildMascotte(draftPicks, draftValue, resolver, ownedPlayers, freeAgentStats, entryMap, entryIdToLeagueId);
 
   // ========== Period Championship ==========
-  const periodChampionship = buildPeriodChampionship(league, entryMap, gameweekHistory, completedGws);
+  const { periods: periodChampionship, alternatives: periodAlternatives } = buildPeriodChampionship(league, entryMap, gameweekHistory, completedGws);
 
   return {
     recommendedXIs,
@@ -2016,6 +2058,7 @@ function buildRequestedStats(
     leagueAvgOpponentScore,
     mascotte,
     periodChampionship,
+    periodAlternatives,
   };
 }
 
