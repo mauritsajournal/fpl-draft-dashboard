@@ -42,6 +42,7 @@ import type {
   RecommendedXI,
   RecommendedPlayer,
   OpponentAvgAgainst,
+  MascotteEntry,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -167,10 +168,11 @@ function main(): void {
   // ---- Requested Stats (Recommended XI + Opponent Avg Against) ----
   const requestedStats = buildRequestedStats(
     league, entryMap, entryIdToLeagueId, ownership, resolver,
-    bootstrap, fixtures, liveMap, picksMap, h2hMatrix, completedGws, currentGw, freeAgents
+    bootstrap, fixtures, liveMap, picksMap, h2hMatrix, completedGws, currentGw, freeAgents,
+    draftPicks, creativeStats.draftValue, ownedPlayers
   );
   if (requestedStats) {
-    console.log(`  Requested Stats: ${requestedStats.recommendedXIs.length} recommended XIs, ${requestedStats.opponentAvgAgainst.length} opponent avg records`);
+    console.log(`  Requested Stats: ${requestedStats.recommendedXIs.length} recommended XIs, ${requestedStats.opponentAvgAgainst.length} opponent avg records, ${requestedStats.mascotte.length} mascotte entries`);
   } else {
     console.log('  Requested Stats: skipped (insufficient data)');
   }
@@ -1450,6 +1452,67 @@ function buildDraftValue(
   return results;
 }
 
+// ---- Mascotte: rank each manager's 15th (last) draft pick ----
+
+function buildMascotte(
+  draftPicks: DraftPickDisplay[],
+  draftValue: DraftValueEntry[],
+  resolver: PlayerResolver,
+  ownedPlayers: PlayerStat[],
+  freeAgentStats: PlayerStat[],
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  entryIdToLeagueId: Map<number, number>,
+): MascotteEntry[] {
+  // Filter for round 15 picks only
+  const round15 = draftPicks.filter(p => p.round === 15);
+  if (round15.length === 0) return [];
+
+  // Build player points lookup from both owned and free agents
+  const allPlayers = new Map<number, PlayerStat>();
+  for (const p of ownedPlayers) allPlayers.set(p.id, p);
+  for (const p of freeAgentStats) allPlayers.set(p.id, p);
+
+  // Build draft value lookup by playerId
+  const draftValueMap = new Map<number, string>();
+  for (const dv of draftValue) {
+    draftValueMap.set(dv.playerId, dv.valueRating);
+  }
+
+  const results: MascotteEntry[] = round15.map(pick => {
+    // pick.leagueEntryId is actually entry_id in draft picks; resolve to league_entry id
+    const leagueId = entryIdToLeagueId.get(pick.leagueEntryId) ?? pick.leagueEntryId;
+    const entry = entryMap.get(leagueId) ?? entryMap.get(pick.leagueEntryId);
+    const playerStat = allPlayers.get(pick.playerId);
+    const bootstrapPlayer = resolver.getPlayer(pick.playerId);
+
+    const position = playerStat?.position
+      ?? (bootstrapPlayer ? resolver.getPosition(bootstrapPlayer.element_type) : 'N/A');
+    const team = playerStat?.team
+      ?? (bootstrapPlayer ? resolver.getTeamName(bootstrapPlayer.team) : 'Unknown');
+
+    return {
+      leagueEntryId: leagueId,
+      entryId: entry?.entry_id ?? pick.leagueEntryId,
+      teamName: entry?.entry_name ?? pick.managerName,
+      playerName: entry?.player_first_name && entry?.player_last_name
+        ? `${entry.player_first_name} ${entry.player_last_name}`
+        : pick.managerName,
+      mascottePlayer: resolver.getName(pick.playerId),
+      mascottePlayerId: pick.playerId,
+      totalPoints: playerStat?.totalPoints ?? 0,
+      position,
+      team,
+      minutesPlayed: playerStat?.minutes ?? 0,
+      valueRating: draftValueMap.get(pick.playerId) ?? 'Fair',
+    };
+  });
+
+  // Sort by totalPoints descending (best mascot first)
+  results.sort((a, b) => b.totalPoints - a.totalPoints);
+
+  return results;
+}
+
 // ---- Requested Stats: Recommended XI + Opponent Avg Against ----
 
 const VALID_FORMATIONS: [number, number, number][] = [
@@ -1470,6 +1533,9 @@ function buildRequestedStats(
   completedGws: number[],
   currentGw: number,
   freeAgentStats: PlayerStat[],
+  draftPicks: DraftPickDisplay[],
+  draftValue: DraftValueEntry[],
+  ownedPlayers: PlayerStat[],
 ): RequestedStats | null {
   if (!ownership || !fixtures || completedGws.length === 0) return null;
 
@@ -1841,10 +1907,14 @@ function buildRequestedStats(
       ) / 10
     : 0;
 
+  // ========== Mascotte ==========
+  const mascotte = buildMascotte(draftPicks, draftValue, resolver, ownedPlayers, freeAgentStats, entryMap, entryIdToLeagueId);
+
   return {
     recommendedXIs,
     opponentAvgAgainst,
     leagueAvgOpponentScore,
+    mascotte,
   };
 }
 

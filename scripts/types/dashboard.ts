@@ -342,10 +342,25 @@ export interface OpponentAvgAgainst {
   }[];
 }
 
+export interface MascotteEntry {
+  leagueEntryId: number;
+  entryId: number;
+  teamName: string;
+  playerName: string;       // manager name
+  mascottePlayer: string;   // player web name
+  mascottePlayerId: number;
+  totalPoints: number;
+  position: string;         // GK, DEF, MID, FWD
+  team: string;             // PL team
+  minutesPlayed: number;
+  valueRating: string;      // from draftValue
+}
+
 export interface RequestedStats {
   recommendedXIs: RecommendedXI[];
   opponentAvgAgainst: OpponentAvgAgainst[];
   leagueAvgOpponentScore: number;
+  mascotte: MascotteEntry[];
 }
 
 export interface DashboardData {
