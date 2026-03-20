@@ -356,11 +356,32 @@ export interface MascotteEntry {
   valueRating: string;      // from draftValue
 }
 
+export interface PeriodManagerResult {
+  leagueEntryId: number;
+  entryId: number;
+  teamName: string;
+  playerName: string;
+  totalPoints: number;
+  leaguePoints: number;  // W=3, D=1, L=0
+  wins: number;
+  draws: number;
+  losses: number;
+  avgPoints: number;
+}
+
+export interface PeriodResult {
+  period: number;        // 1-4
+  label: string;         // e.g. "Period 1"
+  gwRange: [number, number]; // e.g. [1, 10]
+  standings: PeriodManagerResult[];
+}
+
 export interface RequestedStats {
   recommendedXIs: RecommendedXI[];
   opponentAvgAgainst: OpponentAvgAgainst[];
   leagueAvgOpponentScore: number;
   mascotte: MascotteEntry[];
+  periodChampionship: PeriodResult[];
 }
 
 export interface DashboardData {

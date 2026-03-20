@@ -43,6 +43,8 @@ import type {
   RecommendedPlayer,
   OpponentAvgAgainst,
   MascotteEntry,
+  PeriodResult,
+  PeriodManagerResult,
 } from './types/dashboard.js';
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data');
@@ -169,10 +171,10 @@ function main(): void {
   const requestedStats = buildRequestedStats(
     league, entryMap, entryIdToLeagueId, ownership, resolver,
     bootstrap, fixtures, liveMap, picksMap, h2hMatrix, completedGws, currentGw, freeAgents,
-    draftPicks, creativeStats.draftValue, ownedPlayers
+    draftPicks, creativeStats.draftValue, ownedPlayers, gameweekHistory
   );
   if (requestedStats) {
-    console.log(`  Requested Stats: ${requestedStats.recommendedXIs.length} recommended XIs, ${requestedStats.opponentAvgAgainst.length} opponent avg records, ${requestedStats.mascotte.length} mascotte entries`);
+    console.log(`  Requested Stats: ${requestedStats.recommendedXIs.length} recommended XIs, ${requestedStats.opponentAvgAgainst.length} opponent avg records, ${requestedStats.mascotte.length} mascotte, ${requestedStats.periodChampionship.length} periods`);
   } else {
     console.log('  Requested Stats: skipped (insufficient data)');
   }
@@ -1452,6 +1454,100 @@ function buildDraftValue(
   return results;
 }
 
+// ---- Period Championship: divide season into 4 periods ----
+
+function buildPeriodChampionship(
+  league: LeagueResponse,
+  entryMap: Map<number, LeagueResponse['league_entries'][0]>,
+  gameweekHistory: GameweekSnapshot[],
+  completedGws: number[],
+): PeriodResult[] {
+  if (completedGws.length === 0) return [];
+
+  // Define 4 periods across 38 GWs
+  const periods: { period: number; label: string; gwRange: [number, number] }[] = [
+    { period: 1, label: 'Period 1', gwRange: [1, 10] },
+    { period: 2, label: 'Period 2', gwRange: [11, 19] },
+    { period: 3, label: 'Period 3', gwRange: [20, 29] },
+    { period: 4, label: 'Period 4', gwRange: [30, 38] },
+  ];
+
+  // Build per-GW league points (diff from cumulative)
+  const gwMap = new Map<number, GameweekSnapshot>();
+  for (const gw of gameweekHistory) gwMap.set(gw.gameweek, gw);
+
+  // Get per-GW match results from league matches
+  const gwMatchResults = new Map<number, Map<number, { points: number; lp: number }>>();
+  for (const match of league.matches) {
+    if (!match.finished) continue;
+    if (!gwMatchResults.has(match.event)) gwMatchResults.set(match.event, new Map());
+    const gwResults = gwMatchResults.get(match.event)!;
+
+    const p1 = match.league_entry_1_points;
+    const p2 = match.league_entry_2_points;
+    let lp1 = 1, lp2 = 1; // draw
+    if (p1 > p2) { lp1 = 3; lp2 = 0; }
+    else if (p2 > p1) { lp1 = 0; lp2 = 3; }
+
+    gwResults.set(match.league_entry_1, { points: p1, lp: lp1 });
+    gwResults.set(match.league_entry_2, { points: p2, lp: lp2 });
+  }
+
+  const managerIds = [...entryMap.keys()];
+
+  const results: PeriodResult[] = [];
+
+  for (const { period, label, gwRange } of periods) {
+    const [gwStart, gwEnd] = gwRange;
+    const periodGws = completedGws.filter(gw => gw >= gwStart && gw <= gwEnd);
+    if (periodGws.length === 0) continue;
+
+    const standings: PeriodManagerResult[] = managerIds.map(leagueEntryId => {
+      const entry = entryMap.get(leagueEntryId)!;
+      let totalPoints = 0;
+      let leaguePoints = 0;
+      let wins = 0, draws = 0, losses = 0;
+
+      for (const gw of periodGws) {
+        const gwResults = gwMatchResults.get(gw);
+        const result = gwResults?.get(leagueEntryId);
+        if (result) {
+          totalPoints += result.points;
+          leaguePoints += result.lp;
+          if (result.lp === 3) wins++;
+          else if (result.lp === 1) draws++;
+          else losses++;
+        }
+      }
+
+      return {
+        leagueEntryId,
+        entryId: entry.entry_id,
+        teamName: entry.entry_name,
+        playerName: `${entry.player_first_name} ${entry.player_last_name}`,
+        totalPoints,
+        leaguePoints,
+        wins,
+        draws,
+        losses,
+        avgPoints: periodGws.length > 0 ? Math.round((totalPoints / periodGws.length) * 10) / 10 : 0,
+      };
+    });
+
+    // Sort by league points desc, then total points desc as tiebreaker
+    standings.sort((a, b) => b.leaguePoints - a.leaguePoints || b.totalPoints - a.totalPoints);
+
+    results.push({
+      period,
+      label,
+      gwRange: [gwStart, Math.min(gwEnd, Math.max(...periodGws))],
+      standings,
+    });
+  }
+
+  return results;
+}
+
 // ---- Mascotte: rank each manager's 15th (last) draft pick ----
 
 function buildMascotte(
@@ -1536,6 +1632,7 @@ function buildRequestedStats(
   draftPicks: DraftPickDisplay[],
   draftValue: DraftValueEntry[],
   ownedPlayers: PlayerStat[],
+  gameweekHistory: GameweekSnapshot[],
 ): RequestedStats | null {
   if (!ownership || !fixtures || completedGws.length === 0) return null;
 
@@ -1910,11 +2007,15 @@ function buildRequestedStats(
   // ========== Mascotte ==========
   const mascotte = buildMascotte(draftPicks, draftValue, resolver, ownedPlayers, freeAgentStats, entryMap, entryIdToLeagueId);
 
+  // ========== Period Championship ==========
+  const periodChampionship = buildPeriodChampionship(league, entryMap, gameweekHistory, completedGws);
+
   return {
     recommendedXIs,
     opponentAvgAgainst,
     leagueAvgOpponentScore,
     mascotte,
+    periodChampionship,
   };
 }
 

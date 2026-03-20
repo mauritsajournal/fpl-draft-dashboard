@@ -13,6 +13,7 @@ const recommendedXIs = rs?.recommendedXIs ?? [];
 const opponentAvg = rs?.opponentAvgAgainst ?? [];
 const leagueAvg = rs?.leagueAvgOpponentScore ?? 0;
 const mascotte = rs?.mascotte ?? [];
+const periodChampionship = rs?.periodChampionship ?? [];
 const currentGw = dashboardData?.meta?.currentGameweek ?? 0;
 const nextGw = currentGw + 1;
 
@@ -71,6 +72,7 @@ function formationDisplay(formation: string): string {
         <a href="#recommended-xi" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">Recommended XI</a>
         <a href="#opponent-avg" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">Opponent Avg Against</a>
         <a href="#mascotte" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">Mascotte</a>
+        <a href="#period-championship" class="glass-card-sm px-3 py-1.5 no-underline text-slate-400 hover:text-white hover:bg-white/10 transition-all">Period Championship</a>
       </div>
 
       <!-- ===== RECOMMENDED XI ===== -->
@@ -430,6 +432,96 @@ function formationDisplay(formation: string): string {
                     <div class:list={['px-2 py-1 rounded text-xs font-bold border', valueBadge]}>
                       {m.valueRating}
                     </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <!-- ===== PERIOD CHAMPIONSHIP ===== -->
+      {periodChampionship.length > 0 && (
+        <section id="period-championship" class="mb-16 animate-fade-in-up">
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-2xl font-bold text-white">Period Championship</h2>
+            <div class="flex-1 h-px bg-gradient-to-r from-fpl-green/30 to-transparent"></div>
+          </div>
+          <p class="text-slate-500 text-sm mb-6">
+            The season split into 4 periods. Who dominates each stretch? Ranked by league points (W=3, D=1), then total points as tiebreaker.
+          </p>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {periodChampionship.map((period: any) => {
+              const winner = period.standings[0];
+              return (
+                <div class="glass-card overflow-hidden">
+                  {/* Period header */}
+                  <div class="p-4 border-b border-white/5 flex items-center justify-between">
+                    <div>
+                      <h3 class="text-lg font-bold text-white">{period.label}</h3>
+                      <p class="text-xs text-slate-500">GW{period.gwRange[0]} – GW{period.gwRange[1]}</p>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-xs text-slate-500">Champion</div>
+                      <div class="text-sm font-bold text-fpl-green">{winner.teamName}</div>
+                    </div>
+                  </div>
+
+                  {/* Standings table */}
+                  <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                      <thead>
+                        <tr class="text-xs text-slate-500 border-b border-white/5">
+                          <th class="text-left py-2 px-3">#</th>
+                          <th class="text-left py-2 px-1">Team</th>
+                          <th class="text-center py-2 px-1">W</th>
+                          <th class="text-center py-2 px-1">D</th>
+                          <th class="text-center py-2 px-1">L</th>
+                          <th class="text-right py-2 px-1">Pts</th>
+                          <th class="text-right py-2 px-1">Avg</th>
+                          <th class="text-right py-2 px-3">LP</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {period.standings.map((s: any, i: number) => {
+                          const isMaurits = s.entryId === MAURITS_ENTRY_ID;
+                          const isWinner = i === 0;
+                          return (
+                            <tr class:list={[
+                              'border-b border-white/5 hover:bg-white/5 transition-colors',
+                              isMaurits && 'bg-fpl-cyan/5',
+                              isWinner && 'bg-fpl-green/5'
+                            ]}>
+                              <td class:list={[
+                                'py-2 px-3 font-bold',
+                                isWinner ? 'text-fpl-green' : 'text-slate-500'
+                              ]}>
+                                {isWinner ? '🏆' : i + 1}
+                              </td>
+                              <td class="py-2 px-1">
+                                <div class="font-medium text-white truncate max-w-[140px]">
+                                  {s.teamName}
+                                  {isMaurits && <span class="text-xs text-fpl-cyan ml-1">(You)</span>}
+                                </div>
+                                <div class="text-xs text-slate-500 hidden sm:block">{s.playerName}</div>
+                              </td>
+                              <td class="text-center py-2 px-1 text-emerald-400 tabular-nums">{s.wins}</td>
+                              <td class="text-center py-2 px-1 text-slate-400 tabular-nums">{s.draws}</td>
+                              <td class="text-center py-2 px-1 text-rose-400 tabular-nums">{s.losses}</td>
+                              <td class="text-right py-2 px-1 text-slate-300 tabular-nums">{s.totalPoints}</td>
+                              <td class="text-right py-2 px-1 text-slate-400 tabular-nums">{s.avgPoints}</td>
+                              <td class:list={[
+                                'text-right py-2 px-3 font-bold tabular-nums',
+                                isWinner ? 'text-fpl-green' : 'text-white'
+                              ]}>
+                                {s.leaguePoints}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               );
