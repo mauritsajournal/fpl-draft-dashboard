@@ -1466,8 +1466,8 @@ function buildPeriodChampionship(
 
   // Define 4 periods across 38 GWs
   const periods: { period: number; label: string; gwRange: [number, number] }[] = [
-    { period: 1, label: 'Period 1', gwRange: [1, 10] },
-    { period: 2, label: 'Period 2', gwRange: [11, 19] },
+    { period: 1, label: 'Period 1', gwRange: [1, 9] },
+    { period: 2, label: 'Period 2', gwRange: [10, 19] },
     { period: 3, label: 'Period 3', gwRange: [20, 29] },
     { period: 4, label: 'Period 4', gwRange: [30, 38] },
   ];
