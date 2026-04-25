@@ -1,29 +1,29 @@
 [
   {
+    "espnTeamId": 359,
+    "fplTeamId": 1,
+    "teamName": "Arsenal",
+    "rank": 1,
+    "points": 73,
+    "wins": 22,
+    "draws": 7,
+    "losses": 5,
+    "goalsFor": 64,
+    "goalsAgainst": 26,
+    "goalDifference": 38,
+    "gamesPlayed": 34
+  },
+  {
     "espnTeamId": 382,
     "fplTeamId": 13,
     "teamName": "Manchester City",
-    "rank": 1,
+    "rank": 2,
     "points": 70,
     "wins": 21,
     "draws": 7,
     "losses": 5,
     "goalsFor": 66,
     "goalsAgainst": 29,
-    "goalDifference": 37,
-    "gamesPlayed": 33
-  },
-  {
-    "espnTeamId": 359,
-    "fplTeamId": 1,
-    "teamName": "Arsenal",
-    "rank": 2,
-    "points": 70,
-    "wins": 21,
-    "draws": 7,
-    "losses": 5,
-    "goalsFor": 63,
-    "goalsAgainst": 26,
     "goalDifference": 37,
     "gamesPlayed": 33
   },
@@ -42,10 +42,24 @@
     "gamesPlayed": 33
   },
   {
+    "espnTeamId": 364,
+    "fplTeamId": 12,
+    "teamName": "Liverpool",
+    "rank": 4,
+    "points": 58,
+    "wins": 17,
+    "draws": 7,
+    "losses": 10,
+    "goalsFor": 57,
+    "goalsAgainst": 44,
+    "goalDifference": 13,
+    "gamesPlayed": 34
+  },
+  {
     "espnTeamId": 362,
     "fplTeamId": 2,
     "teamName": "Aston Villa",
-    "rank": 4,
+    "rank": 5,
     "points": 58,
     "wins": 17,
     "draws": 7,
@@ -54,20 +68,6 @@
     "goalsAgainst": 42,
     "goalDifference": 5,
     "gamesPlayed": 34
-  },
-  {
-    "espnTeamId": 364,
-    "fplTeamId": 12,
-    "teamName": "Liverpool",
-    "rank": 5,
-    "points": 55,
-    "wins": 16,
-    "draws": 7,
-    "losses": 10,
-    "goalsFor": 54,
-    "goalsAgainst": 43,
-    "goalDifference": 11,
-    "gamesPlayed": 33
   },
   {
     "espnTeamId": 331,
@@ -147,11 +147,11 @@
     "points": 47,
     "wins": 13,
     "draws": 8,
-    "losses": 12,
-    "goalsFor": 40,
-    "goalsAgainst": 39,
-    "goalDifference": 1,
-    "gamesPlayed": 33
+    "losses": 13,
+    "goalsFor": 41,
+    "goalsAgainst": 41,
+    "goalDifference": 0,
+    "gamesPlayed": 34
   },
   {
     "espnTeamId": 366,
@@ -175,11 +175,11 @@
     "points": 43,
     "wins": 11,
     "draws": 10,
-    "losses": 11,
-    "goalsFor": 35,
-    "goalsAgainst": 36,
-    "goalDifference": -1,
-    "gamesPlayed": 32
+    "losses": 12,
+    "goalsFor": 36,
+    "goalsAgainst": 39,
+    "goalDifference": -3,
+    "gamesPlayed": 33
   },
   {
     "espnTeamId": 361,
@@ -189,11 +189,11 @@
     "points": 42,
     "wins": 12,
     "draws": 6,
-    "losses": 15,
+    "losses": 16,
     "goalsFor": 46,
-    "goalsAgainst": 49,
-    "goalDifference": -3,
-    "gamesPlayed": 33
+    "goalsAgainst": 50,
+    "goalDifference": -4,
+    "gamesPlayed": 34
   },
   {
     "espnTeamId": 357,
@@ -228,28 +228,28 @@
     "fplTeamId": 19,
     "teamName": "West Ham United",
     "rank": 17,
-    "points": 33,
-    "wins": 8,
+    "points": 36,
+    "wins": 9,
     "draws": 9,
     "losses": 16,
-    "goalsFor": 40,
-    "goalsAgainst": 57,
-    "goalDifference": -17,
-    "gamesPlayed": 33
+    "goalsFor": 42,
+    "goalsAgainst": 58,
+    "goalDifference": -16,
+    "gamesPlayed": 34
   },
   {
     "espnTeamId": 367,
     "fplTeamId": 18,
     "teamName": "Tottenham Hotspur",
     "rank": 18,
-    "points": 31,
-    "wins": 7,
+    "points": 34,
+    "wins": 8,
     "draws": 10,
     "losses": 16,
-    "goalsFor": 42,
+    "goalsFor": 43,
     "goalsAgainst": 53,
-    "goalDifference": -11,
-    "gamesPlayed": 33
+    "goalDifference": -10,
+    "gamesPlayed": 34
   },
   {
     "espnTeamId": 379,
@@ -273,10 +273,10 @@
     "points": 17,
     "wins": 3,
     "draws": 8,
-    "losses": 22,
+    "losses": 23,
     "goalsFor": 24,
-    "goalsAgainst": 61,
-    "goalDifference": -37,
-    "gamesPlayed": 33
+    "goalsAgainst": 62,
+    "goalDifference": -38,
+    "gamesPlayed": 34
   }
 ]
