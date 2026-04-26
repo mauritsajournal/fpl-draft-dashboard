@@ -120278,7 +120278,7 @@
   {
     "code": 2562232,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 338,
     "kickoff_time": "2026-04-24T19:00:00Z",
@@ -120444,19 +120444,19 @@
           },
           {
             "value": 31,
-            "element": 507
-          },
-          {
-            "value": 30,
             "element": 502
           },
           {
-            "value": 29,
-            "element": 517
+            "value": 31,
+            "element": 507
           },
           {
-            "value": 27,
+            "value": 28,
             "element": 505
+          },
+          {
+            "value": 28,
+            "element": 517
           },
           {
             "value": 18,
@@ -120479,7 +120479,7 @@
             "element": 510
           },
           {
-            "value": 5,
+            "value": 6,
             "element": 511
           },
           {
@@ -120510,14 +120510,14 @@
           },
           {
             "value": 7,
-            "element": 544
-          },
-          {
-            "value": 5,
             "element": 541
           },
           {
-            "value": 5,
+            "value": 6,
+            "element": 544
+          },
+          {
+            "value": 6,
             "element": 551
           },
           {
@@ -120529,7 +120529,7 @@
             "element": 730
           },
           {
-            "value": -7,
+            "value": -6,
             "element": 532
           },
           {
@@ -120545,7 +120545,7 @@
             "element": 670
           },
           {
-            "value": -9,
+            "value": -12,
             "element": 683
           }
         ]
@@ -120554,7 +120554,7 @@
         "identifier": "defensive_contribution",
         "a": [
           {
-            "value": 18,
+            "value": 20,
             "element": 505
           },
           {
@@ -120575,7 +120575,7 @@
           },
           {
             "value": 7,
-            "element": 508
+            "element": 511
           },
           {
             "value": 7,
@@ -120583,15 +120583,15 @@
           },
           {
             "value": 6,
-            "element": 511
+            "element": 508
+          },
+          {
+            "value": 6,
+            "element": 521
           },
           {
             "value": 6,
             "element": 522
-          },
-          {
-            "value": 5,
-            "element": 521
           },
           {
             "value": 5,
@@ -120616,40 +120616,40 @@
         ],
         "h": [
           {
+            "value": 9,
+            "element": 532
+          },
+          {
             "value": 8,
             "element": 531
           },
           {
-            "value": 7,
-            "element": 532
-          },
-          {
-            "value": 7,
-            "element": 544
-          },
-          {
-            "value": 7,
-            "element": 683
+            "value": 8,
+            "element": 547
           },
           {
             "value": 6,
-            "element": 547
+            "element": 544
           },
           {
             "value": 6,
             "element": 668
           },
           {
+            "value": 5,
+            "element": 683
+          },
+          {
+            "value": 3,
+            "element": 541
+          },
+          {
             "value": 3,
             "element": 552
           },
           {
-            "value": 3,
-            "element": 560
-          },
-          {
             "value": 2,
-            "element": 541
+            "element": 551
           },
           {
             "value": 2,
@@ -120661,7 +120661,7 @@
           },
           {
             "value": 1,
-            "element": 551
+            "element": 560
           }
         ]
       }
@@ -120673,7 +120673,7 @@
   {
     "code": 2562229,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 335,
     "kickoff_time": "2026-04-25T11:30:00Z",
@@ -120766,7 +120766,20 @@
       {
         "identifier": "bonus",
         "a": [],
-        "h": []
+        "h": [
+          {
+            "value": 3,
+            "element": 317
+          },
+          {
+            "value": 3,
+            "element": 328
+          },
+          {
+            "value": 1,
+            "element": 314
+          }
+        ]
       },
       {
         "identifier": "bps",
@@ -121014,7 +121027,7 @@
   {
     "code": 2562230,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 336,
     "kickoff_time": "2026-04-25T14:00:00Z",
@@ -121124,7 +121137,20 @@
       {
         "identifier": "bonus",
         "a": [],
-        "h": []
+        "h": [
+          {
+            "value": 3,
+            "element": 386
+          },
+          {
+            "value": 2,
+            "element": 499
+          },
+          {
+            "value": 1,
+            "element": 382
+          }
+        ]
       },
       {
         "identifier": "bps",
@@ -121368,7 +121394,7 @@
   {
     "code": 2562233,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 339,
     "kickoff_time": "2026-04-25T14:00:00Z",
@@ -121486,8 +121512,22 @@
       },
       {
         "identifier": "bonus",
-        "a": [],
-        "h": []
+        "a": [
+          {
+            "value": 1,
+            "element": 242
+          }
+        ],
+        "h": [
+          {
+            "value": 3,
+            "element": 613
+          },
+          {
+            "value": 2,
+            "element": 624
+          }
+        ]
       },
       {
         "identifier": "bps",
@@ -121723,7 +121763,7 @@
   {
     "code": 2562234,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 340,
     "kickoff_time": "2026-04-25T14:00:00Z",
@@ -121827,7 +121867,20 @@
       },
       {
         "identifier": "bonus",
-        "a": [],
+        "a": [
+          {
+            "value": 3,
+            "element": 673
+          },
+          {
+            "value": 2,
+            "element": 568
+          },
+          {
+            "value": 1,
+            "element": 575
+          }
+        ],
         "h": []
       },
       {
@@ -122080,7 +122133,7 @@
   {
     "code": 2562226,
     "event": 34,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 331,
     "kickoff_time": "2026-04-25T16:30:00Z",
@@ -122173,7 +122226,20 @@
       {
         "identifier": "bonus",
         "a": [],
-        "h": []
+        "h": [
+          {
+            "value": 3,
+            "element": 1
+          },
+          {
+            "value": 2,
+            "element": 5
+          },
+          {
+            "value": 1,
+            "element": 725
+          }
+        ]
       },
       {
         "identifier": "bps",
