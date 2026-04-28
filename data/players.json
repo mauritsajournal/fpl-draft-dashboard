@@ -59580,13 +59580,13 @@
       },
       {
         "average_entry_score": null,
-        "deadline_time": "2026-05-17T12:30:00Z",
+        "deadline_time": "2026-05-17T10:00:00Z",
         "id": 37,
         "name": "Gameweek 37",
         "finished": false,
         "highest_scoring_entry": null,
-        "trades_time": "2026-05-15T12:30:00Z",
-        "waivers_time": "2026-05-16T12:30:00Z"
+        "trades_time": "2026-05-15T10:00:00Z",
+        "waivers_time": "2026-05-16T10:00:00Z"
       },
       {
         "average_entry_score": null,
@@ -59924,32 +59924,32 @@
         "event": 36,
         "team_a": 11,
         "team_h": 18
-      }
-    ],
-    "37": [
+      },
       {
-        "id": 361,
+        "id": 307,
         "started": false,
-        "code": 2562256,
+        "code": 2562201,
         "finished": false,
         "finished_provisional": false,
-        "kickoff_time": "2026-05-17T14:00:00Z",
+        "kickoff_time": "2026-05-13T19:00:00Z",
         "minutes": 0,
         "provisional_start_time": false,
         "team_a_score": null,
         "team_h_score": null,
-        "pulse_id": 125151,
-        "event": 37,
-        "team_a": 3,
-        "team_h": 1
-      },
+        "pulse_id": 125097,
+        "event": 36,
+        "team_a": 8,
+        "team_h": 13
+      }
+    ],
+    "37": [
       {
         "id": 362,
         "started": false,
         "code": 2562257,
         "finished": false,
         "finished_provisional": false,
-        "kickoff_time": "2026-05-17T14:00:00Z",
+        "kickoff_time": "2026-05-17T11:30:00Z",
         "minutes": 0,
         "provisional_start_time": false,
         "team_a_score": null,
@@ -59958,6 +59958,22 @@
         "event": 37,
         "team_a": 12,
         "team_h": 2
+      },
+      {
+        "id": 368,
+        "started": false,
+        "code": 2562262,
+        "finished": false,
+        "finished_provisional": false,
+        "kickoff_time": "2026-05-17T11:30:00Z",
+        "minutes": 0,
+        "provisional_start_time": false,
+        "team_a_score": null,
+        "team_h_score": null,
+        "pulse_id": 125158,
+        "event": 37,
+        "team_a": 16,
+        "team_h": 14
       },
       {
         "id": 364,
@@ -60008,38 +60024,6 @@
         "team_h": 11
       },
       {
-        "id": 368,
-        "started": false,
-        "code": 2562262,
-        "finished": false,
-        "finished_provisional": false,
-        "kickoff_time": "2026-05-17T14:00:00Z",
-        "minutes": 0,
-        "provisional_start_time": false,
-        "team_a_score": null,
-        "team_h_score": null,
-        "pulse_id": 125158,
-        "event": 37,
-        "team_a": 16,
-        "team_h": 14
-      },
-      {
-        "id": 369,
-        "started": false,
-        "code": 2562263,
-        "finished": false,
-        "finished_provisional": false,
-        "kickoff_time": "2026-05-17T14:00:00Z",
-        "minutes": 0,
-        "provisional_start_time": false,
-        "team_a_score": null,
-        "team_h_score": null,
-        "pulse_id": 125159,
-        "event": 37,
-        "team_a": 19,
-        "team_h": 15
-      },
-      {
         "id": 370,
         "started": false,
         "code": 2562264,
@@ -60054,6 +60038,70 @@
         "event": 37,
         "team_a": 10,
         "team_h": 20
+      },
+      {
+        "id": 369,
+        "started": false,
+        "code": 2562263,
+        "finished": false,
+        "finished_provisional": false,
+        "kickoff_time": "2026-05-17T16:30:00Z",
+        "minutes": 0,
+        "provisional_start_time": false,
+        "team_a_score": null,
+        "team_h_score": null,
+        "pulse_id": 125159,
+        "event": 37,
+        "team_a": 19,
+        "team_h": 15
+      },
+      {
+        "id": 361,
+        "started": false,
+        "code": 2562256,
+        "finished": false,
+        "finished_provisional": false,
+        "kickoff_time": "2026-05-18T19:00:00Z",
+        "minutes": 0,
+        "provisional_start_time": false,
+        "team_a_score": null,
+        "team_h_score": null,
+        "pulse_id": 125151,
+        "event": 37,
+        "team_a": 3,
+        "team_h": 1
+      },
+      {
+        "id": 363,
+        "started": false,
+        "code": 2562255,
+        "finished": false,
+        "finished_provisional": false,
+        "kickoff_time": "2026-05-19T18:30:00Z",
+        "minutes": 0,
+        "provisional_start_time": false,
+        "team_a_score": null,
+        "team_h_score": null,
+        "pulse_id": 125153,
+        "event": 37,
+        "team_a": 13,
+        "team_h": 4
+      },
+      {
+        "id": 365,
+        "started": false,
+        "code": 2562259,
+        "finished": false,
+        "finished_provisional": false,
+        "kickoff_time": "2026-05-19T19:15:00Z",
+        "minutes": 0,
+        "provisional_start_time": false,
+        "team_a_score": null,
+        "team_h_score": null,
+        "pulse_id": 125155,
+        "event": 37,
+        "team_a": 18,
+        "team_h": 7
       }
     ]
   },
