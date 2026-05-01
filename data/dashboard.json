@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-01T08:55:43.652Z",
+    "lastUpdated": "2026-05-01T14:15:08.846Z",
     "currentGameweek": 34,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -5001,28 +5001,6 @@
       "bonus": 7
     },
     {
-      "id": 293,
-      "webName": "O'Brien",
-      "firstName": "Jake",
-      "lastName": "O'Brien",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Everton",
-      "teamId": 9,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
-      "totalPoints": 108,
-      "form": 2,
-      "goalsScored": 0,
-      "assists": 3,
-      "xG": 0.94,
-      "xA": 0.96,
-      "xGI": 1.9,
-      "minutes": 2790,
-      "cleanSheets": 10,
-      "bonus": 2
-    },
-    {
       "id": 314,
       "webName": "Leno",
       "firstName": "Bernd",
@@ -5593,6 +5571,28 @@
       "minutes": 1474,
       "cleanSheets": 7,
       "bonus": 9
+    },
+    {
+      "id": 342,
+      "webName": "Bogle",
+      "firstName": "Jayden",
+      "lastName": "Bogle",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Leeds",
+      "teamId": 11,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
+      "totalPoints": 89,
+      "form": 4.3,
+      "goalsScored": 1,
+      "assists": 4,
+      "xG": 2.05,
+      "xA": 2.58,
+      "xGI": 4.63,
+      "minutes": 2628,
+      "cleanSheets": 6,
+      "bonus": 1
     },
     {
       "id": 366,
@@ -6345,6 +6345,28 @@
       "bonus": 9
     },
     {
+      "id": 293,
+      "webName": "O'Brien",
+      "firstName": "Jake",
+      "lastName": "O'Brien",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Everton",
+      "teamId": 9,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 108,
+      "form": 2,
+      "goalsScored": 0,
+      "assists": 3,
+      "xG": 0.94,
+      "xA": 0.96,
+      "xGI": 1.9,
+      "minutes": 2790,
+      "cleanSheets": 10,
+      "bonus": 2
+    },
+    {
       "id": 337,
       "webName": "Raúl",
       "firstName": "Raúl",
@@ -7091,28 +7113,6 @@
       "minutes": 2790,
       "cleanSheets": 7,
       "bonus": 6
-    },
-    {
-      "id": 342,
-      "webName": "Bogle",
-      "firstName": "Jayden",
-      "lastName": "Bogle",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Leeds",
-      "teamId": 11,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 89,
-      "form": 4.3,
-      "goalsScored": 1,
-      "assists": 4,
-      "xG": 2.05,
-      "xA": 2.58,
-      "xGI": 4.63,
-      "minutes": 2628,
-      "cleanSheets": 6,
-      "bonus": 1
     },
     {
       "id": 516,
@@ -24463,6 +24463,30 @@
       "playerOutId": 226,
       "type": "free_agent",
       "result": "accepted"
+    },
+    {
+      "id": 62484912,
+      "gameweek": 35,
+      "managerName": "Unknown",
+      "leagueEntryId": 27628,
+      "playerIn": "Van den Berg",
+      "playerInId": 113,
+      "playerOut": "O'Brien",
+      "playerOutId": 293,
+      "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 62485300,
+      "gameweek": 35,
+      "managerName": "Unknown",
+      "leagueEntryId": 27628,
+      "playerIn": "Bogle",
+      "playerInId": 342,
+      "playerOut": "Van den Berg",
+      "playerOutId": 113,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -25861,6 +25885,84 @@
       }
     },
     {
+      "leagueEntryId": 27137,
+      "teamName": "Dikke Saka veel grip",
+      "playerName": "Maurits Koot",
+      "predictedPoints": 92.3,
+      "playerBreakdown": [
+        {
+          "playerId": 373,
+          "playerName": "Virgil",
+          "expectedPoints": 14.4,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 387,
+          "playerName": "Szoboszlai",
+          "expectedPoints": 8.4,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 374,
+          "playerName": "Konaté",
+          "expectedPoints": 9.6,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 382,
+          "playerName": "Wirtz",
+          "expectedPoints": 11.7,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 381,
+          "playerName": "M.Salah",
+          "expectedPoints": 13.9,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 83,
+          "playerName": "O.Dango",
+          "expectedPoints": 5,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 386,
+          "playerName": "Mac Allister",
+          "expectedPoints": 10.5,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 342,
+          "playerName": "Bogle",
+          "expectedPoints": 9.1,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 366,
+          "playerName": "A.Becker",
+          "expectedPoints": 0,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 215,
+          "playerName": "Flemming",
+          "expectedPoints": 8.1,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 371,
+          "playerName": "Kerkez",
+          "expectedPoints": 1.6,
+          "fixtureDifficulty": 3
+        }
+      ],
+      "opponent": {
+        "leagueEntryId": 2273,
+        "teamName": "Gibbs-White Walkers"
+      }
+    },
+    {
       "leagueEntryId": 8630,
       "teamName": "Hannies bal met brie",
       "playerName": "Marc Streng",
@@ -25936,84 +26038,6 @@
       "opponent": {
         "leagueEntryId": 34059,
         "teamName": "Steen, Papier, Schar"
-      }
-    },
-    {
-      "leagueEntryId": 27137,
-      "teamName": "Dikke Saka veel grip",
-      "playerName": "Maurits Koot",
-      "predictedPoints": 87.4,
-      "playerBreakdown": [
-        {
-          "playerId": 373,
-          "playerName": "Virgil",
-          "expectedPoints": 14.4,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 387,
-          "playerName": "Szoboszlai",
-          "expectedPoints": 8.4,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 374,
-          "playerName": "Konaté",
-          "expectedPoints": 9.6,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 382,
-          "playerName": "Wirtz",
-          "expectedPoints": 11.7,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 381,
-          "playerName": "M.Salah",
-          "expectedPoints": 13.9,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 83,
-          "playerName": "O.Dango",
-          "expectedPoints": 5,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 293,
-          "playerName": "O'Brien",
-          "expectedPoints": 4.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 386,
-          "playerName": "Mac Allister",
-          "expectedPoints": 10.5,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 366,
-          "playerName": "A.Becker",
-          "expectedPoints": 0,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 215,
-          "playerName": "Flemming",
-          "expectedPoints": 8.1,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 371,
-          "playerName": "Kerkez",
-          "expectedPoints": 1.6,
-          "fixtureDifficulty": 3
-        }
-      ],
-      "opponent": {
-        "leagueEntryId": 2273,
-        "teamName": "Gibbs-White Walkers"
       }
     },
     {
@@ -29492,8 +29516,8 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 529,
-            "avgPoints": 15.6,
+            "totalPoints": 510,
+            "avgPoints": 15,
             "playerCount": 5
           },
           "MID": {
@@ -30860,7 +30884,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-01T08:55:43.042Z",
+    "lastUpdated": "2026-05-01T14:15:08.102Z",
     "season": "2025",
     "plMatchday": 34,
     "managerProfiles": [
@@ -32607,34 +32631,34 @@
         "fantasyRank": 4,
         "fantasyPoints": 1486,
         "squadStats": {
-          "totalGoals": 47,
+          "totalGoals": 48,
           "totalAssists": 25,
-          "totalShots": 424,
+          "totalShots": 431,
           "shotsOnTarget": 138,
-          "shotAccuracy": 0.32547169811320753,
-          "totalPasses": 14096,
-          "accuratePasses": 11763,
-          "passAccuracy": 0.8344920544835415,
-          "foulsCommitted": 296,
-          "foulsSuffered": 280,
-          "yellowCards": 46,
-          "redCards": 2,
-          "totalCards": 48,
-          "tacklesWon": 220,
+          "shotAccuracy": 0.32018561484918795,
+          "totalPasses": 13934,
+          "accuratePasses": 11659,
+          "passAccuracy": 0.8367302999856466,
+          "foulsCommitted": 318,
+          "foulsSuffered": 293,
+          "yellowCards": 49,
+          "redCards": 1,
+          "totalCards": 50,
+          "tacklesWon": 229,
           "tacklesLost": 140,
-          "interceptions": 177,
-          "clearances": 917,
-          "shotsBlocked": 133,
-          "cleanSheets": 62,
-          "goalsConceded": 425,
+          "interceptions": 196,
+          "clearances": 850,
+          "shotsBlocked": 137,
+          "cleanSheets": 57,
+          "goalsConceded": 429,
           "saves": 61,
-          "totalMinutes": 29505,
-          "appearances": 392,
+          "totalMinutes": 29346,
+          "appearances": 391,
           "headedGoals": 7,
-          "goalInvolvement": 72,
-          "minutesPerGoalInvolvement": 409.7916666666667,
+          "goalInvolvement": 73,
+          "minutesPerGoalInvolvement": 402,
           "disciplinaryPoints": 52,
-          "shotAssists": 310
+          "shotAssists": 313
         },
         "plTeamDistribution": [
           {
@@ -32650,10 +32674,10 @@
             "fplTeamId": 5
           },
           {
-            "teamName": "Everton",
+            "teamName": "Leeds",
             "count": 1,
-            "plRank": 11,
-            "fplTeamId": 9
+            "plRank": 15,
+            "fplTeamId": 11
           },
           {
             "teamName": "Burnley",
@@ -32802,28 +32826,6 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "O'Brien",
-            "espnName": "Jake O'Brien",
-            "plTeam": "Everton",
-            "plTeamRank": 11,
-            "fplPoints": 108,
-            "espnGoals": 0,
-            "espnAssists": 1,
-            "espnMinutes": 2794,
-            "espnYellows": 3,
-            "espnReds": 1,
-            "espnFouls": 16,
-            "espnPasses": 1001,
-            "espnPassPct": 0.742,
-            "espnShots": 10,
-            "espnShotsOnTarget": 4,
-            "espnTackles": 52,
-            "espnInterceptions": 13,
-            "espnCleanSheets": 9,
-            "position": "DEF",
-            "isBenchwarmer": false
-          },
-          {
             "fplName": "Mac Allister",
             "espnName": "Alexis Mac Allister",
             "plTeam": "Liverpool",
@@ -32843,6 +32845,28 @@
             "espnInterceptions": 20,
             "espnCleanSheets": 6,
             "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
+            "fplName": "Bogle",
+            "espnName": "Jayden Bogle",
+            "plTeam": "Leeds",
+            "plTeamRank": 15,
+            "fplPoints": 89,
+            "espnGoals": 1,
+            "espnAssists": 1,
+            "espnMinutes": 2635,
+            "espnYellows": 6,
+            "espnReds": 0,
+            "espnFouls": 38,
+            "espnPasses": 839,
+            "espnPassPct": 0.762,
+            "espnShots": 17,
+            "espnShotsOnTarget": 4,
+            "espnTackles": 61,
+            "espnInterceptions": 32,
+            "espnCleanSheets": 4,
+            "position": "DEF",
             "isBenchwarmer": false
           },
           {
@@ -34318,21 +34342,21 @@
         "verdict": "Punching above weight"
       },
       {
+        "leagueEntryId": 27137,
+        "managerName": "Maurits Koot",
+        "fantasyRank": 4,
+        "avgPlTeamRank": 6.67,
+        "weightedPlRank": 6.68,
+        "rankDelta": 2.68,
+        "verdict": "Slight overperformer"
+      },
+      {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "fantasyRank": 5,
         "avgPlTeamRank": 8.4,
         "weightedPlRank": 7.41,
         "rankDelta": 2.41,
-        "verdict": "Slight overperformer"
-      },
-      {
-        "leagueEntryId": 27137,
-        "managerName": "Maurits Koot",
-        "fantasyRank": 4,
-        "avgPlTeamRank": 6.4,
-        "weightedPlRank": 6.35,
-        "rankDelta": 2.35,
         "verdict": "Slight overperformer"
       },
       {
@@ -34523,9 +34547,9 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "yellows": 46,
-        "reds": 2,
-        "totalCards": 48,
+        "yellows": 49,
+        "reds": 1,
+        "totalCards": 50,
         "disciplinaryPoints": 52,
         "dirtiest3": [
           {
@@ -34539,9 +34563,9 @@
             "reds": 0
           },
           {
-            "name": "O'Brien",
-            "yellows": 3,
-            "reds": 1
+            "name": "Bogle",
+            "yellows": 6,
+            "reds": 0
           }
         ],
         "title": "Dirty Dozen"
@@ -34577,10 +34601,10 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "passAccuracy": 83.45,
-        "totalPasses": 14096,
-        "accuratePasses": 11763,
-        "longBallRatio": 9.88,
+        "passAccuracy": 83.67,
+        "totalPasses": 13934,
+        "accuratePasses": 11659,
+        "longBallRatio": 9.85,
         "style": "Controlled",
         "title": "The Strategist"
       },
@@ -34736,12 +34760,12 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "totalShots": 424,
+        "totalShots": 431,
         "shotsOnTarget": 138,
-        "goals": 47,
-        "shotAccuracy": 32.55,
-        "conversionRate": 11.08,
-        "shotsPerGoal": 9.02,
+        "goals": 48,
+        "shotAccuracy": 32.02,
+        "conversionRate": 11.14,
+        "shotsPerGoal": 8.98,
         "title": "Sharp Shooter"
       }
     ],
@@ -34809,13 +34833,13 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "tacklesWon": 220,
-        "interceptions": 177,
-        "clearances": 917,
-        "shotsBlocked": 133,
-        "defensiveActions": 1447,
-        "cleanSheets": 62,
-        "goalsConceded": 425,
+        "tacklesWon": 229,
+        "interceptions": 196,
+        "clearances": 850,
+        "shotsBlocked": 137,
+        "defensiveActions": 1412,
+        "cleanSheets": 57,
+        "goalsConceded": 429,
         "title": "The Great Wall"
       },
       {
@@ -34911,6 +34935,28 @@
         "title": "The Enforcer"
       },
       {
+        "leagueEntryId": 27137,
+        "managerName": "Maurits Koot",
+        "foulsCommitted": 318,
+        "foulsSuffered": 293,
+        "foulRatio": 1.09,
+        "dirtiest": [
+          {
+            "name": "Strand Larsen",
+            "fouls": 48
+          },
+          {
+            "name": "Flemming",
+            "fouls": 40
+          },
+          {
+            "name": "Bogle",
+            "fouls": 38
+          }
+        ],
+        "title": "The Enforcer"
+      },
+      {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
         "foulsCommitted": 315,
@@ -34972,28 +35018,6 @@
           {
             "name": "Bernardo",
             "fouls": 36
-          }
-        ],
-        "title": "The Enforcer"
-      },
-      {
-        "leagueEntryId": 27137,
-        "managerName": "Maurits Koot",
-        "foulsCommitted": 296,
-        "foulsSuffered": 280,
-        "foulRatio": 1.06,
-        "dirtiest": [
-          {
-            "name": "Strand Larsen",
-            "fouls": 48
-          },
-          {
-            "name": "Flemming",
-            "fouls": 40
-          },
-          {
-            "name": "Szoboszlai",
-            "fouls": 32
           }
         ],
         "title": "The Enforcer"
@@ -35088,7 +35112,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 1967,
+        "avgMinutesPerPlayer": 1956,
         "ghosts": [],
         "title": "All Business"
       },
@@ -35565,9 +35589,9 @@
             "plRank": 9
           },
           {
-            "team": "Everton",
+            "team": "Leeds",
             "count": 1,
-            "plRank": 11
+            "plRank": 15
           },
           {
             "team": "Burnley",
@@ -35589,7 +35613,7 @@
         "managerName": "Maurits Koot",
         "top6Count": 11,
         "top6Pct": 73.33,
-        "bottom6Count": 1,
+        "bottom6Count": 2,
         "totalPlayers": 15,
         "title": "Big Club Merchant"
       },
@@ -35948,10 +35972,10 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "totalGoalInvolvements": 72,
-        "goals": 47,
+        "totalGoalInvolvements": 73,
+        "goals": 48,
         "assists": 25,
-        "minsPerGI": 410,
+        "minsPerGI": 402,
         "topContributors": [
           {
             "name": "M.Salah",
@@ -36045,10 +36069,10 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "chaosScore": 398,
-        "yellows": 46,
-        "reds": 2,
-        "fouls": 296,
+        "chaosScore": 421,
+        "yellows": 49,
+        "reds": 1,
+        "fouls": 318,
         "title": "Agent of Chaos"
       },
       {
@@ -36131,8 +36155,8 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "totalMinutes": 29505,
-        "avgMinutesPerPlayer": 1967,
+        "totalMinutes": 29346,
+        "avgMinutesPerPlayer": 1956,
         "ironMan": {
           "name": "Virgil",
           "minutes": 3060
@@ -36155,9 +36179,9 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "realGI": 72,
+        "realGI": 73,
         "fantasyPoints": 1486,
-        "pointsPerRealGI": 20.64,
+        "pointsPerRealGI": 20.36,
         "overperformers": [
           {
             "name": "Konaté",
@@ -36165,14 +36189,14 @@
             "realGI": 1
           },
           {
-            "name": "O'Brien",
-            "fplPts": 108,
-            "realGI": 1
-          },
-          {
             "name": "Frimpong",
             "fplPts": 59,
             "realGI": 1
+          },
+          {
+            "name": "Bogle",
+            "fplPts": 89,
+            "realGI": 2
           }
         ],
         "underperformers": [
@@ -38547,7 +38571,7 @@
               "seasonScore": 1.15
             },
             "isStarter": false,
-            "status": "d"
+            "status": "i"
           },
           {
             "playerId": 390,
@@ -39518,7 +39542,7 @@
               "seasonScore": 3.35
             },
             "isStarter": false,
-            "status": "a"
+            "status": "d"
           },
           {
             "playerId": 41,
@@ -40189,7 +40213,7 @@
         "teamName": "Dikke Saka veel grip",
         "playerName": "Maurits Koot",
         "formation": "3-5-2",
-        "totalStartScore": 50.18,
+        "totalStartScore": 53.19,
         "players": [
           {
             "playerId": 366,
@@ -40210,6 +40234,26 @@
             },
             "isStarter": true,
             "status": "d"
+          },
+          {
+            "playerId": 342,
+            "webName": "Bogle",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Leeds",
+            "teamShort": "LEE",
+            "opponent": "Burnley",
+            "opponentShort": "BUR",
+            "isHome": true,
+            "startScore": 6.25,
+            "breakdown": {
+              "fixtureScore": 9,
+              "formScore": 3.8,
+              "specialScore": 6.6,
+              "seasonScore": 4.45
+            },
+            "isStarter": true,
+            "status": "a"
           },
           {
             "playerId": 373,
@@ -40247,26 +40291,6 @@
               "formScore": 2.8,
               "specialScore": 3.2,
               "seasonScore": 6.25
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 370,
-            "webName": "Frimpong",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Liverpool",
-            "teamShort": "LIV",
-            "opponent": "Man Utd",
-            "opponentShort": "MUN",
-            "isHome": false,
-            "startScore": 3.24,
-            "breakdown": {
-              "fixtureScore": 3.8,
-              "formScore": 2.8,
-              "specialScore": 3.2,
-              "seasonScore": 2.95
             },
             "isStarter": true,
             "status": "a"
@@ -40349,7 +40373,7 @@
               "seasonScore": 5.8
             },
             "isStarter": true,
-            "status": "d"
+            "status": "i"
           },
           {
             "playerId": 386,
@@ -40412,6 +40436,26 @@
             "status": "a"
           },
           {
+            "playerId": 370,
+            "webName": "Frimpong",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Liverpool",
+            "teamShort": "LIV",
+            "opponent": "Man Utd",
+            "opponentShort": "MUN",
+            "isHome": false,
+            "startScore": 3.24,
+            "breakdown": {
+              "fixtureScore": 3.8,
+              "formScore": 2.8,
+              "specialScore": 3.2,
+              "seasonScore": 2.95
+            },
+            "isStarter": false,
+            "status": "a"
+          },
+          {
             "playerId": 499,
             "webName": "Isak",
             "position": "FWD",
@@ -40449,27 +40493,7 @@
               "seasonScore": 4.05
             },
             "isStarter": false,
-            "status": "a"
-          },
-          {
-            "playerId": 293,
-            "webName": "O'Brien",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Everton",
-            "teamShort": "EVE",
-            "opponent": "Man City",
-            "opponentShort": "MCI",
-            "isHome": true,
-            "startScore": 2.89,
-            "breakdown": {
-              "fixtureScore": 2.33,
-              "formScore": 3,
-              "specialScore": 2.4,
-              "seasonScore": 5.4
-            },
-            "isStarter": false,
-            "status": "a"
+            "status": "d"
           },
           {
             "playerId": 369,
