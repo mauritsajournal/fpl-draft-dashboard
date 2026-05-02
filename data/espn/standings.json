@@ -4,14 +4,14 @@
     "fplTeamId": 1,
     "teamName": "Arsenal",
     "rank": 1,
-    "points": 73,
-    "wins": 22,
+    "points": 76,
+    "wins": 23,
     "draws": 7,
     "losses": 5,
-    "goalsFor": 64,
+    "goalsFor": 67,
     "goalsAgainst": 26,
-    "goalDifference": 38,
-    "gamesPlayed": 34
+    "goalDifference": 41,
+    "gamesPlayed": 35
   },
   {
     "espnTeamId": 382,
@@ -70,24 +70,38 @@
     "gamesPlayed": 34
   },
   {
+    "espnTeamId": 337,
+    "fplTeamId": 5,
+    "teamName": "Brentford",
+    "rank": 6,
+    "points": 51,
+    "wins": 14,
+    "draws": 9,
+    "losses": 12,
+    "goalsFor": 52,
+    "goalsAgainst": 46,
+    "goalDifference": 6,
+    "gamesPlayed": 35
+  },
+  {
     "espnTeamId": 331,
     "fplTeamId": 6,
     "teamName": "Brighton & Hove Albion",
-    "rank": 6,
+    "rank": 7,
     "points": 50,
     "wins": 13,
     "draws": 11,
-    "losses": 10,
-    "goalsFor": 48,
-    "goalsAgainst": 39,
-    "goalDifference": 9,
-    "gamesPlayed": 34
+    "losses": 11,
+    "goalsFor": 49,
+    "goalsAgainst": 42,
+    "goalDifference": 7,
+    "gamesPlayed": 35
   },
   {
     "espnTeamId": 349,
     "fplTeamId": 4,
     "teamName": "AFC Bournemouth",
-    "rank": 7,
+    "rank": 8,
     "points": 49,
     "wins": 11,
     "draws": 16,
@@ -101,7 +115,7 @@
     "espnTeamId": 363,
     "fplTeamId": 7,
     "teamName": "Chelsea",
-    "rank": 8,
+    "rank": 9,
     "points": 48,
     "wins": 13,
     "draws": 9,
@@ -112,20 +126,6 @@
     "gamesPlayed": 34
   },
   {
-    "espnTeamId": 337,
-    "fplTeamId": 5,
-    "teamName": "Brentford",
-    "rank": 9,
-    "points": 48,
-    "wins": 13,
-    "draws": 9,
-    "losses": 12,
-    "goalsFor": 49,
-    "goalsAgainst": 46,
-    "goalDifference": 3,
-    "gamesPlayed": 34
-  },
-  {
     "espnTeamId": 370,
     "fplTeamId": 10,
     "teamName": "Fulham",
@@ -133,11 +133,11 @@
     "points": 48,
     "wins": 14,
     "draws": 6,
-    "losses": 14,
+    "losses": 15,
     "goalsFor": 44,
-    "goalsAgainst": 46,
-    "goalDifference": -2,
-    "gamesPlayed": 34
+    "goalsAgainst": 49,
+    "goalDifference": -5,
+    "gamesPlayed": 35
   },
   {
     "espnTeamId": 368,
@@ -158,20 +158,34 @@
     "fplTeamId": 17,
     "teamName": "Sunderland",
     "rank": 12,
-    "points": 46,
+    "points": 47,
     "wins": 12,
-    "draws": 10,
+    "draws": 11,
     "losses": 12,
-    "goalsFor": 36,
-    "goalsAgainst": 45,
+    "goalsFor": 37,
+    "goalsAgainst": 46,
     "goalDifference": -9,
-    "gamesPlayed": 34
+    "gamesPlayed": 35
+  },
+  {
+    "espnTeamId": 361,
+    "fplTeamId": 15,
+    "teamName": "Newcastle United",
+    "rank": 13,
+    "points": 45,
+    "wins": 13,
+    "draws": 6,
+    "losses": 16,
+    "goalsFor": 49,
+    "goalsAgainst": 51,
+    "goalDifference": -2,
+    "gamesPlayed": 35
   },
   {
     "espnTeamId": 384,
     "fplTeamId": 8,
     "teamName": "Crystal Palace",
-    "rank": 13,
+    "rank": 14,
     "points": 43,
     "wins": 11,
     "draws": 10,
@@ -185,7 +199,7 @@
     "espnTeamId": 357,
     "fplTeamId": 11,
     "teamName": "Leeds United",
-    "rank": 14,
+    "rank": 15,
     "points": 43,
     "wins": 10,
     "draws": 13,
@@ -194,20 +208,6 @@
     "goalsAgainst": 52,
     "goalDifference": -5,
     "gamesPlayed": 35
-  },
-  {
-    "espnTeamId": 361,
-    "fplTeamId": 15,
-    "teamName": "Newcastle United",
-    "rank": 15,
-    "points": 42,
-    "wins": 12,
-    "draws": 6,
-    "losses": 16,
-    "goalsFor": 46,
-    "goalsAgainst": 50,
-    "goalDifference": -4,
-    "gamesPlayed": 34
   },
   {
     "espnTeamId": 393,
@@ -231,11 +231,11 @@
     "points": 36,
     "wins": 9,
     "draws": 9,
-    "losses": 16,
+    "losses": 17,
     "goalsFor": 42,
-    "goalsAgainst": 58,
-    "goalDifference": -16,
-    "gamesPlayed": 34
+    "goalsAgainst": 61,
+    "goalDifference": -19,
+    "gamesPlayed": 35
   },
   {
     "espnTeamId": 367,
@@ -270,13 +270,13 @@
     "fplTeamId": 20,
     "teamName": "Wolverhampton Wanderers",
     "rank": 20,
-    "points": 17,
+    "points": 18,
     "wins": 3,
-    "draws": 8,
+    "draws": 9,
     "losses": 23,
-    "goalsFor": 24,
-    "goalsAgainst": 62,
+    "goalsFor": 25,
+    "goalsAgainst": 63,
     "goalDifference": -38,
-    "gamesPlayed": 34
+    "gamesPlayed": 35
   }
 ]
