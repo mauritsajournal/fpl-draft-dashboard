@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-02T08:19:15.787Z",
+    "lastUpdated": "2026-05-02T14:08:01.453Z",
     "currentGameweek": 34,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -3999,14 +3999,14 @@
       "teamId": 6,
       "owner": "Marc Streng",
       "ownerLeagueEntryId": 8630,
-      "totalPoints": 137,
+      "totalPoints": 138,
       "form": 4.2,
       "goalsScored": 3,
       "assists": 3,
       "xG": 2.37,
       "xA": 1.35,
       "xGI": 3.71,
-      "minutes": 2850,
+      "minutes": 2852,
       "cleanSheets": 9,
       "bonus": 8
     },
@@ -4021,14 +4021,14 @@
       "teamId": 15,
       "owner": "Robert van Gemert",
       "ownerLeagueEntryId": 85079,
-      "totalPoints": 137,
+      "totalPoints": 138,
       "form": 0.8,
       "goalsScored": 9,
       "assists": 6,
       "xG": 5.05,
       "xA": 3.98,
       "xGI": 9.03,
-      "minutes": 2121,
+      "minutes": 2123,
       "cleanSheets": 6,
       "bonus": 19
     },
@@ -4143,6 +4143,28 @@
       "bonus": 15
     },
     {
+      "id": 694,
+      "webName": "Mukiele",
+      "firstName": "Nordi",
+      "lastName": "Mukiele",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": "Salomon van Megen",
+      "ownerLeagueEntryId": 34059,
+      "totalPoints": 129,
+      "form": 3.2,
+      "goalsScored": 2,
+      "assists": 5,
+      "xG": 1.28,
+      "xA": 2.2,
+      "xGI": 3.48,
+      "minutes": 2426,
+      "cleanSheets": 8,
+      "bonus": 10
+    },
+    {
       "id": 26,
       "webName": "Zubimendi",
       "firstName": "Martín",
@@ -4207,28 +4229,6 @@
       "minutes": 2664,
       "cleanSheets": 9,
       "bonus": 14
-    },
-    {
-      "id": 694,
-      "webName": "Mukiele",
-      "firstName": "Nordi",
-      "lastName": "Mukiele",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": "Salomon van Megen",
-      "ownerLeagueEntryId": 34059,
-      "totalPoints": 128,
-      "form": 3.2,
-      "goalsScored": 2,
-      "assists": 5,
-      "xG": 1.28,
-      "xA": 2.2,
-      "xGI": 3.48,
-      "minutes": 2424,
-      "cleanSheets": 8,
-      "bonus": 10
     },
     {
       "id": 256,
@@ -4451,6 +4451,50 @@
       "bonus": 16
     },
     {
+      "id": 547,
+      "webName": "E.Le Fée",
+      "firstName": "Enzo",
+      "lastName": "Le Fée",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": "Sam vd V",
+      "ownerLeagueEntryId": 2273,
+      "totalPoints": 123,
+      "form": 3.5,
+      "goalsScored": 4,
+      "assists": 5,
+      "xG": 4.76,
+      "xA": 4.59,
+      "xGI": 9.35,
+      "minutes": 2572,
+      "cleanSheets": 9,
+      "bonus": 10
+    },
+    {
+      "id": 670,
+      "webName": "Roefs",
+      "firstName": "Robin",
+      "lastName": "Roefs",
+      "position": "GK",
+      "positionId": 1,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": "Tim van Duinen",
+      "ownerLeagueEntryId": 2569,
+      "totalPoints": 123,
+      "form": 3,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 0,
+      "xA": 0.1,
+      "xGI": 0.1,
+      "minutes": 2792,
+      "cleanSheets": 9,
+      "bonus": 12
+    },
+    {
       "id": 317,
       "webName": "Andersen",
       "firstName": "Joachim",
@@ -4515,50 +4559,6 @@
       "minutes": 2888,
       "cleanSheets": 9,
       "bonus": 15
-    },
-    {
-      "id": 547,
-      "webName": "E.Le Fée",
-      "firstName": "Enzo",
-      "lastName": "Le Fée",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": "Sam vd V",
-      "ownerLeagueEntryId": 2273,
-      "totalPoints": 122,
-      "form": 3.5,
-      "goalsScored": 4,
-      "assists": 5,
-      "xG": 4.76,
-      "xA": 4.59,
-      "xGI": 9.35,
-      "minutes": 2570,
-      "cleanSheets": 9,
-      "bonus": 10
-    },
-    {
-      "id": 670,
-      "webName": "Roefs",
-      "firstName": "Robin",
-      "lastName": "Roefs",
-      "position": "GK",
-      "positionId": 1,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": "Tim van Duinen",
-      "ownerLeagueEntryId": 2569,
-      "totalPoints": 122,
-      "form": 3,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 0,
-      "xA": 0.1,
-      "xGI": 0.1,
-      "minutes": 2790,
-      "cleanSheets": 9,
-      "bonus": 12
     },
     {
       "id": 382,
@@ -4627,6 +4627,50 @@
       "bonus": 7
     },
     {
+      "id": 683,
+      "webName": "Thiaw",
+      "firstName": "Malick",
+      "lastName": "Thiaw",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": "Sam vd V",
+      "ownerLeagueEntryId": 2273,
+      "totalPoints": 120,
+      "form": 1.2,
+      "goalsScored": 4,
+      "assists": 0,
+      "xG": 3.98,
+      "xA": 0.93,
+      "xGI": 4.91,
+      "minutes": 2605,
+      "cleanSheets": 5,
+      "bonus": 12
+    },
+    {
+      "id": 139,
+      "webName": "Verbruggen",
+      "firstName": "Bart",
+      "lastName": "Verbruggen",
+      "position": "GK",
+      "positionId": 1,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": "Salomon van Megen",
+      "ownerLeagueEntryId": 34059,
+      "totalPoints": 119,
+      "form": 4.2,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 0,
+      "xA": 0.06,
+      "xGI": 0.06,
+      "minutes": 3062,
+      "cleanSheets": 9,
+      "bonus": 6
+    },
+    {
       "id": 384,
       "webName": "Gakpo",
       "firstName": "Cody",
@@ -4649,26 +4693,26 @@
       "bonus": 5
     },
     {
-      "id": 683,
-      "webName": "Thiaw",
-      "firstName": "Malick",
-      "lastName": "Thiaw",
+      "id": 531,
+      "webName": "Ballard",
+      "firstName": "Daniel",
+      "lastName": "Ballard",
       "position": "DEF",
       "positionId": 2,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": "Sam vd V",
-      "ownerLeagueEntryId": 2273,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": "Pieter van Gemert",
+      "ownerLeagueEntryId": 4815,
       "totalPoints": 119,
-      "form": 1.2,
-      "goalsScored": 4,
-      "assists": 0,
-      "xG": 3.98,
-      "xA": 0.93,
-      "xGI": 4.91,
-      "minutes": 2603,
-      "cleanSheets": 5,
-      "bonus": 12
+      "form": 0,
+      "goalsScored": 2,
+      "assists": 2,
+      "xG": 2.46,
+      "xA": 0.63,
+      "xGI": 3.09,
+      "minutes": 2123,
+      "cleanSheets": 6,
+      "bonus": 9
     },
     {
       "id": 728,
@@ -4715,28 +4759,6 @@
       "bonus": 10
     },
     {
-      "id": 139,
-      "webName": "Verbruggen",
-      "firstName": "Bart",
-      "lastName": "Verbruggen",
-      "position": "GK",
-      "positionId": 1,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": "Salomon van Megen",
-      "ownerLeagueEntryId": 34059,
-      "totalPoints": 118,
-      "form": 4.2,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 0,
-      "xA": 0.06,
-      "xGI": 0.06,
-      "minutes": 3060,
-      "cleanSheets": 9,
-      "bonus": 6
-    },
-    {
       "id": 354,
       "webName": "Ampadu",
       "firstName": "Ethan",
@@ -4759,26 +4781,26 @@
       "bonus": 8
     },
     {
-      "id": 531,
-      "webName": "Ballard",
-      "firstName": "Daniel",
-      "lastName": "Ballard",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": "Pieter van Gemert",
-      "ownerLeagueEntryId": 4815,
-      "totalPoints": 118,
-      "form": 0,
-      "goalsScored": 2,
-      "assists": 2,
-      "xG": 2.46,
-      "xA": 0.63,
-      "xGI": 3.09,
-      "minutes": 2121,
-      "cleanSheets": 6,
-      "bonus": 9
+      "id": 178,
+      "webName": "Welbeck",
+      "firstName": "Danny",
+      "lastName": "Welbeck",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": "Marc Streng",
+      "ownerLeagueEntryId": 8630,
+      "totalPoints": 117,
+      "form": 2.5,
+      "goalsScored": 13,
+      "assists": 0,
+      "xG": 11.79,
+      "xA": 1.32,
+      "xGI": 13.11,
+      "minutes": 1974,
+      "cleanSheets": 8,
+      "bonus": 18
     },
     {
       "id": 106,
@@ -4803,28 +4825,6 @@
       "bonus": 7
     },
     {
-      "id": 178,
-      "webName": "Welbeck",
-      "firstName": "Danny",
-      "lastName": "Welbeck",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": "Marc Streng",
-      "ownerLeagueEntryId": 8630,
-      "totalPoints": 116,
-      "form": 2.5,
-      "goalsScored": 13,
-      "assists": 0,
-      "xG": 11.79,
-      "xA": 1.32,
-      "xGI": 13.11,
-      "minutes": 1972,
-      "cleanSheets": 8,
-      "bonus": 18
-    },
-    {
       "id": 381,
       "webName": "M.Salah",
       "firstName": "Mohamed",
@@ -4845,6 +4845,28 @@
       "minutes": 2055,
       "cleanSheets": 7,
       "bonus": 10
+    },
+    {
+      "id": 684,
+      "webName": "Alderete",
+      "firstName": "Omar",
+      "lastName": "Alderete",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": "Robert van Gemert",
+      "ownerLeagueEntryId": 85079,
+      "totalPoints": 113,
+      "form": 2.2,
+      "goalsScored": 1,
+      "assists": 1,
+      "xG": 1.6,
+      "xA": 0.89,
+      "xGI": 2.48,
+      "minutes": 2597,
+      "cleanSheets": 9,
+      "bonus": 5
     },
     {
       "id": 83,
@@ -4888,28 +4910,6 @@
       "xGI": 13.01,
       "minutes": 2458,
       "cleanSheets": 10,
-      "bonus": 5
-    },
-    {
-      "id": 684,
-      "webName": "Alderete",
-      "firstName": "Omar",
-      "lastName": "Alderete",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": "Robert van Gemert",
-      "ownerLeagueEntryId": 85079,
-      "totalPoints": 112,
-      "form": 2.2,
-      "goalsScored": 1,
-      "assists": 1,
-      "xG": 1.6,
-      "xA": 0.89,
-      "xGI": 2.48,
-      "minutes": 2595,
-      "cleanSheets": 9,
       "bonus": 5
     },
     {
@@ -4957,6 +4957,28 @@
       "bonus": 6
     },
     {
+      "id": 148,
+      "webName": "F.Kadıoğlu",
+      "firstName": "Ferdi",
+      "lastName": "Kadıoğlu",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": "Tim van Duinen",
+      "ownerLeagueEntryId": 2569,
+      "totalPoints": 109,
+      "form": 5.5,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 2,
+      "xA": 2.53,
+      "xGI": 4.53,
+      "minutes": 2772,
+      "cleanSheets": 9,
+      "bonus": 7
+    },
+    {
       "id": 698,
       "webName": "Okafor",
       "firstName": "Noah",
@@ -4977,28 +4999,6 @@
       "minutes": 1553,
       "cleanSheets": 6,
       "bonus": 11
-    },
-    {
-      "id": 148,
-      "webName": "F.Kadıoğlu",
-      "firstName": "Ferdi",
-      "lastName": "Kadıoğlu",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": "Tim van Duinen",
-      "ownerLeagueEntryId": 2569,
-      "totalPoints": 108,
-      "form": 5.5,
-      "goalsScored": 1,
-      "assists": 2,
-      "xG": 2,
-      "xA": 2.53,
-      "xGI": 4.53,
-      "minutes": 2770,
-      "cleanSheets": 9,
-      "bonus": 7
     },
     {
       "id": 220,
@@ -5077,14 +5077,14 @@
       "teamId": 17,
       "owner": "Marc Streng",
       "ownerLeagueEntryId": 8630,
-      "totalPoints": 107,
+      "totalPoints": 108,
       "form": 2,
       "goalsScored": 1,
       "assists": 5,
       "xG": 0.9,
       "xA": 2.91,
       "xGI": 3.81,
-      "minutes": 2541,
+      "minutes": 2543,
       "cleanSheets": 8,
       "bonus": 5
     },
@@ -5759,14 +5759,14 @@
       "teamId": 17,
       "owner": "Robert van Gemert",
       "ownerLeagueEntryId": 85079,
-      "totalPoints": 77,
+      "totalPoints": 78,
       "form": 1.2,
       "goalsScored": 6,
       "assists": 1,
       "xG": 4.54,
       "xA": 0.47,
       "xGI": 5.01,
-      "minutes": 1623,
+      "minutes": 1625,
       "cleanSheets": 5,
       "bonus": 11
     },
@@ -5935,14 +5935,14 @@
       "teamId": 15,
       "owner": "Robert van Gemert",
       "ownerLeagueEntryId": 85079,
-      "totalPoints": 50,
+      "totalPoints": 51,
       "form": 4.8,
       "goalsScored": 4,
       "assists": 1,
       "xG": 2.02,
       "xA": 0.15,
       "xGI": 2.17,
-      "minutes": 519,
+      "minutes": 521,
       "cleanSheets": 1,
       "bonus": 7
     },
@@ -6023,14 +6023,14 @@
       "teamId": 20,
       "owner": "Salomon van Megen",
       "ownerLeagueEntryId": 34059,
-      "totalPoints": 26,
+      "totalPoints": 27,
       "form": 1.5,
       "goalsScored": 1,
       "assists": 2,
       "xG": 1.24,
       "xA": 0.68,
       "xGI": 1.92,
-      "minutes": 817,
+      "minutes": 819,
       "cleanSheets": 3,
       "bonus": 0
     },
@@ -6443,14 +6443,14 @@
       "teamId": 6,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 102,
+      "totalPoints": 103,
       "form": 1.8,
       "goalsScored": 2,
       "assists": 8,
       "xG": 3.27,
       "xA": 4.49,
       "xGI": 7.76,
-      "minutes": 2074,
+      "minutes": 2076,
       "cleanSheets": 9,
       "bonus": 8
     },
@@ -6553,14 +6553,14 @@
       "teamId": 20,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 99,
+      "totalPoints": 100,
       "form": 1.8,
       "goalsScored": 1,
       "assists": 2,
       "xG": 1.26,
       "xA": 1.9,
       "xGI": 3.16,
-      "minutes": 2561,
+      "minutes": 2563,
       "cleanSheets": 4,
       "bonus": 6
     },
@@ -6873,6 +6873,28 @@
       "bonus": 1
     },
     {
+      "id": 532,
+      "webName": "Hume",
+      "firstName": "Trai",
+      "lastName": "Hume",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 94,
+      "form": 1.2,
+      "goalsScored": 1,
+      "assists": 1,
+      "xG": 2.01,
+      "xA": 1.73,
+      "xGI": 3.74,
+      "minutes": 2706,
+      "cleanSheets": 8,
+      "bonus": 6
+    },
+    {
       "id": 7,
       "webName": "Calafiori",
       "firstName": "Riccardo",
@@ -6917,25 +6939,25 @@
       "bonus": 3
     },
     {
-      "id": 532,
-      "webName": "Hume",
-      "firstName": "Trai",
-      "lastName": "Hume",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Sunderland",
-      "teamId": 17,
+      "id": 173,
+      "webName": "Wieffer",
+      "firstName": "Mats",
+      "lastName": "Wieffer",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brighton",
+      "teamId": 6,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 93,
-      "form": 1.2,
-      "goalsScored": 1,
-      "assists": 1,
-      "xG": 2.01,
-      "xA": 1.73,
-      "xGI": 3.74,
-      "minutes": 2704,
-      "cleanSheets": 8,
+      "totalPoints": 92,
+      "form": 5,
+      "goalsScored": 2,
+      "assists": 4,
+      "xG": 1.92,
+      "xA": 1.84,
+      "xGI": 3.76,
+      "minutes": 1796,
+      "cleanSheets": 6,
       "bonus": 6
     },
     {
@@ -7003,28 +7025,6 @@
       "minutes": 2396,
       "cleanSheets": 7,
       "bonus": 0
-    },
-    {
-      "id": 173,
-      "webName": "Wieffer",
-      "firstName": "Mats",
-      "lastName": "Wieffer",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 91,
-      "form": 5,
-      "goalsScored": 2,
-      "assists": 4,
-      "xG": 1.92,
-      "xA": 1.84,
-      "xGI": 3.76,
-      "minutes": 1794,
-      "cleanSheets": 6,
-      "bonus": 6
     },
     {
       "id": 292,
@@ -7247,6 +7247,28 @@
       "bonus": 8
     },
     {
+      "id": 643,
+      "webName": "André",
+      "firstName": "André",
+      "lastName": "Trindade da Costa Neto",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Wolves",
+      "teamId": 20,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 87,
+      "form": 2.2,
+      "goalsScored": 1,
+      "assists": 0,
+      "xG": 0.45,
+      "xA": 0.85,
+      "xGI": 1.3,
+      "minutes": 2402,
+      "cleanSheets": 2,
+      "bonus": 4
+    },
+    {
       "id": 427,
       "webName": "Reijnders",
       "firstName": "Tijjani",
@@ -7269,28 +7291,6 @@
       "bonus": 6
     },
     {
-      "id": 643,
-      "webName": "André",
-      "firstName": "André",
-      "lastName": "Trindade da Costa Neto",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Wolves",
-      "teamId": 20,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 86,
-      "form": 2.2,
-      "goalsScored": 1,
-      "assists": 0,
-      "xG": 0.45,
-      "xA": 0.85,
-      "xGI": 1.3,
-      "minutes": 2400,
-      "cleanSheets": 2,
-      "bonus": 4
-    },
-    {
       "id": 469,
       "webName": "Pope",
       "firstName": "Nick",
@@ -7301,14 +7301,14 @@
       "teamId": 15,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 84,
+      "totalPoints": 85,
       "form": 0.5,
       "goalsScored": 0,
       "assists": 1,
       "xG": 0.16,
       "xA": 0,
       "xGI": 0.16,
-      "minutes": 2056,
+      "minutes": 2058,
       "cleanSheets": 7,
       "bonus": 3
     },
@@ -7379,6 +7379,28 @@
       "bonus": 4
     },
     {
+      "id": 476,
+      "webName": "Burn",
+      "firstName": "Dan",
+      "lastName": "Burn",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 83,
+      "form": 1,
+      "goalsScored": 0,
+      "assists": 3,
+      "xG": 0.91,
+      "xA": 0.33,
+      "xGI": 1.24,
+      "minutes": 1919,
+      "cleanSheets": 6,
+      "bonus": 5
+    },
+    {
       "id": 506,
       "webName": "Murillo",
       "firstName": "Murillo",
@@ -7421,28 +7443,6 @@
       "minutes": 2565,
       "cleanSheets": 6,
       "bonus": 3
-    },
-    {
-      "id": 476,
-      "webName": "Burn",
-      "firstName": "Dan",
-      "lastName": "Burn",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 82,
-      "form": 1,
-      "goalsScored": 0,
-      "assists": 3,
-      "xG": 0.91,
-      "xA": 0.33,
-      "xGI": 1.24,
-      "minutes": 1917,
-      "cleanSheets": 6,
-      "bonus": 5
     },
     {
       "id": 322,
@@ -7577,6 +7577,72 @@
       "bonus": 6
     },
     {
+      "id": 491,
+      "webName": "Tonali",
+      "firstName": "Sandro",
+      "lastName": "Tonali",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 78,
+      "form": 1.5,
+      "goalsScored": 0,
+      "assists": 2,
+      "xG": 1.69,
+      "xA": 2.64,
+      "xGI": 4.33,
+      "minutes": 2304,
+      "cleanSheets": 7,
+      "bonus": 2
+    },
+    {
+      "id": 553,
+      "webName": "Talbi",
+      "firstName": "Chemsdine",
+      "lastName": "Talbi",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 78,
+      "form": 0.5,
+      "goalsScored": 4,
+      "assists": 2,
+      "xG": 1.99,
+      "xA": 0.97,
+      "xGI": 2.95,
+      "minutes": 1357,
+      "cleanSheets": 6,
+      "bonus": 6
+    },
+    {
+      "id": 636,
+      "webName": "S.Bueno",
+      "firstName": "Santiago",
+      "lastName": "Ignacio Bueno",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Wolves",
+      "teamId": 20,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 78,
+      "form": 1.2,
+      "goalsScored": 2,
+      "assists": 2,
+      "xG": 1.77,
+      "xA": 1.06,
+      "xGI": 2.83,
+      "minutes": 2194,
+      "cleanSheets": 4,
+      "bonus": 2
+    },
+    {
       "id": 403,
       "webName": "Gvardiol",
       "firstName": "Joško",
@@ -7599,72 +7665,6 @@
       "bonus": 5
     },
     {
-      "id": 491,
-      "webName": "Tonali",
-      "firstName": "Sandro",
-      "lastName": "Tonali",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 77,
-      "form": 1.5,
-      "goalsScored": 0,
-      "assists": 2,
-      "xG": 1.69,
-      "xA": 2.64,
-      "xGI": 4.33,
-      "minutes": 2302,
-      "cleanSheets": 7,
-      "bonus": 2
-    },
-    {
-      "id": 553,
-      "webName": "Talbi",
-      "firstName": "Chemsdine",
-      "lastName": "Talbi",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 77,
-      "form": 0.5,
-      "goalsScored": 4,
-      "assists": 2,
-      "xG": 1.99,
-      "xA": 0.97,
-      "xGI": 2.95,
-      "minutes": 1355,
-      "cleanSheets": 6,
-      "bonus": 6
-    },
-    {
-      "id": 636,
-      "webName": "S.Bueno",
-      "firstName": "Santiago",
-      "lastName": "Ignacio Bueno",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Wolves",
-      "teamId": 20,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 77,
-      "form": 1.2,
-      "goalsScored": 2,
-      "assists": 2,
-      "xG": 1.77,
-      "xA": 1.06,
-      "xGI": 2.83,
-      "minutes": 2192,
-      "cleanSheets": 4,
-      "bonus": 2
-    },
-    {
       "id": 633,
       "webName": "H.Bueno",
       "firstName": "Hugo",
@@ -7675,14 +7675,14 @@
       "teamId": 20,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 76,
+      "totalPoints": 77,
       "form": 0.8,
       "goalsScored": 1,
       "assists": 2,
       "xG": 0.69,
       "xA": 3.11,
       "xGI": 3.8,
-      "minutes": 2216,
+      "minutes": 2218,
       "cleanSheets": 4,
       "bonus": 4
     },
@@ -7729,6 +7729,28 @@
       "minutes": 1814,
       "cleanSheets": 6,
       "bonus": 5
+    },
+    {
+      "id": 475,
+      "webName": "Botman",
+      "firstName": "Sven",
+      "lastName": "Botman",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 75,
+      "form": 2.2,
+      "goalsScored": 1,
+      "assists": 1,
+      "xG": 1.62,
+      "xA": 0.49,
+      "xGI": 2.11,
+      "minutes": 1476,
+      "cleanSheets": 5,
+      "bonus": 6
     },
     {
       "id": 582,
@@ -7797,28 +7819,6 @@
       "bonus": 4
     },
     {
-      "id": 475,
-      "webName": "Botman",
-      "firstName": "Sven",
-      "lastName": "Botman",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 74,
-      "form": 2.2,
-      "goalsScored": 1,
-      "assists": 1,
-      "xG": 1.62,
-      "xA": 0.49,
-      "xGI": 2.11,
-      "minutes": 1474,
-      "cleanSheets": 5,
-      "bonus": 6
-    },
-    {
       "id": 693,
       "webName": "Hutchinson",
       "firstName": "Omari",
@@ -7839,6 +7839,28 @@
       "minutes": 1494,
       "cleanSheets": 6,
       "bonus": 3
+    },
+    {
+      "id": 163,
+      "webName": "Hinshelwood",
+      "firstName": "Jack",
+      "lastName": "Hinshelwood",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 72,
+      "form": 3.2,
+      "goalsScored": 2,
+      "assists": 5,
+      "xG": 3.99,
+      "xA": 1.93,
+      "xGI": 5.92,
+      "minutes": 1410,
+      "cleanSheets": 5,
+      "bonus": 2
     },
     {
       "id": 325,
@@ -7907,26 +7929,48 @@
       "bonus": 0
     },
     {
-      "id": 163,
-      "webName": "Hinshelwood",
-      "firstName": "Jack",
-      "lastName": "Hinshelwood",
+      "id": 497,
+      "webName": "L.Miley",
+      "firstName": "Lewis",
+      "lastName": "Miley",
       "position": "MID",
       "positionId": 3,
-      "team": "Brighton",
-      "teamId": 6,
+      "team": "Newcastle",
+      "teamId": 15,
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 71,
-      "form": 3.2,
-      "goalsScored": 2,
-      "assists": 5,
-      "xG": 3.74,
-      "xA": 1.93,
-      "xGI": 5.67,
-      "minutes": 1408,
-      "cleanSheets": 5,
-      "bonus": 2
+      "form": 3,
+      "goalsScored": 1,
+      "assists": 4,
+      "xG": 1.36,
+      "xA": 2.07,
+      "xGI": 3.43,
+      "minutes": 1405,
+      "cleanSheets": 2,
+      "bonus": 5
+    },
+    {
+      "id": 552,
+      "webName": "Sadiki",
+      "firstName": "Noah",
+      "lastName": "Sadiki",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Sunderland",
+      "teamId": 17,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 71,
+      "form": 2.2,
+      "goalsScored": 0,
+      "assists": 2,
+      "xG": 0.97,
+      "xA": 1.35,
+      "xGI": 2.32,
+      "minutes": 2566,
+      "cleanSheets": 8,
+      "bonus": 0
     },
     {
       "id": 671,
@@ -8039,10 +8083,10 @@
       "bonus": 3
     },
     {
-      "id": 497,
-      "webName": "L.Miley",
-      "firstName": "Lewis",
-      "lastName": "Miley",
+      "id": 489,
+      "webName": "J.Murphy",
+      "firstName": "Jacob",
+      "lastName": "Murphy",
       "position": "MID",
       "positionId": 3,
       "team": "Newcastle",
@@ -8050,37 +8094,15 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 70,
-      "form": 3,
-      "goalsScored": 1,
-      "assists": 4,
-      "xG": 1.36,
-      "xA": 2.07,
-      "xGI": 3.43,
-      "minutes": 1403,
-      "cleanSheets": 2,
-      "bonus": 5
-    },
-    {
-      "id": 552,
-      "webName": "Sadiki",
-      "firstName": "Noah",
-      "lastName": "Sadiki",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 70,
-      "form": 2.2,
-      "goalsScored": 0,
-      "assists": 2,
-      "xG": 0.97,
-      "xA": 1.35,
-      "xGI": 2.32,
-      "minutes": 2564,
-      "cleanSheets": 8,
-      "bonus": 0
+      "form": 1,
+      "goalsScored": 3,
+      "assists": 1,
+      "xG": 3.05,
+      "xA": 2.43,
+      "xGI": 5.48,
+      "minutes": 1421,
+      "cleanSheets": 7,
+      "bonus": 2
     },
     {
       "id": 712,
@@ -8125,28 +8147,6 @@
       "minutes": 918,
       "cleanSheets": 3,
       "bonus": 8
-    },
-    {
-      "id": 489,
-      "webName": "J.Murphy",
-      "firstName": "Jacob",
-      "lastName": "Murphy",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 69,
-      "form": 1,
-      "goalsScored": 3,
-      "assists": 1,
-      "xG": 3.05,
-      "xA": 2.43,
-      "xGI": 5.48,
-      "minutes": 1419,
-      "cleanSheets": 7,
-      "bonus": 2
     },
     {
       "id": 573,
@@ -8215,6 +8215,28 @@
       "bonus": 8
     },
     {
+      "id": 490,
+      "webName": "Joelinton",
+      "firstName": "Joelinton Cássio",
+      "lastName": "Apolinário de Lira",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Newcastle",
+      "teamId": 15,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 68,
+      "form": 0.2,
+      "goalsScored": 2,
+      "assists": 1,
+      "xG": 2.09,
+      "xA": 1.15,
+      "xGI": 3.24,
+      "minutes": 1772,
+      "cleanSheets": 5,
+      "bonus": 2
+    },
+    {
       "id": 714,
       "webName": "A.Jimenez",
       "firstName": "Álex",
@@ -8233,28 +8255,6 @@
       "xA": 1.61,
       "xGI": 2.68,
       "minutes": 2225,
-      "cleanSheets": 5,
-      "bonus": 2
-    },
-    {
-      "id": 490,
-      "webName": "Joelinton",
-      "firstName": "Joelinton Cássio",
-      "lastName": "Apolinário de Lira",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Newcastle",
-      "teamId": 15,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 67,
-      "form": 0.2,
-      "goalsScored": 2,
-      "assists": 1,
-      "xG": 2.09,
-      "xA": 1.15,
-      "xGI": 3.24,
-      "minutes": 1770,
       "cleanSheets": 5,
       "bonus": 2
     },
@@ -8413,6 +8413,28 @@
       "bonus": 2
     },
     {
+      "id": 784,
+      "webName": "Groß",
+      "firstName": "Pascal",
+      "lastName": "Groß",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 66,
+      "form": 5.5,
+      "goalsScored": 1,
+      "assists": 5,
+      "xG": 0.84,
+      "xA": 3.1,
+      "xGI": 3.94,
+      "minutes": 1278,
+      "cleanSheets": 5,
+      "bonus": 9
+    },
+    {
       "id": 187,
       "webName": "Walker",
       "firstName": "Kyle",
@@ -8433,28 +8455,6 @@
       "minutes": 2825,
       "cleanSheets": 4,
       "bonus": 3
-    },
-    {
-      "id": 784,
-      "webName": "Groß",
-      "firstName": "Pascal",
-      "lastName": "Groß",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 65,
-      "form": 5.5,
-      "goalsScored": 1,
-      "assists": 5,
-      "xG": 0.84,
-      "xA": 3.1,
-      "xGI": 3.94,
-      "minutes": 1276,
-      "cleanSheets": 5,
-      "bonus": 9
     },
     {
       "id": 697,
@@ -8523,6 +8523,28 @@
       "bonus": 0
     },
     {
+      "id": 157,
+      "webName": "Mitoma",
+      "firstName": "Mitoma",
+      "lastName": "Kaoru",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 62,
+      "form": 2.5,
+      "goalsScored": 3,
+      "assists": 1,
+      "xG": 3.64,
+      "xA": 2.69,
+      "xGI": 6.33,
+      "minutes": 1569,
+      "cleanSheets": 5,
+      "bonus": 2
+    },
+    {
       "id": 272,
       "webName": "Lerma",
       "firstName": "Jefferson",
@@ -8567,6 +8589,28 @@
       "bonus": 5
     },
     {
+      "id": 736,
+      "webName": "Tolu",
+      "firstName": "Tolu",
+      "lastName": "Arokodare",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Wolves",
+      "teamId": 20,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 62,
+      "form": 0.5,
+      "goalsScored": 3,
+      "assists": 2,
+      "xG": 4.63,
+      "xA": 0.36,
+      "xGI": 4.99,
+      "minutes": 1271,
+      "cleanSheets": 3,
+      "bonus": 4
+    },
+    {
       "id": 58,
       "webName": "Kamara",
       "firstName": "Boubacar",
@@ -8589,48 +8633,26 @@
       "bonus": 7
     },
     {
-      "id": 157,
-      "webName": "Mitoma",
-      "firstName": "Mitoma",
-      "lastName": "Kaoru",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Brighton",
-      "teamId": 6,
+      "id": 541,
+      "webName": "Reinildo",
+      "firstName": "Reinildo",
+      "lastName": "Mandava",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Sunderland",
+      "teamId": 17,
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 61,
-      "form": 2.5,
-      "goalsScored": 3,
-      "assists": 1,
-      "xG": 3.64,
-      "xA": 2.65,
-      "xGI": 6.29,
-      "minutes": 1567,
-      "cleanSheets": 5,
-      "bonus": 2
-    },
-    {
-      "id": 736,
-      "webName": "Tolu",
-      "firstName": "Tolu",
-      "lastName": "Arokodare",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Wolves",
-      "teamId": 20,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 61,
-      "form": 0.5,
-      "goalsScored": 3,
+      "form": 2.2,
+      "goalsScored": 0,
       "assists": 2,
-      "xG": 4.63,
-      "xA": 0.36,
-      "xGI": 4.99,
-      "minutes": 1269,
-      "cleanSheets": 3,
-      "bonus": 4
+      "xG": 0.13,
+      "xA": 0.58,
+      "xGI": 0.71,
+      "minutes": 1627,
+      "cleanSheets": 5,
+      "bonus": 6
     },
     {
       "id": 230,
@@ -8697,28 +8719,6 @@
       "minutes": 1209,
       "cleanSheets": 5,
       "bonus": 3
-    },
-    {
-      "id": 541,
-      "webName": "Reinildo",
-      "firstName": "Reinildo",
-      "lastName": "Mandava",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Sunderland",
-      "teamId": 17,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 60,
-      "form": 2.2,
-      "goalsScored": 0,
-      "assists": 2,
-      "xG": 0.13,
-      "xA": 0.58,
-      "xGI": 0.71,
-      "minutes": 1625,
-      "cleanSheets": 5,
-      "bonus": 6
     },
     {
       "id": 544,
@@ -8985,6 +8985,28 @@
       "bonus": 2
     },
     {
+      "id": 752,
+      "webName": "Mané",
+      "firstName": "Mateus",
+      "lastName": "Mané",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Wolves",
+      "teamId": 20,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 58,
+      "form": 1,
+      "goalsScored": 2,
+      "assists": 2,
+      "xG": 1.57,
+      "xA": 2.04,
+      "xGI": 3.61,
+      "minutes": 1453,
+      "cleanSheets": 5,
+      "bonus": 6
+    },
+    {
       "id": 217,
       "webName": "Foster",
       "firstName": "Lyle",
@@ -9071,28 +9093,6 @@
       "minutes": 932,
       "cleanSheets": 2,
       "bonus": 1
-    },
-    {
-      "id": 752,
-      "webName": "Mané",
-      "firstName": "Mateus",
-      "lastName": "Mané",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Wolves",
-      "teamId": 20,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 57,
-      "form": 1,
-      "goalsScored": 2,
-      "assists": 2,
-      "xG": 1.57,
-      "xA": 2.04,
-      "xGI": 3.61,
-      "minutes": 1451,
-      "cleanSheets": 5,
-      "bonus": 6
     },
     {
       "id": 341,
@@ -9425,6 +9425,28 @@
       "bonus": 1
     },
     {
+      "id": 634,
+      "webName": "Mosquera",
+      "firstName": "Yerson",
+      "lastName": "Mosquera Valdelamar",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Wolves",
+      "teamId": 20,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 52,
+      "form": 0,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 1.65,
+      "xA": 0.53,
+      "xGI": 2.18,
+      "minutes": 1779,
+      "cleanSheets": 4,
+      "bonus": 3
+    },
+    {
       "id": 696,
       "webName": "Tchatchoua",
       "firstName": "Jackson",
@@ -9511,28 +9533,6 @@
       "minutes": 1800,
       "cleanSheets": 0,
       "bonus": 2
-    },
-    {
-      "id": 634,
-      "webName": "Mosquera",
-      "firstName": "Yerson",
-      "lastName": "Mosquera Valdelamar",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Wolves",
-      "teamId": 20,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 51,
-      "form": 0,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 1.65,
-      "xA": 0.53,
-      "xGI": 2.18,
-      "minutes": 1777,
-      "cleanSheets": 4,
-      "bonus": 3
     },
     {
       "id": 206,
@@ -9733,6 +9733,28 @@
       "bonus": 0
     },
     {
+      "id": 167,
+      "webName": "Baleba",
+      "firstName": "Carlos",
+      "lastName": "Baleba",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Brighton",
+      "teamId": 6,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 46,
+      "form": 1,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 0.56,
+      "xA": 0.61,
+      "xGI": 1.17,
+      "minutes": 1382,
+      "cleanSheets": 5,
+      "bonus": 0
+    },
+    {
       "id": 486,
       "webName": "Elanga",
       "firstName": "Anthony",
@@ -9907,28 +9929,6 @@
       "minutes": 1052,
       "cleanSheets": 3,
       "bonus": 4
-    },
-    {
-      "id": 167,
-      "webName": "Baleba",
-      "firstName": "Carlos",
-      "lastName": "Baleba",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Brighton",
-      "teamId": 6,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 45,
-      "form": 1,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 0.56,
-      "xA": 0.61,
-      "xGI": 1.17,
-      "minutes": 1380,
-      "cleanSheets": 5,
-      "bonus": 0
     },
     {
       "id": 316,
@@ -25717,15 +25717,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 317,
-          "playerName": "Andersen",
-          "expectedPoints": 9.3,
-          "fixtureDifficulty": 3
-        },
-        {
           "playerId": 547,
           "playerName": "E.Le Fée",
           "expectedPoints": 7.9,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 317,
+          "playerName": "Andersen",
+          "expectedPoints": 9.3,
           "fixtureDifficulty": 3
         },
         {
@@ -25849,15 +25849,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 350,
-          "playerName": "Aaronson",
-          "expectedPoints": 7.1,
-          "fixtureDifficulty": 3
-        },
-        {
           "playerId": 670,
           "playerName": "Roefs",
           "expectedPoints": 6,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 350,
+          "playerName": "Aaronson",
+          "expectedPoints": 7.1,
           "fixtureDifficulty": 3
         },
         {
@@ -26101,15 +26101,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 728,
-          "playerName": "Donnarumma",
-          "expectedPoints": 7.6,
-          "fixtureDifficulty": 3
-        },
-        {
           "playerId": 531,
           "playerName": "Ballard",
           "expectedPoints": 0.3,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 728,
+          "playerName": "Donnarumma",
+          "expectedPoints": 7.6,
           "fixtureDifficulty": 3
         },
         {
@@ -29420,13 +29420,13 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 633,
+            "totalPoints": 634,
             "avgPoints": 18.6,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 674,
-            "avgPoints": 19.8,
+            "totalPoints": 675,
+            "avgPoints": 19.9,
             "playerCount": 5
           },
           "FWD": {
@@ -29442,13 +29442,13 @@
         "teamName": "I Baleba I Can Fly",
         "positions": {
           "GK": {
-            "totalPoints": 232,
-            "avgPoints": 6.8,
+            "totalPoints": 233,
+            "avgPoints": 6.9,
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 528,
-            "avgPoints": 15.5,
+            "totalPoints": 529,
+            "avgPoints": 15.6,
             "playerCount": 5
           },
           "MID": {
@@ -29474,8 +29474,8 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 538,
-            "avgPoints": 15.8,
+            "totalPoints": 539,
+            "avgPoints": 15.9,
             "playerCount": 5
           },
           "MID": {
@@ -29501,17 +29501,17 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 613,
-            "avgPoints": 18,
+            "totalPoints": 614,
+            "avgPoints": 18.1,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 627,
-            "avgPoints": 18.4,
+            "totalPoints": 628,
+            "avgPoints": 18.5,
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 238,
+            "totalPoints": 239,
             "avgPoints": 7,
             "playerCount": 3
           }
@@ -29550,12 +29550,12 @@
         "teamName": "Steen, Papier, Schar",
         "positions": {
           "GK": {
-            "totalPoints": 207,
+            "totalPoints": 208,
             "avgPoints": 6.1,
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 546,
+            "totalPoints": 547,
             "avgPoints": 16.1,
             "playerCount": 5
           },
@@ -29565,8 +29565,8 @@
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 260,
-            "avgPoints": 7.6,
+            "totalPoints": 261,
+            "avgPoints": 7.7,
             "playerCount": 3
           }
         }
@@ -29609,18 +29609,18 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 661,
-            "avgPoints": 19.4,
+            "totalPoints": 662,
+            "avgPoints": 19.5,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 659,
+            "totalPoints": 660,
             "avgPoints": 19.4,
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 256,
-            "avgPoints": 7.5,
+            "totalPoints": 258,
+            "avgPoints": 7.6,
             "playerCount": 3
           }
         }
@@ -29910,7 +29910,7 @@
         "playerId": 178,
         "managerName": "Steen, Papier, Schar",
         "leagueEntryId": 34964,
-        "totalPoints": 116,
+        "totalPoints": 117,
         "valueRating": "Fair"
       },
       {
@@ -30580,7 +30580,7 @@
         "playerId": 139,
         "managerName": "Oscar is de Bobb",
         "leagueEntryId": 77537,
-        "totalPoints": 118,
+        "totalPoints": 119,
         "valueRating": "Fair"
       },
       {
@@ -30896,7 +30896,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-02T08:19:15.044Z",
+    "lastUpdated": "2026-05-02T14:08:00.748Z",
     "season": "2025",
     "plMatchday": 35,
     "managerProfiles": [
@@ -30974,16 +30974,16 @@
             "fplTeamId": 8
           },
           {
-            "teamName": "Fulham",
-            "count": 1,
-            "plRank": 10,
-            "fplTeamId": 10
-          },
-          {
             "teamName": "Sunderland",
             "count": 1,
             "plRank": 12,
             "fplTeamId": 17
+          },
+          {
+            "teamName": "Fulham",
+            "count": 1,
+            "plRank": 10,
+            "fplTeamId": 10
           },
           {
             "teamName": "Newcastle",
@@ -31182,6 +31182,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "E.Le Fée",
+            "espnName": "Enzo Le Fée",
+            "plTeam": "Sunderland",
+            "plTeamRank": 12,
+            "fplPoints": 123,
+            "espnGoals": 4,
+            "espnAssists": 5,
+            "espnMinutes": 2575,
+            "espnYellows": 5,
+            "espnReds": 0,
+            "espnFouls": 28,
+            "espnPasses": 960,
+            "espnPassPct": 0.815,
+            "espnShots": 29,
+            "espnShotsOnTarget": 9,
+            "espnTackles": 75,
+            "espnInterceptions": 27,
+            "espnCleanSheets": 7,
+            "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Andersen",
             "espnName": "Joachim Andersen",
             "plTeam": "Fulham",
@@ -31204,33 +31226,11 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "E.Le Fée",
-            "espnName": "Enzo Le Fée",
-            "plTeam": "Sunderland",
-            "plTeamRank": 12,
-            "fplPoints": 122,
-            "espnGoals": 4,
-            "espnAssists": 5,
-            "espnMinutes": 2575,
-            "espnYellows": 5,
-            "espnReds": 0,
-            "espnFouls": 28,
-            "espnPasses": 960,
-            "espnPassPct": 0.815,
-            "espnShots": 29,
-            "espnShotsOnTarget": 9,
-            "espnTackles": 75,
-            "espnInterceptions": 27,
-            "espnCleanSheets": 7,
-            "position": "MID",
-            "isBenchwarmer": false
-          },
-          {
             "fplName": "Thiaw",
             "espnName": "Malick Thiaw",
             "plTeam": "Newcastle",
             "plTeamRank": 15,
-            "fplPoints": 119,
+            "fplPoints": 120,
             "espnGoals": 4,
             "espnAssists": 0,
             "espnMinutes": 2604,
@@ -31531,6 +31531,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Roefs",
+            "espnName": "Robin Roefs",
+            "plTeam": "Sunderland",
+            "plTeamRank": 12,
+            "fplPoints": 123,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 2790,
+            "espnYellows": 3,
+            "espnReds": 0,
+            "espnFouls": 0,
+            "espnPasses": 1189,
+            "espnPassPct": 0.64,
+            "espnShots": 0,
+            "espnShotsOnTarget": 0,
+            "espnTackles": 0,
+            "espnInterceptions": 0,
+            "espnCleanSheets": 9,
+            "position": "GK",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Aaronson",
             "espnName": "Brenden Aaronson",
             "plTeam": "Leeds",
@@ -31550,28 +31572,6 @@
             "espnInterceptions": 15,
             "espnCleanSheets": 1,
             "position": "MID",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Roefs",
-            "espnName": "Robin Roefs",
-            "plTeam": "Sunderland",
-            "plTeamRank": 12,
-            "fplPoints": 122,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 2790,
-            "espnYellows": 3,
-            "espnReds": 0,
-            "espnFouls": 0,
-            "espnPasses": 1189,
-            "espnPassPct": 0.64,
-            "espnShots": 0,
-            "espnShotsOnTarget": 0,
-            "espnTackles": 0,
-            "espnInterceptions": 0,
-            "espnCleanSheets": 9,
-            "position": "GK",
             "isBenchwarmer": false
           },
           {
@@ -31623,7 +31623,7 @@
             "espnName": "F.Kadıoğlu",
             "plTeam": "Brighton",
             "plTeamRank": 6,
-            "fplPoints": 108,
+            "fplPoints": 109,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 0,
@@ -32028,6 +32028,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Ballard",
+            "espnName": "Danny Ballard",
+            "plTeam": "Sunderland",
+            "plTeamRank": 12,
+            "fplPoints": 119,
+            "espnGoals": 2,
+            "espnAssists": 0,
+            "espnMinutes": 2124,
+            "espnYellows": 4,
+            "espnReds": 0,
+            "espnFouls": 28,
+            "espnPasses": 1091,
+            "espnPassPct": 0.821,
+            "espnShots": 26,
+            "espnShotsOnTarget": 9,
+            "espnTackles": 33,
+            "espnInterceptions": 20,
+            "espnCleanSheets": 6,
+            "position": "DEF",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Donnarumma",
             "espnName": "Gianluigi Donnarumma",
             "plTeam": "Man City",
@@ -32047,28 +32069,6 @@
             "espnInterceptions": 1,
             "espnCleanSheets": 13,
             "position": "GK",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Ballard",
-            "espnName": "Danny Ballard",
-            "plTeam": "Sunderland",
-            "plTeamRank": 12,
-            "fplPoints": 118,
-            "espnGoals": 2,
-            "espnAssists": 0,
-            "espnMinutes": 2124,
-            "espnYellows": 4,
-            "espnReds": 0,
-            "espnFouls": 28,
-            "espnPasses": 1091,
-            "espnPassPct": 0.821,
-            "espnShots": 26,
-            "espnShotsOnTarget": 9,
-            "espnTackles": 33,
-            "espnInterceptions": 20,
-            "espnCleanSheets": 6,
-            "position": "DEF",
             "isBenchwarmer": false
           },
           {
@@ -32353,7 +32353,7 @@
             "espnName": "Jan Paul van Hecke",
             "plTeam": "Brighton",
             "plTeamRank": 6,
-            "fplPoints": 137,
+            "fplPoints": 138,
             "espnGoals": 3,
             "espnAssists": 3,
             "espnMinutes": 2851,
@@ -32485,7 +32485,7 @@
             "espnName": "Danny Welbeck",
             "plTeam": "Brighton",
             "plTeamRank": 6,
-            "fplPoints": 116,
+            "fplPoints": 117,
             "espnGoals": 13,
             "espnAssists": 0,
             "espnMinutes": 1983,
@@ -32551,7 +32551,7 @@
             "espnName": "Granit Xhaka",
             "plTeam": "Sunderland",
             "plTeamRank": 12,
-            "fplPoints": 107,
+            "fplPoints": 108,
             "espnGoals": 1,
             "espnAssists": 5,
             "espnMinutes": 2543,
@@ -33191,7 +33191,7 @@
             "espnName": "Nordi Mukiele",
             "plTeam": "Sunderland",
             "plTeamRank": 12,
-            "fplPoints": 128,
+            "fplPoints": 129,
             "espnGoals": 2,
             "espnAssists": 4,
             "espnMinutes": 2427,
@@ -33279,7 +33279,7 @@
             "espnName": "Bart Verbruggen",
             "plTeam": "Brighton",
             "plTeamRank": 6,
-            "fplPoints": 118,
+            "fplPoints": 119,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 3060,
@@ -33455,7 +33455,7 @@
             "espnName": "Adam Armstrong",
             "plTeam": "Wolves",
             "plTeamRank": 20,
-            "fplPoints": 26,
+            "fplPoints": 27,
             "espnGoals": 1,
             "espnAssists": 2,
             "espnMinutes": 820,
@@ -34101,7 +34101,7 @@
             "espnName": "Bruno G.",
             "plTeam": "Newcastle",
             "plTeamRank": 15,
-            "fplPoints": 137,
+            "fplPoints": 138,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 0,
@@ -34145,7 +34145,7 @@
             "espnName": "Omar Alderete",
             "plTeam": "Sunderland",
             "plTeamRank": 12,
-            "fplPoints": 112,
+            "fplPoints": 113,
             "espnGoals": 1,
             "espnAssists": 1,
             "espnMinutes": 2599,
@@ -34277,7 +34277,7 @@
             "espnName": "Brian Brobbey",
             "plTeam": "Sunderland",
             "plTeamRank": 12,
-            "fplPoints": 77,
+            "fplPoints": 78,
             "espnGoals": 6,
             "espnAssists": 1,
             "espnMinutes": 1631,
@@ -34299,7 +34299,7 @@
             "espnName": "William Osula",
             "plTeam": "Newcastle",
             "plTeamRank": 15,
-            "fplPoints": 50,
+            "fplPoints": 51,
             "espnGoals": 4,
             "espnAssists": 0,
             "espnMinutes": 521,
@@ -35254,14 +35254,14 @@
             "plRank": 13
           },
           {
-            "team": "Fulham",
-            "count": 1,
-            "plRank": 10
-          },
-          {
             "team": "Sunderland",
             "count": 1,
             "plRank": 12
+          },
+          {
+            "team": "Fulham",
+            "count": 1,
+            "plRank": 10
           },
           {
             "team": "Newcastle",
@@ -36250,7 +36250,7 @@
           },
           {
             "name": "F.Kadıoğlu",
-            "fplPts": 108,
+            "fplPts": 109,
             "realGI": 0
           },
           {
@@ -36270,7 +36270,7 @@
         "overperformers": [
           {
             "name": "Alderete",
-            "fplPts": 112,
+            "fplPts": 113,
             "realGI": 2
           },
           {
@@ -36297,7 +36297,7 @@
           },
           {
             "name": "Bruno G.",
-            "fplPts": 137,
+            "fplPts": 138,
             "realGI": 0
           }
         ],
@@ -36322,7 +36322,7 @@
           },
           {
             "name": "Thiaw",
-            "fplPts": 119,
+            "fplPts": 120,
             "realGI": 4
           }
         ],
@@ -36364,7 +36364,7 @@
           },
           {
             "name": "Ballard",
-            "fplPts": 118,
+            "fplPts": 119,
             "realGI": 2
           }
         ],
@@ -36460,12 +36460,12 @@
           },
           {
             "name": "Verbruggen",
-            "fplPts": 118,
+            "fplPts": 119,
             "realGI": 0
           },
           {
             "name": "Armstrong",
-            "fplPts": 26,
+            "fplPts": 27,
             "realGI": 3
           }
         ],
@@ -36766,7 +36766,7 @@
             "playerName": "Welbeck",
             "managerName": "Steen, Papier, Schar",
             "leagueEntryId": 34964,
-            "fplPoints": 116,
+            "fplPoints": 117,
             "espnGoals": 13,
             "espnAssists": 0,
             "espnMinutes": 1983,
@@ -36795,7 +36795,7 @@
             "rating": "Hit"
           }
         ],
-        "avgPoints": 92.5
+        "avgPoints": 92.63
       },
       {
         "round": 4,
@@ -37557,7 +37557,7 @@
             "playerName": "Verbruggen",
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
-            "fplPoints": 118,
+            "fplPoints": 119,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 3060,
@@ -37641,7 +37641,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 63.63
+        "avgPoints": 63.75
       },
       {
         "round": 13,
@@ -38312,7 +38312,7 @@
         "teamName": "Hannies bal met brie",
         "playerName": "Marc Streng",
         "formation": "4-4-2",
-        "totalStartScore": 65.51,
+        "totalStartScore": 65.52,
         "players": [
           {
             "playerId": 101,
@@ -38369,7 +38369,7 @@
               "fixtureScore": 6.4,
               "formScore": 6,
               "specialScore": 6,
-              "seasonScore": 6.85
+              "seasonScore": 6.9
             },
             "isStarter": true,
             "status": "a"
@@ -38469,7 +38469,7 @@
               "fixtureScore": 8,
               "formScore": 2.6,
               "specialScore": 5.72,
-              "seasonScore": 5.35
+              "seasonScore": 5.4
             },
             "isStarter": true,
             "status": "a"
@@ -38504,12 +38504,12 @@
             "opponent": "Newcastle",
             "opponentShort": "NEW",
             "isHome": false,
-            "startScore": 6.5,
+            "startScore": 6.51,
             "breakdown": {
               "fixtureScore": 6.4,
               "formScore": 4.8,
               "specialScore": 10,
-              "seasonScore": 5.8
+              "seasonScore": 5.85
             },
             "isStarter": true,
             "status": "a"
@@ -38629,7 +38629,7 @@
         "teamName": "Gibbs-White Walkers",
         "playerName": "Sam vd V",
         "formation": "3-4-3",
-        "totalStartScore": 64.8,
+        "totalStartScore": 64.81,
         "players": [
           {
             "playerId": 1,
@@ -38741,12 +38741,12 @@
             "opponent": "Wolves",
             "opponentShort": "WOL",
             "isHome": false,
-            "startScore": 6.46,
+            "startScore": 6.47,
             "breakdown": {
               "fixtureScore": 8,
               "formScore": 3,
               "specialScore": 10,
-              "seasonScore": 6.1
+              "seasonScore": 6.15
             },
             "isStarter": true,
             "status": "a"
@@ -38886,7 +38886,7 @@
               "fixtureScore": 3,
               "formScore": 2.8,
               "specialScore": 2.4,
-              "seasonScore": 5.95
+              "seasonScore": 6
             },
             "isStarter": false,
             "status": "a"
@@ -38946,7 +38946,7 @@
         "teamName": "Steen, Papier, Schar",
         "playerName": "Salomon van Megen",
         "formation": "3-5-2",
-        "totalStartScore": 64.13,
+        "totalStartScore": 64.14,
         "players": [
           {
             "playerId": 502,
@@ -38978,12 +38978,12 @@
             "opponent": "Wolves",
             "opponentShort": "WOL",
             "isHome": false,
-            "startScore": 5.19,
+            "startScore": 5.2,
             "breakdown": {
               "fixtureScore": 8,
               "formScore": 2.6,
               "specialScore": 4.2,
-              "seasonScore": 6.4
+              "seasonScore": 6.45
             },
             "isStarter": true,
             "status": "a"
@@ -39178,12 +39178,12 @@
             "opponent": "Newcastle",
             "opponentShort": "NEW",
             "isHome": false,
-            "startScore": 5.92,
+            "startScore": 5.93,
             "breakdown": {
               "fixtureScore": 6.4,
               "formScore": 5.4,
               "specialScore": 6,
-              "seasonScore": 5.9
+              "seasonScore": 5.95
             },
             "isStarter": false,
             "status": "a"
@@ -39223,7 +39223,7 @@
               "fixtureScore": 6.6,
               "formScore": 2.2,
               "specialScore": 2.88,
-              "seasonScore": 1.3
+              "seasonScore": 1.35
             },
             "isStarter": false,
             "status": "a"
@@ -39263,7 +39263,7 @@
         "teamName": "I Baleba I Can Fly",
         "playerName": "Tim van Duinen",
         "formation": "4-3-3",
-        "totalStartScore": 62.36,
+        "totalStartScore": 62.38,
         "players": [
           {
             "playerId": 670,
@@ -39275,12 +39275,12 @@
             "opponent": "Wolves",
             "opponentShort": "WOL",
             "isHome": false,
-            "startScore": 5.09,
+            "startScore": 5.1,
             "breakdown": {
               "fixtureScore": 8,
               "formScore": 2.4,
               "specialScore": 4.2,
-              "seasonScore": 6.1
+              "seasonScore": 6.15
             },
             "isStarter": true,
             "status": "a"
@@ -39315,12 +39315,12 @@
             "opponent": "Newcastle",
             "opponentShort": "NEW",
             "isHome": false,
-            "startScore": 6.22,
+            "startScore": 6.23,
             "breakdown": {
               "fixtureScore": 6.4,
               "formScore": 6.4,
               "specialScore": 6,
-              "seasonScore": 5.4
+              "seasonScore": 5.45
             },
             "isStarter": true,
             "status": "a"
@@ -39580,7 +39580,7 @@
         "teamName": "Shake Dias",
         "playerName": "Robert van Gemert",
         "formation": "4-4-2",
-        "totalStartScore": 61.17,
+        "totalStartScore": 61.18,
         "players": [
           {
             "playerId": 314,
@@ -39672,12 +39672,12 @@
             "opponent": "Wolves",
             "opponentShort": "WOL",
             "isHome": false,
-            "startScore": 5.04,
+            "startScore": 5.05,
             "breakdown": {
               "fixtureScore": 8,
               "formScore": 2.4,
               "specialScore": 4.2,
-              "seasonScore": 5.6
+              "seasonScore": 5.65
             },
             "isStarter": true,
             "status": "a"
@@ -39797,7 +39797,7 @@
               "fixtureScore": 8,
               "formScore": 3,
               "specialScore": 7.52,
-              "seasonScore": 3.85
+              "seasonScore": 3.9
             },
             "isStarter": true,
             "status": "a"
@@ -39857,7 +39857,7 @@
               "fixtureScore": 3,
               "formScore": 0.6,
               "specialScore": 10,
-              "seasonScore": 6.85
+              "seasonScore": 6.9
             },
             "isStarter": false,
             "status": "a"
@@ -39872,12 +39872,12 @@
             "opponent": "Brighton",
             "opponentShort": "BHA",
             "isHome": true,
-            "startScore": 3.35,
+            "startScore": 3.36,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 4,
               "specialScore": 3.26,
-              "seasonScore": 2.5
+              "seasonScore": 2.55
             },
             "isStarter": false,
             "status": "a"
@@ -39954,7 +39954,7 @@
               "fixtureScore": 8,
               "formScore": 0.8,
               "specialScore": 4.2,
-              "seasonScore": 5.9
+              "seasonScore": 5.95
             },
             "isStarter": true,
             "status": "a"
@@ -41018,10 +41018,10 @@
         "playerName": "Maximiliaan de Goede",
         "mascottePlayer": "Hinshelwood",
         "mascottePlayerId": 163,
-        "totalPoints": 71,
+        "totalPoints": 72,
         "position": "MID",
         "team": "Brighton",
-        "minutesPlayed": 1408,
+        "minutesPlayed": 1410,
         "valueRating": "Bust"
       },
       {
