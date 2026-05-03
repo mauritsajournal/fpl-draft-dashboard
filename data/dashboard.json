@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-03T08:30:26.673Z",
+    "lastUpdated": "2026-05-03T14:08:29.519Z",
     "currentGameweek": 34,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -3791,6 +3791,28 @@
       "bonus": 10
     },
     {
+      "id": 72,
+      "webName": "Senesi",
+      "firstName": "Marcos",
+      "lastName": "Senesi Barón",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Robert van Gemert",
+      "ownerLeagueEntryId": 85079,
+      "totalPoints": 151,
+      "form": 3.5,
+      "goalsScored": 0,
+      "assists": 6,
+      "xG": 1.53,
+      "xA": 4.64,
+      "xGI": 6.17,
+      "minutes": 2975,
+      "cleanSheets": 9,
+      "bonus": 11
+    },
+    {
       "id": 8,
       "webName": "J.Timber",
       "firstName": "Jurriën",
@@ -3879,50 +3901,6 @@
       "bonus": 9
     },
     {
-      "id": 72,
-      "webName": "Senesi",
-      "firstName": "Marcos",
-      "lastName": "Senesi Barón",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Robert van Gemert",
-      "ownerLeagueEntryId": 85079,
-      "totalPoints": 147,
-      "form": 2.5,
-      "goalsScored": 0,
-      "assists": 5,
-      "xG": 1.53,
-      "xA": 4.52,
-      "xGI": 6.05,
-      "minutes": 2928,
-      "cleanSheets": 9,
-      "bonus": 11
-    },
-    {
-      "id": 257,
-      "webName": "Lacroix",
-      "firstName": "Maxence",
-      "lastName": "Lacroix",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": "Maximiliaan de Goede",
-      "ownerLeagueEntryId": 75126,
-      "totalPoints": 146,
-      "form": 4.5,
-      "goalsScored": 1,
-      "assists": 2,
-      "xG": 2.36,
-      "xA": 0.77,
-      "xGI": 3.13,
-      "minutes": 2755,
-      "cleanSheets": 11,
-      "bonus": 11
-    },
-    {
       "id": 16,
       "webName": "Saka",
       "firstName": "Bukayo",
@@ -3943,6 +3921,28 @@
       "minutes": 2049,
       "cleanSheets": 10,
       "bonus": 16
+    },
+    {
+      "id": 257,
+      "webName": "Lacroix",
+      "firstName": "Maxence",
+      "lastName": "Lacroix",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": "Maximiliaan de Goede",
+      "ownerLeagueEntryId": 75126,
+      "totalPoints": 145,
+      "form": 4.2,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 2.36,
+      "xA": 0.77,
+      "xGI": 3.13,
+      "minutes": 2802,
+      "cleanSheets": 11,
+      "bonus": 11
     },
     {
       "id": 407,
@@ -3989,6 +3989,28 @@
       "bonus": 20
     },
     {
+      "id": 74,
+      "webName": "Truffert",
+      "firstName": "Adrien",
+      "lastName": "Truffert",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Marc Streng",
+      "ownerLeagueEntryId": 8630,
+      "totalPoints": 140,
+      "form": 4.5,
+      "goalsScored": 1,
+      "assists": 4,
+      "xG": 0.98,
+      "xA": 2.62,
+      "xGI": 3.6,
+      "minutes": 3065,
+      "cleanSheets": 9,
+      "bonus": 14
+    },
+    {
       "id": 242,
       "webName": "Dewsbury-Hall",
       "firstName": "Kiernan",
@@ -4009,28 +4031,6 @@
       "minutes": 2276,
       "cleanSheets": 8,
       "bonus": 18
-    },
-    {
-      "id": 74,
-      "webName": "Truffert",
-      "firstName": "Adrien",
-      "lastName": "Truffert",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Marc Streng",
-      "ownerLeagueEntryId": 8630,
-      "totalPoints": 139,
-      "form": 4.2,
-      "goalsScored": 1,
-      "assists": 4,
-      "xG": 0.98,
-      "xA": 2.62,
-      "xGI": 3.6,
-      "minutes": 3018,
-      "cleanSheets": 9,
-      "bonus": 14
     },
     {
       "id": 694,
@@ -4253,6 +4253,50 @@
       "bonus": 14
     },
     {
+      "id": 258,
+      "webName": "Mitchell",
+      "firstName": "Tyrick",
+      "lastName": "Mitchell",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": "Pieter van Gemert",
+      "ownerLeagueEntryId": 4815,
+      "totalPoints": 127,
+      "form": 3,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 1.12,
+      "xA": 2.34,
+      "xGI": 3.46,
+      "minutes": 2895,
+      "cleanSheets": 12,
+      "bonus": 8
+    },
+    {
+      "id": 90,
+      "webName": "Scott",
+      "firstName": "Alex",
+      "lastName": "Scott",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Salomon van Megen",
+      "ownerLeagueEntryId": 34059,
+      "totalPoints": 126,
+      "form": 4.5,
+      "goalsScored": 3,
+      "assists": 2,
+      "xG": 3.8,
+      "xA": 2.95,
+      "xGI": 6.75,
+      "minutes": 2625,
+      "cleanSheets": 9,
+      "bonus": 9
+    },
+    {
       "id": 256,
       "webName": "Muñoz",
       "firstName": "Daniel",
@@ -4270,30 +4314,8 @@
       "xG": 2.34,
       "xA": 3.4,
       "xGI": 5.74,
-      "minutes": 2049,
+      "minutes": 2094,
       "cleanSheets": 10,
-      "bonus": 8
-    },
-    {
-      "id": 258,
-      "webName": "Mitchell",
-      "firstName": "Tyrick",
-      "lastName": "Mitchell",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": "Pieter van Gemert",
-      "ownerLeagueEntryId": 4815,
-      "totalPoints": 126,
-      "form": 3,
-      "goalsScored": 1,
-      "assists": 2,
-      "xG": 1.12,
-      "xA": 2.27,
-      "xGI": 3.39,
-      "minutes": 2893,
-      "cleanSheets": 12,
       "bonus": 8
     },
     {
@@ -4341,26 +4363,26 @@
       "bonus": 17
     },
     {
-      "id": 90,
-      "webName": "Scott",
-      "firstName": "Alex",
-      "lastName": "Scott",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Salomon van Megen",
-      "ownerLeagueEntryId": 34059,
+      "id": 253,
+      "webName": "Henderson",
+      "firstName": "Dean",
+      "lastName": "Henderson",
+      "position": "GK",
+      "positionId": 1,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": "Sam vd V",
+      "ownerLeagueEntryId": 2273,
       "totalPoints": 125,
-      "form": 4.2,
-      "goalsScored": 3,
-      "assists": 2,
-      "xG": 3.76,
-      "xA": 2.62,
-      "xGI": 6.38,
-      "minutes": 2578,
-      "cleanSheets": 9,
-      "bonus": 9
+      "form": 2.5,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 0,
+      "xA": 0.1,
+      "xGI": 0.1,
+      "minutes": 2927,
+      "cleanSheets": 11,
+      "bonus": 7
     },
     {
       "id": 317,
@@ -4471,28 +4493,6 @@
       "minutes": 2434,
       "cleanSheets": 13,
       "bonus": 10
-    },
-    {
-      "id": 253,
-      "webName": "Henderson",
-      "firstName": "Dean",
-      "lastName": "Henderson",
-      "position": "GK",
-      "positionId": 1,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": "Sam vd V",
-      "ownerLeagueEntryId": 2273,
-      "totalPoints": 124,
-      "form": 2.2,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 0,
-      "xA": 0.1,
-      "xGI": 0.1,
-      "minutes": 2880,
-      "cleanSheets": 11,
-      "bonus": 7
     },
     {
       "id": 661,
@@ -4649,6 +4649,28 @@
       "bonus": 15
     },
     {
+      "id": 84,
+      "webName": "Tavernier",
+      "firstName": "Marcus",
+      "lastName": "Tavernier",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Marc Streng",
+      "ownerLeagueEntryId": 8630,
+      "totalPoints": 121,
+      "form": 3,
+      "goalsScored": 6,
+      "assists": 4,
+      "xG": 8.59,
+      "xA": 3.84,
+      "xGI": 12.43,
+      "minutes": 2437,
+      "cleanSheets": 9,
+      "bonus": 11
+    },
+    {
       "id": 178,
       "webName": "Welbeck",
       "firstName": "Danny",
@@ -4691,28 +4713,6 @@
       "minutes": 2243,
       "cleanSheets": 10,
       "bonus": 17
-    },
-    {
-      "id": 84,
-      "webName": "Tavernier",
-      "firstName": "Marcus",
-      "lastName": "Tavernier",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Marc Streng",
-      "ownerLeagueEntryId": 8630,
-      "totalPoints": 120,
-      "form": 2.8,
-      "goalsScored": 6,
-      "assists": 4,
-      "xG": 8.46,
-      "xA": 3.82,
-      "xGI": 12.28,
-      "minutes": 2390,
-      "cleanSheets": 9,
-      "bonus": 11
     },
     {
       "id": 139,
@@ -5045,6 +5045,28 @@
       "bonus": 9
     },
     {
+      "id": 97,
+      "webName": "Evanilson",
+      "firstName": "Francisco Evanilson",
+      "lastName": "de Lima Barbosa",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Tim van Duinen",
+      "ownerLeagueEntryId": 2569,
+      "totalPoints": 109,
+      "form": 3.8,
+      "goalsScored": 6,
+      "assists": 7,
+      "xG": 9.99,
+      "xA": 1.26,
+      "xGI": 11.25,
+      "minutes": 2507,
+      "cleanSheets": 9,
+      "bonus": 6
+    },
+    {
       "id": 148,
       "webName": "F.Kadıoğlu",
       "firstName": "Ferdi",
@@ -5121,14 +5143,14 @@
       "teamId": 4,
       "owner": "Robert van Gemert",
       "ownerLeagueEntryId": 85079,
-      "totalPoints": 106,
-      "form": 1,
+      "totalPoints": 107,
+      "form": 1.2,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0,
       "xA": 0,
       "xGI": 0,
-      "minutes": 3060,
+      "minutes": 3107,
       "cleanSheets": 9,
       "bonus": 5
     },
@@ -5221,28 +5243,6 @@
       "bonus": 19
     },
     {
-      "id": 97,
-      "webName": "Evanilson",
-      "firstName": "Francisco Evanilson",
-      "lastName": "de Lima Barbosa",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Tim van Duinen",
-      "ownerLeagueEntryId": 2569,
-      "totalPoints": 105,
-      "form": 2.8,
-      "goalsScored": 6,
-      "assists": 6,
-      "xG": 9.56,
-      "xA": 1.26,
-      "xGI": 10.82,
-      "minutes": 2460,
-      "cleanSheets": 9,
-      "bonus": 6
-    },
-    {
       "id": 113,
       "webName": "Van den Berg",
       "firstName": "Sepp",
@@ -5309,6 +5309,28 @@
       "bonus": 9
     },
     {
+      "id": 267,
+      "webName": "Sarr",
+      "firstName": "Ismaïla",
+      "lastName": "Sarr",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": "Pieter van Gemert",
+      "ownerLeagueEntryId": 4815,
+      "totalPoints": 101,
+      "form": 1.8,
+      "goalsScored": 7,
+      "assists": 2,
+      "xG": 8.56,
+      "xA": 0.9,
+      "xGI": 9.45,
+      "minutes": 1875,
+      "cleanSheets": 9,
+      "bonus": 9
+    },
+    {
       "id": 348,
       "webName": "Rodon",
       "firstName": "Joe",
@@ -5353,26 +5375,26 @@
       "bonus": 10
     },
     {
-      "id": 267,
-      "webName": "Sarr",
-      "firstName": "Ismaïla",
-      "lastName": "Sarr",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
+      "id": 100,
+      "webName": "Kroupi.Jr",
+      "firstName": "Junior",
+      "lastName": "Kroupi",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Bournemouth",
+      "teamId": 4,
       "owner": "Pieter van Gemert",
       "ownerLeagueEntryId": 4815,
       "totalPoints": 100,
-      "form": 1.8,
-      "goalsScored": 7,
-      "assists": 2,
-      "xG": 8.56,
-      "xA": 0.9,
-      "xGI": 9.45,
-      "minutes": 1873,
-      "cleanSheets": 9,
-      "bonus": 9
+      "form": 5.2,
+      "goalsScored": 12,
+      "assists": 0,
+      "xG": 7.75,
+      "xA": 1.26,
+      "xGI": 9.01,
+      "minutes": 1416,
+      "cleanSheets": 7,
+      "bonus": 11
     },
     {
       "id": 283,
@@ -5461,28 +5483,6 @@
       "minutes": 2855,
       "cleanSheets": 9,
       "bonus": 3
-    },
-    {
-      "id": 100,
-      "webName": "Kroupi.Jr",
-      "firstName": "Junior",
-      "lastName": "Kroupi",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": "Pieter van Gemert",
-      "ownerLeagueEntryId": 4815,
-      "totalPoints": 95,
-      "form": 4,
-      "goalsScored": 11,
-      "assists": 0,
-      "xG": 6.86,
-      "xA": 1.26,
-      "xGI": 8.12,
-      "minutes": 1369,
-      "cleanSheets": 7,
-      "bonus": 11
     },
     {
       "id": 37,
@@ -5803,14 +5803,14 @@
       "teamId": 8,
       "owner": "Maurits Koot",
       "ownerLeagueEntryId": 27137,
-      "totalPoints": 66,
-      "form": 1,
+      "totalPoints": 67,
+      "form": 1.2,
       "goalsScored": 4,
       "assists": 1,
-      "xG": 4.63,
+      "xG": 4.71,
       "xA": 0.72,
-      "xGI": 5.35,
-      "minutes": 2007,
+      "xGI": 5.43,
+      "minutes": 2054,
       "cleanSheets": 5,
       "bonus": 3
     },
@@ -5825,14 +5825,14 @@
       "teamId": 8,
       "owner": "Pieter van Gemert",
       "ownerLeagueEntryId": 4815,
-      "totalPoints": 65,
-      "form": 4.2,
+      "totalPoints": 64,
+      "form": 4,
       "goalsScored": 0,
       "assists": 0,
       "xG": 1.17,
       "xA": 0.29,
       "xGI": 1.46,
-      "minutes": 971,
+      "minutes": 1018,
       "cleanSheets": 5,
       "bonus": 9
     },
@@ -6829,6 +6829,28 @@
       "bonus": 7
     },
     {
+      "id": 273,
+      "webName": "Wharton",
+      "firstName": "Adam",
+      "lastName": "Wharton",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 95,
+      "form": 0.8,
+      "goalsScored": 0,
+      "assists": 6,
+      "xG": 1.33,
+      "xA": 6.46,
+      "xGI": 7.78,
+      "minutes": 2283,
+      "cleanSheets": 8,
+      "bonus": 6
+    },
+    {
       "id": 328,
       "webName": "Sessegnon",
       "firstName": "Ryan",
@@ -6893,28 +6915,6 @@
       "minutes": 2486,
       "cleanSheets": 8,
       "bonus": 0
-    },
-    {
-      "id": 273,
-      "webName": "Wharton",
-      "firstName": "Adam",
-      "lastName": "Wharton",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 94,
-      "form": 0.8,
-      "goalsScored": 0,
-      "assists": 6,
-      "xG": 1.33,
-      "xA": 6.46,
-      "xGI": 7.78,
-      "minutes": 2281,
-      "cleanSheets": 8,
-      "bonus": 6
     },
     {
       "id": 342,
@@ -7049,6 +7049,28 @@
       "bonus": 6
     },
     {
+      "id": 77,
+      "webName": "Hill",
+      "firstName": "James",
+      "lastName": "Hill",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 91,
+      "form": 2.2,
+      "goalsScored": 0,
+      "assists": 3,
+      "xG": 0.79,
+      "xA": 1.13,
+      "xGI": 1.91,
+      "minutes": 1789,
+      "cleanSheets": 6,
+      "bonus": 2
+    },
+    {
       "id": 292,
       "webName": "Mykolenko",
       "firstName": "Vitalii",
@@ -7091,28 +7113,6 @@
       "minutes": 1869,
       "cleanSheets": 5,
       "bonus": 10
-    },
-    {
-      "id": 77,
-      "webName": "Hill",
-      "firstName": "James",
-      "lastName": "Hill",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 90,
-      "form": 2,
-      "goalsScored": 0,
-      "assists": 3,
-      "xG": 0.79,
-      "xA": 1.1,
-      "xGI": 1.88,
-      "minutes": 1742,
-      "cleanSheets": 6,
-      "bonus": 2
     },
     {
       "id": 126,
@@ -8061,6 +8061,28 @@
       "bonus": 2
     },
     {
+      "id": 712,
+      "webName": "Yeremy",
+      "firstName": "Yéremy",
+      "lastName": "Pino Santos",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 71,
+      "form": 1.2,
+      "goalsScored": 2,
+      "assists": 1,
+      "xG": 4.15,
+      "xA": 5.75,
+      "xGI": 9.9,
+      "minutes": 1925,
+      "cleanSheets": 7,
+      "bonus": 3
+    },
+    {
       "id": 125,
       "webName": "Janelt",
       "firstName": "Vitaly",
@@ -8124,28 +8146,6 @@
       "xGI": 1.31,
       "minutes": 1289,
       "cleanSheets": 5,
-      "bonus": 3
-    },
-    {
-      "id": 712,
-      "webName": "Yeremy",
-      "firstName": "Yéremy",
-      "lastName": "Pino Santos",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 70,
-      "form": 1,
-      "goalsScored": 2,
-      "assists": 1,
-      "xG": 4.15,
-      "xA": 5.72,
-      "xGI": 9.87,
-      "minutes": 1880,
-      "cleanSheets": 7,
       "bonus": 3
     },
     {
@@ -8215,6 +8215,28 @@
       "bonus": 8
     },
     {
+      "id": 714,
+      "webName": "A.Jimenez",
+      "firstName": "Álex",
+      "lastName": "Jiménez Sánchez",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 69,
+      "form": 1.2,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 1.07,
+      "xA": 1.73,
+      "xGI": 2.8,
+      "minutes": 2272,
+      "cleanSheets": 5,
+      "bonus": 2
+    },
+    {
       "id": 347,
       "webName": "Gudmundsson",
       "firstName": "Gabriel",
@@ -8259,26 +8281,26 @@
       "bonus": 7
     },
     {
-      "id": 714,
-      "webName": "A.Jimenez",
-      "firstName": "Álex",
-      "lastName": "Jiménez Sánchez",
-      "position": "DEF",
-      "positionId": 2,
+      "id": 85,
+      "webName": "Adams",
+      "firstName": "Tyler",
+      "lastName": "Adams",
+      "position": "MID",
+      "positionId": 3,
       "team": "Bournemouth",
       "teamId": 4,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 68,
-      "form": 1,
-      "goalsScored": 1,
+      "totalPoints": 67,
+      "form": 1.8,
+      "goalsScored": 2,
       "assists": 2,
-      "xG": 1.07,
-      "xA": 1.61,
-      "xGI": 2.68,
-      "minutes": 2225,
-      "cleanSheets": 5,
-      "bonus": 2
+      "xG": 0.61,
+      "xA": 0.61,
+      "xGI": 1.22,
+      "minutes": 1521,
+      "cleanSheets": 6,
+      "bonus": 3
     },
     {
       "id": 145,
@@ -8367,28 +8389,6 @@
       "minutes": 996,
       "cleanSheets": 4,
       "bonus": 5
-    },
-    {
-      "id": 85,
-      "webName": "Adams",
-      "firstName": "Tyler",
-      "lastName": "Adams",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 66,
-      "form": 1.5,
-      "goalsScored": 2,
-      "assists": 2,
-      "xG": 0.61,
-      "xA": 0.51,
-      "xGI": 1.12,
-      "minutes": 1474,
-      "cleanSheets": 6,
-      "bonus": 3
     },
     {
       "id": 388,
@@ -8567,28 +8567,6 @@
       "bonus": 2
     },
     {
-      "id": 272,
-      "webName": "Lerma",
-      "firstName": "Jefferson",
-      "lastName": "Lerma Solís",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 62,
-      "form": 2,
-      "goalsScored": 0,
-      "assists": 5,
-      "xG": 1.81,
-      "xA": 1.14,
-      "xGI": 2.95,
-      "minutes": 1426,
-      "cleanSheets": 7,
-      "bonus": 3
-    },
-    {
       "id": 421,
       "webName": "Rodrigo",
       "firstName": "Rodrigo 'Rodri'",
@@ -8653,6 +8631,28 @@
       "minutes": 1410,
       "cleanSheets": 5,
       "bonus": 7
+    },
+    {
+      "id": 272,
+      "webName": "Lerma",
+      "firstName": "Jefferson",
+      "lastName": "Lerma Solís",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 61,
+      "form": 1.8,
+      "goalsScored": 0,
+      "assists": 5,
+      "xG": 1.81,
+      "xA": 1.14,
+      "xGI": 2.95,
+      "minutes": 1473,
+      "cleanSheets": 7,
+      "bonus": 3
     },
     {
       "id": 332,
@@ -8765,6 +8765,28 @@
       "bonus": 3
     },
     {
+      "id": 271,
+      "webName": "Kamada",
+      "firstName": "Daichi",
+      "lastName": "Kamada",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 60,
+      "form": 1.8,
+      "goalsScored": 0,
+      "assists": 2,
+      "xG": 1.42,
+      "xA": 2.37,
+      "xGI": 3.79,
+      "minutes": 1659,
+      "cleanSheets": 6,
+      "bonus": 0
+    },
+    {
       "id": 591,
       "webName": "Gray",
       "firstName": "Archie",
@@ -8831,28 +8853,6 @@
       "bonus": 3
     },
     {
-      "id": 271,
-      "webName": "Kamada",
-      "firstName": "Daichi",
-      "lastName": "Kamada",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 59,
-      "form": 1.5,
-      "goalsScored": 0,
-      "assists": 2,
-      "xG": 1.42,
-      "xA": 2.36,
-      "xGI": 3.78,
-      "minutes": 1614,
-      "cleanSheets": 6,
-      "bonus": 0
-    },
-    {
       "id": 304,
       "webName": "Iroegbunam",
       "firstName": "Tim",
@@ -8895,6 +8895,28 @@
       "minutes": 1326,
       "cleanSheets": 6,
       "bonus": 3
+    },
+    {
+      "id": 580,
+      "webName": "Johnson",
+      "firstName": "Brennan",
+      "lastName": "Johnson",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Crystal Palace",
+      "teamId": 8,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 59,
+      "form": 1.5,
+      "goalsScored": 2,
+      "assists": 1,
+      "xG": 2.37,
+      "xA": 1.03,
+      "xGI": 3.4,
+      "minutes": 1469,
+      "cleanSheets": 6,
+      "bonus": 2
     },
     {
       "id": 584,
@@ -9005,28 +9027,6 @@
       "minutes": 839,
       "cleanSheets": 4,
       "bonus": 4
-    },
-    {
-      "id": 580,
-      "webName": "Johnson",
-      "firstName": "Brennan",
-      "lastName": "Johnson",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Crystal Palace",
-      "teamId": 8,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 58,
-      "form": 1.2,
-      "goalsScored": 2,
-      "assists": 1,
-      "xG": 2.37,
-      "xA": 1.03,
-      "xGI": 3.4,
-      "minutes": 1422,
-      "cleanSheets": 6,
-      "bonus": 2
     },
     {
       "id": 217,
@@ -9953,6 +9953,28 @@
       "bonus": 1
     },
     {
+      "id": 808,
+      "webName": "Rayan",
+      "firstName": "Rayan Vitor",
+      "lastName": "Simplício Rocha",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 46,
+      "form": 3.5,
+      "goalsScored": 3,
+      "assists": 2,
+      "xG": 1.81,
+      "xA": 1.55,
+      "xGI": 3.36,
+      "minutes": 839,
+      "cleanSheets": 3,
+      "bonus": 2
+    },
+    {
       "id": 40,
       "webName": "Mings",
       "firstName": "Tyrone",
@@ -10038,28 +10060,6 @@
       "xGI": 4,
       "minutes": 1117,
       "cleanSheets": 2,
-      "bonus": 2
-    },
-    {
-      "id": 808,
-      "webName": "Rayan",
-      "firstName": "Rayan Vitor",
-      "lastName": "Simplício Rocha",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 45,
-      "form": 3.2,
-      "goalsScored": 3,
-      "assists": 2,
-      "xG": 1.63,
-      "xA": 1.55,
-      "xGI": 3.18,
-      "minutes": 792,
-      "cleanSheets": 3,
       "bonus": 2
     },
     {
@@ -25588,7 +25588,7 @@
       "leagueEntryId": 34059,
       "teamName": "Steen, Papier, Schar",
       "playerName": "Salomon van Megen",
-      "predictedPoints": 113.7,
+      "predictedPoints": 114.4,
       "playerBreakdown": [
         {
           "playerId": 82,
@@ -25609,6 +25609,12 @@
           "fixtureDifficulty": 3
         },
         {
+          "playerId": 90,
+          "playerName": "Scott",
+          "expectedPoints": 9.7,
+          "fixtureDifficulty": 3
+        },
+        {
           "playerId": 256,
           "playerName": "Muñoz",
           "expectedPoints": 9,
@@ -25618,12 +25624,6 @@
           "playerId": 691,
           "playerName": "Calvert-Lewin",
           "expectedPoints": 9.5,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 90,
-          "playerName": "Scott",
-          "expectedPoints": 9,
           "fixtureDifficulty": 3
         },
         {
@@ -25666,7 +25666,7 @@
       "leagueEntryId": 2273,
       "teamName": "Gibbs-White Walkers",
       "playerName": "Sam vd V",
-      "predictedPoints": 98.1,
+      "predictedPoints": 98.7,
       "playerBreakdown": [
         {
           "playerId": 624,
@@ -25717,15 +25717,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 317,
-          "playerName": "Andersen",
-          "expectedPoints": 10.7,
+          "playerId": 253,
+          "playerName": "Henderson",
+          "expectedPoints": 5,
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 253,
-          "playerName": "Henderson",
-          "expectedPoints": 4.4,
+          "playerId": 317,
+          "playerName": "Andersen",
+          "expectedPoints": 10.7,
           "fixtureDifficulty": 3
         },
         {
@@ -25744,7 +25744,7 @@
       "leagueEntryId": 75126,
       "teamName": "Oscar is de Bobb",
       "playerName": "Maximiliaan de Goede",
-      "predictedPoints": 90.8,
+      "predictedPoints": 90.2,
       "playerBreakdown": [
         {
           "playerId": 449,
@@ -25779,7 +25779,7 @@
         {
           "playerId": 257,
           "playerName": "Lacroix",
-          "expectedPoints": 9.3,
+          "expectedPoints": 8.7,
           "fixtureDifficulty": 3
         },
         {
@@ -25822,7 +25822,7 @@
       "leagueEntryId": 2569,
       "teamName": "I Baleba I Can Fly",
       "playerName": "Tim van Duinen",
-      "predictedPoints": 87.2,
+      "predictedPoints": 89.2,
       "playerBreakdown": [
         {
           "playerId": 260,
@@ -25873,15 +25873,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 148,
-          "playerName": "F.Kadıoğlu",
-          "expectedPoints": 12.1,
+          "playerId": 97,
+          "playerName": "Evanilson",
+          "expectedPoints": 8.7,
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 97,
-          "playerName": "Evanilson",
-          "expectedPoints": 6.7,
+          "playerId": 148,
+          "playerName": "F.Kadıoğlu",
+          "expectedPoints": 12.1,
           "fixtureDifficulty": 3
         },
         {
@@ -25900,7 +25900,7 @@
       "leagueEntryId": 8630,
       "teamName": "Hannies bal met brie",
       "playerName": "Marc Streng",
-      "predictedPoints": 81.3,
+      "predictedPoints": 82.3,
       "playerBreakdown": [
         {
           "playerId": 517,
@@ -25911,7 +25911,7 @@
         {
           "playerId": 74,
           "playerName": "Truffert",
-          "expectedPoints": 8.8,
+          "expectedPoints": 9.4,
           "fixtureDifficulty": 3
         },
         {
@@ -25939,15 +25939,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 178,
-          "playerName": "Welbeck",
-          "expectedPoints": 8.9,
+          "playerId": 84,
+          "playerName": "Tavernier",
+          "expectedPoints": 7.2,
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 84,
-          "playerName": "Tavernier",
-          "expectedPoints": 6.8,
+          "playerId": 178,
+          "playerName": "Welbeck",
+          "expectedPoints": 8.9,
           "fixtureDifficulty": 3
         },
         {
@@ -26056,7 +26056,7 @@
       "leagueEntryId": 85079,
       "teamName": "Shake Dias",
       "playerName": "Robert van Gemert",
-      "predictedPoints": 70.9,
+      "predictedPoints": 73.3,
       "playerBreakdown": [
         {
           "playerId": 21,
@@ -26077,15 +26077,15 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 8,
-          "playerName": "J.Timber",
-          "expectedPoints": 0.6,
+          "playerId": 72,
+          "playerName": "Senesi",
+          "expectedPoints": 7.6,
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 72,
-          "playerName": "Senesi",
-          "expectedPoints": 5.6,
+          "playerId": 8,
+          "playerName": "J.Timber",
+          "expectedPoints": 0.6,
           "fixtureDifficulty": 3
         },
         {
@@ -26115,7 +26115,7 @@
         {
           "playerId": 67,
           "playerName": "Petrović",
-          "expectedPoints": 2,
+          "expectedPoints": 2.4,
           "fixtureDifficulty": 3
         },
         {
@@ -29415,7 +29415,7 @@
         "teamName": "Gibbs-White Walkers",
         "positions": {
           "GK": {
-            "totalPoints": 271,
+            "totalPoints": 272,
             "avgPoints": 8,
             "playerCount": 2
           },
@@ -29457,8 +29457,8 @@
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 240,
-            "avgPoints": 7.1,
+            "totalPoints": 244,
+            "avgPoints": 7.2,
             "playerCount": 3
           }
         }
@@ -29479,13 +29479,13 @@
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 614,
+            "totalPoints": 615,
             "avgPoints": 18.1,
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 353,
-            "avgPoints": 10.4,
+            "totalPoints": 358,
+            "avgPoints": 10.5,
             "playerCount": 3
           }
         }
@@ -29501,12 +29501,12 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 618,
+            "totalPoints": 619,
             "avgPoints": 18.2,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 636,
+            "totalPoints": 637,
             "avgPoints": 18.7,
             "playerCount": 5
           },
@@ -29538,7 +29538,7 @@
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 190,
+            "totalPoints": 191,
             "avgPoints": 5.6,
             "playerCount": 3
           }
@@ -29560,7 +29560,7 @@
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 645,
+            "totalPoints": 646,
             "avgPoints": 19,
             "playerCount": 5
           },
@@ -29582,7 +29582,7 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 582,
+            "totalPoints": 581,
             "avgPoints": 17.1,
             "playerCount": 5
           },
@@ -29604,13 +29604,13 @@
         "teamName": "Shake Dias",
         "positions": {
           "GK": {
-            "totalPoints": 217,
+            "totalPoints": 218,
             "avgPoints": 6.4,
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 665,
-            "avgPoints": 19.6,
+            "totalPoints": 669,
+            "avgPoints": 19.7,
             "playerCount": 5
           },
           "MID": {
@@ -29890,7 +29890,7 @@
         "playerId": 97,
         "managerName": "I Baleba I Can Fly",
         "leagueEntryId": 2569,
-        "totalPoints": 105,
+        "totalPoints": 109,
         "valueRating": "Fair"
       },
       {
@@ -29900,7 +29900,7 @@
         "playerId": 654,
         "managerName": "Hannies bal met brie",
         "leagueEntryId": 8627,
-        "totalPoints": 66,
+        "totalPoints": 67,
         "valueRating": "Bust"
       },
       {
@@ -30280,7 +30280,7 @@
         "playerId": 267,
         "managerName": "Steen, Papier, Schar",
         "leagueEntryId": 34964,
-        "totalPoints": 100,
+        "totalPoints": 101,
         "valueRating": "Fair"
       },
       {
@@ -30720,7 +30720,7 @@
         "playerId": 258,
         "managerName": "Dikke Saka veel grip",
         "leagueEntryId": 27628,
-        "totalPoints": 126,
+        "totalPoints": 127,
         "valueRating": "Steal"
       },
       {
@@ -30740,7 +30740,7 @@
         "playerId": 257,
         "managerName": "Oscar is de Bobb",
         "leagueEntryId": 77537,
-        "totalPoints": 146,
+        "totalPoints": 145,
         "valueRating": "Steal"
       },
       {
@@ -30760,7 +30760,7 @@
         "playerId": 253,
         "managerName": "Steen, Papier, Schar",
         "leagueEntryId": 34964,
-        "totalPoints": 124,
+        "totalPoints": 125,
         "valueRating": "Good Value"
       },
       {
@@ -30820,7 +30820,7 @@
         "playerId": 74,
         "managerName": "Eze come Eze go",
         "leagueEntryId": 4813,
-        "totalPoints": 139,
+        "totalPoints": 140,
         "valueRating": "Steal"
       },
       {
@@ -30830,7 +30830,7 @@
         "playerId": 67,
         "managerName": "Gibbs-White Walkers",
         "leagueEntryId": 2273,
-        "totalPoints": 106,
+        "totalPoints": 107,
         "valueRating": "Fair"
       },
       {
@@ -30896,7 +30896,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-03T08:30:25.936Z",
+    "lastUpdated": "2026-05-03T14:08:28.804Z",
     "season": "2025",
     "plMatchday": 35,
     "managerProfiles": [
@@ -30974,16 +30974,16 @@
             "fplTeamId": 17
           },
           {
-            "teamName": "Fulham",
-            "count": 1,
-            "plRank": 10,
-            "fplTeamId": 10
-          },
-          {
             "teamName": "Crystal Palace",
             "count": 1,
             "plRank": 14,
             "fplTeamId": 8
+          },
+          {
+            "teamName": "Fulham",
+            "count": 1,
+            "plRank": 10,
+            "fplTeamId": 10
           },
           {
             "teamName": "Newcastle",
@@ -31182,6 +31182,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Henderson",
+            "espnName": "Dean Henderson",
+            "plTeam": "Crystal Palace",
+            "plTeamRank": 14,
+            "fplPoints": 125,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 2880,
+            "espnYellows": 4,
+            "espnReds": 0,
+            "espnFouls": 1,
+            "espnPasses": 973,
+            "espnPassPct": 0.558,
+            "espnShots": 0,
+            "espnShotsOnTarget": 0,
+            "espnTackles": 0,
+            "espnInterceptions": 2,
+            "espnCleanSheets": 11,
+            "position": "GK",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Andersen",
             "espnName": "Joachim Andersen",
             "plTeam": "Fulham",
@@ -31201,28 +31223,6 @@
             "espnInterceptions": 35,
             "espnCleanSheets": 8,
             "position": "DEF",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Henderson",
-            "espnName": "Dean Henderson",
-            "plTeam": "Crystal Palace",
-            "plTeamRank": 14,
-            "fplPoints": 124,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 2880,
-            "espnYellows": 4,
-            "espnReds": 0,
-            "espnFouls": 1,
-            "espnPasses": 973,
-            "espnPassPct": 0.558,
-            "espnShots": 0,
-            "espnShotsOnTarget": 0,
-            "espnTackles": 0,
-            "espnInterceptions": 2,
-            "espnCleanSheets": 11,
-            "position": "GK",
             "isBenchwarmer": false
           },
           {
@@ -31417,16 +31417,16 @@
             "fplTeamId": 17
           },
           {
-            "teamName": "Brighton",
-            "count": 1,
-            "plRank": 7,
-            "fplTeamId": 6
-          },
-          {
             "teamName": "Bournemouth",
             "count": 1,
             "plRank": 8,
             "fplTeamId": 4
+          },
+          {
+            "teamName": "Brighton",
+            "count": 1,
+            "plRank": 7,
+            "fplTeamId": 6
           },
           {
             "teamName": "Crystal Palace",
@@ -31619,6 +31619,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Evanilson",
+            "espnName": "Evanilson",
+            "plTeam": "Bournemouth",
+            "plTeamRank": 8,
+            "fplPoints": 109,
+            "espnGoals": 6,
+            "espnAssists": 1,
+            "espnMinutes": 2474,
+            "espnYellows": 2,
+            "espnReds": 0,
+            "espnFouls": 23,
+            "espnPasses": 415,
+            "espnPassPct": 0.754,
+            "espnShots": 63,
+            "espnShotsOnTarget": 22,
+            "espnTackles": 10,
+            "espnInterceptions": 4,
+            "espnCleanSheets": 2,
+            "position": "FWD",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "F.Kadıoğlu",
             "espnName": "F.Kadıoğlu",
             "plTeam": "Brighton",
@@ -31639,28 +31661,6 @@
             "espnCleanSheets": 0,
             "position": "DEF",
             "isBenchwarmer": true
-          },
-          {
-            "fplName": "Evanilson",
-            "espnName": "Evanilson",
-            "plTeam": "Bournemouth",
-            "plTeamRank": 8,
-            "fplPoints": 105,
-            "espnGoals": 6,
-            "espnAssists": 1,
-            "espnMinutes": 2474,
-            "espnYellows": 2,
-            "espnReds": 0,
-            "espnFouls": 23,
-            "espnPasses": 415,
-            "espnPassPct": 0.754,
-            "espnShots": 63,
-            "espnShotsOnTarget": 22,
-            "espnTackles": 10,
-            "espnInterceptions": 4,
-            "espnCleanSheets": 2,
-            "position": "FWD",
-            "isBenchwarmer": false
           },
           {
             "fplName": "Mateta",
@@ -31944,7 +31944,7 @@
             "espnName": "Tyrick Mitchell",
             "plTeam": "Crystal Palace",
             "plTeamRank": 14,
-            "fplPoints": 126,
+            "fplPoints": 127,
             "espnGoals": 1,
             "espnAssists": 2,
             "espnMinutes": 2893,
@@ -32120,7 +32120,7 @@
             "espnName": "Ismaïla Sarr",
             "plTeam": "Crystal Palace",
             "plTeamRank": 14,
-            "fplPoints": 100,
+            "fplPoints": 101,
             "espnGoals": 7,
             "espnAssists": 1,
             "espnMinutes": 1877,
@@ -32142,7 +32142,7 @@
             "espnName": "Junior Kroupi",
             "plTeam": "Bournemouth",
             "plTeamRank": 8,
-            "fplPoints": 95,
+            "fplPoints": 100,
             "espnGoals": 11,
             "espnAssists": 0,
             "espnMinutes": 1385,
@@ -32164,7 +32164,7 @@
             "espnName": "Jaydee Canvot",
             "plTeam": "Crystal Palace",
             "plTeamRank": 14,
-            "fplPoints": 65,
+            "fplPoints": 64,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 974,
@@ -32331,7 +32331,7 @@
             "espnName": "Adrien Truffert",
             "plTeam": "Bournemouth",
             "plTeamRank": 8,
-            "fplPoints": 139,
+            "fplPoints": 140,
             "espnGoals": 1,
             "espnAssists": 3,
             "espnMinutes": 3020,
@@ -32437,6 +32437,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Tavernier",
+            "espnName": "Marcus Tavernier",
+            "plTeam": "Bournemouth",
+            "plTeamRank": 8,
+            "fplPoints": 121,
+            "espnGoals": 6,
+            "espnAssists": 4,
+            "espnMinutes": 2394,
+            "espnYellows": 5,
+            "espnReds": 0,
+            "espnFouls": 28,
+            "espnPasses": 977,
+            "espnPassPct": 0.828,
+            "espnShots": 63,
+            "espnShotsOnTarget": 20,
+            "espnTackles": 36,
+            "espnInterceptions": 15,
+            "espnCleanSheets": 4,
+            "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Welbeck",
             "espnName": "Danny Welbeck",
             "plTeam": "Brighton",
@@ -32456,28 +32478,6 @@
             "espnInterceptions": 9,
             "espnCleanSheets": 1,
             "position": "FWD",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Tavernier",
-            "espnName": "Marcus Tavernier",
-            "plTeam": "Bournemouth",
-            "plTeamRank": 8,
-            "fplPoints": 120,
-            "espnGoals": 6,
-            "espnAssists": 4,
-            "espnMinutes": 2394,
-            "espnYellows": 5,
-            "espnReds": 0,
-            "espnFouls": 28,
-            "espnPasses": 977,
-            "espnPassPct": 0.828,
-            "espnShots": 63,
-            "espnShotsOnTarget": 20,
-            "espnTackles": 36,
-            "espnInterceptions": 15,
-            "espnCleanSheets": 4,
-            "position": "MID",
             "isBenchwarmer": false
           },
           {
@@ -32946,7 +32946,7 @@
             "espnName": "Jørgen Strand Larsen",
             "plTeam": "Crystal Palace",
             "plTeamRank": 14,
-            "fplPoints": 66,
+            "fplPoints": 67,
             "espnGoals": 4,
             "espnAssists": 1,
             "espnMinutes": 2018,
@@ -33099,16 +33099,16 @@
             "fplTeamId": 17
           },
           {
-            "teamName": "Crystal Palace",
-            "count": 1,
-            "plRank": 14,
-            "fplTeamId": 8
-          },
-          {
             "teamName": "Bournemouth",
             "count": 1,
             "plRank": 8,
             "fplTeamId": 4
+          },
+          {
+            "teamName": "Crystal Palace",
+            "count": 1,
+            "plRank": 14,
+            "fplTeamId": 8
           },
           {
             "teamName": "Brentford",
@@ -33209,6 +33209,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Scott",
+            "espnName": "Alex Scott",
+            "plTeam": "Bournemouth",
+            "plTeamRank": 8,
+            "fplPoints": 126,
+            "espnGoals": 3,
+            "espnAssists": 1,
+            "espnMinutes": 2590,
+            "espnYellows": 4,
+            "espnReds": 0,
+            "espnFouls": 38,
+            "espnPasses": 1260,
+            "espnPassPct": 0.846,
+            "espnShots": 43,
+            "espnShotsOnTarget": 12,
+            "espnTackles": 54,
+            "espnInterceptions": 35,
+            "espnCleanSheets": 5,
+            "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Muñoz",
             "espnName": "Daniel Muñoz",
             "plTeam": "Crystal Palace",
@@ -33250,28 +33272,6 @@
             "espnInterceptions": 2,
             "espnCleanSheets": 3,
             "position": "FWD",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Scott",
-            "espnName": "Alex Scott",
-            "plTeam": "Bournemouth",
-            "plTeamRank": 8,
-            "fplPoints": 125,
-            "espnGoals": 3,
-            "espnAssists": 1,
-            "espnMinutes": 2590,
-            "espnYellows": 4,
-            "espnReds": 0,
-            "espnFouls": 38,
-            "espnPasses": 1260,
-            "espnPassPct": 0.846,
-            "espnShots": 43,
-            "espnShotsOnTarget": 12,
-            "espnTackles": 54,
-            "espnInterceptions": 35,
-            "espnCleanSheets": 5,
-            "position": "MID",
             "isBenchwarmer": false
           },
           {
@@ -33657,7 +33657,7 @@
           },
           {
             "fplName": "Casemiro",
-            "espnName": "Casemiro",
+            "espnName": "Casemiro ",
             "plTeam": "Man Utd",
             "plTeamRank": 3,
             "fplPoints": 160,
@@ -33682,7 +33682,7 @@
             "espnName": "Maxence Lacroix",
             "plTeam": "Crystal Palace",
             "plTeamRank": 14,
-            "fplPoints": 146,
+            "fplPoints": 145,
             "espnGoals": 1,
             "espnAssists": 2,
             "espnMinutes": 2756,
@@ -34053,6 +34053,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Senesi",
+            "espnName": "Marcos Senesi",
+            "plTeam": "Bournemouth",
+            "plTeamRank": 8,
+            "fplPoints": 151,
+            "espnGoals": 0,
+            "espnAssists": 5,
+            "espnMinutes": 2930,
+            "espnYellows": 8,
+            "espnReds": 0,
+            "espnFouls": 31,
+            "espnPasses": 2048,
+            "espnPassPct": 0.774,
+            "espnShots": 17,
+            "espnShotsOnTarget": 5,
+            "espnTackles": 56,
+            "espnInterceptions": 51,
+            "espnCleanSheets": 8,
+            "position": "DEF",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "J.Timber",
             "espnName": "Jurriën Timber",
             "plTeam": "Arsenal",
@@ -34071,28 +34093,6 @@
             "espnTackles": 66,
             "espnInterceptions": 24,
             "espnCleanSheets": 11,
-            "position": "DEF",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Senesi",
-            "espnName": "Marcos Senesi",
-            "plTeam": "Bournemouth",
-            "plTeamRank": 8,
-            "fplPoints": 147,
-            "espnGoals": 0,
-            "espnAssists": 5,
-            "espnMinutes": 2930,
-            "espnYellows": 8,
-            "espnReds": 0,
-            "espnFouls": 31,
-            "espnPasses": 2048,
-            "espnPassPct": 0.774,
-            "espnShots": 17,
-            "espnShotsOnTarget": 5,
-            "espnTackles": 56,
-            "espnInterceptions": 51,
-            "espnCleanSheets": 8,
             "position": "DEF",
             "isBenchwarmer": false
           },
@@ -34189,7 +34189,7 @@
             "espnName": "Djordje Petrovic",
             "plTeam": "Bournemouth",
             "plTeamRank": 8,
-            "fplPoints": 106,
+            "fplPoints": 107,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 3060,
@@ -35178,14 +35178,14 @@
             "plRank": 12
           },
           {
-            "team": "Crystal Palace",
-            "count": 1,
-            "plRank": 14
-          },
-          {
             "team": "Bournemouth",
             "count": 1,
             "plRank": 8
+          },
+          {
+            "team": "Crystal Palace",
+            "count": 1,
+            "plRank": 14
           },
           {
             "team": "Brentford",
@@ -35254,14 +35254,14 @@
             "plRank": 12
           },
           {
-            "team": "Fulham",
-            "count": 1,
-            "plRank": 10
-          },
-          {
             "team": "Crystal Palace",
             "count": 1,
             "plRank": 14
+          },
+          {
+            "team": "Fulham",
+            "count": 1,
+            "plRank": 10
           },
           {
             "team": "Newcastle",
@@ -35325,14 +35325,14 @@
             "plRank": 12
           },
           {
-            "team": "Brighton",
-            "count": 1,
-            "plRank": 7
-          },
-          {
             "team": "Bournemouth",
             "count": 1,
             "plRank": 8
+          },
+          {
+            "team": "Brighton",
+            "count": 1,
+            "plRank": 7
           },
           {
             "team": "Crystal Palace",
@@ -36280,14 +36280,14 @@
           },
           {
             "name": "Senesi",
-            "fplPts": 147,
+            "fplPts": 151,
             "realGI": 5
           }
         ],
         "underperformers": [
           {
             "name": "Petrović",
-            "fplPts": 106,
+            "fplPts": 107,
             "realGI": 0
           },
           {
@@ -36334,7 +36334,7 @@
           },
           {
             "name": "Henderson",
-            "fplPts": 124,
+            "fplPts": 125,
             "realGI": 0
           },
           {
@@ -36371,7 +36371,7 @@
         "underperformers": [
           {
             "name": "Canvot",
-            "fplPts": 65,
+            "fplPts": 64,
             "realGI": 0
           },
           {
@@ -36406,7 +36406,7 @@
           },
           {
             "name": "Truffert",
-            "fplPts": 139,
+            "fplPts": 140,
             "realGI": 4
           }
         ],
@@ -36443,7 +36443,7 @@
           },
           {
             "name": "Scott",
-            "fplPts": 125,
+            "fplPts": 126,
             "realGI": 4
           },
           {
@@ -36485,7 +36485,7 @@
           },
           {
             "name": "Lacroix",
-            "fplPts": 146,
+            "fplPts": 145,
             "realGI": 3
           },
           {
@@ -36744,7 +36744,7 @@
             "playerName": "Evanilson",
             "managerName": "I Baleba I Can Fly",
             "leagueEntryId": 2569,
-            "fplPoints": 105,
+            "fplPoints": 109,
             "espnGoals": 6,
             "espnAssists": 1,
             "espnMinutes": 2474,
@@ -36755,7 +36755,7 @@
             "playerName": "Strand Larsen",
             "managerName": "Hannies bal met brie",
             "leagueEntryId": 8627,
-            "fplPoints": 66,
+            "fplPoints": 67,
             "espnGoals": 4,
             "espnAssists": 1,
             "espnMinutes": 2018,
@@ -36795,7 +36795,7 @@
             "rating": "Hit"
           }
         ],
-        "avgPoints": 93.13
+        "avgPoints": 93.75
       },
       {
         "round": 4,
@@ -37203,7 +37203,7 @@
             "playerName": "Sarr",
             "managerName": "Steen, Papier, Schar",
             "leagueEntryId": 34964,
-            "fplPoints": 100,
+            "fplPoints": 101,
             "espnGoals": 7,
             "espnAssists": 1,
             "espnMinutes": 1877,
@@ -37265,7 +37265,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 59.13
+        "avgPoints": 59.25
       },
       {
         "round": 9,
@@ -37717,7 +37717,7 @@
             "playerName": "Mitchell",
             "managerName": "Dikke Saka veel grip",
             "leagueEntryId": 27628,
-            "fplPoints": 126,
+            "fplPoints": 127,
             "espnGoals": 1,
             "espnAssists": 2,
             "espnMinutes": 2893,
@@ -37735,7 +37735,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 31
+        "avgPoints": 31.13
       },
       {
         "round": 14,
@@ -37745,7 +37745,7 @@
             "playerName": "Lacroix",
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
-            "fplPoints": 146,
+            "fplPoints": 145,
             "espnGoals": 1,
             "espnAssists": 2,
             "espnMinutes": 2756,
@@ -37767,7 +37767,7 @@
             "playerName": "Henderson",
             "managerName": "Steen, Papier, Schar",
             "leagueEntryId": 34964,
-            "fplPoints": 124,
+            "fplPoints": 125,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 2880,
@@ -37839,7 +37839,7 @@
             "playerName": "Truffert",
             "managerName": "Eze come Eze go",
             "leagueEntryId": 4813,
-            "fplPoints": 139,
+            "fplPoints": 140,
             "espnGoals": 1,
             "espnAssists": 3,
             "espnMinutes": 3020,
@@ -37850,7 +37850,7 @@
             "playerName": "Petrović",
             "managerName": "Gibbs-White Walkers",
             "leagueEntryId": 2273,
-            "fplPoints": 106,
+            "fplPoints": 107,
             "espnGoals": 0,
             "espnAssists": 0,
             "espnMinutes": 3060,
@@ -37923,7 +37923,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 59.38
+        "avgPoints": 59.63
       }
     ],
     "awards": {
@@ -38247,12 +38247,12 @@
             "opponent": "Bournemouth",
             "opponentShort": "BOU",
             "isHome": false,
-            "startScore": 4.15,
+            "startScore": 4.14,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 5.4,
               "specialScore": 2.4,
-              "seasonScore": 7.3
+              "seasonScore": 7.25
             },
             "isStarter": false,
             "status": "a"
@@ -38312,7 +38312,7 @@
         "teamName": "Hannies bal met brie",
         "playerName": "Marc Streng",
         "formation": "4-4-2",
-        "totalStartScore": 65.74,
+        "totalStartScore": 65.76,
         "players": [
           {
             "playerId": 101,
@@ -38384,12 +38384,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 6.19,
+            "startScore": 6.2,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 6.4,
               "specialScore": 4.9,
-              "seasonScore": 6.95
+              "seasonScore": 7
             },
             "isStarter": true,
             "status": "a"
@@ -38444,12 +38444,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 5.99,
+            "startScore": 6,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 3.2,
               "specialScore": 10,
-              "seasonScore": 6
+              "seasonScore": 6.05
             },
             "isStarter": true,
             "status": "a"
@@ -38926,7 +38926,7 @@
               "fixtureScore": 3,
               "formScore": 1.8,
               "specialScore": 2.4,
-              "seasonScore": 6.2
+              "seasonScore": 6.25
             },
             "isStarter": false,
             "status": "a"
@@ -38946,7 +38946,7 @@
         "teamName": "Steen, Papier, Schar",
         "playerName": "Salomon van Megen",
         "formation": "3-5-2",
-        "totalStartScore": 64.3,
+        "totalStartScore": 64.4,
         "players": [
           {
             "playerId": 502,
@@ -39058,12 +39058,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 6.49,
+            "startScore": 6.59,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 4.8,
-              "specialScore": 9.57,
-              "seasonScore": 6.25
+              "specialScore": 10,
+              "seasonScore": 6.3
             },
             "isStarter": true,
             "status": "a"
@@ -39263,7 +39263,7 @@
         "teamName": "I Baleba I Can Fly",
         "playerName": "Tim van Duinen",
         "formation": "4-3-3",
-        "totalStartScore": 62.41,
+        "totalStartScore": 62.43,
         "players": [
           {
             "playerId": 670,
@@ -39435,12 +39435,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 6.06,
+            "startScore": 6.08,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 3.6,
               "specialScore": 10,
-              "seasonScore": 5.25
+              "seasonScore": 5.45
             },
             "isStarter": true,
             "status": "a"
@@ -39580,7 +39580,7 @@
         "teamName": "Shake Dias",
         "playerName": "Robert van Gemert",
         "formation": "4-4-2",
-        "totalStartScore": 61.27,
+        "totalStartScore": 61.29,
         "players": [
           {
             "playerId": 314,
@@ -39632,12 +39632,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 5.46,
+            "startScore": 5.48,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 4.2,
               "specialScore": 4.9,
-              "seasonScore": 7.35
+              "seasonScore": 7.55
             },
             "isStarter": true,
             "status": "a"
@@ -39817,7 +39817,7 @@
               "fixtureScore": 6.5,
               "formScore": 2.4,
               "specialScore": 4.9,
-              "seasonScore": 5.3
+              "seasonScore": 5.35
             },
             "isStarter": false,
             "status": "a"
@@ -39897,7 +39897,7 @@
         "teamName": "Eze come Eze go",
         "playerName": "Pieter van Gemert",
         "formation": "3-4-3",
-        "totalStartScore": 59.83,
+        "totalStartScore": 59.85,
         "players": [
           {
             "playerId": 728,
@@ -39969,12 +39969,12 @@
             "opponent": "Bournemouth",
             "opponentShort": "BOU",
             "isHome": false,
-            "startScore": 3.82,
+            "startScore": 3.81,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 5.6,
               "specialScore": 2.4,
-              "seasonScore": 3.25
+              "seasonScore": 3.2
             },
             "isStarter": true,
             "status": "a"
@@ -40069,12 +40069,12 @@
             "opponent": "Crystal Palace",
             "opponentShort": "CRY",
             "isHome": true,
-            "startScore": 6.36,
+            "startScore": 6.39,
             "breakdown": {
               "fixtureScore": 6.5,
               "formScore": 4.6,
               "specialScore": 10,
-              "seasonScore": 4.75
+              "seasonScore": 5
             },
             "isStarter": true,
             "status": "a"
@@ -40129,12 +40129,12 @@
             "opponent": "Bournemouth",
             "opponentShort": "BOU",
             "isHome": false,
-            "startScore": 4.25,
+            "startScore": 4.26,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 2,
               "specialScore": 10,
-              "seasonScore": 5
+              "seasonScore": 5.05
             },
             "isStarter": false,
             "status": "a"
@@ -40169,12 +40169,12 @@
             "opponent": "Bournemouth",
             "opponentShort": "BOU",
             "isHome": false,
-            "startScore": 3.42,
+            "startScore": 3.43,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 3.6,
               "specialScore": 2.4,
-              "seasonScore": 6.3
+              "seasonScore": 6.35
             },
             "isStarter": false,
             "status": "a"
@@ -40202,10 +40202,10 @@
         ],
         "transferSuggestion": {
           "playerOut": "Canvot",
-          "playerOutScore": 3.82,
+          "playerOutScore": 3.81,
           "playerIn": "Milenković",
           "playerInScore": 6.98,
-          "improvement": 3.16
+          "improvement": 3.17
         }
       },
       {
@@ -40214,7 +40214,7 @@
         "teamName": "Dikke Saka veel grip",
         "playerName": "Maurits Koot",
         "formation": "3-5-2",
-        "totalStartScore": 51.52,
+        "totalStartScore": 51.54,
         "players": [
           {
             "playerId": 366,
@@ -40426,12 +40426,12 @@
             "opponent": "Bournemouth",
             "opponentShort": "BOU",
             "isHome": false,
-            "startScore": 3.34,
+            "startScore": 3.36,
             "breakdown": {
               "fixtureScore": 3,
               "formScore": 1,
-              "specialScore": 8.02,
-              "seasonScore": 3.3
+              "specialScore": 8.15,
+              "seasonScore": 3.35
             },
             "isStarter": true,
             "status": "a"
@@ -40953,10 +40953,10 @@
         "playerName": "Pieter van Gemert",
         "mascottePlayer": "Truffert",
         "mascottePlayerId": 74,
-        "totalPoints": 139,
+        "totalPoints": 140,
         "position": "DEF",
         "team": "Bournemouth",
-        "minutesPlayed": 3018,
+        "minutesPlayed": 3065,
         "valueRating": "Steal"
       },
       {
@@ -40992,10 +40992,10 @@
         "playerName": "Sam vd V",
         "mascottePlayer": "Petrović",
         "mascottePlayerId": 67,
-        "totalPoints": 106,
+        "totalPoints": 107,
         "position": "GK",
         "team": "Bournemouth",
-        "minutesPlayed": 3060,
+        "minutesPlayed": 3107,
         "valueRating": "Fair"
       },
       {
