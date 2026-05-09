@@ -35,18 +35,18 @@
     "fplTeamId": 1
   },
   {
+    "fplId": 249,
+    "fplName": "João Pedro",
+    "espnId": "284960",
+    "espnName": "João Pedro ",
+    "fplTeamId": 7
+  },
+  {
     "fplId": 136,
     "fplName": "Thiago",
     "espnId": "301894",
     "espnName": "Igor Thiago",
     "fplTeamId": 5
-  },
-  {
-    "fplId": 249,
-    "fplName": "João Pedro",
-    "espnId": "284960",
-    "espnName": "João Pedro",
-    "fplTeamId": 7
   },
   {
     "fplId": 515,
@@ -70,18 +70,18 @@
     "fplTeamId": 14
   },
   {
-    "fplId": 260,
-    "fplName": "Guéhi",
-    "espnId": "265907",
-    "espnName": "Marc Guéhi",
-    "fplTeamId": 13
-  },
-  {
     "fplId": 72,
     "fplName": "Senesi",
     "espnId": "233945",
     "espnName": "Marcos Senesi",
     "fplTeamId": 4
+  },
+  {
+    "fplId": 260,
+    "fplName": "Guéhi",
+    "espnId": "265907",
+    "espnName": "Marc Guéhi",
+    "fplTeamId": 13
   },
   {
     "fplId": 329,
@@ -140,6 +140,13 @@
     "fplTeamId": 9
   },
   {
+    "fplId": 387,
+    "fplName": "Szoboszlai",
+    "espnId": "257206",
+    "espnName": "Dominik Szoboszlai",
+    "fplTeamId": 12
+  },
+  {
     "fplId": 257,
     "fplName": "Lacroix",
     "espnId": "265918",
@@ -152,13 +159,6 @@
     "espnId": "196176",
     "espnName": "David Raya",
     "fplTeamId": 1
-  },
-  {
-    "fplId": 387,
-    "fplName": "Szoboszlai",
-    "espnId": "257206",
-    "espnName": "Dominik Szoboszlai",
-    "fplTeamId": 12
   },
   {
     "fplId": 74,
@@ -189,13 +189,6 @@
     "fplTeamId": 9
   },
   {
-    "fplId": 151,
-    "fplName": "Van Hecke",
-    "espnId": "282583",
-    "espnName": "Jan Paul van Hecke",
-    "fplTeamId": 6
-  },
-  {
     "fplId": 237,
     "fplName": "Enzo",
     "espnId": "285450",
@@ -203,11 +196,18 @@
     "fplTeamId": 7
   },
   {
-    "fplId": 101,
-    "fplName": "Kelleher",
-    "espnId": "275599",
-    "espnName": "Caoimhín Kelleher",
-    "fplTeamId": 5
+    "fplId": 151,
+    "fplName": "Van Hecke",
+    "espnId": "282583",
+    "espnName": "Jan Paul van Hecke",
+    "fplTeamId": 6
+  },
+  {
+    "fplId": 390,
+    "fplName": "Gravenberch",
+    "espnId": "274632",
+    "espnName": "Ryan Gravenberch",
+    "fplTeamId": 12
   },
   {
     "fplId": 450,
@@ -215,6 +215,13 @@
     "espnId": "259902",
     "espnName": "Matheus Cunha",
     "fplTeamId": 14
+  },
+  {
+    "fplId": 101,
+    "fplName": "Kelleher",
+    "espnId": "275599",
+    "espnName": "Caoimhín Kelleher",
+    "fplTeamId": 5
   },
   {
     "fplId": 664,
@@ -238,13 +245,6 @@
     "fplTeamId": 2
   },
   {
-    "fplId": 390,
-    "fplName": "Gravenberch",
-    "espnId": "274632",
-    "espnName": "Ryan Gravenberch",
-    "fplTeamId": 12
-  },
-  {
     "fplId": 26,
     "fplName": "Zubimendi",
     "espnId": "287266",
@@ -257,6 +257,13 @@
     "espnId": "159443",
     "espnName": "Jordan Pickford",
     "fplTeamId": 9
+  },
+  {
+    "fplId": 374,
+    "fplName": "Konaté",
+    "espnId": "251634",
+    "espnName": "Ibrahima Konaté",
+    "fplTeamId": 12
   },
   {
     "fplId": 417,
@@ -273,6 +280,13 @@
     "fplTeamId": 8
   },
   {
+    "fplId": 384,
+    "fplName": "Gakpo",
+    "espnId": "249524",
+    "espnName": "Cody Gakpo",
+    "fplTeamId": 12
+  },
+  {
     "fplId": 253,
     "fplName": "Henderson",
     "espnId": "234172",
@@ -287,32 +301,11 @@
     "fplTeamId": 8
   },
   {
-    "fplId": 374,
-    "fplName": "Konaté",
-    "espnId": "251634",
-    "espnName": "Ibrahima Konaté",
-    "fplTeamId": 12
-  },
-  {
-    "fplId": 691,
-    "fplName": "Calvert-Lewin",
-    "espnId": "197717",
-    "espnName": "Dominic Calvert-Lewin",
-    "fplTeamId": 11
-  },
-  {
     "fplId": 317,
     "fplName": "Andersen",
     "espnId": "196081",
     "espnName": "Joachim Andersen",
     "fplTeamId": 10
-  },
-  {
-    "fplId": 384,
-    "fplName": "Gakpo",
-    "espnId": "249524",
-    "espnName": "Cody Gakpo",
-    "fplTeamId": 12
   },
   {
     "fplId": 670,
@@ -322,11 +315,25 @@
     "fplTeamId": 17
   },
   {
+    "fplId": 691,
+    "fplName": "Calvert-Lewin",
+    "espnId": "197717",
+    "espnName": "Dominic Calvert-Lewin",
+    "fplTeamId": 11
+  },
+  {
     "fplId": 6,
     "fplName": "Saliba",
     "espnId": "277385",
     "espnName": "William Saliba",
     "fplTeamId": 1
+  },
+  {
+    "fplId": 84,
+    "fplName": "Tavernier",
+    "espnId": "243364",
+    "espnName": "Marcus Tavernier",
+    "fplTeamId": 4
   },
   {
     "fplId": 261,
@@ -343,13 +350,6 @@
     "fplTeamId": 1
   },
   {
-    "fplId": 84,
-    "fplName": "Tavernier",
-    "espnId": "243364",
-    "espnName": "Marcus Tavernier",
-    "fplTeamId": 4
-  },
-  {
     "fplId": 382,
     "fplName": "Wirtz",
     "espnId": "303748",
@@ -362,6 +362,13 @@
     "espnId": "291638",
     "espnName": "Neco Williams",
     "fplTeamId": 16
+  },
+  {
+    "fplId": 178,
+    "fplName": "Welbeck",
+    "espnId": "115271",
+    "espnName": "Danny Welbeck",
+    "fplTeamId": 6
   },
   {
     "fplId": 295,
@@ -378,10 +385,10 @@
     "fplTeamId": 9
   },
   {
-    "fplId": 178,
-    "fplName": "Welbeck",
-    "espnId": "115271",
-    "espnName": "Danny Welbeck",
+    "fplId": 139,
+    "fplName": "Verbruggen",
+    "espnId": "291609",
+    "espnName": "Bart Verbruggen",
     "fplTeamId": 6
   },
   {
@@ -390,13 +397,6 @@
     "espnId": "303444",
     "espnName": "Malick Thiaw",
     "fplTeamId": 15
-  },
-  {
-    "fplId": 139,
-    "fplName": "Verbruggen",
-    "espnId": "291609",
-    "espnName": "Bart Verbruggen",
-    "fplTeamId": 6
   },
   {
     "fplId": 728,
@@ -413,13 +413,6 @@
     "fplTeamId": 11
   },
   {
-    "fplId": 381,
-    "fplName": "M.Salah",
-    "espnId": "173896",
-    "espnName": "Mohamed Salah",
-    "fplTeamId": 12
-  },
-  {
     "fplId": 667,
     "fplName": "Xhaka",
     "espnId": "149981",
@@ -432,6 +425,13 @@
     "espnId": "215401",
     "espnName": "Omar Alderete",
     "fplTeamId": 17
+  },
+  {
+    "fplId": 381,
+    "fplName": "M.Salah",
+    "espnId": "173896",
+    "espnName": "Mohamed Salah",
+    "fplTeamId": 12
   },
   {
     "fplId": 36,
@@ -455,18 +455,18 @@
     "fplTeamId": 9
   },
   {
-    "fplId": 32,
-    "fplName": "Martinez",
-    "espnId": "158626",
-    "espnName": "Emiliano Martínez",
-    "fplTeamId": 2
-  },
-  {
     "fplId": 67,
     "fplName": "Petrović",
     "espnId": "289824",
     "espnName": "Djordje Petrovic",
     "fplTeamId": 4
+  },
+  {
+    "fplId": 32,
+    "fplName": "Martinez",
+    "espnId": "158626",
+    "espnName": "Emiliano Martínez",
+    "fplTeamId": 2
   },
   {
     "fplId": 314,
@@ -476,18 +476,18 @@
     "fplTeamId": 10
   },
   {
+    "fplId": 97,
+    "fplName": "Evanilson",
+    "espnId": "102368",
+    "espnName": "Evanilson ",
+    "fplTeamId": 4
+  },
+  {
     "fplId": 679,
     "fplName": "Šeško",
     "espnId": "289155",
     "espnName": "Benjamin Sesko",
     "fplTeamId": 14
-  },
-  {
-    "fplId": 97,
-    "fplName": "Evanilson",
-    "espnId": "102368",
-    "espnName": "Evanilson",
-    "fplTeamId": 4
   },
   {
     "fplId": 110,
@@ -616,6 +616,13 @@
     "fplTeamId": 2
   },
   {
+    "fplId": 729,
+    "fplName": "Lammens",
+    "espnId": "301425",
+    "espnName": "Senne Lammens",
+    "fplTeamId": 14
+  },
+  {
     "fplId": 311,
     "fplName": "Beto",
     "espnId": "289511",
@@ -630,11 +637,11 @@
     "fplTeamId": 13
   },
   {
-    "fplId": 729,
-    "fplName": "Lammens",
-    "espnId": "301425",
-    "espnName": "Senne Lammens",
-    "fplTeamId": 14
+    "fplId": 146,
+    "fplName": "Dunk",
+    "espnId": "147106",
+    "espnName": "Lewis Dunk",
+    "fplTeamId": 6
   },
   {
     "fplId": 366,
@@ -658,25 +665,11 @@
     "fplTeamId": 15
   },
   {
-    "fplId": 720,
-    "fplName": "Hincapie",
-    "espnId": "292062",
-    "espnName": "Piero Hincapié",
-    "fplTeamId": 1
-  },
-  {
-    "fplId": 146,
-    "fplName": "Dunk",
-    "espnId": "147106",
-    "espnName": "Lewis Dunk",
+    "fplId": 163,
+    "fplName": "Hinshelwood",
+    "espnId": "328011",
+    "espnName": "Jack Hinshelwood",
     "fplTeamId": 6
-  },
-  {
-    "fplId": 707,
-    "fplName": "Justin",
-    "espnId": "231863",
-    "espnName": "James Justin",
-    "fplTeamId": 11
   },
   {
     "fplId": 371,
@@ -686,11 +679,18 @@
     "fplTeamId": 12
   },
   {
-    "fplId": 163,
-    "fplName": "Hinshelwood",
-    "espnId": "328011",
-    "espnName": "Jack Hinshelwood",
-    "fplTeamId": 6
+    "fplId": 720,
+    "fplName": "Hincapie",
+    "espnId": "292062",
+    "espnName": "Piero Hincapié",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 707,
+    "fplName": "Justin",
+    "espnId": "231863",
+    "espnName": "James Justin",
+    "fplTeamId": 11
   },
   {
     "fplId": 733,
@@ -728,18 +728,18 @@
     "fplTeamId": 14
   },
   {
-    "fplId": 681,
-    "fplName": "Hermansen",
-    "espnId": "281564",
-    "espnName": "Mads Hermansen",
-    "fplTeamId": 19
-  },
-  {
     "fplId": 370,
     "fplName": "Frimpong",
     "espnId": "281119",
     "espnName": "Jeremie Frimpong",
     "fplTeamId": 12
+  },
+  {
+    "fplId": 681,
+    "fplName": "Hermansen",
+    "espnId": "281564",
+    "espnName": "Mads Hermansen",
+    "fplTeamId": 19
   },
   {
     "fplId": 580,
@@ -903,17 +903,17 @@
     "fplTeamId": 13
   },
   {
-    "fplId": 236,
-    "fplName": "Neto",
-    "espnId": "256115",
-    "espnName": "Pedro Neto",
-    "fplTeamId": 7
-  },
-  {
     "fplId": 225,
     "fplName": "James",
     "espnId": "189007",
     "espnName": "Reece James",
+    "fplTeamId": 7
+  },
+  {
+    "fplId": 236,
+    "fplName": "Neto",
+    "espnId": "256115",
+    "espnName": "Pedro Neto",
     "fplTeamId": 7
   },
   {
@@ -980,18 +980,18 @@
     "fplTeamId": 5
   },
   {
-    "fplId": 113,
-    "fplName": "Van den Berg",
-    "espnId": "270507",
-    "espnName": "Sepp van den Berg",
-    "fplTeamId": 5
-  },
-  {
     "fplId": 241,
     "fplName": "Caicedo",
     "espnId": "289877",
     "espnName": "Moisés Caicedo",
     "fplTeamId": 7
+  },
+  {
+    "fplId": 113,
+    "fplName": "Van den Berg",
+    "espnId": "270507",
+    "espnName": "Sepp van den Berg",
+    "fplTeamId": 5
   },
   {
     "fplId": 160,
@@ -1008,20 +1008,6 @@
     "fplTeamId": 7
   },
   {
-    "fplId": 348,
-    "fplName": "Rodon",
-    "espnId": "232325",
-    "espnName": "Joe Rodon",
-    "fplTeamId": 11
-  },
-  {
-    "fplId": 615,
-    "fplName": "Summerville",
-    "espnId": "284792",
-    "espnName": "Crysencio Summerville",
-    "fplTeamId": 19
-  },
-  {
     "fplId": 646,
     "fplName": "J.Gomes",
     "espnId": "308456",
@@ -1036,11 +1022,32 @@
     "fplTeamId": 4
   },
   {
+    "fplId": 348,
+    "fplName": "Rodon",
+    "espnId": "232325",
+    "espnName": "Joe Rodon",
+    "fplTeamId": 11
+  },
+  {
+    "fplId": 615,
+    "fplName": "Summerville",
+    "espnId": "284792",
+    "espnName": "Crysencio Summerville",
+    "fplTeamId": 19
+  },
+  {
     "fplId": 324,
     "fplName": "Iwobi",
     "espnId": "175063",
     "espnName": "Alex Iwobi",
     "fplTeamId": 10
+  },
+  {
+    "fplId": 228,
+    "fplName": "Gusto",
+    "espnId": "308947",
+    "espnName": "Malo Gusto",
+    "fplTeamId": 7
   },
   {
     "fplId": 502,
@@ -1064,11 +1071,25 @@
     "fplTeamId": 6
   },
   {
+    "fplId": 443,
+    "fplName": "Shaw",
+    "espnId": "167127",
+    "espnName": "Luke Shaw",
+    "fplTeamId": 14
+  },
+  {
     "fplId": 470,
     "fplName": "Dúbravka",
     "espnId": "126703",
     "espnName": "Martin Dúbravka",
     "fplTeamId": 3
+  },
+  {
+    "fplId": 532,
+    "fplName": "Hume",
+    "espnId": "290207",
+    "espnName": "Trai Hume",
+    "fplTeamId": 17
   },
   {
     "fplId": 603,
@@ -1092,13 +1113,6 @@
     "fplTeamId": 6
   },
   {
-    "fplId": 228,
-    "fplName": "Gusto",
-    "espnId": "308947",
-    "espnName": "Malo Gusto",
-    "fplTeamId": 7
-  },
-  {
     "fplId": 273,
     "fplName": "Wharton",
     "espnId": "333419",
@@ -1113,25 +1127,18 @@
     "fplTeamId": 10
   },
   {
-    "fplId": 443,
-    "fplName": "Shaw",
-    "espnId": "167127",
-    "espnName": "Luke Shaw",
-    "fplTeamId": 14
-  },
-  {
-    "fplId": 532,
-    "fplName": "Hume",
-    "espnId": "290207",
-    "espnName": "Trai Hume",
-    "fplTeamId": 17
-  },
-  {
     "fplId": 129,
     "fplName": "Yarmoliuk",
     "espnId": "342029",
     "espnName": "Yehor Yarmoliuk",
     "fplTeamId": 5
+  },
+  {
+    "fplId": 318,
+    "fplName": "Bassey",
+    "espnId": "263110",
+    "espnName": "Calvin Bassey",
+    "fplTeamId": 10
   },
   {
     "fplId": 342,
@@ -1146,13 +1153,6 @@
     "espnId": "214375",
     "espnName": "Emiliano Buendía",
     "fplTeamId": 2
-  },
-  {
-    "fplId": 318,
-    "fplName": "Bassey",
-    "espnId": "263110",
-    "espnName": "Calvin Bassey",
-    "fplTeamId": 10
   },
   {
     "fplId": 487,
