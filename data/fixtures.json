@@ -126577,7 +126577,7 @@
   {
     "code": 2562249,
     "event": 36,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 355,
     "kickoff_time": "2026-05-09T11:30:00Z",
@@ -126687,8 +126687,22 @@
       },
       {
         "identifier": "bonus",
-        "a": [],
-        "h": []
+        "a": [
+          {
+            "value": 2,
+            "element": 237
+          }
+        ],
+        "h": [
+          {
+            "value": 3,
+            "element": 390
+          },
+          {
+            "value": 1,
+            "element": 686
+          }
+        ]
       },
       {
         "identifier": "bps",
@@ -126912,7 +126926,7 @@
   {
     "code": 2562245,
     "event": 36,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 351,
     "kickoff_time": "2026-05-09T14:00:00Z",
@@ -127013,7 +127027,24 @@
       {
         "identifier": "bonus",
         "a": [],
-        "h": []
+        "h": [
+          {
+            "value": 3,
+            "element": 145
+          },
+          {
+            "value": 2,
+            "element": 146
+          },
+          {
+            "value": 1,
+            "element": 160
+          },
+          {
+            "value": 1,
+            "element": 163
+          }
+        ]
       },
       {
         "identifier": "bps",
@@ -127253,7 +127284,7 @@
   {
     "code": 2562248,
     "event": 36,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 354,
     "kickoff_time": "2026-05-09T14:00:00Z",
@@ -127363,14 +127394,27 @@
       },
       {
         "identifier": "bonus",
-        "a": [],
+        "a": [
+          {
+            "value": 3,
+            "element": 74
+          },
+          {
+            "value": 2,
+            "element": 73
+          },
+          {
+            "value": 1,
+            "element": 807
+          }
+        ],
         "h": []
       },
       {
         "identifier": "bps",
         "a": [
           {
-            "value": 36,
+            "value": 37,
             "element": 74
           },
           {
@@ -127444,16 +127488,16 @@
             "element": 331
           },
           {
+            "value": 18,
+            "element": 314
+          },
+          {
             "value": 16,
             "element": 318
           },
           {
             "value": 14,
             "element": 316
-          },
-          {
-            "value": 12,
-            "element": 314
           },
           {
             "value": 12,
@@ -127632,7 +127676,7 @@
   {
     "code": 2562252,
     "event": 36,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 358,
     "kickoff_time": "2026-05-09T14:00:00Z",
@@ -127709,7 +127753,20 @@
       },
       {
         "identifier": "bonus",
-        "a": [],
+        "a": [
+          {
+            "value": 3,
+            "element": 438
+          },
+          {
+            "value": 2,
+            "element": 442
+          },
+          {
+            "value": 2,
+            "element": 733
+          }
+        ],
         "h": []
       },
       {
@@ -127918,7 +127975,7 @@
   {
     "code": 2562250,
     "event": 36,
-    "finished": false,
+    "finished": true,
     "finished_provisional": true,
     "id": 356,
     "kickoff_time": "2026-05-09T16:30:00Z",
@@ -128027,7 +128084,20 @@
       {
         "identifier": "bonus",
         "a": [],
-        "h": []
+        "h": [
+          {
+            "value": 3,
+            "element": 418
+          },
+          {
+            "value": 2,
+            "element": 430
+          },
+          {
+            "value": 1,
+            "element": 260
+          }
+        ]
       },
       {
         "identifier": "bps",
