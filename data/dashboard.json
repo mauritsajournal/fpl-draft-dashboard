@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-15T20:11:56.911Z",
+    "lastUpdated": "2026-05-16T04:25:39.487Z",
     "currentGameweek": 36,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -3821,6 +3821,50 @@
       "bonus": 16
     },
     {
+      "id": 373,
+      "webName": "Virgil",
+      "firstName": "Virgil",
+      "lastName": "van Dijk",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Liverpool",
+      "teamId": 12,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
+      "totalPoints": 171,
+      "form": 5.4,
+      "goalsScored": 6,
+      "assists": 1,
+      "xG": 3.7,
+      "xA": 1.27,
+      "xGI": 4.97,
+      "minutes": 3330,
+      "cleanSheets": 10,
+      "bonus": 10
+    },
+    {
+      "id": 47,
+      "webName": "Rogers",
+      "firstName": "Morgan",
+      "lastName": "Rogers",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": "Pieter van Gemert",
+      "ownerLeagueEntryId": 4815,
+      "totalPoints": 169,
+      "form": 5.2,
+      "goalsScored": 10,
+      "assists": 8,
+      "xG": 6.84,
+      "xA": 4.31,
+      "xGI": 11.15,
+      "minutes": 3280,
+      "cleanSheets": 9,
+      "bonus": 17
+    },
+    {
       "id": 72,
       "webName": "Senesi",
       "firstName": "Marcos",
@@ -3909,28 +3953,6 @@
       "bonus": 20
     },
     {
-      "id": 47,
-      "webName": "Rogers",
-      "firstName": "Morgan",
-      "lastName": "Rogers",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": "Pieter van Gemert",
-      "ownerLeagueEntryId": 4815,
-      "totalPoints": 163,
-      "form": 4,
-      "goalsScored": 10,
-      "assists": 7,
-      "xG": 6.84,
-      "xA": 4.09,
-      "xGI": 10.93,
-      "minutes": 3240,
-      "cleanSheets": 9,
-      "bonus": 15
-    },
-    {
       "id": 329,
       "webName": "Wilson",
       "firstName": "Harry",
@@ -3953,26 +3975,26 @@
       "bonus": 21
     },
     {
-      "id": 373,
-      "webName": "Virgil",
-      "firstName": "Virgil",
-      "lastName": "van Dijk",
-      "position": "DEF",
-      "positionId": 2,
+      "id": 387,
+      "webName": "Szoboszlai",
+      "firstName": "Dominik",
+      "lastName": "Szoboszlai",
+      "position": "MID",
+      "positionId": 3,
       "team": "Liverpool",
       "teamId": 12,
       "owner": "Maurits Koot",
       "ownerLeagueEntryId": 27137,
-      "totalPoints": 160,
-      "form": 3.2,
-      "goalsScored": 4,
-      "assists": 1,
-      "xG": 3.3,
-      "xA": 1.26,
-      "xGI": 4.56,
-      "minutes": 3290,
-      "cleanSheets": 10,
-      "bonus": 10
+      "totalPoints": 158,
+      "form": 6,
+      "goalsScored": 6,
+      "assists": 7,
+      "xG": 4.35,
+      "xA": 6.46,
+      "xGI": 10.81,
+      "minutes": 3142,
+      "cleanSheets": 9,
+      "bonus": 21
     },
     {
       "id": 411,
@@ -4017,6 +4039,28 @@
       "minutes": 3240,
       "cleanSheets": 18,
       "bonus": 11
+    },
+    {
+      "id": 64,
+      "webName": "Watkins",
+      "firstName": "Ollie",
+      "lastName": "Watkins",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": "Robert van Gemert",
+      "ownerLeagueEntryId": 85079,
+      "totalPoints": 154,
+      "form": 8.6,
+      "goalsScored": 14,
+      "assists": 4,
+      "xG": 14.25,
+      "xA": 1.17,
+      "xGI": 15.42,
+      "minutes": 2743,
+      "cleanSheets": 9,
+      "bonus": 23
     },
     {
       "id": 303,
@@ -4083,28 +4127,6 @@
       "minutes": 2771,
       "cleanSheets": 12,
       "bonus": 16
-    },
-    {
-      "id": 387,
-      "webName": "Szoboszlai",
-      "firstName": "Dominik",
-      "lastName": "Szoboszlai",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Liverpool",
-      "teamId": 12,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
-      "totalPoints": 150,
-      "form": 4.4,
-      "goalsScored": 6,
-      "assists": 5,
-      "xG": 4.35,
-      "xA": 6.12,
-      "xGI": 10.47,
-      "minutes": 3102,
-      "cleanSheets": 9,
-      "bonus": 20
     },
     {
       "id": 488,
@@ -4227,38 +4249,16 @@
       "teamId": 12,
       "owner": "Marc Streng",
       "ownerLeagueEntryId": 8630,
-      "totalPoints": 141,
-      "form": 3.2,
+      "totalPoints": 142,
+      "form": 3.4,
       "goalsScored": 5,
       "assists": 5,
       "xG": 1.81,
       "xA": 2.24,
       "xGI": 4.05,
-      "minutes": 2894,
+      "minutes": 2909,
       "cleanSheets": 9,
       "bonus": 17
-    },
-    {
-      "id": 64,
-      "webName": "Watkins",
-      "firstName": "Ollie",
-      "lastName": "Watkins",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": "Robert van Gemert",
-      "ownerLeagueEntryId": 85079,
-      "totalPoints": 139,
-      "form": 5.6,
-      "goalsScored": 12,
-      "assists": 3,
-      "xG": 12.82,
-      "xA": 1.16,
-      "xGI": 13.98,
-      "minutes": 2703,
-      "cleanSheets": 9,
-      "bonus": 20
     },
     {
       "id": 101,
@@ -4481,26 +4481,26 @@
       "bonus": 10
     },
     {
-      "id": 374,
-      "webName": "Konaté",
-      "firstName": "Ibrahima",
-      "lastName": "Konaté",
-      "position": "DEF",
-      "positionId": 2,
+      "id": 384,
+      "webName": "Gakpo",
+      "firstName": "Cody",
+      "lastName": "Gakpo",
+      "position": "MID",
+      "positionId": 3,
       "team": "Liverpool",
       "teamId": 12,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
+      "owner": "Marc Streng",
+      "ownerLeagueEntryId": 8630,
       "totalPoints": 129,
-      "form": 2.4,
-      "goalsScored": 1,
-      "assists": 0,
-      "xG": 1.05,
-      "xA": 0.94,
-      "xGI": 1.99,
-      "minutes": 2962,
+      "form": 3.4,
+      "goalsScored": 7,
+      "assists": 5,
+      "xG": 8.25,
+      "xA": 4.62,
+      "xGI": 12.87,
+      "minutes": 2646,
       "cleanSheets": 10,
-      "bonus": 8
+      "bonus": 5
     },
     {
       "id": 354,
@@ -4525,26 +4525,26 @@
       "bonus": 11
     },
     {
-      "id": 384,
-      "webName": "Gakpo",
-      "firstName": "Cody",
-      "lastName": "Gakpo",
-      "position": "MID",
-      "positionId": 3,
+      "id": 374,
+      "webName": "Konaté",
+      "firstName": "Ibrahima",
+      "lastName": "Konaté",
+      "position": "DEF",
+      "positionId": 2,
       "team": "Liverpool",
       "teamId": 12,
-      "owner": "Marc Streng",
-      "ownerLeagueEntryId": 8630,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
       "totalPoints": 128,
-      "form": 3.2,
-      "goalsScored": 7,
-      "assists": 5,
-      "xG": 7.61,
-      "xA": 4.62,
-      "xGI": 12.23,
-      "minutes": 2623,
+      "form": 2.2,
+      "goalsScored": 1,
+      "assists": 0,
+      "xG": 1.05,
+      "xA": 0.96,
+      "xGI": 2.01,
+      "minutes": 3002,
       "cleanSheets": 10,
-      "bonus": 5
+      "bonus": 8
     },
     {
       "id": 414,
@@ -4657,6 +4657,28 @@
       "bonus": 7
     },
     {
+      "id": 382,
+      "webName": "Wirtz",
+      "firstName": "Florian",
+      "lastName": "Wirtz",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Liverpool",
+      "teamId": 12,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
+      "totalPoints": 124,
+      "form": 2.6,
+      "goalsScored": 5,
+      "assists": 4,
+      "xG": 6.14,
+      "xA": 5.11,
+      "xGI": 11.24,
+      "minutes": 2357,
+      "cleanSheets": 10,
+      "bonus": 17
+    },
+    {
       "id": 684,
       "webName": "Alderete",
       "firstName": "Omar",
@@ -4721,28 +4743,6 @@
       "minutes": 2408,
       "cleanSheets": 7,
       "bonus": 8
-    },
-    {
-      "id": 382,
-      "webName": "Wirtz",
-      "firstName": "Florian",
-      "lastName": "Wirtz",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Liverpool",
-      "teamId": 12,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
-      "totalPoints": 123,
-      "form": 2.4,
-      "goalsScored": 5,
-      "assists": 4,
-      "xG": 6.11,
-      "xA": 5.1,
-      "xGI": 11.2,
-      "minutes": 2333,
-      "cleanSheets": 10,
-      "bonus": 17
     },
     {
       "id": 683,
@@ -4855,6 +4855,28 @@
       "bonus": 5
     },
     {
+      "id": 381,
+      "webName": "M.Salah",
+      "firstName": "Mohamed",
+      "lastName": "Salah",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Liverpool",
+      "teamId": 12,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
+      "totalPoints": 117,
+      "form": 2.4,
+      "goalsScored": 7,
+      "assists": 6,
+      "xG": 7.98,
+      "xA": 5,
+      "xGI": 12.98,
+      "minutes": 2071,
+      "cleanSheets": 7,
+      "bonus": 10
+    },
+    {
       "id": 418,
       "webName": "Doku",
       "firstName": "Jérémy",
@@ -4914,33 +4936,11 @@
       "goalsScored": 3,
       "assists": 3,
       "xG": 1.14,
-      "xA": 2.92,
-      "xGI": 4.06,
-      "minutes": 2931,
+      "xA": 2.93,
+      "xGI": 4.07,
+      "minutes": 2971,
       "cleanSheets": 8,
       "bonus": 7
-    },
-    {
-      "id": 381,
-      "webName": "M.Salah",
-      "firstName": "Mohamed",
-      "lastName": "Salah",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Liverpool",
-      "teamId": 12,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
-      "totalPoints": 116,
-      "form": 2.2,
-      "goalsScored": 7,
-      "assists": 6,
-      "xG": 7.98,
-      "xA": 4.93,
-      "xGI": 12.91,
-      "minutes": 2055,
-      "cleanSheets": 7,
-      "bonus": 10
     },
     {
       "id": 293,
@@ -5295,6 +5295,28 @@
       "bonus": 4
     },
     {
+      "id": 386,
+      "webName": "Mac Allister",
+      "firstName": "Alexis",
+      "lastName": "Mac Allister",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Liverpool",
+      "teamId": 12,
+      "owner": "Maurits Koot",
+      "ownerLeagueEntryId": 27137,
+      "totalPoints": 107,
+      "form": 4.2,
+      "goalsScored": 2,
+      "assists": 5,
+      "xG": 3.55,
+      "xA": 1.6,
+      "xGI": 5.15,
+      "minutes": 2564,
+      "cleanSheets": 7,
+      "bonus": 9
+    },
+    {
       "id": 568,
       "webName": "Pedro Porro",
       "firstName": "Pedro",
@@ -5380,28 +5402,6 @@
       "xGI": 12.52,
       "minutes": 1776,
       "cleanSheets": 3,
-      "bonus": 9
-    },
-    {
-      "id": 386,
-      "webName": "Mac Allister",
-      "firstName": "Alexis",
-      "lastName": "Mac Allister",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Liverpool",
-      "teamId": 12,
-      "owner": "Maurits Koot",
-      "ownerLeagueEntryId": 27137,
-      "totalPoints": 104,
-      "form": 3.6,
-      "goalsScored": 2,
-      "assists": 5,
-      "xG": 3.55,
-      "xA": 1.59,
-      "xGI": 5.14,
-      "minutes": 2524,
-      "cleanSheets": 7,
       "bonus": 9
     },
     {
@@ -5723,14 +5723,14 @@
       "teamId": 12,
       "owner": "Maurits Koot",
       "ownerLeagueEntryId": 27137,
-      "totalPoints": 85,
-      "form": 1.2,
+      "totalPoints": 84,
+      "form": 1,
       "goalsScored": 2,
       "assists": 1,
       "xG": 1.47,
-      "xA": 0.68,
-      "xGI": 2.15,
-      "minutes": 2204,
+      "xA": 0.69,
+      "xGI": 2.16,
+      "minutes": 2244,
       "cleanSheets": 6,
       "bonus": 4
     },
@@ -6097,14 +6097,14 @@
       "teamId": 12,
       "owner": "Maurits Koot",
       "ownerLeagueEntryId": 27137,
-      "totalPoints": 40,
-      "form": 1.8,
+      "totalPoints": 41,
+      "form": 2,
       "goalsScored": 2,
       "assists": 1,
-      "xG": 1.12,
-      "xA": 1.85,
-      "xGI": 2.97,
-      "minutes": 435,
+      "xG": 1.2,
+      "xA": 1.95,
+      "xGI": 3.15,
+      "minutes": 475,
       "cleanSheets": 2,
       "bonus": 4
     },
@@ -6148,7 +6148,7 @@
       "xG": 0,
       "xA": 0,
       "xGI": 0,
-      "minutes": 827,
+      "minutes": 867,
       "cleanSheets": 2,
       "bonus": 2
     },
@@ -6649,14 +6649,14 @@
       "teamId": 2,
       "owner": null,
       "ownerLeagueEntryId": null,
-      "totalPoints": 119,
-      "form": 2.8,
+      "totalPoints": 120,
+      "form": 3,
       "goalsScored": 0,
       "assists": 1,
       "xG": 0,
-      "xA": 0.07,
-      "xGI": 0.07,
-      "minutes": 2795,
+      "xA": 0.08,
+      "xGI": 0.08,
+      "minutes": 2835,
       "cleanSheets": 7,
       "bonus": 11
     },
@@ -6947,6 +6947,28 @@
       "bonus": 6
     },
     {
+      "id": 54,
+      "webName": "McGinn",
+      "firstName": "John",
+      "lastName": "McGinn",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 102,
+      "form": 3.6,
+      "goalsScored": 5,
+      "assists": 4,
+      "xG": 2.96,
+      "xA": 4.11,
+      "xGI": 7.07,
+      "minutes": 2132,
+      "cleanSheets": 8,
+      "bonus": 6
+    },
+    {
       "id": 348,
       "webName": "Rodon",
       "firstName": "Joe",
@@ -7050,9 +7072,9 @@
       "goalsScored": 0,
       "assists": 1,
       "xG": 1.27,
-      "xA": 0.58,
-      "xGI": 1.85,
-      "minutes": 2995,
+      "xA": 0.59,
+      "xGI": 1.86,
+      "minutes": 3035,
       "cleanSheets": 9,
       "bonus": 3
     },
@@ -7203,34 +7225,12 @@
       "form": 2,
       "goalsScored": 0,
       "assists": 7,
-      "xG": 0.63,
-      "xA": 3.27,
-      "xGI": 3.9,
-      "minutes": 1802,
+      "xG": 0.66,
+      "xA": 3.28,
+      "xGI": 3.94,
+      "minutes": 1842,
       "cleanSheets": 7,
       "bonus": 5
-    },
-    {
-      "id": 54,
-      "webName": "McGinn",
-      "firstName": "John",
-      "lastName": "McGinn",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 97,
-      "form": 2.6,
-      "goalsScored": 4,
-      "assists": 4,
-      "xG": 2.91,
-      "xA": 4.1,
-      "xGI": 7.01,
-      "minutes": 2093,
-      "cleanSheets": 8,
-      "bonus": 6
     },
     {
       "id": 146,
@@ -7299,6 +7299,28 @@
       "bonus": 7
     },
     {
+      "id": 50,
+      "webName": "Buendía",
+      "firstName": "Emiliano",
+      "lastName": "Buendía Stati",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 96,
+      "form": 2.4,
+      "goalsScored": 6,
+      "assists": 2,
+      "xG": 3.3,
+      "xA": 2.19,
+      "xGI": 5.49,
+      "minutes": 1663,
+      "cleanSheets": 3,
+      "bonus": 8
+    },
+    {
       "id": 129,
       "webName": "Yarmoliuk",
       "firstName": "Yehor",
@@ -7341,28 +7363,6 @@
       "minutes": 3150,
       "cleanSheets": 4,
       "bonus": 7
-    },
-    {
-      "id": 50,
-      "webName": "Buendía",
-      "firstName": "Emiliano",
-      "lastName": "Buendía Stati",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 95,
-      "form": 2.2,
-      "goalsScored": 6,
-      "assists": 2,
-      "xG": 3.28,
-      "xA": 1.96,
-      "xGI": 5.24,
-      "minutes": 1629,
-      "cleanSheets": 3,
-      "bonus": 8
     },
     {
       "id": 169,
@@ -8509,6 +8509,28 @@
       "bonus": 6
     },
     {
+      "id": 388,
+      "webName": "C.Jones",
+      "firstName": "Curtis",
+      "lastName": "Jones",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Liverpool",
+      "teamId": 12,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 71,
+      "form": 3.2,
+      "goalsScored": 0,
+      "assists": 3,
+      "xG": 1.57,
+      "xA": 2.69,
+      "xGI": 4.26,
+      "minutes": 1833,
+      "cleanSheets": 3,
+      "bonus": 3
+    },
+    {
       "id": 573,
       "webName": "Spence",
       "firstName": "Djed",
@@ -8595,28 +8617,6 @@
       "minutes": 945,
       "cleanSheets": 3,
       "bonus": 8
-    },
-    {
-      "id": 388,
-      "webName": "C.Jones",
-      "firstName": "Curtis",
-      "lastName": "Jones",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Liverpool",
-      "teamId": 12,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 70,
-      "form": 3,
-      "goalsScored": 0,
-      "assists": 3,
-      "xG": 1.49,
-      "xA": 2.67,
-      "xGI": 4.16,
-      "minutes": 1793,
-      "cleanSheets": 3,
-      "bonus": 3
     },
     {
       "id": 541,
@@ -8707,6 +8707,28 @@
       "bonus": 7
     },
     {
+      "id": 48,
+      "webName": "Tielemans",
+      "firstName": "Youri",
+      "lastName": "Tielemans",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 67,
+      "form": 2.4,
+      "goalsScored": 0,
+      "assists": 4,
+      "xG": 1.13,
+      "xA": 2.98,
+      "xGI": 4.11,
+      "minutes": 1840,
+      "cleanSheets": 4,
+      "bonus": 3
+    },
+    {
       "id": 507,
       "webName": "Aina",
       "firstName": "Ola",
@@ -8771,28 +8793,6 @@
       "minutes": 996,
       "cleanSheets": 4,
       "bonus": 5
-    },
-    {
-      "id": 48,
-      "webName": "Tielemans",
-      "firstName": "Youri",
-      "lastName": "Tielemans",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 66,
-      "form": 2.2,
-      "goalsScored": 0,
-      "assists": 4,
-      "xG": 1.1,
-      "xA": 2.98,
-      "xGI": 4.08,
-      "minutes": 1801,
-      "cleanSheets": 4,
-      "bonus": 3
     },
     {
       "id": 187,
@@ -8947,6 +8947,28 @@
       "minutes": 1360,
       "cleanSheets": 3,
       "bonus": 4
+    },
+    {
+      "id": 41,
+      "webName": "Pau",
+      "firstName": "Pau",
+      "lastName": "Torres",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 63,
+      "form": 1,
+      "goalsScored": 0,
+      "assists": 2,
+      "xG": 1.2,
+      "xA": 0.39,
+      "xGI": 1.59,
+      "minutes": 1656,
+      "cleanSheets": 5,
+      "bonus": 2
     },
     {
       "id": 192,
@@ -9255,28 +9277,6 @@
       "minutes": 1607,
       "cleanSheets": 5,
       "bonus": 6
-    },
-    {
-      "id": 41,
-      "webName": "Pau",
-      "firstName": "Pau",
-      "lastName": "Torres",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 60,
-      "form": 0.4,
-      "goalsScored": 0,
-      "assists": 1,
-      "xG": 0.63,
-      "xA": 0.39,
-      "xGI": 1.02,
-      "minutes": 1616,
-      "cleanSheets": 5,
-      "bonus": 2
     },
     {
       "id": 591,
@@ -9931,10 +9931,10 @@
       "form": 2.8,
       "goalsScored": 3,
       "assists": 1,
-      "xG": 1.56,
-      "xA": 1.17,
-      "xGI": 2.73,
-      "minutes": 719,
+      "xG": 1.59,
+      "xA": 1.18,
+      "xGI": 2.77,
+      "minutes": 759,
       "cleanSheets": 1,
       "bonus": 5
     },
@@ -10071,6 +10071,28 @@
       "bonus": 1
     },
     {
+      "id": 39,
+      "webName": "Maatsen",
+      "firstName": "Ian",
+      "lastName": "Maatsen",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Aston Villa",
+      "teamId": 2,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 49,
+      "form": 1.6,
+      "goalsScored": 0,
+      "assists": 1,
+      "xG": 1.24,
+      "xA": 2.25,
+      "xGI": 3.49,
+      "minutes": 1500,
+      "cleanSheets": 2,
+      "bonus": 0
+    },
+    {
       "id": 52,
       "webName": "J.Ramsey",
       "firstName": "Jacob",
@@ -10112,28 +10134,6 @@
       "xGI": 1.66,
       "minutes": 955,
       "cleanSheets": 3,
-      "bonus": 0
-    },
-    {
-      "id": 39,
-      "webName": "Maatsen",
-      "firstName": "Ian",
-      "lastName": "Maatsen",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Aston Villa",
-      "teamId": 2,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 48,
-      "form": 1.4,
-      "goalsScored": 0,
-      "assists": 1,
-      "xG": 1.24,
-      "xA": 2.25,
-      "xGI": 3.49,
-      "minutes": 1495,
-      "cleanSheets": 2,
       "bonus": 0
     },
     {
@@ -10648,7 +10648,7 @@
       "leagueEntryId": 4815,
       "teamName": "Eze come Eze go",
       "playerName": "Pieter van Gemert",
-      "score": 83,
+      "score": 84,
       "breakdown": {
         "form": 25,
         "xGI": 18.5,
@@ -10699,7 +10699,7 @@
       "score": 79,
       "breakdown": {
         "form": 25,
-        "xGI": 13.8,
+        "xGI": 14,
         "totalPoints": 25,
         "fixtureDifficulty": 15
       }
@@ -10711,7 +10711,7 @@
       "score": 79,
       "breakdown": {
         "form": 25,
-        "xGI": 13.9,
+        "xGI": 14.2,
         "totalPoints": 25,
         "fixtureDifficulty": 15
       }
@@ -10734,9 +10734,9 @@
       "playerName": "Maurits Koot",
       "score": 72,
       "breakdown": {
-        "form": 24.7,
-        "xGI": 8.8,
-        "totalPoints": 23,
+        "form": 25,
+        "xGI": 9,
+        "totalPoints": 23.5,
         "fixtureDifficulty": 15
       }
     }
@@ -26527,6 +26527,84 @@
   ],
   "predictions": [
     {
+      "leagueEntryId": 85079,
+      "teamName": "Shake Dias",
+      "playerName": "Robert van Gemert",
+      "predictedPoints": 82.7,
+      "playerBreakdown": [
+        {
+          "playerId": 21,
+          "playerName": "Rice",
+          "expectedPoints": 5.8,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 72,
+          "playerName": "Senesi",
+          "expectedPoints": 11.8,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 329,
+          "playerName": "Wilson",
+          "expectedPoints": 4.7,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 411,
+          "playerName": "O'Reilly",
+          "expectedPoints": 7.2,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 64,
+          "playerName": "Watkins",
+          "expectedPoints": 18.7,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 488,
+          "playerName": "Bruno G.",
+          "expectedPoints": 7,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 684,
+          "playerName": "Alderete",
+          "expectedPoints": 5.5,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 67,
+          "playerName": "Petrović",
+          "expectedPoints": 5.6,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 314,
+          "playerName": "Leno",
+          "expectedPoints": 9.2,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 485,
+          "playerName": "Gordon",
+          "expectedPoints": 1.2,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 416,
+          "playerName": "Bernardo",
+          "expectedPoints": 6,
+          "fixtureDifficulty": 3
+        }
+      ],
+      "opponent": {
+        "leagueEntryId": 4815,
+        "teamName": "Eze come Eze go"
+      }
+    },
+    {
       "leagueEntryId": 75126,
       "teamName": "Oscar is de Bobb",
       "playerName": "Maximiliaan de Goede",
@@ -26761,88 +26839,10 @@
       }
     },
     {
-      "leagueEntryId": 85079,
-      "teamName": "Shake Dias",
-      "playerName": "Robert van Gemert",
-      "predictedPoints": 76.6,
-      "playerBreakdown": [
-        {
-          "playerId": 21,
-          "playerName": "Rice",
-          "expectedPoints": 5.8,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 72,
-          "playerName": "Senesi",
-          "expectedPoints": 11.8,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 329,
-          "playerName": "Wilson",
-          "expectedPoints": 4.7,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 411,
-          "playerName": "O'Reilly",
-          "expectedPoints": 7.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 488,
-          "playerName": "Bruno G.",
-          "expectedPoints": 7,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 64,
-          "playerName": "Watkins",
-          "expectedPoints": 12.6,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 684,
-          "playerName": "Alderete",
-          "expectedPoints": 5.5,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 67,
-          "playerName": "Petrović",
-          "expectedPoints": 5.6,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 314,
-          "playerName": "Leno",
-          "expectedPoints": 9.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 485,
-          "playerName": "Gordon",
-          "expectedPoints": 1.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 416,
-          "playerName": "Bernardo",
-          "expectedPoints": 6,
-          "fixtureDifficulty": 3
-        }
-      ],
-      "opponent": {
-        "leagueEntryId": 4815,
-        "teamName": "Eze come Eze go"
-      }
-    },
-    {
       "leagueEntryId": 8630,
       "teamName": "Hannies bal met brie",
       "playerName": "Marc Streng",
-      "predictedPoints": 76.4,
+      "predictedPoints": 77.3,
       "playerBreakdown": [
         {
           "playerId": 517,
@@ -26859,7 +26859,7 @@
         {
           "playerId": 390,
           "playerName": "Gravenberch",
-          "expectedPoints": 6.8,
+          "expectedPoints": 7.2,
           "fixtureDifficulty": 3
         },
         {
@@ -26871,7 +26871,7 @@
         {
           "playerId": 384,
           "playerName": "Gakpo",
-          "expectedPoints": 7.6,
+          "expectedPoints": 8.1,
           "fixtureDifficulty": 3
         },
         {
@@ -26920,7 +26920,7 @@
       "leagueEntryId": 4815,
       "teamName": "Eze come Eze go",
       "playerName": "Pieter van Gemert",
-      "predictedPoints": 74.8,
+      "predictedPoints": 77.2,
       "playerBreakdown": [
         {
           "playerId": 430,
@@ -26931,7 +26931,7 @@
         {
           "playerId": 47,
           "playerName": "Rogers",
-          "expectedPoints": 9.1,
+          "expectedPoints": 11.5,
           "fixtureDifficulty": 3
         },
         {
@@ -27076,48 +27076,48 @@
       "leagueEntryId": 27137,
       "teamName": "Dikke Saka veel grip",
       "playerName": "Maurits Koot",
-      "predictedPoints": 58.5,
+      "predictedPoints": 67.4,
       "playerBreakdown": [
         {
           "playerId": 373,
           "playerName": "Virgil",
-          "expectedPoints": 6.9,
+          "expectedPoints": 11.3,
           "fixtureDifficulty": 3
         },
         {
           "playerId": 387,
           "playerName": "Szoboszlai",
-          "expectedPoints": 9.8,
+          "expectedPoints": 13.1,
           "fixtureDifficulty": 3
         },
         {
           "playerId": 374,
           "playerName": "Konaté",
-          "expectedPoints": 5,
+          "expectedPoints": 4.6,
           "fixtureDifficulty": 3
         },
         {
           "playerId": 382,
           "playerName": "Wirtz",
-          "expectedPoints": 5.9,
+          "expectedPoints": 6.3,
           "fixtureDifficulty": 3
         },
         {
           "playerId": 381,
           "playerName": "M.Salah",
-          "expectedPoints": 5.7,
+          "expectedPoints": 6.1,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 386,
+          "playerName": "Mac Allister",
+          "expectedPoints": 8.9,
           "fixtureDifficulty": 3
         },
         {
           "playerId": 568,
           "playerName": "Pedro Porro",
           "expectedPoints": 9.7,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 386,
-          "playerName": "Mac Allister",
-          "expectedPoints": 7.7,
           "fixtureDifficulty": 3
         },
         {
@@ -27129,7 +27129,7 @@
         {
           "playerId": 371,
           "playerName": "Kerkez",
-          "expectedPoints": 2.6,
+          "expectedPoints": 2.2,
           "fixtureDifficulty": 3
         },
         {
@@ -30527,8 +30527,8 @@
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 647,
-            "avgPoints": 18,
+            "totalPoints": 653,
+            "avgPoints": 18.1,
             "playerCount": 5
           },
           "FWD": {
@@ -30554,8 +30554,8 @@
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 684,
-            "avgPoints": 19,
+            "totalPoints": 686,
+            "avgPoints": 19.1,
             "playerCount": 5
           },
           "FWD": {
@@ -30576,13 +30576,13 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 543,
-            "avgPoints": 15.1,
+            "totalPoints": 552,
+            "avgPoints": 15.3,
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 533,
-            "avgPoints": 14.8,
+            "totalPoints": 547,
+            "avgPoints": 15.2,
             "playerCount": 5
           },
           "FWD": {
@@ -30667,8 +30667,8 @@
             "playerCount": 5
           },
           "FWD": {
-            "totalPoints": 280,
-            "avgPoints": 7.8,
+            "totalPoints": 295,
+            "avgPoints": 8.2,
             "playerCount": 3
           }
         }
@@ -30768,7 +30768,7 @@
         "playerId": 381,
         "managerName": "Shake Dias",
         "leagueEntryId": 87853,
-        "totalPoints": 116,
+        "totalPoints": 117,
         "valueRating": "Overpaid"
       },
       {
@@ -30798,7 +30798,7 @@
         "playerId": 382,
         "managerName": "Steen, Papier, Schar",
         "leagueEntryId": 34964,
-        "totalPoints": 123,
+        "totalPoints": 124,
         "valueRating": "Fair"
       },
       {
@@ -30808,7 +30808,7 @@
         "playerId": 64,
         "managerName": "Dikke Saka veel grip",
         "leagueEntryId": 27628,
-        "totalPoints": 139,
+        "totalPoints": 154,
         "valueRating": "Fair"
       },
       {
@@ -30998,7 +30998,7 @@
         "playerId": 373,
         "managerName": "Dikke Saka veel grip",
         "leagueEntryId": 27628,
-        "totalPoints": 160,
+        "totalPoints": 171,
         "valueRating": "Good Value"
       },
       {
@@ -31048,7 +31048,7 @@
         "playerId": 374,
         "managerName": "Gibbs-White Walkers",
         "leagueEntryId": 2273,
-        "totalPoints": 129,
+        "totalPoints": 128,
         "valueRating": "Fair"
       },
       {
@@ -31068,7 +31068,7 @@
         "playerId": 47,
         "managerName": "Eze come Eze go",
         "leagueEntryId": 4813,
-        "totalPoints": 163,
+        "totalPoints": 169,
         "valueRating": "Steal"
       },
       {
@@ -31078,7 +31078,7 @@
         "playerId": 384,
         "managerName": "Gibbs-White Walkers",
         "leagueEntryId": 2273,
-        "totalPoints": 128,
+        "totalPoints": 129,
         "valueRating": "Fair"
       },
       {
@@ -31088,7 +31088,7 @@
         "playerId": 387,
         "managerName": "Shake Dias",
         "leagueEntryId": 87853,
-        "totalPoints": 150,
+        "totalPoints": 158,
         "valueRating": "Good Value"
       },
       {
@@ -31198,7 +31198,7 @@
         "playerId": 371,
         "managerName": "Shake Dias",
         "leagueEntryId": 87853,
-        "totalPoints": 85,
+        "totalPoints": 84,
         "valueRating": "Fair"
       },
       {
@@ -31944,9 +31944,9 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-15T20:11:56.180Z",
+    "lastUpdated": "2026-05-16T04:25:38.757Z",
     "season": "2025",
-    "plMatchday": 36,
+    "plMatchday": 37,
     "managerProfiles": [
       {
         "leagueEntryId": 2273,
@@ -32892,7 +32892,7 @@
           {
             "teamName": "Aston Villa",
             "count": 1,
-            "plRank": 5,
+            "plRank": 4,
             "fplTeamId": 2
           },
           {
@@ -32947,8 +32947,8 @@
             "fplName": "Rogers",
             "espnName": "Morgan Rogers",
             "plTeam": "Aston Villa",
-            "plTeamRank": 5,
-            "fplPoints": 163,
+            "plTeamRank": 4,
+            "fplPoints": 169,
             "espnGoals": 9,
             "espnAssists": 5,
             "espnMinutes": 3195,
@@ -33305,7 +33305,7 @@
           {
             "teamName": "Liverpool",
             "count": 2,
-            "plRank": 4,
+            "plRank": 5,
             "fplTeamId": 12
           },
           {
@@ -33329,7 +33329,7 @@
           {
             "teamName": "Aston Villa",
             "count": 1,
-            "plRank": 5,
+            "plRank": 4,
             "fplTeamId": 2
           },
           {
@@ -33406,8 +33406,8 @@
             "fplName": "Gravenberch",
             "espnName": "Ryan Gravenberch",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 141,
+            "plTeamRank": 5,
+            "fplPoints": 142,
             "espnGoals": 5,
             "espnAssists": 3,
             "espnMinutes": 2847,
@@ -33450,8 +33450,8 @@
             "fplName": "Gakpo",
             "espnName": "Cody Gakpo",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 128,
+            "plTeamRank": 5,
+            "fplPoints": 129,
             "espnGoals": 7,
             "espnAssists": 5,
             "espnMinutes": 2583,
@@ -33560,7 +33560,7 @@
             "fplName": "Cash",
             "espnName": "Matty Cash",
             "plTeam": "Aston Villa",
-            "plTeamRank": 5,
+            "plTeamRank": 4,
             "fplPoints": 116,
             "espnGoals": 3,
             "espnAssists": 3,
@@ -33730,7 +33730,7 @@
           {
             "teamName": "Liverpool",
             "count": 12,
-            "plRank": 4,
+            "plRank": 5,
             "fplTeamId": 12
           },
           {
@@ -33751,8 +33751,8 @@
             "fplName": "Virgil",
             "espnName": "Virgil van Dijk",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 160,
+            "plTeamRank": 5,
+            "fplPoints": 171,
             "espnGoals": 4,
             "espnAssists": 0,
             "espnMinutes": 3240,
@@ -33773,8 +33773,8 @@
             "fplName": "Szoboszlai",
             "espnName": "Dominik Szoboszlai",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 150,
+            "plTeamRank": 5,
+            "fplPoints": 158,
             "espnGoals": 6,
             "espnAssists": 5,
             "espnMinutes": 3053,
@@ -33795,8 +33795,8 @@
             "fplName": "Konaté",
             "espnName": "Ibrahima Konaté",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 129,
+            "plTeamRank": 5,
+            "fplPoints": 128,
             "espnGoals": 1,
             "espnAssists": 0,
             "espnMinutes": 2921,
@@ -33817,8 +33817,8 @@
             "fplName": "Wirtz",
             "espnName": "Florian Wirtz",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 123,
+            "plTeamRank": 5,
+            "fplPoints": 124,
             "espnGoals": 5,
             "espnAssists": 3,
             "espnMinutes": 2347,
@@ -33839,8 +33839,8 @@
             "fplName": "M.Salah",
             "espnName": "Mohamed Salah",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 116,
+            "plTeamRank": 5,
+            "fplPoints": 117,
             "espnGoals": 7,
             "espnAssists": 6,
             "espnMinutes": 2058,
@@ -33854,6 +33854,28 @@
             "espnTackles": 16,
             "espnInterceptions": 4,
             "espnCleanSheets": 4,
+            "position": "MID",
+            "isBenchwarmer": false
+          },
+          {
+            "fplName": "Mac Allister",
+            "espnName": "Alexis Mac Allister",
+            "plTeam": "Liverpool",
+            "plTeamRank": 5,
+            "fplPoints": 107,
+            "espnGoals": 2,
+            "espnAssists": 4,
+            "espnMinutes": 2482,
+            "espnYellows": 6,
+            "espnReds": 0,
+            "espnFouls": 33,
+            "espnPasses": 1344,
+            "espnPassPct": 0.866,
+            "espnShots": 47,
+            "espnShotsOnTarget": 11,
+            "espnTackles": 48,
+            "espnInterceptions": 20,
+            "espnCleanSheets": 6,
             "position": "MID",
             "isBenchwarmer": false
           },
@@ -33880,32 +33902,10 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "Mac Allister",
-            "espnName": "Alexis Mac Allister",
-            "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 104,
-            "espnGoals": 2,
-            "espnAssists": 4,
-            "espnMinutes": 2482,
-            "espnYellows": 6,
-            "espnReds": 0,
-            "espnFouls": 33,
-            "espnPasses": 1344,
-            "espnPassPct": 0.866,
-            "espnShots": 47,
-            "espnShotsOnTarget": 11,
-            "espnTackles": 48,
-            "espnInterceptions": 20,
-            "espnCleanSheets": 6,
-            "position": "MID",
-            "isBenchwarmer": false
-          },
-          {
             "fplName": "A.Becker",
             "espnName": "Alisson Becker",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
+            "plTeamRank": 5,
             "fplPoints": 89,
             "espnGoals": 0,
             "espnAssists": 0,
@@ -33927,8 +33927,8 @@
             "fplName": "Kerkez",
             "espnName": "Milos Kerkez",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 85,
+            "plTeamRank": 5,
+            "fplPoints": 84,
             "espnGoals": 2,
             "espnAssists": 1,
             "espnMinutes": 2163,
@@ -33971,7 +33971,7 @@
             "fplName": "Frimpong",
             "espnName": "Jeremie Frimpong",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
+            "plTeamRank": 5,
             "fplPoints": 62,
             "espnGoals": 0,
             "espnAssists": 1,
@@ -34015,7 +34015,7 @@
             "fplName": "Isak",
             "espnName": "Alexander Isak",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
+            "plTeamRank": 5,
             "fplPoints": 41,
             "espnGoals": 3,
             "espnAssists": 1,
@@ -34037,8 +34037,8 @@
             "fplName": "Ngumoha",
             "espnName": "Rio Ngumoha",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
-            "fplPoints": 40,
+            "plTeamRank": 5,
+            "fplPoints": 41,
             "espnGoals": 2,
             "espnAssists": 1,
             "espnMinutes": 388,
@@ -34059,7 +34059,7 @@
             "fplName": "Mamardashvili",
             "espnName": "Giorgi Mamardashvili",
             "plTeam": "Liverpool",
-            "plTeamRank": 4,
+            "plTeamRank": 5,
             "fplPoints": 34,
             "espnGoals": 0,
             "espnAssists": 0,
@@ -34999,7 +34999,7 @@
           {
             "teamName": "Aston Villa",
             "count": 1,
-            "plRank": 5,
+            "plRank": 4,
             "fplTeamId": 2
           }
         ],
@@ -35093,6 +35093,28 @@
             "isBenchwarmer": false
           },
           {
+            "fplName": "Watkins",
+            "espnName": "Ollie Watkins",
+            "plTeam": "Aston Villa",
+            "plTeamRank": 4,
+            "fplPoints": 154,
+            "espnGoals": 12,
+            "espnAssists": 2,
+            "espnMinutes": 2672,
+            "espnYellows": 3,
+            "espnReds": 0,
+            "espnFouls": 34,
+            "espnPasses": 445,
+            "espnPassPct": 0.717,
+            "espnShots": 73,
+            "espnShotsOnTarget": 31,
+            "espnTackles": 21,
+            "espnInterceptions": 6,
+            "espnCleanSheets": 3,
+            "position": "FWD",
+            "isBenchwarmer": false
+          },
+          {
             "fplName": "Bruno G.",
             "espnName": "Bruno G.",
             "plTeam": "Newcastle",
@@ -35113,28 +35135,6 @@
             "espnCleanSheets": 0,
             "position": "MID",
             "isBenchwarmer": true
-          },
-          {
-            "fplName": "Watkins",
-            "espnName": "Ollie Watkins",
-            "plTeam": "Aston Villa",
-            "plTeamRank": 5,
-            "fplPoints": 139,
-            "espnGoals": 12,
-            "espnAssists": 2,
-            "espnMinutes": 2672,
-            "espnYellows": 3,
-            "espnReds": 0,
-            "espnFouls": 34,
-            "espnPasses": 445,
-            "espnPassPct": 0.717,
-            "espnShots": 73,
-            "espnShotsOnTarget": 31,
-            "espnTackles": 21,
-            "espnInterceptions": 6,
-            "espnCleanSheets": 3,
-            "position": "FWD",
-            "isBenchwarmer": false
           },
           {
             "fplName": "Alderete",
@@ -35360,27 +35360,27 @@
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "fantasyRank": 3,
-        "avgPlTeamRank": 9.87,
-        "weightedPlRank": 9.12,
-        "rankDelta": 6.12,
+        "avgPlTeamRank": 9.8,
+        "weightedPlRank": 9.02,
+        "rankDelta": 6.02,
         "verdict": "Punching above weight"
       },
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
         "fantasyRank": 4,
-        "avgPlTeamRank": 6.47,
-        "weightedPlRank": 6.64,
-        "rankDelta": 2.64,
-        "verdict": "Slight overperformer"
+        "avgPlTeamRank": 7.27,
+        "weightedPlRank": 7.42,
+        "rankDelta": 3.42,
+        "verdict": "Punching above weight"
       },
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "fantasyRank": 5,
-        "avgPlTeamRank": 8.07,
-        "weightedPlRank": 7.38,
-        "rankDelta": 2.38,
+        "avgPlTeamRank": 8,
+        "weightedPlRank": 7.3,
+        "rankDelta": 2.3,
         "verdict": "Slight overperformer"
       },
       {
@@ -35405,9 +35405,9 @@
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "fantasyRank": 8,
-        "avgPlTeamRank": 7.93,
-        "weightedPlRank": 8.43,
-        "rankDelta": 0.43,
+        "avgPlTeamRank": 8,
+        "weightedPlRank": 8.49,
+        "rankDelta": 0.49,
         "verdict": "Right on track"
       }
     ],
@@ -36259,7 +36259,7 @@
           {
             "team": "Liverpool",
             "count": 2,
-            "plRank": 4
+            "plRank": 5
           },
           {
             "team": "Brentford",
@@ -36279,7 +36279,7 @@
           {
             "team": "Aston Villa",
             "count": 1,
-            "plRank": 5
+            "plRank": 4
           },
           {
             "team": "Man Utd",
@@ -36401,7 +36401,7 @@
           {
             "team": "Aston Villa",
             "count": 1,
-            "plRank": 5
+            "plRank": 4
           },
           {
             "team": "Man Utd",
@@ -36574,7 +36574,7 @@
           {
             "team": "Aston Villa",
             "count": 1,
-            "plRank": 5
+            "plRank": 4
           }
         ],
         "title": "Cluster Picker"
@@ -36590,7 +36590,7 @@
           {
             "team": "Liverpool",
             "count": 12,
-            "plRank": 4
+            "plRank": 5
           },
           {
             "team": "Spurs",
@@ -37184,7 +37184,7 @@
         "overperformers": [
           {
             "name": "Konaté",
-            "fplPts": 129,
+            "fplPts": 128,
             "realGI": 1
           },
           {
@@ -37194,7 +37194,7 @@
           },
           {
             "name": "Virgil",
-            "fplPts": 160,
+            "fplPts": 171,
             "realGI": 4
           }
         ],
@@ -37211,7 +37211,7 @@
           },
           {
             "name": "M.Salah",
-            "fplPts": 116,
+            "fplPts": 117,
             "realGI": 13
           }
         ],
@@ -37543,7 +37543,7 @@
             "playerName": "M.Salah",
             "managerName": "Shake Dias",
             "leagueEntryId": 87853,
-            "fplPoints": 116,
+            "fplPoints": 117,
             "espnGoals": 7,
             "espnAssists": 6,
             "espnMinutes": 2058,
@@ -37576,7 +37576,7 @@
             "playerName": "Wirtz",
             "managerName": "Steen, Papier, Schar",
             "leagueEntryId": 34964,
-            "fplPoints": 123,
+            "fplPoints": 124,
             "espnGoals": 5,
             "espnAssists": 3,
             "espnMinutes": 2347,
@@ -37587,7 +37587,7 @@
             "playerName": "Watkins",
             "managerName": "Dikke Saka veel grip",
             "leagueEntryId": 27628,
-            "fplPoints": 139,
+            "fplPoints": 154,
             "espnGoals": 12,
             "espnAssists": 2,
             "espnMinutes": 2672,
@@ -37605,7 +37605,7 @@
             "rating": "Star"
           }
         ],
-        "avgPoints": 139
+        "avgPoints": 141.13
       },
       {
         "round": 2,
@@ -37814,7 +37814,7 @@
             "playerName": "Virgil",
             "managerName": "Dikke Saka veel grip",
             "leagueEntryId": 27628,
-            "fplPoints": 160,
+            "fplPoints": 171,
             "espnGoals": 4,
             "espnAssists": 0,
             "espnMinutes": 3240,
@@ -37869,7 +37869,7 @@
             "playerName": "Konaté",
             "managerName": "Gibbs-White Walkers",
             "leagueEntryId": 2273,
-            "fplPoints": 129,
+            "fplPoints": 128,
             "espnGoals": 1,
             "espnAssists": 0,
             "espnMinutes": 2921,
@@ -37887,7 +37887,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 97.88
+        "avgPoints": 99.13
       },
       {
         "round": 5,
@@ -37897,7 +37897,7 @@
             "playerName": "Rogers",
             "managerName": "Eze come Eze go",
             "leagueEntryId": 4813,
-            "fplPoints": 163,
+            "fplPoints": 169,
             "espnGoals": 9,
             "espnAssists": 5,
             "espnMinutes": 3195,
@@ -37908,7 +37908,7 @@
             "playerName": "Gakpo",
             "managerName": "Gibbs-White Walkers",
             "leagueEntryId": 2273,
-            "fplPoints": 128,
+            "fplPoints": 129,
             "espnGoals": 7,
             "espnAssists": 5,
             "espnMinutes": 2583,
@@ -37919,7 +37919,7 @@
             "playerName": "Szoboszlai",
             "managerName": "Shake Dias",
             "leagueEntryId": 87853,
-            "fplPoints": 150,
+            "fplPoints": 158,
             "espnGoals": 6,
             "espnAssists": 5,
             "espnMinutes": 3053,
@@ -37981,7 +37981,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 85.38
+        "avgPoints": 87.25
       },
       {
         "round": 6,
@@ -38046,7 +38046,7 @@
             "playerName": "Kerkez",
             "managerName": "Shake Dias",
             "leagueEntryId": 87853,
-            "fplPoints": 85,
+            "fplPoints": 84,
             "espnGoals": 2,
             "espnAssists": 1,
             "espnMinutes": 2163,
@@ -38075,7 +38075,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 79.38
+        "avgPoints": 79.25
       },
       {
         "round": 7,
@@ -39943,7 +39943,7 @@
         "teamName": "Shake Dias",
         "playerName": "Robert van Gemert",
         "formation": "3-5-2",
-        "totalStartScore": 61.44,
+        "totalStartScore": 61.51,
         "players": [
           {
             "playerId": 314,
@@ -40135,12 +40135,12 @@
             "opponent": "Liverpool",
             "opponentShort": "LIV",
             "isHome": true,
-            "startScore": 6.2,
+            "startScore": 6.27,
             "breakdown": {
               "fixtureScore": 4,
               "formScore": 6,
               "specialScore": 10,
-              "seasonScore": 6.95
+              "seasonScore": 7.7
             },
             "isStarter": true,
             "status": "a"
@@ -40260,7 +40260,7 @@
         "teamName": "Eze come Eze go",
         "playerName": "Pieter van Gemert",
         "formation": "3-5-2",
-        "totalStartScore": 60.37,
+        "totalStartScore": 60.39,
         "players": [
           {
             "playerId": 728,
@@ -40412,12 +40412,12 @@
             "opponent": "Liverpool",
             "opponentShort": "LIV",
             "isHome": true,
-            "startScore": 5.55,
+            "startScore": 5.57,
             "breakdown": {
               "fixtureScore": 4,
               "formScore": 3.8,
               "specialScore": 10,
-              "seasonScore": 8.15
+              "seasonScore": 8.45
             },
             "isStarter": true,
             "status": "a"
@@ -41011,7 +41011,7 @@
               "fixtureScore": 4.2,
               "formScore": 4.2,
               "specialScore": 10,
-              "seasonScore": 6.4
+              "seasonScore": 6.45
             },
             "isStarter": true,
             "status": "a"
@@ -41131,7 +41131,7 @@
               "fixtureScore": 4.2,
               "formScore": 3.2,
               "specialScore": 6.07,
-              "seasonScore": 7.05
+              "seasonScore": 7.1
             },
             "isStarter": false,
             "status": "a"
@@ -41211,7 +41211,7 @@
         "teamName": "Dikke Saka veel grip",
         "playerName": "Maurits Koot",
         "formation": "3-5-2",
-        "totalStartScore": 51.55,
+        "totalStartScore": 51.73,
         "players": [
           {
             "playerId": 367,
@@ -41263,12 +41263,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 4.43,
+            "startScore": 4.49,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 4.8,
               "specialScore": 2.4,
-              "seasonScore": 8
+              "seasonScore": 8.55
             },
             "isStarter": true,
             "status": "a"
@@ -41283,12 +41283,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 3.79,
+            "startScore": 3.78,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 3.4,
               "specialScore": 2.4,
-              "seasonScore": 6.45
+              "seasonScore": 6.4
             },
             "isStarter": true,
             "status": "a"
@@ -41303,12 +41303,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 6.04,
+            "startScore": 6.08,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 5.2,
               "specialScore": 10,
-              "seasonScore": 7.5
+              "seasonScore": 7.9
             },
             "isStarter": true,
             "status": "a"
@@ -41323,12 +41323,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 5.38,
+            "startScore": 5.39,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 3.8,
               "specialScore": 10,
-              "seasonScore": 5.8
+              "seasonScore": 5.85
             },
             "isStarter": true,
             "status": "a"
@@ -41348,10 +41348,10 @@
               "fixtureScore": 4.2,
               "formScore": 3.6,
               "specialScore": 10,
-              "seasonScore": 6.15
+              "seasonScore": 6.2
             },
             "isStarter": true,
-            "status": "d"
+            "status": "a"
           },
           {
             "playerId": 386,
@@ -41363,12 +41363,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 4.79,
+            "startScore": 4.81,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 3.6,
-              "specialScore": 7.71,
-              "seasonScore": 5.2
+              "specialScore": 7.73,
+              "seasonScore": 5.35
             },
             "isStarter": true,
             "status": "a"
@@ -41383,12 +41383,12 @@
             "opponent": "Aston Villa",
             "opponentShort": "AVL",
             "isHome": false,
-            "startScore": 3.89,
+            "startScore": 3.95,
             "breakdown": {
               "fixtureScore": 4.2,
               "formScore": 3.8,
-              "specialScore": 4.46,
-              "seasonScore": 2
+              "specialScore": 4.72,
+              "seasonScore": 2.05
             },
             "isStarter": true,
             "status": "a"
@@ -41488,7 +41488,7 @@
               "fixtureScore": 4.2,
               "formScore": 1,
               "specialScore": 2.4,
-              "seasonScore": 4.25
+              "seasonScore": 4.2
             },
             "isStarter": false,
             "status": "a"
@@ -41976,10 +41976,10 @@
         "playerName": "Tim van Duinen",
         "mascottePlayer": "Martinez",
         "mascottePlayerId": 32,
-        "totalPoints": 119,
+        "totalPoints": 120,
         "position": "GK",
         "team": "Aston Villa",
-        "minutesPlayed": 2795,
+        "minutesPlayed": 2835,
         "valueRating": "Fair"
       },
       {
