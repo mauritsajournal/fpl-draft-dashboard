@@ -205,7 +205,7 @@
   },
   {
     "espnId": "284960",
-    "displayName": "João Pedro",
+    "displayName": "João Pedro ",
     "espnTeamId": 363,
     "fplTeamId": 7,
     "stats": {
@@ -268,6 +268,40 @@
       "shotsBlocked": 28,
       "cleanSheets": 6,
       "goalsConceded": 60,
+      "saves": 0
+    }
+  },
+  {
+    "espnId": "243396",
+    "displayName": "Morgan Gibbs-White",
+    "espnTeamId": 393,
+    "fplTeamId": 16,
+    "stats": {
+      "appearances": 35,
+      "minutes": 2930,
+      "starts": 33,
+      "goals": 13,
+      "headedGoals": 3,
+      "assists": 4,
+      "shotAssists": 46,
+      "totalShots": 75,
+      "shotsOnTarget": 28,
+      "totalPasses": 1139,
+      "accuratePasses": 925,
+      "passPercentage": 0.812,
+      "accurateLongBalls": 40,
+      "foulsCommitted": 25,
+      "foulsSuffered": 39,
+      "yellowCards": 1,
+      "redCards": 0,
+      "tacklesWon": 14,
+      "tacklesLost": 5,
+      "tacklePercentage": 0.737,
+      "interceptions": 11,
+      "clearances": 32,
+      "shotsBlocked": 21,
+      "cleanSheets": 7,
+      "goalsConceded": 41,
       "saves": 0
     }
   },

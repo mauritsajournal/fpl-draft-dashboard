@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-16T08:45:34.191Z",
+    "lastUpdated": "2026-05-16T14:20:04.890Z",
     "currentGameweek": 36,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -31944,7 +31944,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-16T08:45:33.380Z",
+    "lastUpdated": "2026-05-16T14:20:04.139Z",
     "season": "2025",
     "plMatchday": 37,
     "managerProfiles": [
@@ -31955,34 +31955,34 @@
         "fantasyRank": 2,
         "fantasyPoints": 1670,
         "squadStats": {
-          "totalGoals": 56,
-          "totalAssists": 44,
-          "totalShots": 477,
-          "shotsOnTarget": 171,
-          "shotAccuracy": 0.3584905660377358,
-          "totalPasses": 13784,
-          "accuratePasses": 11277,
-          "passAccuracy": 0.818122460824144,
-          "foulsCommitted": 334,
-          "foulsSuffered": 347,
-          "yellowCards": 57,
+          "totalGoals": 69,
+          "totalAssists": 48,
+          "totalShots": 552,
+          "shotsOnTarget": 199,
+          "shotAccuracy": 0.3605072463768116,
+          "totalPasses": 14923,
+          "accuratePasses": 12202,
+          "passAccuracy": 0.8176640085773638,
+          "foulsCommitted": 359,
+          "foulsSuffered": 386,
+          "yellowCards": 58,
           "redCards": 1,
-          "totalCards": 58,
-          "tacklesWon": 315,
-          "tacklesLost": 204,
-          "interceptions": 280,
-          "clearances": 1020,
-          "shotsBlocked": 143,
-          "cleanSheets": 89,
-          "goalsConceded": 420,
+          "totalCards": 59,
+          "tacklesWon": 329,
+          "tacklesLost": 209,
+          "interceptions": 291,
+          "clearances": 1052,
+          "shotsBlocked": 164,
+          "cleanSheets": 96,
+          "goalsConceded": 461,
           "saves": 60,
-          "totalMinutes": 32021,
-          "appearances": 418,
-          "headedGoals": 14,
-          "goalInvolvement": 100,
-          "minutesPerGoalInvolvement": 320.21,
-          "disciplinaryPoints": 60,
-          "shotAssists": 332
+          "totalMinutes": 34951,
+          "appearances": 453,
+          "headedGoals": 17,
+          "goalInvolvement": 117,
+          "minutesPerGoalInvolvement": 298.7264957264957,
+          "disciplinaryPoints": 61,
+          "shotAssists": 378
         },
         "plTeamDistribution": [
           {
@@ -32075,21 +32075,21 @@
             "plTeam": "Nott'm Forest",
             "plTeamRank": 16,
             "fplPoints": 172,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
-            "espnYellows": 0,
+            "espnGoals": 13,
+            "espnAssists": 4,
+            "espnMinutes": 2930,
+            "espnYellows": 1,
             "espnReds": 0,
-            "espnFouls": 0,
-            "espnPasses": 0,
-            "espnPassPct": 0,
-            "espnShots": 0,
-            "espnShotsOnTarget": 0,
-            "espnTackles": 0,
-            "espnInterceptions": 0,
-            "espnCleanSheets": 0,
+            "espnFouls": 25,
+            "espnPasses": 1139,
+            "espnPassPct": 0.812,
+            "espnShots": 75,
+            "espnShotsOnTarget": 28,
+            "espnTackles": 19,
+            "espnInterceptions": 11,
+            "espnCleanSheets": 7,
             "position": "MID",
-            "isBenchwarmer": true
+            "isBenchwarmer": false
           },
           {
             "fplName": "Tarkowski",
@@ -34659,7 +34659,7 @@
           },
           {
             "fplName": "João Pedro",
-            "espnName": "João Pedro",
+            "espnName": "João Pedro ",
             "plTeam": "Chelsea",
             "plTeamRank": 9,
             "fplPoints": 176,
@@ -35339,21 +35339,21 @@
     ],
     "realVsFantasy": [
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "fantasyRank": 2,
+        "avgPlTeamRank": 8.27,
+        "weightedPlRank": 9.04,
+        "rankDelta": 7.04,
+        "verdict": "Punching above weight"
+      },
+      {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
         "fantasyRank": 1,
         "avgPlTeamRank": 7.47,
         "weightedPlRank": 7.55,
         "rankDelta": 6.55,
-        "verdict": "Punching above weight"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "fantasyRank": 2,
-        "avgPlTeamRank": 8.27,
-        "weightedPlRank": 8.41,
-        "rankDelta": 6.41,
         "verdict": "Punching above weight"
       },
       {
@@ -35519,10 +35519,10 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "yellows": 57,
+        "yellows": 58,
         "reds": 1,
-        "totalCards": 58,
-        "disciplinaryPoints": 60,
+        "totalCards": 59,
+        "disciplinaryPoints": 61,
         "dirtiest3": [
           {
             "name": "Garner",
@@ -35665,9 +35665,9 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "passAccuracy": 81.81,
-        "totalPasses": 13784,
-        "accuratePasses": 11277,
+        "passAccuracy": 81.77,
+        "totalPasses": 14923,
+        "accuratePasses": 12202,
         "longBallRatio": 10.66,
         "style": "Balanced",
         "title": "The Pragmatist"
@@ -35749,6 +35749,17 @@
         "title": "Sharp Shooter"
       },
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "totalShots": 552,
+        "shotsOnTarget": 199,
+        "goals": 69,
+        "shotAccuracy": 36.05,
+        "conversionRate": 12.5,
+        "shotsPerGoal": 8,
+        "title": "Sharp Shooter"
+      },
+      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "totalShots": 489,
@@ -35757,17 +35768,6 @@
         "shotAccuracy": 34.36,
         "conversionRate": 11.86,
         "shotsPerGoal": 8.43,
-        "title": "Sharp Shooter"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "totalShots": 477,
-        "shotsOnTarget": 171,
-        "goals": 56,
-        "shotAccuracy": 35.85,
-        "conversionRate": 11.74,
-        "shotsPerGoal": 8.52,
         "title": "Sharp Shooter"
       },
       {
@@ -35809,13 +35809,13 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "tacklesWon": 315,
-        "interceptions": 280,
-        "clearances": 1020,
-        "shotsBlocked": 143,
-        "defensiveActions": 1758,
-        "cleanSheets": 89,
-        "goalsConceded": 420,
+        "tacklesWon": 329,
+        "interceptions": 291,
+        "clearances": 1052,
+        "shotsBlocked": 164,
+        "defensiveActions": 1836,
+        "cleanSheets": 96,
+        "goalsConceded": 461,
         "title": "The Great Wall"
       },
       {
@@ -35937,6 +35937,28 @@
         "title": "The Enforcer"
       },
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "foulsCommitted": 359,
+        "foulsSuffered": 386,
+        "foulRatio": 0.93,
+        "dirtiest": [
+          {
+            "name": "Raúl",
+            "fouls": 45
+          },
+          {
+            "name": "Cucurella",
+            "fouls": 44
+          },
+          {
+            "name": "Garner",
+            "fouls": 36
+          }
+        ],
+        "title": "The Enforcer"
+      },
+      {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "foulsCommitted": 338,
@@ -35953,28 +35975,6 @@
           },
           {
             "name": "Burn",
-            "fouls": 36
-          }
-        ],
-        "title": "The Enforcer"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "foulsCommitted": 334,
-        "foulsSuffered": 347,
-        "foulRatio": 0.96,
-        "dirtiest": [
-          {
-            "name": "Raúl",
-            "fouls": 45
-          },
-          {
-            "name": "Cucurella",
-            "fouls": 44
-          },
-          {
-            "name": "Garner",
             "fouls": 36
           }
         ],
@@ -36074,14 +36074,10 @@
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
         "totalPlayers": 15,
-        "playersWithMinutes": 13,
-        "playersWithZeroMinutes": 2,
-        "avgMinutesPerPlayer": 2135,
+        "playersWithMinutes": 14,
+        "playersWithZeroMinutes": 1,
+        "avgMinutesPerPlayer": 2330,
         "ghosts": [
-          {
-            "name": "Gibbs-White",
-            "team": "Nott'm Forest"
-          },
           {
             "name": "Arrizabalaga",
             "team": "Arsenal"
@@ -36727,6 +36723,47 @@
         "title": "Goal Machine"
       },
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "totalGoalInvolvements": 117,
+        "goals": 69,
+        "assists": 48,
+        "minsPerGI": 299,
+        "topContributors": [
+          {
+            "name": "Bowen",
+            "goals": 8,
+            "assists": 10,
+            "gi": 18
+          },
+          {
+            "name": "Gibbs-White",
+            "goals": 13,
+            "assists": 4,
+            "gi": 17
+          },
+          {
+            "name": "Raúl",
+            "goals": 9,
+            "assists": 3,
+            "gi": 12
+          },
+          {
+            "name": "Saka",
+            "goals": 7,
+            "assists": 4,
+            "gi": 11
+          },
+          {
+            "name": "Palmer",
+            "goals": 9,
+            "assists": 1,
+            "gi": 10
+          }
+        ],
+        "title": "Goal Machine"
+      },
+      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "totalGoalInvolvements": 110,
@@ -36762,47 +36799,6 @@
             "name": "Schade",
             "goals": 7,
             "assists": 3,
-            "gi": 10
-          }
-        ],
-        "title": "Goal Machine"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "totalGoalInvolvements": 100,
-        "goals": 56,
-        "assists": 44,
-        "minsPerGI": 320,
-        "topContributors": [
-          {
-            "name": "Bowen",
-            "goals": 8,
-            "assists": 10,
-            "gi": 18
-          },
-          {
-            "name": "Raúl",
-            "goals": 9,
-            "assists": 3,
-            "gi": 12
-          },
-          {
-            "name": "Saka",
-            "goals": 7,
-            "assists": 4,
-            "gi": 11
-          },
-          {
-            "name": "Palmer",
-            "goals": 9,
-            "assists": 1,
-            "gi": 10
-          },
-          {
-            "name": "Beto",
-            "goals": 9,
-            "assists": 1,
             "gi": 10
           }
         ],
@@ -37043,21 +37039,21 @@
         "title": "Agent of Chaos"
       },
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "chaosScore": 480,
+        "yellows": 58,
+        "reds": 1,
+        "fouls": 359,
+        "title": "Agent of Chaos"
+      },
+      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "chaosScore": 457,
         "yellows": 64,
         "reds": 1,
         "fouls": 324,
-        "title": "Agent of Chaos"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "chaosScore": 453,
-        "yellows": 57,
-        "reds": 1,
-        "fouls": 334,
         "title": "Agent of Chaos"
       },
       {
@@ -37123,6 +37119,17 @@
         "title": "Nailed On"
       },
       {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "totalMinutes": 34951,
+        "avgMinutesPerPlayer": 2330,
+        "ironMan": {
+          "name": "Raya",
+          "minutes": 3240
+        },
+        "title": "Nailed On"
+      },
+      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "totalMinutes": 33709,
@@ -37140,17 +37147,6 @@
         "avgMinutesPerPlayer": 2220,
         "ironMan": {
           "name": "Petrović",
-          "minutes": 3240
-        },
-        "title": "Nailed On"
-      },
-      {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "totalMinutes": 32021,
-        "avgMinutesPerPlayer": 2135,
-        "ironMan": {
-          "name": "Raya",
           "minutes": 3240
         },
         "title": "Nailed On"
@@ -37348,48 +37344,6 @@
         "title": "Fair Exchange"
       },
       {
-        "leagueEntryId": 2273,
-        "managerName": "Sam vd V",
-        "realGI": 100,
-        "fantasyPoints": 1670,
-        "pointsPerRealGI": 16.7,
-        "overperformers": [
-          {
-            "name": "Hill",
-            "fplPts": 106,
-            "realGI": 3
-          },
-          {
-            "name": "Tarkowski",
-            "fplPts": 164,
-            "realGI": 5
-          },
-          {
-            "name": "Thiaw",
-            "fplPts": 123,
-            "realGI": 4
-          }
-        ],
-        "underperformers": [
-          {
-            "name": "Raya",
-            "fplPts": 156,
-            "realGI": 0
-          },
-          {
-            "name": "Gibbs-White",
-            "fplPts": 172,
-            "realGI": 0
-          },
-          {
-            "name": "Raúl",
-            "fplPts": 110,
-            "realGI": 12
-          }
-        ],
-        "title": "Fair Exchange"
-      },
-      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "realGI": 110,
@@ -37427,6 +37381,48 @@
             "name": "Pickford",
             "fplPts": 132,
             "realGI": 0
+          }
+        ],
+        "title": "Fair Exchange"
+      },
+      {
+        "leagueEntryId": 2273,
+        "managerName": "Sam vd V",
+        "realGI": 117,
+        "fantasyPoints": 1670,
+        "pointsPerRealGI": 14.27,
+        "overperformers": [
+          {
+            "name": "Hill",
+            "fplPts": 106,
+            "realGI": 3
+          },
+          {
+            "name": "Tarkowski",
+            "fplPts": 164,
+            "realGI": 5
+          },
+          {
+            "name": "Thiaw",
+            "fplPts": 123,
+            "realGI": 4
+          }
+        ],
+        "underperformers": [
+          {
+            "name": "Raya",
+            "fplPts": 156,
+            "realGI": 0
+          },
+          {
+            "name": "Raúl",
+            "fplPts": 110,
+            "realGI": 12
+          },
+          {
+            "name": "Bowen",
+            "fplPts": 173,
+            "realGI": 18
           }
         ],
         "title": "Fair Exchange"
@@ -38112,9 +38108,9 @@
             "managerName": "Shake Dias",
             "leagueEntryId": 87853,
             "fplPoints": 172,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
+            "espnGoals": 13,
+            "espnAssists": 4,
+            "espnMinutes": 2930,
             "rating": "Star"
           },
           {
@@ -38950,11 +38946,6 @@
         "cards": 11
       },
       "ghostPlayer": [
-        {
-          "name": "Gibbs-White",
-          "manager": "Sam vd V",
-          "team": "Nott'm Forest"
-        },
         {
           "name": "Arrizabalaga",
           "manager": "Sam vd V",
