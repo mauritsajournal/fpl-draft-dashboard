@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-20T04:59:15.117Z",
+    "lastUpdated": "2026-05-20T10:21:27.637Z",
     "currentGameweek": 37,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -32078,7 +32078,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-20T04:59:14.364Z",
+    "lastUpdated": "2026-05-20T10:21:26.901Z",
     "season": "2025",
     "plMatchday": 37,
     "managerProfiles": [
@@ -32091,32 +32091,32 @@
         "squadStats": {
           "totalGoals": 70,
           "totalAssists": 49,
-          "totalShots": 569,
-          "shotsOnTarget": 206,
-          "shotAccuracy": 0.36203866432337434,
-          "totalPasses": 15229,
-          "accuratePasses": 12459,
-          "passAccuracy": 0.8181101845163832,
-          "foulsCommitted": 367,
-          "foulsSuffered": 396,
-          "yellowCards": 59,
+          "totalShots": 573,
+          "shotsOnTarget": 207,
+          "shotAccuracy": 0.3612565445026178,
+          "totalPasses": 15382,
+          "accuratePasses": 12589,
+          "passAccuracy": 0.8184241321024575,
+          "foulsCommitted": 368,
+          "foulsSuffered": 403,
+          "yellowCards": 61,
           "redCards": 1,
-          "totalCards": 60,
-          "tacklesWon": 340,
-          "tacklesLost": 215,
-          "interceptions": 299,
-          "clearances": 1072,
-          "shotsBlocked": 168,
+          "totalCards": 62,
+          "tacklesWon": 343,
+          "tacklesLost": 218,
+          "interceptions": 301,
+          "clearances": 1080,
+          "shotsBlocked": 170,
           "cleanSheets": 98,
-          "goalsConceded": 475,
+          "goalsConceded": 479,
           "saves": 60,
-          "totalMinutes": 35759,
-          "appearances": 463,
+          "totalMinutes": 36118,
+          "appearances": 467,
           "headedGoals": 17,
           "goalInvolvement": 119,
-          "minutesPerGoalInvolvement": 300.4957983193277,
-          "disciplinaryPoints": 62,
-          "shotAssists": 383
+          "minutesPerGoalInvolvement": 303.5126050420168,
+          "disciplinaryPoints": 64,
+          "shotAssists": 385
         },
         "plTeamDistribution": [
           {
@@ -32321,16 +32321,16 @@
             "fplPoints": 154,
             "espnGoals": 1,
             "espnAssists": 5,
-            "espnMinutes": 2775,
+            "espnMinutes": 2865,
             "espnYellows": 5,
             "espnReds": 0,
             "espnFouls": 17,
-            "espnPasses": 2101,
-            "espnPassPct": 0.89,
+            "espnPasses": 2157,
+            "espnPassPct": 0.891,
             "espnShots": 7,
             "espnShotsOnTarget": 2,
-            "espnTackles": 56,
-            "espnInterceptions": 29,
+            "espnTackles": 57,
+            "espnInterceptions": 30,
             "espnCleanSheets": 12,
             "position": "DEF",
             "isBenchwarmer": false
@@ -32387,15 +32387,15 @@
             "fplPoints": 107,
             "espnGoals": 0,
             "espnAssists": 3,
-            "espnMinutes": 1924,
-            "espnYellows": 3,
+            "espnMinutes": 2014,
+            "espnYellows": 4,
             "espnReds": 0,
-            "espnFouls": 13,
-            "espnPasses": 929,
-            "espnPassPct": 0.771,
-            "espnShots": 11,
+            "espnFouls": 14,
+            "espnPasses": 976,
+            "espnPassPct": 0.774,
+            "espnShots": 12,
             "espnShotsOnTarget": 2,
-            "espnTackles": 38,
+            "espnTackles": 39,
             "espnInterceptions": 36,
             "espnCleanSheets": 6,
             "position": "DEF",
@@ -32409,15 +32409,15 @@
             "fplPoints": 106,
             "espnGoals": 9,
             "espnAssists": 1,
-            "espnMinutes": 1786,
+            "espnMinutes": 1875,
             "espnYellows": 4,
             "espnReds": 0,
             "espnFouls": 13,
-            "espnPasses": 763,
-            "espnPassPct": 0.853,
-            "espnShots": 58,
-            "espnShotsOnTarget": 22,
-            "espnTackles": 24,
+            "espnPasses": 787,
+            "espnPassPct": 0.855,
+            "espnShots": 61,
+            "espnShotsOnTarget": 23,
+            "espnTackles": 25,
             "espnInterceptions": 15,
             "espnCleanSheets": 2,
             "position": "MID",
@@ -32431,16 +32431,16 @@
             "fplPoints": 103,
             "espnGoals": 1,
             "espnAssists": 4,
-            "espnMinutes": 2530,
-            "espnYellows": 7,
+            "espnMinutes": 2620,
+            "espnYellows": 8,
             "espnReds": 1,
             "espnFouls": 44,
-            "espnPasses": 1394,
-            "espnPassPct": 0.883,
+            "espnPasses": 1420,
+            "espnPassPct": 0.879,
             "espnShots": 20,
             "espnShotsOnTarget": 6,
-            "espnTackles": 50,
-            "espnInterceptions": 31,
+            "espnTackles": 53,
+            "espnInterceptions": 32,
             "espnCleanSheets": 9,
             "position": "DEF",
             "isBenchwarmer": false
@@ -32520,34 +32520,34 @@
         "fantasyRank": 6,
         "fantasyPoints": 1635,
         "squadStats": {
-          "totalGoals": 57,
-          "totalAssists": 35,
-          "totalShots": 507,
-          "shotsOnTarget": 190,
-          "shotAccuracy": 0.3747534516765286,
-          "totalPasses": 16185,
-          "accuratePasses": 13251,
-          "passAccuracy": 0.8187210379981464,
-          "foulsCommitted": 249,
-          "foulsSuffered": 324,
+          "totalGoals": 58,
+          "totalAssists": 36,
+          "totalShots": 513,
+          "shotsOnTarget": 191,
+          "shotAccuracy": 0.3723196881091618,
+          "totalPasses": 16312,
+          "accuratePasses": 13358,
+          "passAccuracy": 0.8189063266307013,
+          "foulsCommitted": 254,
+          "foulsSuffered": 330,
           "yellowCards": 45,
           "redCards": 1,
           "totalCards": 46,
-          "tacklesWon": 186,
-          "tacklesLost": 158,
-          "interceptions": 214,
-          "clearances": 1009,
-          "shotsBlocked": 113,
+          "tacklesWon": 188,
+          "tacklesLost": 159,
+          "interceptions": 216,
+          "clearances": 1012,
+          "shotsBlocked": 115,
           "cleanSheets": 84,
-          "goalsConceded": 458,
+          "goalsConceded": 460,
           "saves": 165,
-          "totalMinutes": 34523,
-          "appearances": 442,
+          "totalMinutes": 34826,
+          "appearances": 446,
           "headedGoals": 14,
-          "goalInvolvement": 92,
-          "minutesPerGoalInvolvement": 375.25,
+          "goalInvolvement": 94,
+          "minutesPerGoalInvolvement": 370.48936170212767,
           "disciplinaryPoints": 48,
-          "shotAssists": 342
+          "shotAssists": 345
         },
         "plTeamDistribution": [
           {
@@ -32632,16 +32632,16 @@
             "fplPoints": 179,
             "espnGoals": 3,
             "espnAssists": 3,
-            "espnMinutes": 3060,
+            "espnMinutes": 3150,
             "espnYellows": 6,
             "espnReds": 0,
-            "espnFouls": 23,
-            "espnPasses": 2257,
+            "espnFouls": 25,
+            "espnPasses": 2309,
             "espnPassPct": 0.896,
             "espnShots": 32,
             "espnShotsOnTarget": 9,
-            "espnTackles": 45,
-            "espnInterceptions": 49,
+            "espnTackles": 46,
+            "espnInterceptions": 50,
             "espnCleanSheets": 14,
             "position": "DEF",
             "isBenchwarmer": false
@@ -32652,18 +32652,18 @@
             "plTeam": "Chelsea",
             "plTeamRank": 8,
             "fplPoints": 156,
-            "espnGoals": 9,
-            "espnAssists": 3,
-            "espnMinutes": 2941,
+            "espnGoals": 10,
+            "espnAssists": 4,
+            "espnMinutes": 3031,
             "espnYellows": 9,
             "espnReds": 0,
-            "espnFouls": 32,
-            "espnPasses": 1936,
-            "espnPassPct": 0.867,
-            "espnShots": 70,
-            "espnShotsOnTarget": 30,
-            "espnTackles": 51,
-            "espnInterceptions": 20,
+            "espnFouls": 33,
+            "espnPasses": 1983,
+            "espnPassPct": 0.863,
+            "espnShots": 72,
+            "espnShotsOnTarget": 31,
+            "espnTackles": 52,
+            "espnInterceptions": 21,
             "espnCleanSheets": 5,
             "position": "MID",
             "isBenchwarmer": false
@@ -32742,13 +32742,13 @@
             "fplPoints": 134,
             "espnGoals": 4,
             "espnAssists": 12,
-            "espnMinutes": 1720,
+            "espnMinutes": 1754,
             "espnYellows": 1,
             "espnReds": 0,
             "espnFouls": 16,
-            "espnPasses": 1246,
-            "espnPassPct": 0.865,
-            "espnShots": 53,
+            "espnPasses": 1257,
+            "espnPassPct": 0.866,
+            "espnShots": 54,
             "espnShotsOnTarget": 13,
             "espnTackles": 26,
             "espnInterceptions": 7,
@@ -32808,15 +32808,15 @@
             "fplPoints": 113,
             "espnGoals": 6,
             "espnAssists": 1,
-            "espnMinutes": 2597,
+            "espnMinutes": 2686,
             "espnYellows": 2,
             "espnReds": 0,
-            "espnFouls": 24,
-            "espnPasses": 436,
-            "espnPassPct": 0.757,
-            "espnShots": 66,
+            "espnFouls": 26,
+            "espnPasses": 453,
+            "espnPassPct": 0.764,
+            "espnShots": 69,
             "espnShotsOnTarget": 22,
-            "espnTackles": 11,
+            "espnTackles": 12,
             "espnInterceptions": 6,
             "espnCleanSheets": 2,
             "position": "FWD",
@@ -32963,34 +32963,34 @@
         "fantasyRank": 3,
         "fantasyPoints": 1671,
         "squadStats": {
-          "totalGoals": 90,
+          "totalGoals": 92,
           "totalAssists": 24,
-          "totalShots": 610,
-          "shotsOnTarget": 247,
-          "shotAccuracy": 0.40491803278688526,
-          "totalPasses": 13186,
-          "accuratePasses": 10428,
-          "passAccuracy": 0.7908387683907174,
-          "foulsCommitted": 331,
-          "foulsSuffered": 365,
-          "yellowCards": 64,
+          "totalShots": 614,
+          "shotsOnTarget": 249,
+          "shotAccuracy": 0.40553745928338764,
+          "totalPasses": 13255,
+          "accuratePasses": 10484,
+          "passAccuracy": 0.790946812523576,
+          "foulsCommitted": 333,
+          "foulsSuffered": 366,
+          "yellowCards": 65,
           "redCards": 1,
-          "totalCards": 65,
+          "totalCards": 66,
           "tacklesWon": 275,
           "tacklesLost": 188,
           "interceptions": 232,
-          "clearances": 953,
-          "shotsBlocked": 158,
+          "clearances": 959,
+          "shotsBlocked": 159,
           "cleanSheets": 87,
-          "goalsConceded": 501,
-          "saves": 175,
-          "totalMinutes": 35754,
-          "appearances": 447,
+          "goalsConceded": 503,
+          "saves": 177,
+          "totalMinutes": 36010,
+          "appearances": 450,
           "headedGoals": 12,
-          "goalInvolvement": 114,
-          "minutesPerGoalInvolvement": 313.63157894736844,
-          "disciplinaryPoints": 67,
-          "shotAssists": 266
+          "goalInvolvement": 116,
+          "minutesPerGoalInvolvement": 310.4310344827586,
+          "disciplinaryPoints": 68,
+          "shotAssists": 267
         },
         "plTeamDistribution": [
           {
@@ -33061,16 +33061,16 @@
             "plTeam": "Man City",
             "plTeamRank": 2,
             "fplPoints": 239,
-            "espnGoals": 26,
+            "espnGoals": 27,
             "espnAssists": 8,
-            "espnMinutes": 2868,
+            "espnMinutes": 2958,
             "espnYellows": 2,
             "espnReds": 0,
-            "espnFouls": 23,
-            "espnPasses": 369,
-            "espnPassPct": 0.65,
-            "espnShots": 124,
-            "espnShotsOnTarget": 58,
+            "espnFouls": 24,
+            "espnPasses": 384,
+            "espnPassPct": 0.656,
+            "espnShots": 126,
+            "espnShotsOnTarget": 59,
             "espnTackles": 15,
             "espnInterceptions": 5,
             "espnCleanSheets": 9,
@@ -33129,11 +33129,11 @@
             "fplPoints": 135,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 2970,
-            "espnYellows": 7,
+            "espnMinutes": 3060,
+            "espnYellows": 8,
             "espnReds": 0,
             "espnFouls": 0,
-            "espnPasses": 857,
+            "espnPasses": 879,
             "espnPassPct": 0.803,
             "espnShots": 0,
             "espnShotsOnTarget": 0,
@@ -33259,16 +33259,16 @@
             "plTeam": "Bournemouth",
             "plTeamRank": 6,
             "fplPoints": 111,
-            "espnGoals": 12,
+            "espnGoals": 13,
             "espnAssists": 0,
-            "espnMinutes": 1534,
+            "espnMinutes": 1610,
             "espnYellows": 5,
             "espnReds": 0,
-            "espnFouls": 26,
-            "espnPasses": 399,
-            "espnPassPct": 0.749,
-            "espnShots": 44,
-            "espnShotsOnTarget": 20,
+            "espnFouls": 27,
+            "espnPasses": 431,
+            "espnPassPct": 0.754,
+            "espnShots": 46,
+            "espnShotsOnTarget": 21,
             "espnTackles": 9,
             "espnInterceptions": 8,
             "espnCleanSheets": 0,
@@ -33394,34 +33394,34 @@
         "fantasyRank": 8,
         "fantasyPoints": 1426,
         "squadStats": {
-          "totalGoals": 59,
+          "totalGoals": 60,
           "totalAssists": 44,
-          "totalShots": 496,
-          "shotsOnTarget": 170,
-          "shotAccuracy": 0.34274193548387094,
-          "totalPasses": 18580,
-          "accuratePasses": 15292,
-          "passAccuracy": 0.8230355220667385,
-          "foulsCommitted": 381,
-          "foulsSuffered": 489,
+          "totalShots": 499,
+          "shotsOnTarget": 172,
+          "shotAccuracy": 0.34468937875751504,
+          "totalPasses": 18652,
+          "accuratePasses": 15335,
+          "passAccuracy": 0.8221638430195153,
+          "foulsCommitted": 382,
+          "foulsSuffered": 491,
           "yellowCards": 79,
           "redCards": 2,
           "totalCards": 81,
-          "tacklesWon": 390,
-          "tacklesLost": 267,
+          "tacklesWon": 391,
+          "tacklesLost": 268,
           "interceptions": 331,
-          "clearances": 913,
+          "clearances": 915,
           "shotsBlocked": 154,
           "cleanSheets": 100,
-          "goalsConceded": 541,
-          "saves": 194,
-          "totalMinutes": 39251,
-          "appearances": 492,
+          "goalsConceded": 544,
+          "saves": 196,
+          "totalMinutes": 39465,
+          "appearances": 495,
           "headedGoals": 10,
-          "goalInvolvement": 103,
-          "minutesPerGoalInvolvement": 381.07766990291265,
+          "goalInvolvement": 104,
+          "minutesPerGoalInvolvement": 379.47115384615387,
           "disciplinaryPoints": 85,
-          "shotAssists": 410
+          "shotAssists": 411
         },
         "plTeamDistribution": [
           {
@@ -33610,11 +33610,11 @@
             "fplPoints": 129,
             "espnGoals": 7,
             "espnAssists": 5,
-            "espnMinutes": 1960,
+            "espnMinutes": 1994,
             "espnYellows": 4,
             "espnReds": 0,
             "espnFouls": 18,
-            "espnPasses": 1146,
+            "espnPasses": 1162,
             "espnPassPct": 0.883,
             "espnShots": 55,
             "espnShotsOnTarget": 19,
@@ -33696,17 +33696,17 @@
             "plTeam": "Spurs",
             "plTeamRank": 17,
             "fplPoints": 117,
-            "espnGoals": 10,
+            "espnGoals": 11,
             "espnAssists": 4,
-            "espnMinutes": 1794,
+            "espnMinutes": 1884,
             "espnYellows": 5,
             "espnReds": 0,
-            "espnFouls": 21,
-            "espnPasses": 292,
-            "espnPassPct": 0.62,
-            "espnShots": 56,
-            "espnShotsOnTarget": 24,
-            "espnTackles": 25,
+            "espnFouls": 22,
+            "espnPasses": 310,
+            "espnPassPct": 0.616,
+            "espnShots": 59,
+            "espnShotsOnTarget": 26,
+            "espnTackles": 27,
             "espnInterceptions": 5,
             "espnCleanSheets": 3,
             "position": "FWD",
@@ -33764,12 +33764,12 @@
             "fplPoints": 111,
             "espnGoals": 0,
             "espnAssists": 1,
-            "espnMinutes": 2861,
+            "espnMinutes": 2951,
             "espnYellows": 3,
             "espnReds": 1,
             "espnFouls": 2,
-            "espnPasses": 1230,
-            "espnPassPct": 0.673,
+            "espnPasses": 1268,
+            "espnPassPct": 0.668,
             "espnShots": 0,
             "espnShotsOnTarget": 0,
             "espnTackles": 2,
@@ -33836,29 +33836,29 @@
           "totalShots": 410,
           "shotsOnTarget": 126,
           "shotAccuracy": 0.3073170731707317,
-          "totalPasses": 15513,
-          "accuratePasses": 13012,
-          "passAccuracy": 0.8387803777476954,
-          "foulsCommitted": 312,
-          "foulsSuffered": 284,
-          "yellowCards": 48,
+          "totalPasses": 15588,
+          "accuratePasses": 13072,
+          "passAccuracy": 0.8385937900949448,
+          "foulsCommitted": 314,
+          "foulsSuffered": 285,
+          "yellowCards": 49,
           "redCards": 1,
-          "totalCards": 49,
-          "tacklesWon": 245,
+          "totalCards": 50,
+          "tacklesWon": 246,
           "tacklesLost": 151,
           "interceptions": 179,
-          "clearances": 864,
+          "clearances": 865,
           "shotsBlocked": 122,
           "cleanSheets": 62,
-          "goalsConceded": 477,
+          "goalsConceded": 481,
           "saves": 90,
-          "totalMinutes": 30517,
-          "appearances": 417,
+          "totalMinutes": 30676,
+          "appearances": 419,
           "headedGoals": 7,
           "goalInvolvement": 68,
-          "minutesPerGoalInvolvement": 448.77941176470586,
-          "disciplinaryPoints": 51,
-          "shotAssists": 365
+          "minutesPerGoalInvolvement": 451.11764705882354,
+          "disciplinaryPoints": 52,
+          "shotAssists": 368
         },
         "plTeamDistribution": [
           {
@@ -34021,15 +34021,15 @@
             "fplPoints": 107,
             "espnGoals": 1,
             "espnAssists": 2,
-            "espnMinutes": 2618,
-            "espnYellows": 9,
+            "espnMinutes": 2708,
+            "espnYellows": 10,
             "espnReds": 0,
-            "espnFouls": 29,
-            "espnPasses": 1378,
-            "espnPassPct": 0.744,
+            "espnFouls": 30,
+            "espnPasses": 1436,
+            "espnPassPct": 0.749,
             "espnShots": 30,
             "espnShotsOnTarget": 8,
-            "espnTackles": 70,
+            "espnTackles": 71,
             "espnInterceptions": 29,
             "espnCleanSheets": 8,
             "position": "DEF",
@@ -34131,12 +34131,12 @@
             "fplPoints": 51,
             "espnGoals": 1,
             "espnAssists": 1,
-            "espnMinutes": 1584,
+            "espnMinutes": 1653,
             "espnYellows": 3,
             "espnReds": 0,
-            "espnFouls": 39,
-            "espnPasses": 304,
-            "espnPassPct": 0.714,
+            "espnFouls": 40,
+            "espnPasses": 321,
+            "espnPassPct": 0.707,
             "espnShots": 19,
             "espnShotsOnTarget": 4,
             "espnTackles": 28,
@@ -34220,34 +34220,34 @@
         "fantasyRank": 7,
         "fantasyPoints": 1599,
         "squadStats": {
-          "totalGoals": 64,
-          "totalAssists": 30,
-          "totalShots": 386,
-          "shotsOnTarget": 141,
-          "shotAccuracy": 0.36528497409326427,
-          "totalPasses": 10135,
-          "accuratePasses": 8074,
-          "passAccuracy": 0.7966452886038481,
-          "foulsCommitted": 264,
-          "foulsSuffered": 331,
-          "yellowCards": 34,
+          "totalGoals": 80,
+          "totalAssists": 34,
+          "totalShots": 469,
+          "shotsOnTarget": 182,
+          "shotAccuracy": 0.3880597014925373,
+          "totalPasses": 11071,
+          "accuratePasses": 8819,
+          "passAccuracy": 0.7965856742841658,
+          "foulsCommitted": 320,
+          "foulsSuffered": 354,
+          "yellowCards": 41,
           "redCards": 1,
-          "totalCards": 35,
-          "tacklesWon": 184,
-          "tacklesLost": 136,
-          "interceptions": 154,
-          "clearances": 583,
-          "shotsBlocked": 105,
-          "cleanSheets": 64,
-          "goalsConceded": 350,
+          "totalCards": 42,
+          "tacklesWon": 216,
+          "tacklesLost": 149,
+          "interceptions": 166,
+          "clearances": 612,
+          "shotsBlocked": 119,
+          "cleanSheets": 75,
+          "goalsConceded": 402,
           "saves": 186,
-          "totalMinutes": 28538,
-          "appearances": 416,
+          "totalMinutes": 31756,
+          "appearances": 453,
           "headedGoals": 10,
-          "goalInvolvement": 94,
-          "minutesPerGoalInvolvement": 303.59574468085106,
-          "disciplinaryPoints": 37,
-          "shotAssists": 255
+          "goalInvolvement": 114,
+          "minutesPerGoalInvolvement": 278.56140350877195,
+          "disciplinaryPoints": 44,
+          "shotAssists": 295
         },
         "plTeamDistribution": [
           {
@@ -34306,21 +34306,21 @@
             "plTeam": "Man City",
             "plTeamRank": 2,
             "fplPoints": 196,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
-            "espnYellows": 0,
+            "espnGoals": 16,
+            "espnAssists": 4,
+            "espnMinutes": 3142,
+            "espnYellows": 7,
             "espnReds": 0,
-            "espnFouls": 0,
-            "espnPasses": 0,
-            "espnPassPct": 0,
-            "espnShots": 0,
-            "espnShotsOnTarget": 0,
-            "espnTackles": 0,
-            "espnInterceptions": 0,
-            "espnCleanSheets": 0,
+            "espnFouls": 56,
+            "espnPasses": 914,
+            "espnPassPct": 0.796,
+            "espnShots": 82,
+            "espnShotsOnTarget": 40,
+            "espnTackles": 45,
+            "espnInterceptions": 12,
+            "espnCleanSheets": 11,
             "position": "MID",
-            "isBenchwarmer": true
+            "isBenchwarmer": false
           },
           {
             "fplName": "Dewsbury-Hall",
@@ -34462,14 +34462,14 @@
             "fplPoints": 119,
             "espnGoals": 5,
             "espnAssists": 5,
-            "espnMinutes": 1695,
+            "espnMinutes": 1771,
             "espnYellows": 0,
             "espnReds": 0,
             "espnFouls": 23,
-            "espnPasses": 744,
-            "espnPassPct": 0.833,
-            "espnShots": 36,
-            "espnShotsOnTarget": 14,
+            "espnPasses": 766,
+            "espnPassPct": 0.832,
+            "espnShots": 37,
+            "espnShotsOnTarget": 15,
             "espnTackles": 23,
             "espnInterceptions": 13,
             "espnCleanSheets": 2,
@@ -34641,31 +34641,31 @@
         "squadStats": {
           "totalGoals": 88,
           "totalAssists": 42,
-          "totalShots": 560,
+          "totalShots": 561,
           "shotsOnTarget": 207,
-          "shotAccuracy": 0.36964285714285716,
-          "totalPasses": 17471,
-          "accuratePasses": 14397,
-          "passAccuracy": 0.8240512849865491,
-          "foulsCommitted": 395,
-          "foulsSuffered": 357,
-          "yellowCards": 63,
+          "shotAccuracy": 0.3689839572192513,
+          "totalPasses": 17628,
+          "accuratePasses": 14545,
+          "passAccuracy": 0.8251077830723849,
+          "foulsCommitted": 397,
+          "foulsSuffered": 358,
+          "yellowCards": 64,
           "redCards": 3,
-          "totalCards": 66,
-          "tacklesWon": 344,
+          "totalCards": 67,
+          "tacklesWon": 346,
           "tacklesLost": 245,
-          "interceptions": 317,
-          "clearances": 1123,
+          "interceptions": 320,
+          "clearances": 1126,
           "shotsBlocked": 164,
           "cleanSheets": 98,
-          "goalsConceded": 483,
+          "goalsConceded": 486,
           "saves": 129,
-          "totalMinutes": 36927,
-          "appearances": 467,
+          "totalMinutes": 37107,
+          "appearances": 469,
           "headedGoals": 20,
           "goalInvolvement": 130,
-          "minutesPerGoalInvolvement": 284.05384615384617,
-          "disciplinaryPoints": 72,
+          "minutesPerGoalInvolvement": 285.4384615384615,
+          "disciplinaryPoints": 73,
           "shotAssists": 321
         },
         "plTeamDistribution": [
@@ -34953,16 +34953,16 @@
             "fplPoints": 110,
             "espnGoals": 4,
             "espnAssists": 1,
-            "espnMinutes": 2863,
-            "espnYellows": 8,
+            "espnMinutes": 2953,
+            "espnYellows": 9,
             "espnReds": 1,
-            "espnFouls": 24,
-            "espnPasses": 1645,
-            "espnPassPct": 0.9,
+            "espnFouls": 25,
+            "espnPasses": 1720,
+            "espnPassPct": 0.903,
             "espnShots": 15,
             "espnShotsOnTarget": 6,
-            "espnTackles": 38,
-            "espnInterceptions": 21,
+            "espnTackles": 39,
+            "espnInterceptions": 22,
             "espnCleanSheets": 7,
             "position": "DEF",
             "isBenchwarmer": false
@@ -35041,16 +35041,16 @@
             "fplPoints": 67,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 1339,
+            "espnMinutes": 1429,
             "espnYellows": 2,
             "espnReds": 0,
-            "espnFouls": 13,
-            "espnPasses": 998,
-            "espnPassPct": 0.919,
-            "espnShots": 6,
+            "espnFouls": 14,
+            "espnPasses": 1080,
+            "espnPassPct": 0.918,
+            "espnShots": 7,
             "espnShotsOnTarget": 1,
-            "espnTackles": 26,
-            "espnInterceptions": 31,
+            "espnTackles": 27,
+            "espnInterceptions": 33,
             "espnCleanSheets": 5,
             "position": "DEF",
             "isBenchwarmer": false
@@ -35066,32 +35066,32 @@
         "squadStats": {
           "totalGoals": 57,
           "totalAssists": 32,
-          "totalShots": 417,
-          "shotsOnTarget": 160,
-          "shotAccuracy": 0.38369304556354916,
-          "totalPasses": 14916,
-          "accuratePasses": 12190,
-          "passAccuracy": 0.8172432287476535,
-          "foulsCommitted": 341,
+          "totalShots": 420,
+          "shotsOnTarget": 161,
+          "shotAccuracy": 0.38333333333333336,
+          "totalPasses": 15113,
+          "accuratePasses": 12346,
+          "passAccuracy": 0.8169125918083769,
+          "foulsCommitted": 342,
           "foulsSuffered": 281,
           "yellowCards": 71,
           "redCards": 2,
           "totalCards": 73,
-          "tacklesWon": 241,
+          "tacklesWon": 242,
           "tacklesLost": 193,
-          "interceptions": 222,
-          "clearances": 1023,
-          "shotsBlocked": 123,
+          "interceptions": 223,
+          "clearances": 1035,
+          "shotsBlocked": 125,
           "cleanSheets": 85,
-          "goalsConceded": 455,
-          "saves": 199,
-          "totalMinutes": 33788,
-          "appearances": 443,
+          "goalsConceded": 459,
+          "saves": 202,
+          "totalMinutes": 34114,
+          "appearances": 447,
           "headedGoals": 12,
           "goalInvolvement": 89,
-          "minutesPerGoalInvolvement": 379.64044943820227,
+          "minutesPerGoalInvolvement": 383.30337078651684,
           "disciplinaryPoints": 77,
-          "shotAssists": 285
+          "shotAssists": 286
         },
         "plTeamDistribution": [
           {
@@ -35168,16 +35168,16 @@
             "fplPoints": 173,
             "espnGoals": 0,
             "espnAssists": 5,
-            "espnMinutes": 3110,
+            "espnMinutes": 3200,
             "espnYellows": 8,
             "espnReds": 0,
             "espnFouls": 34,
-            "espnPasses": 2172,
-            "espnPassPct": 0.776,
+            "espnPasses": 2244,
+            "espnPassPct": 0.777,
             "espnShots": 17,
             "espnShotsOnTarget": 5,
-            "espnTackles": 59,
-            "espnInterceptions": 54,
+            "espnTackles": 60,
+            "espnInterceptions": 55,
             "espnCleanSheets": 10,
             "position": "DEF",
             "isBenchwarmer": false
@@ -35212,14 +35212,14 @@
             "fplPoints": 160,
             "espnGoals": 5,
             "espnAssists": 3,
-            "espnMinutes": 2558,
+            "espnMinutes": 2648,
             "espnYellows": 5,
             "espnReds": 0,
-            "espnFouls": 44,
-            "espnPasses": 1306,
-            "espnPassPct": 0.864,
-            "espnShots": 39,
-            "espnShotsOnTarget": 14,
+            "espnFouls": 45,
+            "espnPasses": 1354,
+            "espnPassPct": 0.862,
+            "espnShots": 41,
+            "espnShotsOnTarget": 15,
             "espnTackles": 68,
             "espnInterceptions": 20,
             "espnCleanSheets": 10,
@@ -35300,12 +35300,12 @@
             "fplPoints": 121,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 3240,
+            "espnMinutes": 3330,
             "espnYellows": 3,
             "espnReds": 0,
             "espnFouls": 0,
-            "espnPasses": 854,
-            "espnPassPct": 0.641,
+            "espnPasses": 884,
+            "espnPassPct": 0.64,
             "espnShots": 0,
             "espnShotsOnTarget": 0,
             "espnTackles": 0,
@@ -35344,13 +35344,13 @@
             "fplPoints": 101,
             "espnGoals": 2,
             "espnAssists": 4,
-            "espnMinutes": 2771,
+            "espnMinutes": 2827,
             "espnYellows": 10,
             "espnReds": 0,
             "espnFouls": 36,
-            "espnPasses": 2132,
+            "espnPasses": 2179,
             "espnPassPct": 0.902,
-            "espnShots": 28,
+            "espnShots": 29,
             "espnShotsOnTarget": 6,
             "espnTackles": 50,
             "espnInterceptions": 21,
@@ -35477,8 +35477,8 @@
         "managerName": "Sam vd V",
         "fantasyRank": 2,
         "avgPlTeamRank": 8.53,
-        "weightedPlRank": 9.35,
-        "rankDelta": 7.35,
+        "weightedPlRank": 9.32,
+        "rankDelta": 7.32,
         "verdict": "Punching above weight"
       },
       {
@@ -35486,8 +35486,8 @@
         "managerName": "Pieter van Gemert",
         "fantasyRank": 3,
         "avgPlTeamRank": 10.4,
-        "weightedPlRank": 9.71,
-        "rankDelta": 6.71,
+        "weightedPlRank": 9.66,
+        "rankDelta": 6.66,
         "verdict": "Punching above weight"
       },
       {
@@ -35495,8 +35495,8 @@
         "managerName": "Maximiliaan de Goede",
         "fantasyRank": 1,
         "avgPlTeamRank": 7.47,
-        "weightedPlRank": 7.58,
-        "rankDelta": 6.58,
+        "weightedPlRank": 7.59,
+        "rankDelta": 6.59,
         "verdict": "Punching above weight"
       },
       {
@@ -35504,8 +35504,8 @@
         "managerName": "Maurits Koot",
         "fantasyRank": 4,
         "avgPlTeamRank": 7.27,
-        "weightedPlRank": 7.39,
-        "rankDelta": 3.39,
+        "weightedPlRank": 7.44,
+        "rankDelta": 3.44,
         "verdict": "Punching above weight"
       },
       {
@@ -35513,8 +35513,8 @@
         "managerName": "Robert van Gemert",
         "fantasyRank": 5,
         "avgPlTeamRank": 7.47,
-        "weightedPlRank": 7.1,
-        "rankDelta": 2.1,
+        "weightedPlRank": 7.07,
+        "rankDelta": 2.07,
         "verdict": "Slight overperformer"
       },
       {
@@ -35522,8 +35522,8 @@
         "managerName": "Tim van Duinen",
         "fantasyRank": 6,
         "avgPlTeamRank": 7.93,
-        "weightedPlRank": 7.64,
-        "rankDelta": 1.64,
+        "weightedPlRank": 7.62,
+        "rankDelta": 1.62,
         "verdict": "Slight overperformer"
       },
       {
@@ -35531,8 +35531,8 @@
         "managerName": "Marc Streng",
         "fantasyRank": 8,
         "avgPlTeamRank": 7.93,
-        "weightedPlRank": 8.43,
-        "rankDelta": 0.43,
+        "weightedPlRank": 8.44,
+        "rankDelta": 0.44,
         "verdict": "Right on track"
       },
       {
@@ -35540,8 +35540,8 @@
         "managerName": "Salomon van Megen",
         "fantasyRank": 7,
         "avgPlTeamRank": 5.87,
-        "weightedPlRank": 7.01,
-        "rankDelta": 0.01,
+        "weightedPlRank": 6.5,
+        "rankDelta": -0.5,
         "verdict": "Right on track"
       }
     ],
@@ -35601,10 +35601,10 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "yellows": 63,
+        "yellows": 64,
         "reds": 3,
-        "totalCards": 66,
-        "disciplinaryPoints": 72,
+        "totalCards": 67,
+        "disciplinaryPoints": 73,
         "dirtiest3": [
           {
             "name": "Casemiro",
@@ -35613,7 +35613,7 @@
           },
           {
             "name": "Van de Ven",
-            "yellows": 8,
+            "yellows": 9,
             "reds": 1
           },
           {
@@ -35627,10 +35627,10 @@
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "yellows": 64,
+        "yellows": 65,
         "reds": 1,
-        "totalCards": 65,
-        "disciplinaryPoints": 67,
+        "totalCards": 66,
+        "disciplinaryPoints": 68,
         "dirtiest3": [
           {
             "name": "Schade",
@@ -35638,12 +35638,12 @@
             "reds": 1
           },
           {
-            "name": "Rogers",
-            "yellows": 7,
+            "name": "Donnarumma",
+            "yellows": 8,
             "reds": 0
           },
           {
-            "name": "Donnarumma",
+            "name": "Rogers",
             "yellows": 7,
             "reds": 0
           }
@@ -35653,10 +35653,10 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "yellows": 59,
+        "yellows": 61,
         "reds": 1,
-        "totalCards": 60,
-        "disciplinaryPoints": 62,
+        "totalCards": 62,
+        "disciplinaryPoints": 64,
         "dirtiest3": [
           {
             "name": "Garner",
@@ -35665,7 +35665,7 @@
           },
           {
             "name": "Cucurella",
-            "yellows": 7,
+            "yellows": 8,
             "reds": 1
           },
           {
@@ -35679,10 +35679,10 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "yellows": 48,
+        "yellows": 49,
         "reds": 1,
-        "totalCards": 49,
-        "disciplinaryPoints": 51,
+        "totalCards": 50,
+        "disciplinaryPoints": 52,
         "dirtiest3": [
           {
             "name": "Szoboszlai",
@@ -35691,7 +35691,7 @@
           },
           {
             "name": "Pedro Porro",
-            "yellows": 9,
+            "yellows": 10,
             "reds": 0
           },
           {
@@ -35731,11 +35731,16 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "yellows": 34,
+        "yellows": 41,
         "reds": 1,
-        "totalCards": 35,
-        "disciplinaryPoints": 37,
+        "totalCards": 42,
+        "disciplinaryPoints": 44,
         "dirtiest3": [
+          {
+            "name": "Semenyo",
+            "yellows": 7,
+            "reds": 0
+          },
           {
             "name": "Dewsbury-Hall",
             "yellows": 6,
@@ -35743,11 +35748,6 @@
           },
           {
             "name": "Gyökeres",
-            "yellows": 5,
-            "reds": 0
-          },
-          {
-            "name": "Calafiori",
             "yellows": 5,
             "reds": 0
           }
@@ -35759,9 +35759,9 @@
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "passAccuracy": 83.88,
-        "totalPasses": 15513,
-        "accuratePasses": 13012,
+        "passAccuracy": 83.86,
+        "totalPasses": 15588,
+        "accuratePasses": 13072,
         "longBallRatio": 9.27,
         "style": "Controlled",
         "title": "The Strategist"
@@ -35769,39 +35769,39 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "passAccuracy": 82.41,
-        "totalPasses": 17471,
-        "accuratePasses": 14397,
-        "longBallRatio": 10.93,
+        "passAccuracy": 82.51,
+        "totalPasses": 17628,
+        "accuratePasses": 14545,
+        "longBallRatio": 10.9,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "passAccuracy": 82.3,
-        "totalPasses": 18580,
-        "accuratePasses": 15292,
-        "longBallRatio": 10.53,
+        "passAccuracy": 82.22,
+        "totalPasses": 18652,
+        "accuratePasses": 15335,
+        "longBallRatio": 10.51,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "passAccuracy": 81.87,
-        "totalPasses": 16185,
-        "accuratePasses": 13251,
-        "longBallRatio": 11.07,
+        "passAccuracy": 81.89,
+        "totalPasses": 16312,
+        "accuratePasses": 13358,
+        "longBallRatio": 11.04,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "passAccuracy": 81.81,
-        "totalPasses": 15229,
-        "accuratePasses": 12459,
+        "passAccuracy": 81.84,
+        "totalPasses": 15382,
+        "accuratePasses": 12589,
         "longBallRatio": 10.64,
         "style": "Balanced",
         "title": "The Pragmatist"
@@ -35809,10 +35809,10 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "passAccuracy": 81.72,
-        "totalPasses": 14916,
-        "accuratePasses": 12190,
-        "longBallRatio": 10.32,
+        "passAccuracy": 81.69,
+        "totalPasses": 15113,
+        "accuratePasses": 12346,
+        "longBallRatio": 10.31,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
@@ -35820,19 +35820,19 @@
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
         "passAccuracy": 79.66,
-        "totalPasses": 10135,
-        "accuratePasses": 8074,
-        "longBallRatio": 10.34,
+        "totalPasses": 11071,
+        "accuratePasses": 8819,
+        "longBallRatio": 10.3,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "passAccuracy": 79.08,
-        "totalPasses": 13186,
-        "accuratePasses": 10428,
-        "longBallRatio": 11.5,
+        "passAccuracy": 79.09,
+        "totalPasses": 13255,
+        "accuratePasses": 10484,
+        "longBallRatio": 11.46,
         "style": "Balanced",
         "title": "The Pragmatist"
       }
@@ -35841,78 +35841,78 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "totalShots": 386,
-        "shotsOnTarget": 141,
-        "goals": 64,
-        "shotAccuracy": 36.53,
-        "conversionRate": 16.58,
-        "shotsPerGoal": 6.03,
+        "totalShots": 469,
+        "shotsOnTarget": 182,
+        "goals": 80,
+        "shotAccuracy": 38.81,
+        "conversionRate": 17.06,
+        "shotsPerGoal": 5.86,
         "title": "Clinical Finisher"
       },
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "totalShots": 560,
+        "totalShots": 561,
         "shotsOnTarget": 207,
         "goals": 88,
-        "shotAccuracy": 36.96,
-        "conversionRate": 15.71,
-        "shotsPerGoal": 6.36,
+        "shotAccuracy": 36.9,
+        "conversionRate": 15.69,
+        "shotsPerGoal": 6.38,
         "title": "Clinical Finisher"
       },
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "totalShots": 610,
-        "shotsOnTarget": 247,
-        "goals": 90,
-        "shotAccuracy": 40.49,
-        "conversionRate": 14.75,
-        "shotsPerGoal": 6.78,
+        "totalShots": 614,
+        "shotsOnTarget": 249,
+        "goals": 92,
+        "shotAccuracy": 40.55,
+        "conversionRate": 14.98,
+        "shotsPerGoal": 6.67,
         "title": "Sharp Shooter"
       },
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "totalShots": 417,
-        "shotsOnTarget": 160,
+        "totalShots": 420,
+        "shotsOnTarget": 161,
         "goals": 57,
-        "shotAccuracy": 38.37,
-        "conversionRate": 13.67,
-        "shotsPerGoal": 7.32,
+        "shotAccuracy": 38.33,
+        "conversionRate": 13.57,
+        "shotsPerGoal": 7.37,
         "title": "Sharp Shooter"
       },
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "totalShots": 569,
-        "shotsOnTarget": 206,
+        "totalShots": 573,
+        "shotsOnTarget": 207,
         "goals": 70,
-        "shotAccuracy": 36.2,
-        "conversionRate": 12.3,
-        "shotsPerGoal": 8.13,
+        "shotAccuracy": 36.13,
+        "conversionRate": 12.22,
+        "shotsPerGoal": 8.19,
         "title": "Sharp Shooter"
       },
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "totalShots": 496,
-        "shotsOnTarget": 170,
-        "goals": 59,
-        "shotAccuracy": 34.27,
-        "conversionRate": 11.9,
-        "shotsPerGoal": 8.41,
+        "totalShots": 499,
+        "shotsOnTarget": 172,
+        "goals": 60,
+        "shotAccuracy": 34.47,
+        "conversionRate": 12.02,
+        "shotsPerGoal": 8.32,
         "title": "Sharp Shooter"
       },
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalShots": 507,
-        "shotsOnTarget": 190,
-        "goals": 57,
-        "shotAccuracy": 37.48,
-        "conversionRate": 11.24,
-        "shotsPerGoal": 8.89,
+        "totalShots": 513,
+        "shotsOnTarget": 191,
+        "goals": 58,
+        "shotAccuracy": 37.23,
+        "conversionRate": 11.31,
+        "shotsPerGoal": 8.84,
         "title": "Sharp Shooter"
       },
       {
@@ -35931,37 +35931,37 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "tacklesWon": 344,
-        "interceptions": 317,
-        "clearances": 1123,
+        "tacklesWon": 346,
+        "interceptions": 320,
+        "clearances": 1126,
         "shotsBlocked": 164,
-        "defensiveActions": 1948,
+        "defensiveActions": 1956,
         "cleanSheets": 98,
-        "goalsConceded": 483,
+        "goalsConceded": 486,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "tacklesWon": 340,
-        "interceptions": 299,
-        "clearances": 1072,
-        "shotsBlocked": 168,
-        "defensiveActions": 1879,
+        "tacklesWon": 343,
+        "interceptions": 301,
+        "clearances": 1080,
+        "shotsBlocked": 170,
+        "defensiveActions": 1894,
         "cleanSheets": 98,
-        "goalsConceded": 475,
+        "goalsConceded": 479,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "tacklesWon": 390,
+        "tacklesWon": 391,
         "interceptions": 331,
-        "clearances": 913,
+        "clearances": 915,
         "shotsBlocked": 154,
-        "defensiveActions": 1788,
+        "defensiveActions": 1791,
         "cleanSheets": 100,
-        "goalsConceded": 541,
+        "goalsConceded": 544,
         "title": "The Great Wall"
       },
       {
@@ -35969,59 +35969,59 @@
         "managerName": "Pieter van Gemert",
         "tacklesWon": 275,
         "interceptions": 232,
-        "clearances": 953,
-        "shotsBlocked": 158,
-        "defensiveActions": 1618,
+        "clearances": 959,
+        "shotsBlocked": 159,
+        "defensiveActions": 1625,
         "cleanSheets": 87,
-        "goalsConceded": 501,
+        "goalsConceded": 503,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "tacklesWon": 241,
-        "interceptions": 222,
-        "clearances": 1023,
-        "shotsBlocked": 123,
-        "defensiveActions": 1609,
+        "tacklesWon": 242,
+        "interceptions": 223,
+        "clearances": 1035,
+        "shotsBlocked": 125,
+        "defensiveActions": 1625,
         "cleanSheets": 85,
-        "goalsConceded": 455,
+        "goalsConceded": 459,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "tacklesWon": 186,
-        "interceptions": 214,
-        "clearances": 1009,
-        "shotsBlocked": 113,
-        "defensiveActions": 1522,
+        "tacklesWon": 188,
+        "interceptions": 216,
+        "clearances": 1012,
+        "shotsBlocked": 115,
+        "defensiveActions": 1531,
         "cleanSheets": 84,
-        "goalsConceded": 458,
+        "goalsConceded": 460,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "tacklesWon": 245,
+        "tacklesWon": 246,
         "interceptions": 179,
-        "clearances": 864,
+        "clearances": 865,
         "shotsBlocked": 122,
-        "defensiveActions": 1410,
+        "defensiveActions": 1412,
         "cleanSheets": 62,
-        "goalsConceded": 477,
+        "goalsConceded": 481,
         "title": "The Great Wall"
       },
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "tacklesWon": 184,
-        "interceptions": 154,
-        "clearances": 583,
-        "shotsBlocked": 105,
-        "defensiveActions": 1026,
-        "cleanSheets": 64,
-        "goalsConceded": 350,
+        "tacklesWon": 216,
+        "interceptions": 166,
+        "clearances": 612,
+        "shotsBlocked": 119,
+        "defensiveActions": 1113,
+        "cleanSheets": 75,
+        "goalsConceded": 402,
         "title": "The Great Wall"
       }
     ],
@@ -36029,8 +36029,8 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "foulsCommitted": 395,
-        "foulsSuffered": 357,
+        "foulsCommitted": 397,
+        "foulsSuffered": 358,
         "foulRatio": 1.11,
         "dirtiest": [
           {
@@ -36051,8 +36051,8 @@
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "foulsCommitted": 381,
-        "foulsSuffered": 489,
+        "foulsCommitted": 382,
+        "foulsSuffered": 491,
         "foulRatio": 0.78,
         "dirtiest": [
           {
@@ -36073,9 +36073,9 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "foulsCommitted": 367,
-        "foulsSuffered": 396,
-        "foulRatio": 0.93,
+        "foulsCommitted": 368,
+        "foulsSuffered": 403,
+        "foulRatio": 0.91,
         "dirtiest": [
           {
             "name": "Raúl",
@@ -36095,13 +36095,13 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "foulsCommitted": 341,
+        "foulsCommitted": 342,
         "foulsSuffered": 281,
-        "foulRatio": 1.21,
+        "foulRatio": 1.22,
         "dirtiest": [
           {
             "name": "O'Reilly",
-            "fouls": 44
+            "fouls": 45
           },
           {
             "name": "Bernardo",
@@ -36117,8 +36117,8 @@
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "foulsCommitted": 331,
-        "foulsSuffered": 365,
+        "foulsCommitted": 333,
+        "foulsSuffered": 366,
         "foulRatio": 0.91,
         "dirtiest": [
           {
@@ -36137,10 +36137,32 @@
         "title": "The Enforcer"
       },
       {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "foulsCommitted": 320,
+        "foulsSuffered": 354,
+        "foulRatio": 0.9,
+        "dirtiest": [
+          {
+            "name": "Semenyo",
+            "fouls": 56
+          },
+          {
+            "name": "Calvert-Lewin",
+            "fouls": 44
+          },
+          {
+            "name": "Gyökeres",
+            "fouls": 35
+          }
+        ],
+        "title": "The Enforcer"
+      },
+      {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "foulsCommitted": 312,
-        "foulsSuffered": 284,
+        "foulsCommitted": 314,
+        "foulsSuffered": 285,
         "foulRatio": 1.1,
         "dirtiest": [
           {
@@ -36153,29 +36175,7 @@
           },
           {
             "name": "Kolo Muani",
-            "fouls": 39
-          }
-        ],
-        "title": "The Enforcer"
-      },
-      {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "foulsCommitted": 264,
-        "foulsSuffered": 331,
-        "foulRatio": 0.8,
-        "dirtiest": [
-          {
-            "name": "Calvert-Lewin",
-            "fouls": 44
-          },
-          {
-            "name": "Gyökeres",
-            "fouls": 35
-          },
-          {
-            "name": "Dewsbury-Hall",
-            "fouls": 31
+            "fouls": 40
           }
         ],
         "title": "The Enforcer"
@@ -36183,13 +36183,13 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "foulsCommitted": 249,
-        "foulsSuffered": 324,
+        "foulsCommitted": 254,
+        "foulsSuffered": 330,
         "foulRatio": 0.77,
         "dirtiest": [
           {
             "name": "Enzo",
-            "fouls": 32
+            "fouls": 33
           },
           {
             "name": "O.Dango",
@@ -36197,7 +36197,7 @@
           },
           {
             "name": "Evanilson",
-            "fouls": 24
+            "fouls": 26
           }
         ],
         "title": "The Enforcer"
@@ -36210,26 +36210,11 @@
         "totalPlayers": 15,
         "playersWithMinutes": 14,
         "playersWithZeroMinutes": 1,
-        "avgMinutesPerPlayer": 2384,
+        "avgMinutesPerPlayer": 2408,
         "ghosts": [
           {
             "name": "Arrizabalaga",
             "team": "Arsenal"
-          }
-        ],
-        "title": "Lean Squad"
-      },
-      {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "totalPlayers": 15,
-        "playersWithMinutes": 14,
-        "playersWithZeroMinutes": 1,
-        "avgMinutesPerPlayer": 1903,
-        "ghosts": [
-          {
-            "name": "Semenyo",
-            "team": "Man City"
           }
         ],
         "title": "Lean Squad"
@@ -36240,7 +36225,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 14,
         "playersWithZeroMinutes": 1,
-        "avgMinutesPerPlayer": 2253,
+        "avgMinutesPerPlayer": 2274,
         "ghosts": [
           {
             "name": "Bruno G.",
@@ -36255,7 +36240,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2302,
+        "avgMinutesPerPlayer": 2322,
         "ghosts": [],
         "title": "All Business"
       },
@@ -36265,7 +36250,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2384,
+        "avgMinutesPerPlayer": 2401,
         "ghosts": [],
         "title": "All Business"
       },
@@ -36275,7 +36260,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2617,
+        "avgMinutesPerPlayer": 2631,
         "ghosts": [],
         "title": "All Business"
       },
@@ -36285,7 +36270,17 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2034,
+        "avgMinutesPerPlayer": 2045,
+        "ghosts": [],
+        "title": "All Business"
+      },
+      {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "totalPlayers": 15,
+        "playersWithMinutes": 15,
+        "playersWithZeroMinutes": 0,
+        "avgMinutesPerPlayer": 2117,
         "ghosts": [],
         "title": "All Business"
       },
@@ -36295,7 +36290,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2462,
+        "avgMinutesPerPlayer": 2474,
         "ghosts": [],
         "title": "All Business"
       }
@@ -36821,7 +36816,7 @@
         "totalGoalInvolvements": 130,
         "goals": 88,
         "assists": 42,
-        "minsPerGI": 284,
+        "minsPerGI": 285,
         "topContributors": [
           {
             "name": "B.Fernandes",
@@ -36862,7 +36857,7 @@
         "totalGoalInvolvements": 119,
         "goals": 70,
         "assists": 49,
-        "minsPerGI": 300,
+        "minsPerGI": 304,
         "topContributors": [
           {
             "name": "Gibbs-White",
@@ -36900,16 +36895,16 @@
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "totalGoalInvolvements": 114,
-        "goals": 90,
+        "totalGoalInvolvements": 116,
+        "goals": 92,
         "assists": 24,
-        "minsPerGI": 314,
+        "minsPerGI": 310,
         "topContributors": [
           {
             "name": "Haaland",
-            "goals": 26,
+            "goals": 27,
             "assists": 8,
-            "gi": 34
+            "gi": 35
           },
           {
             "name": "Rogers",
@@ -36918,15 +36913,15 @@
             "gi": 16
           },
           {
+            "name": "Kroupi.Jr",
+            "goals": 13,
+            "assists": 0,
+            "gi": 13
+          },
+          {
             "name": "Cunha",
             "goals": 10,
             "assists": 2,
-            "gi": 12
-          },
-          {
-            "name": "Kroupi.Jr",
-            "goals": 12,
-            "assists": 0,
             "gi": 12
           },
           {
@@ -36939,23 +36934,64 @@
         "title": "Goal Machine"
       },
       {
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "totalGoalInvolvements": 114,
+        "goals": 80,
+        "assists": 34,
+        "minsPerGI": 279,
+        "topContributors": [
+          {
+            "name": "Semenyo",
+            "goals": 16,
+            "assists": 4,
+            "gi": 20
+          },
+          {
+            "name": "Calvert-Lewin",
+            "goals": 14,
+            "assists": 1,
+            "gi": 15
+          },
+          {
+            "name": "Gyökeres",
+            "goals": 14,
+            "assists": 1,
+            "gi": 15
+          },
+          {
+            "name": "Dewsbury-Hall",
+            "goals": 8,
+            "assists": 4,
+            "gi": 12
+          },
+          {
+            "name": "Trossard",
+            "goals": 6,
+            "assists": 6,
+            "gi": 12
+          }
+        ],
+        "title": "Goal Machine"
+      },
+      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "totalGoalInvolvements": 103,
-        "goals": 59,
+        "totalGoalInvolvements": 104,
+        "goals": 60,
         "assists": 44,
-        "minsPerGI": 381,
+        "minsPerGI": 379,
         "topContributors": [
+          {
+            "name": "Richarlison",
+            "goals": 11,
+            "assists": 4,
+            "gi": 15
+          },
           {
             "name": "Welbeck",
             "goals": 13,
             "assists": 1,
-            "gi": 14
-          },
-          {
-            "name": "Richarlison",
-            "goals": 10,
-            "assists": 4,
             "gi": 14
           },
           {
@@ -36980,53 +37016,12 @@
         "title": "Goal Machine"
       },
       {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "totalGoalInvolvements": 94,
-        "goals": 64,
-        "assists": 30,
-        "minsPerGI": 304,
-        "topContributors": [
-          {
-            "name": "Calvert-Lewin",
-            "goals": 14,
-            "assists": 1,
-            "gi": 15
-          },
-          {
-            "name": "Gyökeres",
-            "goals": 14,
-            "assists": 1,
-            "gi": 15
-          },
-          {
-            "name": "Dewsbury-Hall",
-            "goals": 8,
-            "assists": 4,
-            "gi": 12
-          },
-          {
-            "name": "Trossard",
-            "goals": 6,
-            "assists": 6,
-            "gi": 12
-          },
-          {
-            "name": "Woltemade",
-            "goals": 8,
-            "assists": 3,
-            "gi": 11
-          }
-        ],
-        "title": "Goal Machine"
-      },
-      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalGoalInvolvements": 92,
-        "goals": 57,
-        "assists": 35,
-        "minsPerGI": 375,
+        "totalGoalInvolvements": 94,
+        "goals": 58,
+        "assists": 36,
+        "minsPerGI": 370,
         "topContributors": [
           {
             "name": "Cherki",
@@ -37035,16 +37030,16 @@
             "gi": 16
           },
           {
+            "name": "Enzo",
+            "goals": 10,
+            "assists": 4,
+            "gi": 14
+          },
+          {
             "name": "Mbeumo",
             "goals": 10,
             "assists": 3,
             "gi": 13
-          },
-          {
-            "name": "Enzo",
-            "goals": 9,
-            "assists": 3,
-            "gi": 12
           },
           {
             "name": "Mateta",
@@ -37067,7 +37062,7 @@
         "totalGoalInvolvements": 89,
         "goals": 57,
         "assists": 32,
-        "minsPerGI": 380,
+        "minsPerGI": 383,
         "topContributors": [
           {
             "name": "Watkins",
@@ -37108,7 +37103,7 @@
         "totalGoalInvolvements": 68,
         "goals": 40,
         "assists": 28,
-        "minsPerGI": 449,
+        "minsPerGI": 451,
         "topContributors": [
           {
             "name": "Szoboszlai",
@@ -37148,73 +37143,73 @@
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "chaosScore": 549,
+        "chaosScore": 550,
         "yellows": 79,
         "reds": 2,
-        "fouls": 381,
+        "fouls": 382,
         "title": "Agent of Chaos"
       },
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "chaosScore": 536,
-        "yellows": 63,
+        "chaosScore": 540,
+        "yellows": 64,
         "reds": 3,
-        "fouls": 395,
-        "title": "Agent of Chaos"
-      },
-      {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "chaosScore": 493,
-        "yellows": 71,
-        "reds": 2,
-        "fouls": 341,
+        "fouls": 397,
         "title": "Agent of Chaos"
       },
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "chaosScore": 490,
-        "yellows": 59,
+        "chaosScore": 495,
+        "yellows": 61,
         "reds": 1,
-        "fouls": 367,
+        "fouls": 368,
+        "title": "Agent of Chaos"
+      },
+      {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "chaosScore": 494,
+        "yellows": 71,
+        "reds": 2,
+        "fouls": 342,
         "title": "Agent of Chaos"
       },
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "chaosScore": 464,
-        "yellows": 64,
+        "chaosScore": 468,
+        "yellows": 65,
         "reds": 1,
-        "fouls": 331,
+        "fouls": 333,
         "title": "Agent of Chaos"
       },
       {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
-        "chaosScore": 413,
-        "yellows": 48,
+        "chaosScore": 417,
+        "yellows": 49,
         "reds": 1,
-        "fouls": 312,
-        "title": "Agent of Chaos"
-      },
-      {
-        "leagueEntryId": 2569,
-        "managerName": "Tim van Duinen",
-        "chaosScore": 344,
-        "yellows": 45,
-        "reds": 1,
-        "fouls": 249,
+        "fouls": 314,
         "title": "Agent of Chaos"
       },
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "chaosScore": 337,
-        "yellows": 34,
+        "chaosScore": 407,
+        "yellows": 41,
         "reds": 1,
-        "fouls": 264,
+        "fouls": 320,
+        "title": "Agent of Chaos"
+      },
+      {
+        "leagueEntryId": 2569,
+        "managerName": "Tim van Duinen",
+        "chaosScore": 349,
+        "yellows": 45,
+        "reds": 1,
+        "fouls": 254,
         "title": "Agent of Chaos"
       }
     ],
@@ -37222,8 +37217,8 @@
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
-        "totalMinutes": 39251,
-        "avgMinutesPerPlayer": 2617,
+        "totalMinutes": 39465,
+        "avgMinutesPerPlayer": 2631,
         "ironMan": {
           "name": "Anderson",
           "minutes": 3269
@@ -37233,8 +37228,8 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "totalMinutes": 36927,
-        "avgMinutesPerPlayer": 2462,
+        "totalMinutes": 37107,
+        "avgMinutesPerPlayer": 2474,
         "ironMan": {
           "name": "Thiago",
           "minutes": 3194
@@ -37244,8 +37239,8 @@
       {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
-        "totalMinutes": 35759,
-        "avgMinutesPerPlayer": 2384,
+        "totalMinutes": 36118,
+        "avgMinutesPerPlayer": 2408,
         "ironMan": {
           "name": "Raya",
           "minutes": 3330
@@ -37255,8 +37250,8 @@
       {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "totalMinutes": 35754,
-        "avgMinutesPerPlayer": 2384,
+        "totalMinutes": 36010,
+        "avgMinutesPerPlayer": 2401,
         "ironMan": {
           "name": "Pickford",
           "minutes": 3330
@@ -37266,32 +37261,21 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalMinutes": 34523,
-        "avgMinutesPerPlayer": 2302,
+        "totalMinutes": 34826,
+        "avgMinutesPerPlayer": 2322,
         "ironMan": {
-          "name": "O'Brien",
-          "minutes": 3062
+          "name": "Guéhi",
+          "minutes": 3150
         },
         "title": "Nailed On"
       },
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "totalMinutes": 33788,
-        "avgMinutesPerPlayer": 2253,
+        "totalMinutes": 34114,
+        "avgMinutesPerPlayer": 2274,
         "ironMan": {
-          "name": "Leno",
-          "minutes": 3330
-        },
-        "title": "Nailed On"
-      },
-      {
-        "leagueEntryId": 27137,
-        "managerName": "Maurits Koot",
-        "totalMinutes": 30517,
-        "avgMinutesPerPlayer": 2034,
-        "ironMan": {
-          "name": "Virgil",
+          "name": "Petrović",
           "minutes": 3330
         },
         "title": "Nailed On"
@@ -37299,10 +37283,21 @@
       {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
-        "totalMinutes": 28538,
-        "avgMinutesPerPlayer": 1903,
+        "totalMinutes": 31756,
+        "avgMinutesPerPlayer": 2117,
         "ironMan": {
           "name": "Verbruggen",
+          "minutes": 3330
+        },
+        "title": "Nailed On"
+      },
+      {
+        "leagueEntryId": 27137,
+        "managerName": "Maurits Koot",
+        "totalMinutes": 30676,
+        "avgMinutesPerPlayer": 2045,
+        "ironMan": {
+          "name": "Virgil",
           "minutes": 3330
         },
         "title": "Nailed On"
@@ -37396,9 +37391,9 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "realGI": 92,
+        "realGI": 94,
         "fantasyPoints": 1635,
-        "pointsPerRealGI": 17.77,
+        "pointsPerRealGI": 17.39,
         "overperformers": [
           {
             "name": "Saliba",
@@ -37436,53 +37431,11 @@
         "title": "Fair Exchange"
       },
       {
-        "leagueEntryId": 34059,
-        "managerName": "Salomon van Megen",
-        "realGI": 94,
-        "fantasyPoints": 1599,
-        "pointsPerRealGI": 17.01,
-        "overperformers": [
-          {
-            "name": "Calafiori",
-            "fplPts": 108,
-            "realGI": 3
-          },
-          {
-            "name": "Keane",
-            "fplPts": 127,
-            "realGI": 4
-          },
-          {
-            "name": "Hincapie",
-            "fplPts": 85,
-            "realGI": 3
-          }
-        ],
-        "underperformers": [
-          {
-            "name": "Lewis-Skelly",
-            "fplPts": 27,
-            "realGI": 0
-          },
-          {
-            "name": "Pope",
-            "fplPts": 94,
-            "realGI": 0
-          },
-          {
-            "name": "Verbruggen",
-            "fplPts": 128,
-            "realGI": 0
-          }
-        ],
-        "title": "Fair Exchange"
-      },
-      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
-        "realGI": 114,
+        "realGI": 116,
         "fantasyPoints": 1671,
-        "pointsPerRealGI": 14.66,
+        "pointsPerRealGI": 14.41,
         "overperformers": [
           {
             "name": "Struijk",
@@ -37562,43 +37515,43 @@
         "title": "Fair Exchange"
       },
       {
-        "leagueEntryId": 8630,
-        "managerName": "Marc Streng",
-        "realGI": 103,
-        "fantasyPoints": 1426,
-        "pointsPerRealGI": 13.84,
+        "leagueEntryId": 34059,
+        "managerName": "Salomon van Megen",
+        "realGI": 114,
+        "fantasyPoints": 1599,
+        "pointsPerRealGI": 14.03,
         "overperformers": [
           {
-            "name": "Sánchez",
-            "fplPts": 111,
-            "realGI": 1
+            "name": "Calafiori",
+            "fplPts": 108,
+            "realGI": 3
           },
           {
-            "name": "Kayode",
-            "fplPts": 111,
-            "realGI": 2
-          },
-          {
-            "name": "Dalot",
-            "fplPts": 111,
+            "name": "Keane",
+            "fplPts": 127,
             "realGI": 4
+          },
+          {
+            "name": "Hincapie",
+            "fplPts": 85,
+            "realGI": 3
           }
         ],
         "underperformers": [
           {
-            "name": "Kelleher",
-            "fplPts": 137,
+            "name": "Lewis-Skelly",
+            "fplPts": 27,
             "realGI": 0
           },
           {
-            "name": "Havertz",
-            "fplPts": 32,
-            "realGI": 4
+            "name": "Pope",
+            "fplPts": 94,
+            "realGI": 0
           },
           {
-            "name": "Richarlison",
-            "fplPts": 117,
-            "realGI": 14
+            "name": "Verbruggen",
+            "fplPts": 128,
+            "realGI": 0
           }
         ],
         "title": "Fair Exchange"
@@ -37644,6 +37597,48 @@
           }
         ],
         "title": "Fair Exchange"
+      },
+      {
+        "leagueEntryId": 8630,
+        "managerName": "Marc Streng",
+        "realGI": 104,
+        "fantasyPoints": 1426,
+        "pointsPerRealGI": 13.71,
+        "overperformers": [
+          {
+            "name": "Sánchez",
+            "fplPts": 111,
+            "realGI": 1
+          },
+          {
+            "name": "Kayode",
+            "fplPts": 111,
+            "realGI": 2
+          },
+          {
+            "name": "Dalot",
+            "fplPts": 111,
+            "realGI": 4
+          }
+        ],
+        "underperformers": [
+          {
+            "name": "Kelleher",
+            "fplPts": 137,
+            "realGI": 0
+          },
+          {
+            "name": "Richarlison",
+            "fplPts": 117,
+            "realGI": 15
+          },
+          {
+            "name": "Havertz",
+            "fplPts": 32,
+            "realGI": 4
+          }
+        ],
+        "title": "Fair Exchange"
       }
     ],
     "draftHitRate": [
@@ -37656,9 +37651,9 @@
             "managerName": "Eze come Eze go",
             "leagueEntryId": 4813,
             "fplPoints": 239,
-            "espnGoals": 26,
+            "espnGoals": 27,
             "espnAssists": 8,
-            "espnMinutes": 2868,
+            "espnMinutes": 2958,
             "rating": "Star"
           },
           {
@@ -37669,7 +37664,7 @@
             "fplPoints": 106,
             "espnGoals": 9,
             "espnAssists": 1,
-            "espnMinutes": 1786,
+            "espnMinutes": 1875,
             "rating": "Star"
           },
           {
@@ -37879,7 +37874,7 @@
             "fplPoints": 113,
             "espnGoals": 6,
             "espnAssists": 1,
-            "espnMinutes": 2597,
+            "espnMinutes": 2686,
             "rating": "Star"
           },
           {
@@ -37921,9 +37916,9 @@
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
             "fplPoints": 117,
-            "espnGoals": 10,
+            "espnGoals": 11,
             "espnAssists": 4,
-            "espnMinutes": 1794,
+            "espnMinutes": 1884,
             "rating": "Star"
           }
         ],
@@ -38067,7 +38062,7 @@
             "fplPoints": 134,
             "espnGoals": 4,
             "espnAssists": 12,
-            "espnMinutes": 1720,
+            "espnMinutes": 1754,
             "rating": "Star"
           },
           {
@@ -38137,9 +38132,9 @@
             "managerName": "Dikke Saka veel grip",
             "leagueEntryId": 27628,
             "fplPoints": 196,
-            "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
+            "espnGoals": 16,
+            "espnAssists": 4,
+            "espnMinutes": 3142,
             "rating": "Star"
           },
           {
@@ -38233,7 +38228,7 @@
             "fplPoints": 107,
             "espnGoals": 1,
             "espnAssists": 2,
-            "espnMinutes": 2618,
+            "espnMinutes": 2708,
             "rating": "Star"
           },
           {
@@ -38316,7 +38311,7 @@
             "fplPoints": 129,
             "espnGoals": 7,
             "espnAssists": 5,
-            "espnMinutes": 1960,
+            "espnMinutes": 1994,
             "rating": "Star"
           },
           {
@@ -38349,7 +38344,7 @@
             "fplPoints": 111,
             "espnGoals": 0,
             "espnAssists": 1,
-            "espnMinutes": 2861,
+            "espnMinutes": 2951,
             "rating": "Star"
           },
           {
@@ -38465,7 +38460,7 @@
             "fplPoints": 103,
             "espnGoals": 1,
             "espnAssists": 4,
-            "espnMinutes": 2530,
+            "espnMinutes": 2620,
             "rating": "Star"
           },
           {
@@ -38515,7 +38510,7 @@
             "fplPoints": 179,
             "espnGoals": 3,
             "espnAssists": 3,
-            "espnMinutes": 3060,
+            "espnMinutes": 3150,
             "rating": "Star"
           },
           {
@@ -38935,7 +38930,7 @@
             "fplPoints": 110,
             "espnGoals": 4,
             "espnAssists": 1,
-            "espnMinutes": 2863,
+            "espnMinutes": 2953,
             "rating": "Star"
           },
           {
@@ -38985,7 +38980,7 @@
             "fplPoints": 121,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 3240,
+            "espnMinutes": 3330,
             "rating": "Star"
           },
           {
@@ -39062,7 +39057,7 @@
       "goldBoot": {
         "name": "Haaland",
         "manager": "Pieter van Gemert",
-        "goals": 26
+        "goals": 27
       },
       "playmaker": {
         "name": "B.Fernandes",
@@ -39084,11 +39079,6 @@
           "name": "Arrizabalaga",
           "manager": "Sam vd V",
           "team": "Arsenal"
-        },
-        {
-          "name": "Semenyo",
-          "manager": "Salomon van Megen",
-          "team": "Man City"
         },
         {
           "name": "Bruno G.",
