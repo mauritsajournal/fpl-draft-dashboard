@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-24T09:16:23.647Z",
+    "lastUpdated": "2026-05-24T14:21:21.189Z",
     "currentGameweek": 37,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -98,7 +98,7 @@
     },
     {
       "rank": 6,
-      "lastRank": 7,
+      "lastRank": 6,
       "leagueEntryId": 2569,
       "entryId": 2569,
       "teamName": "I Baleba I Can Fly",
@@ -114,7 +114,7 @@
     },
     {
       "rank": 7,
-      "lastRank": 6,
+      "lastRank": 7,
       "leagueEntryId": 34059,
       "entryId": 34964,
       "teamName": "Steen, Papier, Schar",
@@ -4496,28 +4496,6 @@
       "bonus": 11
     },
     {
-      "id": 354,
-      "webName": "Ampadu",
-      "firstName": "Ethan",
-      "lastName": "Ampadu",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Leeds",
-      "teamId": 11,
-      "owner": "Maximiliaan de Goede",
-      "ownerLeagueEntryId": 75126,
-      "totalPoints": 131,
-      "form": 4.7,
-      "goalsScored": 1,
-      "assists": 4,
-      "xG": 2.47,
-      "xA": 2.17,
-      "xGI": 4.64,
-      "minutes": 3029,
-      "cleanSheets": 8,
-      "bonus": 11
-    },
-    {
       "id": 384,
       "webName": "Gakpo",
       "firstName": "Cody",
@@ -5222,28 +5200,6 @@
       "bonus": 10
     },
     {
-      "id": 113,
-      "webName": "Van den Berg",
-      "firstName": "Sepp",
-      "lastName": "van den Berg",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "Brentford",
-      "teamId": 5,
-      "owner": "Tim van Duinen",
-      "ownerLeagueEntryId": 2569,
-      "totalPoints": 109,
-      "form": 2.5,
-      "goalsScored": 0,
-      "assists": 3,
-      "xG": 3.36,
-      "xA": 1.42,
-      "xGI": 4.78,
-      "minutes": 2671,
-      "cleanSheets": 8,
-      "bonus": 3
-    },
-    {
       "id": 7,
       "webName": "Calafiori",
       "firstName": "Riccardo",
@@ -5594,6 +5550,28 @@
       "minutes": 2330,
       "cleanSheets": 4,
       "bonus": 13
+    },
+    {
+      "id": 603,
+      "webName": "Diouf",
+      "firstName": "El Hadji Malick",
+      "lastName": "Diouf",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "West Ham",
+      "teamId": 19,
+      "owner": "Tim van Duinen",
+      "ownerLeagueEntryId": 2569,
+      "totalPoints": 98,
+      "form": 1.2,
+      "goalsScored": 0,
+      "assists": 6,
+      "xG": 0.57,
+      "xA": 2.5,
+      "xGI": 3.07,
+      "minutes": 2616,
+      "cleanSheets": 8,
+      "bonus": 3
     },
     {
       "id": 228,
@@ -6011,6 +5989,28 @@
       "xGI": 1.32,
       "minutes": 1657,
       "cleanSheets": 4,
+      "bonus": 3
+    },
+    {
+      "id": 808,
+      "webName": "Rayan",
+      "firstName": "Rayan Vitor",
+      "lastName": "Simplício Rocha",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Bournemouth",
+      "teamId": 4,
+      "owner": "Maximiliaan de Goede",
+      "ownerLeagueEntryId": 75126,
+      "totalPoints": 65,
+      "form": 6.7,
+      "goalsScored": 5,
+      "assists": 2,
+      "xG": 2.61,
+      "xA": 1.8,
+      "xGI": 4.41,
+      "minutes": 1038,
+      "cleanSheets": 6,
       "bonus": 3
     },
     {
@@ -6610,6 +6610,28 @@
       "bonus": 9
     },
     {
+      "id": 354,
+      "webName": "Ampadu",
+      "firstName": "Ethan",
+      "lastName": "Ampadu",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Leeds",
+      "teamId": 11,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 131,
+      "form": 4.7,
+      "goalsScored": 1,
+      "assists": 4,
+      "xG": 2.47,
+      "xA": 2.17,
+      "xGI": 4.64,
+      "minutes": 3029,
+      "cleanSheets": 8,
+      "bonus": 11
+    },
+    {
       "id": 253,
       "webName": "Henderson",
       "firstName": "Dean",
@@ -7116,6 +7138,28 @@
       "bonus": 5
     },
     {
+      "id": 113,
+      "webName": "Van den Berg",
+      "firstName": "Sepp",
+      "lastName": "van den Berg",
+      "position": "DEF",
+      "positionId": 2,
+      "team": "Brentford",
+      "teamId": 5,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 109,
+      "form": 2.5,
+      "goalsScored": 0,
+      "assists": 3,
+      "xG": 3.36,
+      "xA": 1.42,
+      "xGI": 4.78,
+      "minutes": 2671,
+      "cleanSheets": 8,
+      "bonus": 3
+    },
+    {
       "id": 698,
       "webName": "Okafor",
       "firstName": "Noah",
@@ -7422,28 +7466,6 @@
       "minutes": 1819,
       "cleanSheets": 5,
       "bonus": 6
-    },
-    {
-      "id": 603,
-      "webName": "Diouf",
-      "firstName": "El Hadji Malick",
-      "lastName": "Diouf",
-      "position": "DEF",
-      "positionId": 2,
-      "team": "West Ham",
-      "teamId": 19,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 98,
-      "form": 1.2,
-      "goalsScored": 0,
-      "assists": 6,
-      "xG": 0.57,
-      "xA": 2.5,
-      "xGI": 3.07,
-      "minutes": 2616,
-      "cleanSheets": 8,
-      "bonus": 3
     },
     {
       "id": 37,
@@ -9182,28 +9204,6 @@
       "minutes": 1378,
       "cleanSheets": 3,
       "bonus": 4
-    },
-    {
-      "id": 808,
-      "webName": "Rayan",
-      "firstName": "Rayan Vitor",
-      "lastName": "Simplício Rocha",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Bournemouth",
-      "teamId": 4,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 65,
-      "form": 6.7,
-      "goalsScored": 5,
-      "assists": 2,
-      "xG": 2.61,
-      "xA": 1.8,
-      "xGI": 4.41,
-      "minutes": 1038,
-      "cleanSheets": 6,
-      "bonus": 3
     },
     {
       "id": 304,
@@ -25978,6 +25978,30 @@
       "playerOutId": 191,
       "type": "free_agent",
       "result": "accepted"
+    },
+    {
+      "id": 67961085,
+      "gameweek": 38,
+      "managerName": "Unknown",
+      "leagueEntryId": 77537,
+      "playerIn": "Rayan",
+      "playerInId": 808,
+      "playerOut": "Ampadu",
+      "playerOutId": 354,
+      "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 67980899,
+      "gameweek": 38,
+      "managerName": "Tim van Duinen",
+      "leagueEntryId": 2569,
+      "playerIn": "Diouf",
+      "playerInId": 603,
+      "playerOut": "Van den Berg",
+      "playerOutId": 113,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -27145,7 +27169,7 @@
       "leagueEntryId": 75126,
       "teamName": "Oscar is de Bobb",
       "playerName": "Maximiliaan de Goede",
-      "predictedPoints": 101.2,
+      "predictedPoints": 98.9,
       "playerBreakdown": [
         {
           "playerId": 449,
@@ -27178,12 +27202,6 @@
           "fixtureDifficulty": 3
         },
         {
-          "playerId": 354,
-          "playerName": "Ampadu",
-          "expectedPoints": 9.9,
-          "fixtureDifficulty": 3
-        },
-        {
           "playerId": 708,
           "playerName": "M.Fernandes",
           "expectedPoints": 6.5,
@@ -27211,6 +27229,12 @@
           "playerId": 575,
           "playerName": "Van de Ven",
           "expectedPoints": 5.3,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 729,
+          "playerName": "Lammens",
+          "expectedPoints": 7.6,
           "fixtureDifficulty": 3
         }
       ],
@@ -27295,84 +27319,6 @@
       "opponent": {
         "leagueEntryId": 85079,
         "teamName": "Shake Dias"
-      }
-    },
-    {
-      "leagueEntryId": 2569,
-      "teamName": "I Baleba I Can Fly",
-      "playerName": "Tim van Duinen",
-      "predictedPoints": 90.1,
-      "playerBreakdown": [
-        {
-          "playerId": 260,
-          "playerName": "Guéhi",
-          "expectedPoints": 11,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 237,
-          "playerName": "Enzo",
-          "expectedPoints": 17.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 119,
-          "playerName": "Mbeumo",
-          "expectedPoints": 8,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 6,
-          "playerName": "Saliba",
-          "expectedPoints": 13.2,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 417,
-          "playerName": "Cherki",
-          "expectedPoints": 6.9,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 670,
-          "playerName": "Roefs",
-          "expectedPoints": 6,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 84,
-          "playerName": "Tavernier",
-          "expectedPoints": 5.9,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 293,
-          "playerName": "O'Brien",
-          "expectedPoints": 4.3,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 97,
-          "playerName": "Evanilson",
-          "expectedPoints": 6.6,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 113,
-          "playerName": "Van den Berg",
-          "expectedPoints": 5.5,
-          "fixtureDifficulty": 3
-        },
-        {
-          "playerId": 283,
-          "playerName": "Mateta",
-          "expectedPoints": 5.5,
-          "fixtureDifficulty": 3
-        }
-      ],
-      "opponent": {
-        "leagueEntryId": 27137,
-        "teamName": "Dikke Saka veel grip"
       }
     },
     {
@@ -27529,6 +27475,84 @@
       "opponent": {
         "leagueEntryId": 75126,
         "teamName": "Oscar is de Bobb"
+      }
+    },
+    {
+      "leagueEntryId": 2569,
+      "teamName": "I Baleba I Can Fly",
+      "playerName": "Tim van Duinen",
+      "predictedPoints": 87.3,
+      "playerBreakdown": [
+        {
+          "playerId": 260,
+          "playerName": "Guéhi",
+          "expectedPoints": 11,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 237,
+          "playerName": "Enzo",
+          "expectedPoints": 17.2,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 119,
+          "playerName": "Mbeumo",
+          "expectedPoints": 8,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 6,
+          "playerName": "Saliba",
+          "expectedPoints": 13.2,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 417,
+          "playerName": "Cherki",
+          "expectedPoints": 6.9,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 670,
+          "playerName": "Roefs",
+          "expectedPoints": 6,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 84,
+          "playerName": "Tavernier",
+          "expectedPoints": 5.9,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 293,
+          "playerName": "O'Brien",
+          "expectedPoints": 4.3,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 97,
+          "playerName": "Evanilson",
+          "expectedPoints": 6.6,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 283,
+          "playerName": "Mateta",
+          "expectedPoints": 5.5,
+          "fixtureDifficulty": 3
+        },
+        {
+          "playerId": 603,
+          "playerName": "Diouf",
+          "expectedPoints": 2.7,
+          "fixtureDifficulty": 3
+        }
+      ],
+      "opponent": {
+        "leagueEntryId": 27137,
+        "teamName": "Dikke Saka veel grip"
       }
     },
     {
@@ -31085,8 +31109,8 @@
             "playerCount": 2
           },
           "DEF": {
-            "totalPoints": 626,
-            "avgPoints": 16.9,
+            "totalPoints": 615,
+            "avgPoints": 16.6,
             "playerCount": 5
           },
           "MID": {
@@ -31225,8 +31249,8 @@
             "playerCount": 5
           },
           "MID": {
-            "totalPoints": 704,
-            "avgPoints": 19,
+            "totalPoints": 638,
+            "avgPoints": 17.2,
             "playerCount": 5
           },
           "FWD": {
@@ -32059,7 +32083,7 @@
         "managerName": "Oscar is de Bobb",
         "leagueEntryId": 77537,
         "totalPoints": 32,
-        "valueRating": "Good Value"
+        "valueRating": "Fair"
       },
       {
         "pick": 2,
@@ -32089,7 +32113,7 @@
         "managerName": "Hannies bal met brie",
         "leagueEntryId": 8627,
         "totalPoints": 0,
-        "valueRating": "Fair"
+        "valueRating": "Overpaid"
       },
       {
         "pick": 5,
@@ -32098,8 +32122,8 @@
         "playerId": 603,
         "managerName": "I Baleba I Can Fly",
         "leagueEntryId": 2569,
-        "totalPoints": 0,
-        "valueRating": "Overpaid"
+        "totalPoints": 98,
+        "valueRating": "Good Value"
       },
       {
         "pick": 6,
@@ -32534,7 +32558,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-05-24T09:16:23.070Z",
+    "lastUpdated": "2026-05-24T14:21:20.459Z",
     "season": "2025",
     "plMatchday": 37,
     "managerProfiles": [
@@ -32831,7 +32855,7 @@
           },
           {
             "fplName": "Beto",
-            "espnName": "Beto",
+            "espnName": "Beto ",
             "plTeam": "Everton",
             "plTeamRank": 12,
             "fplPoints": 103,
@@ -32971,33 +32995,33 @@
         "fantasyPoints": 1635,
         "squadStats": {
           "totalGoals": 57,
-          "totalAssists": 37,
-          "totalShots": 527,
-          "shotsOnTarget": 194,
-          "shotAccuracy": 0.3681214421252372,
-          "totalPasses": 17310,
-          "accuratePasses": 14188,
-          "passAccuracy": 0.8196418255343731,
-          "foulsCommitted": 257,
-          "foulsSuffered": 328,
-          "yellowCards": 46,
+          "totalAssists": 40,
+          "totalShots": 522,
+          "shotsOnTarget": 191,
+          "shotAccuracy": 0.36590038314176243,
+          "totalPasses": 16908,
+          "accuratePasses": 13690,
+          "passAccuracy": 0.80967589306837,
+          "foulsCommitted": 271,
+          "foulsSuffered": 340,
+          "yellowCards": 50,
           "redCards": 1,
-          "totalCards": 47,
-          "tacklesWon": 199,
-          "tacklesLost": 164,
-          "interceptions": 208,
-          "clearances": 1032,
-          "shotsBlocked": 119,
-          "cleanSheets": 86,
-          "goalsConceded": 516,
+          "totalCards": 51,
+          "tacklesWon": 210,
+          "tacklesLost": 176,
+          "interceptions": 210,
+          "clearances": 956,
+          "shotsBlocked": 121,
+          "cleanSheets": 83,
+          "goalsConceded": 523,
           "saves": 234,
-          "totalMinutes": 36545,
+          "totalMinutes": 36495,
           "appearances": 462,
           "headedGoals": 12,
-          "goalInvolvement": 94,
-          "minutesPerGoalInvolvement": 388.77659574468083,
-          "disciplinaryPoints": 49,
-          "shotAssists": 366
+          "goalInvolvement": 97,
+          "minutesPerGoalInvolvement": 376.2371134020619,
+          "disciplinaryPoints": 53,
+          "shotAssists": 387
         },
         "plTeamDistribution": [
           {
@@ -33043,16 +33067,16 @@
             "fplTeamId": 9
           },
           {
-            "teamName": "Brentford",
-            "count": 1,
-            "plRank": 9,
-            "fplTeamId": 5
-          },
-          {
             "teamName": "Crystal Palace",
             "count": 1,
             "plRank": 15,
             "fplTeamId": 8
+          },
+          {
+            "teamName": "West Ham",
+            "count": 1,
+            "plRank": 18,
+            "fplTeamId": 19
           },
           {
             "teamName": "Burnley",
@@ -33273,28 +33297,6 @@
             "isBenchwarmer": false
           },
           {
-            "fplName": "Van den Berg",
-            "espnName": "Sepp van den Berg",
-            "plTeam": "Brentford",
-            "plTeamRank": 9,
-            "fplPoints": 109,
-            "espnGoals": 0,
-            "espnAssists": 2,
-            "espnMinutes": 2671,
-            "espnYellows": 2,
-            "espnReds": 0,
-            "espnFouls": 14,
-            "espnPasses": 1393,
-            "espnPassPct": 0.885,
-            "espnShots": 23,
-            "espnShotsOnTarget": 7,
-            "espnTackles": 20,
-            "espnInterceptions": 29,
-            "espnCleanSheets": 8,
-            "position": "DEF",
-            "isBenchwarmer": false
-          },
-          {
             "fplName": "Mateta",
             "espnName": "Jean-Philippe Mateta",
             "plTeam": "Crystal Palace",
@@ -33314,6 +33316,28 @@
             "espnInterceptions": 6,
             "espnCleanSheets": 5,
             "position": "FWD",
+            "isBenchwarmer": false
+          },
+          {
+            "fplName": "Diouf",
+            "espnName": "El Hadji Malick Diouf",
+            "plTeam": "West Ham",
+            "plTeamRank": 18,
+            "fplPoints": 98,
+            "espnGoals": 0,
+            "espnAssists": 5,
+            "espnMinutes": 2621,
+            "espnYellows": 6,
+            "espnReds": 0,
+            "espnFouls": 28,
+            "espnPasses": 991,
+            "espnPassPct": 0.742,
+            "espnShots": 18,
+            "espnShotsOnTarget": 4,
+            "espnTackles": 43,
+            "espnInterceptions": 31,
+            "espnCleanSheets": 5,
+            "position": "DEF",
             "isBenchwarmer": false
           },
           {
@@ -34176,7 +34200,7 @@
           },
           {
             "fplName": "Richarlison",
-            "espnName": "Richarlison",
+            "espnName": "Richarlison ",
             "plTeam": "Spurs",
             "plTeamRank": 17,
             "fplPoints": 117,
@@ -35107,34 +35131,34 @@
         "fantasyRank": 1,
         "fantasyPoints": 1793,
         "squadStats": {
-          "totalGoals": 74,
-          "totalAssists": 46,
-          "totalShots": 524,
-          "shotsOnTarget": 176,
-          "shotAccuracy": 0.33587786259541985,
-          "totalPasses": 16689,
-          "accuratePasses": 13814,
-          "passAccuracy": 0.8277308406734976,
-          "foulsCommitted": 430,
-          "foulsSuffered": 399,
-          "yellowCards": 74,
+          "totalGoals": 78,
+          "totalAssists": 47,
+          "totalShots": 525,
+          "shotsOnTarget": 178,
+          "shotAccuracy": 0.33904761904761904,
+          "totalPasses": 15321,
+          "accuratePasses": 12624,
+          "passAccuracy": 0.8239671039749363,
+          "foulsCommitted": 390,
+          "foulsSuffered": 370,
+          "yellowCards": 66,
           "redCards": 2,
-          "totalCards": 76,
-          "tacklesWon": 380,
-          "tacklesLost": 259,
-          "interceptions": 291,
-          "clearances": 1102,
-          "shotsBlocked": 177,
-          "cleanSheets": 85,
-          "goalsConceded": 539,
+          "totalCards": 68,
+          "tacklesWon": 341,
+          "tacklesLost": 230,
+          "interceptions": 247,
+          "clearances": 1040,
+          "shotsBlocked": 176,
+          "cleanSheets": 80,
+          "goalsConceded": 502,
           "saves": 129,
-          "totalMinutes": 36495,
-          "appearances": 466,
-          "headedGoals": 12,
-          "goalInvolvement": 120,
-          "minutesPerGoalInvolvement": 304.125,
-          "disciplinaryPoints": 80,
-          "shotAssists": 308
+          "totalMinutes": 34508,
+          "appearances": 446,
+          "headedGoals": 13,
+          "goalInvolvement": 125,
+          "minutesPerGoalInvolvement": 276.064,
+          "disciplinaryPoints": 72,
+          "shotAssists": 303
         },
         "plTeamDistribution": [
           {
@@ -35180,16 +35204,16 @@
             "fplTeamId": 8
           },
           {
-            "teamName": "Leeds",
-            "count": 1,
-            "plRank": 14,
-            "fplTeamId": 11
-          },
-          {
             "teamName": "Nott'm Forest",
             "count": 1,
             "plRank": 16,
             "fplTeamId": 16
+          },
+          {
+            "teamName": "Bournemouth",
+            "count": 1,
+            "plRank": 6,
+            "fplTeamId": 4
           }
         ],
         "players": [
@@ -35301,28 +35325,6 @@
             "espnInterceptions": 45,
             "espnCleanSheets": 11,
             "position": "DEF",
-            "isBenchwarmer": false
-          },
-          {
-            "fplName": "Ampadu",
-            "espnName": "Ethan Ampadu",
-            "plTeam": "Leeds",
-            "plTeamRank": 14,
-            "fplPoints": 131,
-            "espnGoals": 1,
-            "espnAssists": 1,
-            "espnMinutes": 3033,
-            "espnYellows": 9,
-            "espnReds": 0,
-            "espnFouls": 49,
-            "espnPasses": 1669,
-            "espnPassPct": 0.853,
-            "espnShots": 26,
-            "espnShotsOnTarget": 6,
-            "espnTackles": 79,
-            "espnInterceptions": 50,
-            "espnCleanSheets": 6,
-            "position": "MID",
             "isBenchwarmer": false
           },
           {
@@ -35477,6 +35479,28 @@
             "espnInterceptions": 0,
             "espnCleanSheets": 6,
             "position": "GK",
+            "isBenchwarmer": false
+          },
+          {
+            "fplName": "Rayan",
+            "espnName": "Rayan",
+            "plTeam": "Bournemouth",
+            "plTeamRank": 6,
+            "fplPoints": 65,
+            "espnGoals": 5,
+            "espnAssists": 2,
+            "espnMinutes": 1046,
+            "espnYellows": 1,
+            "espnReds": 0,
+            "espnFouls": 9,
+            "espnPasses": 301,
+            "espnPassPct": 0.777,
+            "espnShots": 27,
+            "espnShotsOnTarget": 8,
+            "espnTackles": 11,
+            "espnInterceptions": 6,
+            "espnCleanSheets": 1,
+            "position": "MID",
             "isBenchwarmer": false
           },
           {
@@ -35944,9 +35968,9 @@
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
         "fantasyRank": 1,
-        "avgPlTeamRank": 11,
-        "weightedPlRank": 10.81,
-        "rankDelta": 9.81,
+        "avgPlTeamRank": 10.47,
+        "weightedPlRank": 10.39,
+        "rankDelta": 9.39,
         "verdict": "Punching above weight"
       },
       {
@@ -35977,21 +36001,21 @@
         "verdict": "Punching above weight"
       },
       {
+        "leagueEntryId": 2569,
+        "managerName": "Tim van Duinen",
+        "fantasyRank": 6,
+        "avgPlTeamRank": 8.67,
+        "weightedPlRank": 8.71,
+        "rankDelta": 2.71,
+        "verdict": "Slight overperformer"
+      },
+      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "fantasyRank": 8,
         "avgPlTeamRank": 10.27,
         "weightedPlRank": 10.55,
         "rankDelta": 2.55,
-        "verdict": "Slight overperformer"
-      },
-      {
-        "leagueEntryId": 2569,
-        "managerName": "Tim van Duinen",
-        "fantasyRank": 6,
-        "avgPlTeamRank": 8.07,
-        "weightedPlRank": 8.07,
-        "rankDelta": 2.07,
         "verdict": "Slight overperformer"
       },
       {
@@ -36014,32 +36038,6 @@
       }
     ],
     "cardCollector": [
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "yellows": 74,
-        "reds": 2,
-        "totalCards": 76,
-        "disciplinaryPoints": 80,
-        "dirtiest3": [
-          {
-            "name": "Van de Ven",
-            "yellows": 9,
-            "reds": 1
-          },
-          {
-            "name": "Ampadu",
-            "yellows": 9,
-            "reds": 0
-          },
-          {
-            "name": "Danso",
-            "yellows": 8,
-            "reds": 0
-          }
-        ],
-        "title": "Dirty Dozen"
-      },
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
@@ -36087,6 +36085,32 @@
           {
             "name": "Senesi",
             "yellows": 8,
+            "reds": 0
+          }
+        ],
+        "title": "Dirty Dozen"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "yellows": 66,
+        "reds": 2,
+        "totalCards": 68,
+        "disciplinaryPoints": 72,
+        "dirtiest3": [
+          {
+            "name": "Van de Ven",
+            "yellows": 9,
+            "reds": 1
+          },
+          {
+            "name": "Danso",
+            "yellows": 8,
+            "reds": 0
+          },
+          {
+            "name": "Thiago",
+            "yellows": 7,
             "reds": 0
           }
         ],
@@ -36199,10 +36223,10 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "yellows": 46,
+        "yellows": 50,
         "reds": 1,
-        "totalCards": 47,
-        "disciplinaryPoints": 49,
+        "totalCards": 51,
+        "disciplinaryPoints": 53,
         "dirtiest3": [
           {
             "name": "Enzo",
@@ -36237,10 +36261,10 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "passAccuracy": 82.77,
-        "totalPasses": 16689,
-        "accuratePasses": 13814,
-        "longBallRatio": 11.49,
+        "passAccuracy": 82.4,
+        "totalPasses": 15321,
+        "accuratePasses": 12624,
+        "longBallRatio": 11.48,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
@@ -36265,22 +36289,22 @@
         "title": "The Pragmatist"
       },
       {
-        "leagueEntryId": 2569,
-        "managerName": "Tim van Duinen",
-        "passAccuracy": 81.96,
-        "totalPasses": 17310,
-        "accuratePasses": 14188,
-        "longBallRatio": 11.02,
-        "style": "Balanced",
-        "title": "The Pragmatist"
-      },
-      {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
         "passAccuracy": 81.62,
         "totalPasses": 12255,
         "accuratePasses": 10002,
         "longBallRatio": 10,
+        "style": "Balanced",
+        "title": "The Pragmatist"
+      },
+      {
+        "leagueEntryId": 2569,
+        "managerName": "Tim van Duinen",
+        "passAccuracy": 80.97,
+        "totalPasses": 16908,
+        "accuratePasses": 13690,
+        "longBallRatio": 10.99,
         "style": "Balanced",
         "title": "The Pragmatist"
       },
@@ -36318,23 +36342,23 @@
         "title": "Clinical Finisher"
       },
       {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "totalShots": 525,
+        "shotsOnTarget": 178,
+        "goals": 78,
+        "shotAccuracy": 33.9,
+        "conversionRate": 14.86,
+        "shotsPerGoal": 6.73,
+        "title": "Sharp Shooter"
+      },
+      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "totalShots": 609,
         "shotsOnTarget": 241,
         "goals": 86,
         "shotAccuracy": 39.57,
-        "conversionRate": 14.12,
-        "shotsPerGoal": 7.08,
-        "title": "Sharp Shooter"
-      },
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "totalShots": 524,
-        "shotsOnTarget": 176,
-        "goals": 74,
-        "shotAccuracy": 33.59,
         "conversionRate": 14.12,
         "shotsPerGoal": 7.08,
         "title": "Sharp Shooter"
@@ -36386,28 +36410,16 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalShots": 527,
-        "shotsOnTarget": 194,
+        "totalShots": 522,
+        "shotsOnTarget": 191,
         "goals": 57,
-        "shotAccuracy": 36.81,
-        "conversionRate": 10.82,
-        "shotsPerGoal": 9.25,
+        "shotAccuracy": 36.59,
+        "conversionRate": 10.92,
+        "shotsPerGoal": 9.16,
         "title": "Sharp Shooter"
       }
     ],
     "defensiveWall": [
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "tacklesWon": 380,
-        "interceptions": 291,
-        "clearances": 1102,
-        "shotsBlocked": 177,
-        "defensiveActions": 1950,
-        "cleanSheets": 85,
-        "goalsConceded": 539,
-        "title": "The Great Wall"
-      },
       {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
@@ -36418,6 +36430,18 @@
         "defensiveActions": 1897,
         "cleanSheets": 99,
         "goalsConceded": 601,
+        "title": "The Great Wall"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "tacklesWon": 341,
+        "interceptions": 247,
+        "clearances": 1040,
+        "shotsBlocked": 176,
+        "defensiveActions": 1804,
+        "cleanSheets": 80,
+        "goalsConceded": 502,
         "title": "The Great Wall"
       },
       {
@@ -36459,13 +36483,13 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "tacklesWon": 199,
-        "interceptions": 208,
-        "clearances": 1032,
-        "shotsBlocked": 119,
-        "defensiveActions": 1558,
-        "cleanSheets": 86,
-        "goalsConceded": 516,
+        "tacklesWon": 210,
+        "interceptions": 210,
+        "clearances": 956,
+        "shotsBlocked": 121,
+        "defensiveActions": 1497,
+        "cleanSheets": 83,
+        "goalsConceded": 523,
         "title": "The Great Wall"
       },
       {
@@ -36497,21 +36521,21 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "foulsCommitted": 430,
-        "foulsSuffered": 399,
-        "foulRatio": 1.08,
+        "foulsCommitted": 390,
+        "foulsSuffered": 370,
+        "foulRatio": 1.05,
         "dirtiest": [
           {
             "name": "Thiago",
             "fouls": 72
           },
           {
-            "name": "Ampadu",
-            "fouls": 49
-          },
-          {
             "name": "M.Fernandes",
             "fouls": 48
+          },
+          {
+            "name": "Igor Jesus",
+            "fouls": 42
           }
         ],
         "title": "The Enforcer"
@@ -36651,9 +36675,9 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "foulsCommitted": 257,
-        "foulsSuffered": 328,
-        "foulRatio": 0.78,
+        "foulsCommitted": 271,
+        "foulsSuffered": 340,
+        "foulRatio": 0.8,
         "dirtiest": [
           {
             "name": "Enzo",
@@ -36664,8 +36688,8 @@
             "fouls": 30
           },
           {
-            "name": "Evanilson",
-            "fouls": 26
+            "name": "Diouf",
+            "fouls": 28
           }
         ],
         "title": "The Enforcer"
@@ -36723,7 +36747,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2436,
+        "avgMinutesPerPlayer": 2433,
         "ghosts": [],
         "title": "All Business"
       },
@@ -36763,7 +36787,7 @@
         "totalPlayers": 15,
         "playersWithMinutes": 15,
         "playersWithZeroMinutes": 0,
-        "avgMinutesPerPlayer": 2433,
+        "avgMinutesPerPlayer": 2301,
         "ghosts": [],
         "title": "All Business"
       }
@@ -36813,14 +36837,14 @@
             "plRank": 12
           },
           {
-            "team": "Brentford",
-            "count": 1,
-            "plRank": 9
-          },
-          {
             "team": "Crystal Palace",
             "count": 1,
             "plRank": 15
+          },
+          {
+            "team": "West Ham",
+            "count": 1,
+            "plRank": 18
           },
           {
             "team": "Burnley",
@@ -37077,14 +37101,14 @@
             "plRank": 15
           },
           {
-            "team": "Leeds",
-            "count": 1,
-            "plRank": 14
-          },
-          {
             "team": "Nott'm Forest",
             "count": 1,
             "plRank": 16
+          },
+          {
+            "team": "Bournemouth",
+            "count": 1,
+            "plRank": 6
           }
         ],
         "title": "Well Spread"
@@ -37233,7 +37257,7 @@
         "managerName": "Tim van Duinen",
         "top6Count": 7,
         "top6Pct": 46.67,
-        "bottom6Count": 3,
+        "bottom6Count": 4,
         "totalPlayers": 15,
         "title": "Star Chaser"
       },
@@ -37265,20 +37289,20 @@
         "title": "Balanced Portfolio"
       },
       {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "top6Count": 5,
+        "top6Pct": 33.33,
+        "bottom6Count": 7,
+        "totalPlayers": 15,
+        "title": "Balanced Portfolio"
+      },
+      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "top6Count": 4,
         "top6Pct": 26.67,
         "bottom6Count": 5,
-        "totalPlayers": 15,
-        "title": "Balanced Portfolio"
-      },
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "top6Count": 4,
-        "top6Pct": 26.67,
-        "bottom6Count": 7,
         "totalPlayers": 15,
         "title": "Balanced Portfolio"
       },
@@ -37296,10 +37320,10 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "totalGoalInvolvements": 120,
-        "goals": 74,
-        "assists": 46,
-        "minsPerGI": 304,
+        "totalGoalInvolvements": 125,
+        "goals": 78,
+        "assists": 47,
+        "minsPerGI": 276,
         "topContributors": [
           {
             "name": "B.Fernandes",
@@ -37460,10 +37484,10 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalGoalInvolvements": 94,
+        "totalGoalInvolvements": 97,
         "goals": 57,
-        "assists": 37,
-        "minsPerGI": 389,
+        "assists": 40,
+        "minsPerGI": 376,
         "topContributors": [
           {
             "name": "Cherki",
@@ -37626,10 +37650,10 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "chaosScore": 588,
-        "yellows": 74,
+        "chaosScore": 532,
+        "yellows": 66,
         "reds": 2,
-        "fouls": 430,
+        "fouls": 390,
         "title": "Agent of Chaos"
       },
       {
@@ -37689,10 +37713,10 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "chaosScore": 354,
-        "yellows": 46,
+        "chaosScore": 376,
+        "yellows": 50,
         "reds": 1,
-        "fouls": 257,
+        "fouls": 271,
         "title": "Agent of Chaos"
       }
     ],
@@ -37711,8 +37735,8 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "totalMinutes": 36545,
-        "avgMinutesPerPlayer": 2436,
+        "totalMinutes": 36495,
+        "avgMinutesPerPlayer": 2433,
         "ironMan": {
           "name": "Guéhi",
           "minutes": 3150
@@ -37722,8 +37746,8 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "totalMinutes": 36495,
-        "avgMinutesPerPlayer": 2433,
+        "totalMinutes": 34508,
+        "avgMinutesPerPlayer": 2301,
         "ironMan": {
           "name": "Thiago",
           "minutes": 3194
@@ -37916,9 +37940,9 @@
       {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
-        "realGI": 94,
+        "realGI": 97,
         "fantasyPoints": 1635,
-        "pointsPerRealGI": 17.39,
+        "pointsPerRealGI": 16.86,
         "overperformers": [
           {
             "name": "Saliba",
@@ -37931,8 +37955,8 @@
             "realGI": 2
           },
           {
-            "name": "Van den Berg",
-            "fplPts": 109,
+            "name": "Botman",
+            "fplPts": 86,
             "realGI": 2
           }
         ],
@@ -38040,48 +38064,6 @@
         "title": "Fair Exchange"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "realGI": 120,
-        "fantasyPoints": 1793,
-        "pointsPerRealGI": 14.94,
-        "overperformers": [
-          {
-            "name": "Hermansen",
-            "fplPts": 69,
-            "realGI": 1
-          },
-          {
-            "name": "Ampadu",
-            "fplPts": 131,
-            "realGI": 2
-          },
-          {
-            "name": "Lacroix",
-            "fplPts": 154,
-            "realGI": 3
-          }
-        ],
-        "underperformers": [
-          {
-            "name": "Hato",
-            "fplPts": 19,
-            "realGI": 0
-          },
-          {
-            "name": "Danso",
-            "fplPts": 55,
-            "realGI": 0
-          },
-          {
-            "name": "Lammens",
-            "fplPts": 103,
-            "realGI": 0
-          }
-        ],
-        "title": "Fair Exchange"
-      },
-      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "realGI": 98,
@@ -38119,6 +38101,48 @@
             "name": "Havertz",
             "fplPts": 32,
             "realGI": 4
+          }
+        ],
+        "title": "Fair Exchange"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "realGI": 125,
+        "fantasyPoints": 1793,
+        "pointsPerRealGI": 14.34,
+        "overperformers": [
+          {
+            "name": "Hermansen",
+            "fplPts": 69,
+            "realGI": 1
+          },
+          {
+            "name": "Lacroix",
+            "fplPts": 154,
+            "realGI": 3
+          },
+          {
+            "name": "Gabriel",
+            "fplPts": 208,
+            "realGI": 7
+          }
+        ],
+        "underperformers": [
+          {
+            "name": "Hato",
+            "fplPts": 19,
+            "realGI": 0
+          },
+          {
+            "name": "Danso",
+            "fplPts": 55,
+            "realGI": 0
+          },
+          {
+            "name": "Lammens",
+            "fplPts": 103,
+            "realGI": 0
           }
         ],
         "title": "Fair Exchange"
@@ -39023,11 +39047,11 @@
             "playerName": "Diouf",
             "managerName": "I Baleba I Can Fly",
             "leagueEntryId": 2569,
-            "fplPoints": 0,
+            "fplPoints": 98,
             "espnGoals": 0,
-            "espnAssists": 0,
-            "espnMinutes": 0,
-            "rating": "Bust"
+            "espnAssists": 5,
+            "espnMinutes": 2621,
+            "rating": "Hit"
           },
           {
             "pick": 6,
@@ -39063,7 +39087,7 @@
             "rating": "Bust"
           }
         ],
-        "avgPoints": 29.75
+        "avgPoints": 42
       },
       {
         "round": 11,
@@ -40855,323 +40879,6 @@
         "transferSuggestion": null
       },
       {
-        "leagueEntryId": 75126,
-        "entryId": 77537,
-        "teamName": "Oscar is de Bobb",
-        "playerName": "Maximiliaan de Goede",
-        "formation": "3-4-3",
-        "totalStartScore": 57.49,
-        "players": [
-          {
-            "playerId": 729,
-            "webName": "Lammens",
-            "position": "GK",
-            "positionId": 1,
-            "team": "Man Utd",
-            "teamShort": "MUN",
-            "opponent": "Brighton",
-            "opponentShort": "BHA",
-            "isHome": false,
-            "startScore": 3.86,
-            "breakdown": {
-              "fixtureScore": 2.5,
-              "formScore": 5,
-              "specialScore": 3.6,
-              "seasonScore": 5.15
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 5,
-            "webName": "Gabriel",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Arsenal",
-            "teamShort": "ARS",
-            "opponent": "Crystal Palace",
-            "opponentShort": "CRY",
-            "isHome": false,
-            "startScore": 6.63,
-            "breakdown": {
-              "fixtureScore": 6,
-              "formScore": 6.2,
-              "specialScore": 6.8,
-              "seasonScore": 10
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 257,
-            "webName": "Lacroix",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Crystal Palace",
-            "teamShort": "CRY",
-            "opponent": "Arsenal",
-            "opponentShort": "ARS",
-            "isHome": true,
-            "startScore": 4.26,
-            "breakdown": {
-              "fixtureScore": 4.2,
-              "formScore": 4.4,
-              "specialScore": 2.4,
-              "seasonScore": 7.7
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 570,
-            "webName": "Danso",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Spurs",
-            "teamShort": "TOT",
-            "opponent": "Everton",
-            "opponentShort": "EVE",
-            "isHome": true,
-            "startScore": 3.72,
-            "breakdown": {
-              "fixtureScore": 4.8,
-              "formScore": 3.2,
-              "specialScore": 3.2,
-              "seasonScore": 2.75
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 354,
-            "webName": "Ampadu",
-            "position": "MID",
-            "positionId": 3,
-            "team": "Leeds",
-            "teamShort": "LEE",
-            "opponent": "West Ham",
-            "opponentShort": "WHU",
-            "isHome": false,
-            "startScore": 6.25,
-            "breakdown": {
-              "fixtureScore": 6.8,
-              "formScore": 5.2,
-              "specialScore": 6.96,
-              "seasonScore": 6.55
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 266,
-            "webName": "Eze",
-            "position": "MID",
-            "positionId": 3,
-            "team": "Arsenal",
-            "teamShort": "ARS",
-            "opponent": "Crystal Palace",
-            "opponentShort": "CRY",
-            "isHome": false,
-            "startScore": 5.85,
-            "breakdown": {
-              "fixtureScore": 6,
-              "formScore": 3.4,
-              "specialScore": 10,
-              "seasonScore": 5.6
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 449,
-            "webName": "B.Fernandes",
-            "position": "MID",
-            "positionId": 3,
-            "team": "Man Utd",
-            "teamShort": "MUN",
-            "opponent": "Brighton",
-            "opponentShort": "BHA",
-            "isHome": false,
-            "startScore": 5.84,
-            "breakdown": {
-              "fixtureScore": 2.5,
-              "formScore": 5.6,
-              "specialScore": 10,
-              "seasonScore": 10
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 708,
-            "webName": "M.Fernandes",
-            "position": "MID",
-            "positionId": 3,
-            "team": "West Ham",
-            "teamShort": "WHU",
-            "opponent": "Leeds",
-            "opponentShort": "LEE",
-            "isHome": true,
-            "startScore": 4.83,
-            "breakdown": {
-              "fixtureScore": 4.5,
-              "formScore": 3.4,
-              "specialScore": 7.15,
-              "seasonScore": 6.3
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 526,
-            "webName": "Igor Jesus",
-            "position": "FWD",
-            "positionId": 4,
-            "team": "Nott'm Forest",
-            "teamShort": "NFO",
-            "opponent": "Bournemouth",
-            "opponentShort": "BOU",
-            "isHome": true,
-            "startScore": 5.99,
-            "breakdown": {
-              "fixtureScore": 4,
-              "formScore": 5.8,
-              "specialScore": 10,
-              "seasonScore": 5.6
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 249,
-            "webName": "João Pedro",
-            "position": "FWD",
-            "positionId": 4,
-            "team": "Chelsea",
-            "teamShort": "CHE",
-            "opponent": "Sunderland",
-            "opponentShort": "SUN",
-            "isHome": false,
-            "startScore": 5.4,
-            "breakdown": {
-              "fixtureScore": 5.2,
-              "formScore": 2,
-              "specialScore": 10,
-              "seasonScore": 8.8
-            },
-            "isStarter": true,
-            "status": "d"
-          },
-          {
-            "playerId": 136,
-            "webName": "Thiago",
-            "position": "FWD",
-            "positionId": 4,
-            "team": "Brentford",
-            "teamShort": "BRE",
-            "opponent": "Liverpool",
-            "opponentShort": "LIV",
-            "isHome": false,
-            "startScore": 4.86,
-            "breakdown": {
-              "fixtureScore": 3,
-              "formScore": 2.6,
-              "specialScore": 10,
-              "seasonScore": 8.95
-            },
-            "isStarter": true,
-            "status": "a"
-          },
-          {
-            "playerId": 674,
-            "webName": "J.Palhinha",
-            "position": "MID",
-            "positionId": 3,
-            "team": "Spurs",
-            "teamShort": "TOT",
-            "opponent": "Everton",
-            "opponentShort": "EVE",
-            "isHome": true,
-            "startScore": 4.44,
-            "breakdown": {
-              "fixtureScore": 4.8,
-              "formScore": 3.8,
-              "specialScore": 4.29,
-              "seasonScore": 5.7
-            },
-            "isStarter": false,
-            "status": "a"
-          },
-          {
-            "playerId": 681,
-            "webName": "Hermansen",
-            "position": "GK",
-            "positionId": 1,
-            "team": "West Ham",
-            "teamShort": "WHU",
-            "opponent": "Leeds",
-            "opponentShort": "LEE",
-            "isHome": true,
-            "startScore": 3.83,
-            "breakdown": {
-              "fixtureScore": 4.5,
-              "formScore": 3.4,
-              "specialScore": 3.6,
-              "seasonScore": 3.45
-            },
-            "isStarter": false,
-            "status": "a"
-          },
-          {
-            "playerId": 575,
-            "webName": "Van de Ven",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Spurs",
-            "teamShort": "TOT",
-            "opponent": "Everton",
-            "opponentShort": "EVE",
-            "isHome": true,
-            "startScore": 3.64,
-            "breakdown": {
-              "fixtureScore": 4.8,
-              "formScore": 2.2,
-              "specialScore": 3.2,
-              "seasonScore": 5.5
-            },
-            "isStarter": false,
-            "status": "a"
-          },
-          {
-            "playerId": 672,
-            "webName": "Hato",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Chelsea",
-            "teamShort": "CHE",
-            "opponent": "Sunderland",
-            "opponentShort": "SUN",
-            "isHome": false,
-            "startScore": 2.58,
-            "breakdown": {
-              "fixtureScore": 5.2,
-              "formScore": 1.2,
-              "specialScore": 1.2,
-              "seasonScore": 0.95
-            },
-            "isStarter": false,
-            "status": "a"
-          }
-        ],
-        "transferSuggestion": {
-          "playerOut": "Danso",
-          "playerOutScore": 3.72,
-          "playerIn": "J.Timber",
-          "playerInScore": 4.21,
-          "improvement": 0.49
-        }
-      },
-      {
         "leagueEntryId": 2569,
         "entryId": 2569,
         "teamName": "I Baleba I Can Fly",
@@ -41440,6 +41147,26 @@
             "status": "a"
           },
           {
+            "playerId": 603,
+            "webName": "Diouf",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "West Ham",
+            "teamShort": "WHU",
+            "opponent": "Leeds",
+            "opponentShort": "LEE",
+            "isHome": true,
+            "startScore": 3.49,
+            "breakdown": {
+              "fixtureScore": 4.5,
+              "formScore": 2,
+              "specialScore": 3.6,
+              "seasonScore": 4.9
+            },
+            "isStarter": false,
+            "status": "a"
+          },
+          {
             "playerId": 293,
             "webName": "O'Brien",
             "position": "DEF",
@@ -41458,26 +41185,6 @@
             },
             "isStarter": false,
             "status": "a"
-          },
-          {
-            "playerId": 113,
-            "webName": "Van den Berg",
-            "position": "DEF",
-            "positionId": 2,
-            "team": "Brentford",
-            "teamShort": "BRE",
-            "opponent": "Liverpool",
-            "opponentShort": "LIV",
-            "isHome": false,
-            "startScore": 3.2,
-            "breakdown": {
-              "fixtureScore": 3,
-              "formScore": 3.2,
-              "specialScore": 2.4,
-              "seasonScore": 5.45
-            },
-            "isStarter": false,
-            "status": "a"
           }
         ],
         "transferSuggestion": {
@@ -41486,6 +41193,323 @@
           "playerIn": "Barry",
           "playerInScore": 5.4,
           "improvement": 0.8
+        }
+      },
+      {
+        "leagueEntryId": 75126,
+        "entryId": 77537,
+        "teamName": "Oscar is de Bobb",
+        "playerName": "Maximiliaan de Goede",
+        "formation": "3-4-3",
+        "totalStartScore": 56.11,
+        "players": [
+          {
+            "playerId": 729,
+            "webName": "Lammens",
+            "position": "GK",
+            "positionId": 1,
+            "team": "Man Utd",
+            "teamShort": "MUN",
+            "opponent": "Brighton",
+            "opponentShort": "BHA",
+            "isHome": false,
+            "startScore": 3.86,
+            "breakdown": {
+              "fixtureScore": 2.5,
+              "formScore": 5,
+              "specialScore": 3.6,
+              "seasonScore": 5.15
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 5,
+            "webName": "Gabriel",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Arsenal",
+            "teamShort": "ARS",
+            "opponent": "Crystal Palace",
+            "opponentShort": "CRY",
+            "isHome": false,
+            "startScore": 6.63,
+            "breakdown": {
+              "fixtureScore": 6,
+              "formScore": 6.2,
+              "specialScore": 6.8,
+              "seasonScore": 10
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 257,
+            "webName": "Lacroix",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Crystal Palace",
+            "teamShort": "CRY",
+            "opponent": "Arsenal",
+            "opponentShort": "ARS",
+            "isHome": true,
+            "startScore": 4.26,
+            "breakdown": {
+              "fixtureScore": 4.2,
+              "formScore": 4.4,
+              "specialScore": 2.4,
+              "seasonScore": 7.7
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 570,
+            "webName": "Danso",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Spurs",
+            "teamShort": "TOT",
+            "opponent": "Everton",
+            "opponentShort": "EVE",
+            "isHome": true,
+            "startScore": 3.72,
+            "breakdown": {
+              "fixtureScore": 4.8,
+              "formScore": 3.2,
+              "specialScore": 3.2,
+              "seasonScore": 2.75
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 266,
+            "webName": "Eze",
+            "position": "MID",
+            "positionId": 3,
+            "team": "Arsenal",
+            "teamShort": "ARS",
+            "opponent": "Crystal Palace",
+            "opponentShort": "CRY",
+            "isHome": false,
+            "startScore": 5.85,
+            "breakdown": {
+              "fixtureScore": 6,
+              "formScore": 3.4,
+              "specialScore": 10,
+              "seasonScore": 5.6
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 449,
+            "webName": "B.Fernandes",
+            "position": "MID",
+            "positionId": 3,
+            "team": "Man Utd",
+            "teamShort": "MUN",
+            "opponent": "Brighton",
+            "opponentShort": "BHA",
+            "isHome": false,
+            "startScore": 5.84,
+            "breakdown": {
+              "fixtureScore": 2.5,
+              "formScore": 5.6,
+              "specialScore": 10,
+              "seasonScore": 10
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 808,
+            "webName": "Rayan",
+            "position": "MID",
+            "positionId": 3,
+            "team": "Bournemouth",
+            "teamShort": "BOU",
+            "opponent": "Nott'm Forest",
+            "opponentShort": "NFO",
+            "isHome": false,
+            "startScore": 4.87,
+            "breakdown": {
+              "fixtureScore": 3,
+              "formScore": 6.2,
+              "specialScore": 6.62,
+              "seasonScore": 3.25
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 708,
+            "webName": "M.Fernandes",
+            "position": "MID",
+            "positionId": 3,
+            "team": "West Ham",
+            "teamShort": "WHU",
+            "opponent": "Leeds",
+            "opponentShort": "LEE",
+            "isHome": true,
+            "startScore": 4.83,
+            "breakdown": {
+              "fixtureScore": 4.5,
+              "formScore": 3.4,
+              "specialScore": 7.15,
+              "seasonScore": 6.3
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 526,
+            "webName": "Igor Jesus",
+            "position": "FWD",
+            "positionId": 4,
+            "team": "Nott'm Forest",
+            "teamShort": "NFO",
+            "opponent": "Bournemouth",
+            "opponentShort": "BOU",
+            "isHome": true,
+            "startScore": 5.99,
+            "breakdown": {
+              "fixtureScore": 4,
+              "formScore": 5.8,
+              "specialScore": 10,
+              "seasonScore": 5.6
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 249,
+            "webName": "João Pedro",
+            "position": "FWD",
+            "positionId": 4,
+            "team": "Chelsea",
+            "teamShort": "CHE",
+            "opponent": "Sunderland",
+            "opponentShort": "SUN",
+            "isHome": false,
+            "startScore": 5.4,
+            "breakdown": {
+              "fixtureScore": 5.2,
+              "formScore": 2,
+              "specialScore": 10,
+              "seasonScore": 8.8
+            },
+            "isStarter": true,
+            "status": "d"
+          },
+          {
+            "playerId": 136,
+            "webName": "Thiago",
+            "position": "FWD",
+            "positionId": 4,
+            "team": "Brentford",
+            "teamShort": "BRE",
+            "opponent": "Liverpool",
+            "opponentShort": "LIV",
+            "isHome": false,
+            "startScore": 4.86,
+            "breakdown": {
+              "fixtureScore": 3,
+              "formScore": 2.6,
+              "specialScore": 10,
+              "seasonScore": 8.95
+            },
+            "isStarter": true,
+            "status": "a"
+          },
+          {
+            "playerId": 674,
+            "webName": "J.Palhinha",
+            "position": "MID",
+            "positionId": 3,
+            "team": "Spurs",
+            "teamShort": "TOT",
+            "opponent": "Everton",
+            "opponentShort": "EVE",
+            "isHome": true,
+            "startScore": 4.44,
+            "breakdown": {
+              "fixtureScore": 4.8,
+              "formScore": 3.8,
+              "specialScore": 4.29,
+              "seasonScore": 5.7
+            },
+            "isStarter": false,
+            "status": "a"
+          },
+          {
+            "playerId": 681,
+            "webName": "Hermansen",
+            "position": "GK",
+            "positionId": 1,
+            "team": "West Ham",
+            "teamShort": "WHU",
+            "opponent": "Leeds",
+            "opponentShort": "LEE",
+            "isHome": true,
+            "startScore": 3.83,
+            "breakdown": {
+              "fixtureScore": 4.5,
+              "formScore": 3.4,
+              "specialScore": 3.6,
+              "seasonScore": 3.45
+            },
+            "isStarter": false,
+            "status": "a"
+          },
+          {
+            "playerId": 575,
+            "webName": "Van de Ven",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Spurs",
+            "teamShort": "TOT",
+            "opponent": "Everton",
+            "opponentShort": "EVE",
+            "isHome": true,
+            "startScore": 3.64,
+            "breakdown": {
+              "fixtureScore": 4.8,
+              "formScore": 2.2,
+              "specialScore": 3.2,
+              "seasonScore": 5.5
+            },
+            "isStarter": false,
+            "status": "a"
+          },
+          {
+            "playerId": 672,
+            "webName": "Hato",
+            "position": "DEF",
+            "positionId": 2,
+            "team": "Chelsea",
+            "teamShort": "CHE",
+            "opponent": "Sunderland",
+            "opponentShort": "SUN",
+            "isHome": false,
+            "startScore": 2.58,
+            "breakdown": {
+              "fixtureScore": 5.2,
+              "formScore": 1.2,
+              "specialScore": 1.2,
+              "seasonScore": 0.95
+            },
+            "isStarter": false,
+            "status": "a"
+          }
+        ],
+        "transferSuggestion": {
+          "playerOut": "Danso",
+          "playerOutScore": 3.72,
+          "playerIn": "J.Timber",
+          "playerInScore": 4.21,
+          "improvement": 0.49
         }
       },
       {
