@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DraftBoard from '../components/DraftBoard.svelte';
+import EmptyState from '../components/EmptyState.astro';
+
+let board: any = null;
+try {
+  const mod = await import('../../data/draft-board.json');
+  board = mod.default;
+} catch {}
+
+const dataJson = board ? JSON.stringify({ tiers: board.tiers, players: board.players }) : '';
+const total = board?.players?.length ?? 0;
+---
+
+<Layout title="WK Draft Board — FC Driegangendiner" description="World Cup 2026 draft preference board — track wie er nog beschikbaar is tijdens de draft.">
+  {board ? (
+    <>
+      <div class="mb-6 animate-fade-in-up">
+        <h1 class="text-3xl font-extrabold bg-gradient-to-r from-fpl-green to-fpl-cyan bg-clip-text text-transparent">
+          WK Draft Board
+        </h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+          Mijn draft-voorkeur voor de World Cup 2026 draft — {total} spelers in 7 tiers.
+          <span class="text-slate-300">Klik op een speler</span> om hem te markeren als gepakt (grijs).
+          Gebruik de zoekbalk om snel een speler te laten <span class="text-fpl-cyan">oplichten</span>.
+          Je voortgang wordt lokaal bewaard, ook na verversen.
+        </p>
+      </div>
+
+      <!-- Legend -->
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 mb-6 text-xs text-slate-500 animate-fade-in-up">
+        <span class="font-semibold text-slate-400">Posities:</span>
+        <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-amber-400"></span>GK</span>
+        <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-blue-400"></span>DEF</span>
+        <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-emerald-400"></span>MID</span>
+        <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-rose-400"></span>FWD</span>
+        <span class="w-px h-3 bg-white/10"></span>
+        <span class="font-semibold text-slate-400">Set pieces:</span>
+        <span class="text-fpl-pink font-bold">PEN</span>
+        <span class="text-fpl-blue font-bold">FK</span>
+        <span class="text-fpl-cyan font-bold">COR</span>
+        <span class="w-px h-3 bg-white/10"></span>
+        <span><span class="text-slate-300">xPts</span> = verwachte punten</span>
+      </div>
+
+      <DraftBoard client:load data={dataJson} />
+    </>
+  ) : (
+    <EmptyState title="WK Draft Board" />
+  )}
+</Layout>
