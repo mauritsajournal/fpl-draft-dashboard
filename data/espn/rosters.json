@@ -41,26 +41,6 @@
       "fplTeamId": 1
     },
     {
-      "espnId": "386202",
-      "displayName": "Khari Ranson",
-      "shortName": "K. Ranson",
-      "position": "Goalkeeper",
-      "jersey": "79",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "390095",
-      "displayName": "Jack Porter",
-      "shortName": "J. Porter",
-      "position": "Goalkeeper",
-      "jersey": "78",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "236322",
       "displayName": "Gabriel Magalhães",
       "shortName": "G. Magalhães",
@@ -121,41 +101,11 @@
       "fplTeamId": 1
     },
     {
-      "espnId": "351059",
-      "displayName": "Josh Nichols",
-      "shortName": "J. Nichols",
-      "position": "Defender",
-      "jersey": "48",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "352758",
       "displayName": "Myles Lewis-Skelly",
       "shortName": "M. Lewis-Skelly",
       "position": "Defender",
       "jersey": "49",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "374017",
-      "displayName": "Jaden Dixon",
-      "shortName": "J. Dixon",
-      "position": "Defender",
-      "jersey": "52",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "400284",
-      "displayName": "Marli Salmon",
-      "shortName": "M. Salmon",
-      "position": "Defender",
-      "jersey": "89",
       "nationality": "England",
       "espnTeamId": 359,
       "fplTeamId": 1
@@ -217,36 +167,6 @@
       "position": "Midfielder",
       "jersey": "36",
       "nationality": "Spain",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "351060",
-      "displayName": "Harrison Dudziak",
-      "shortName": "H. Dudziak",
-      "position": "Midfielder",
-      "jersey": "39",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "397263",
-      "displayName": "Max Dowman",
-      "shortName": "M. Dowman",
-      "position": "Midfielder",
-      "jersey": "56",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "399894",
-      "displayName": "Ife Ibrahim",
-      "shortName": "I. Ibrahim",
-      "position": "Midfielder",
-      "jersey": "72",
-      "nationality": "England",
       "espnTeamId": 359,
       "fplTeamId": 1
     },
@@ -321,16 +241,6 @@
       "fplTeamId": 1
     },
     {
-      "espnId": "381341",
-      "displayName": "Ceadach O’Neill",
-      "shortName": "C. O’Neill",
-      "position": "Forward",
-      "jersey": "76",
-      "nationality": "Northern Ireland",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "390975",
       "displayName": "Andre Annous",
       "shortName": "A. Annous",
@@ -339,19 +249,260 @@
       "nationality": "England",
       "espnTeamId": 359,
       "fplTeamId": 1
-    },
-    {
-      "espnId": "411237",
-      "displayName": "Brando Bailey-Joseph",
-      "shortName": "B. Bailey-Joseph",
-      "position": "Forward",
-      "jersey": "81",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
     }
   ],
-  "2": [],
+  "2": [
+    {
+      "espnId": "132233",
+      "displayName": "Marco Bizot",
+      "shortName": "M. Bizot",
+      "position": "Goalkeeper",
+      "jersey": "40",
+      "nationality": "Netherlands",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "158626",
+      "displayName": "Emiliano Martínez",
+      "shortName": "E. Martínez",
+      "position": "Goalkeeper",
+      "jersey": "23",
+      "nationality": "Argentina",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "370724",
+      "displayName": "Ronnie Hollingshead",
+      "shortName": "R. Hollingshead",
+      "position": "Goalkeeper",
+      "jersey": "60",
+      "nationality": "Wales",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "160115",
+      "displayName": "Lucas Digne",
+      "shortName": "L. Digne",
+      "position": "Defender",
+      "jersey": "12",
+      "nationality": "France",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "181312",
+      "displayName": "Tyrone Mings",
+      "shortName": "T. Mings",
+      "position": "Defender",
+      "jersey": "5",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "204679",
+      "displayName": "Victor Lindelöf",
+      "shortName": "V. Lindelöf",
+      "position": "Defender",
+      "jersey": "3",
+      "nationality": "Sweden",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "231859",
+      "displayName": "Ezri Konsa",
+      "shortName": "E. Konsa",
+      "position": "Defender",
+      "jersey": "4",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "234698",
+      "displayName": "Matty Cash",
+      "shortName": "M. Cash",
+      "position": "Defender",
+      "jersey": "2",
+      "nationality": "Poland",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "251100",
+      "displayName": "Pau Torres",
+      "shortName": "P. Torres",
+      "position": "Defender",
+      "jersey": "14",
+      "nationality": "Spain",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "281125",
+      "displayName": "Ian Maatsen",
+      "shortName": "I. Maatsen",
+      "position": "Defender",
+      "jersey": "22",
+      "nationality": "Netherlands",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "356080",
+      "displayName": "Andrés García",
+      "shortName": "A. García",
+      "position": "Defender",
+      "jersey": "16",
+      "nationality": "Spain",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "152469",
+      "displayName": "Ross Barkley",
+      "shortName": "R. Barkley",
+      "position": "Midfielder",
+      "jersey": "6",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "162843",
+      "displayName": "John McGinn",
+      "shortName": "J. McGinn",
+      "position": "Midfielder",
+      "jersey": "7",
+      "nationality": "Scotland",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "193297",
+      "displayName": "Youri Tielemans",
+      "shortName": "Y. Tielemans",
+      "position": "Midfielder",
+      "jersey": "8",
+      "nationality": "Belgium",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "214375",
+      "displayName": "Emiliano Buendía",
+      "shortName": "E. Buendía",
+      "position": "Midfielder",
+      "jersey": "10",
+      "nationality": "Argentina",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "224809",
+      "displayName": "Leon Bailey",
+      "shortName": "L. Bailey",
+      "position": "Midfielder",
+      "jersey": "31",
+      "nationality": "Jamaica",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "250936",
+      "displayName": "Boubacar Kamara",
+      "shortName": "B. Kamara",
+      "position": "Midfielder",
+      "jersey": "44",
+      "nationality": "France",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "304799",
+      "displayName": "Amadou Onana",
+      "shortName": "A. Onana",
+      "position": "Midfielder",
+      "jersey": "24",
+      "nationality": "Belgium",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "310607",
+      "displayName": "Lamare Bogarde",
+      "shortName": "L. Bogarde",
+      "position": "Midfielder",
+      "jersey": "26",
+      "nationality": "Netherlands",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "392682",
+      "displayName": "Modou Cissé",
+      "shortName": "M. Cissé",
+      "position": "Midfielder",
+      "jersey": "",
+      "nationality": "Senegal",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "198825",
+      "displayName": "Ollie Watkins",
+      "shortName": "O. Watkins",
+      "position": "Forward",
+      "jersey": "11",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "236209",
+      "displayName": "Tammy Abraham",
+      "shortName": "T. Abraham",
+      "position": "Forward",
+      "jersey": "18",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "265653",
+      "displayName": "Morgan Rogers",
+      "shortName": "M. Rogers",
+      "position": "Forward",
+      "jersey": "27",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "382839",
+      "displayName": "Alysson",
+      "shortName": "Alysson",
+      "position": "Forward",
+      "jersey": "47",
+      "nationality": "Brazil",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "401451",
+      "displayName": "Brian Madjo",
+      "shortName": "B. Madjo",
+      "position": "Forward",
+      "jersey": "30",
+      "nationality": "England",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    }
+  ],
   "3": [
     {
       "espnId": "126703",
@@ -714,7 +865,268 @@
       "fplTeamId": 3
     }
   ],
-  "4": [],
+  "4": [
+    {
+      "espnId": "93193",
+      "displayName": "Fraser Forster",
+      "shortName": "F. Forster",
+      "position": "Goalkeeper",
+      "jersey": "17",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "289824",
+      "displayName": "Djordje Petrovic",
+      "shortName": "D. Petrovic",
+      "position": "Goalkeeper",
+      "jersey": "1",
+      "nationality": "Serbia",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "122268",
+      "displayName": "Adam Smith",
+      "shortName": "A. Smith",
+      "position": "Defender",
+      "jersey": "15",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "279155",
+      "displayName": "James Hill",
+      "shortName": "J. Hill",
+      "position": "Defender",
+      "jersey": "23",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "282675",
+      "displayName": "Bafodé Diakité",
+      "shortName": "B. Diakité",
+      "position": "Defender",
+      "jersey": "18",
+      "nationality": "France",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "305684",
+      "displayName": "Adrien Truffert",
+      "shortName": "A. Truffert",
+      "position": "Defender",
+      "jersey": "3",
+      "nationality": "France",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "337023",
+      "displayName": "Matai Akinmboni",
+      "shortName": "M. Akinmboni",
+      "position": "Defender",
+      "jersey": "45",
+      "nationality": "USA",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "339797",
+      "displayName": "Julio Soler",
+      "shortName": "J. Soler",
+      "position": "Defender",
+      "jersey": "6",
+      "nationality": "Argentina",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "348298",
+      "displayName": "Owen Bevan",
+      "shortName": "O. Bevan",
+      "position": "Defender",
+      "jersey": "35",
+      "nationality": "Wales",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "367861",
+      "displayName": "Álex Jiménez",
+      "shortName": "Á. Jiménez",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "Spain",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "377736",
+      "displayName": "Veljko Milosavljevic",
+      "shortName": "V. Milosavljevic",
+      "position": "Defender",
+      "jersey": "44",
+      "nationality": "Serbia",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "72487",
+      "displayName": "David Brooks",
+      "shortName": "D. Brooks",
+      "position": "Midfielder",
+      "jersey": "7",
+      "nationality": "Wales",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "93435",
+      "displayName": "Ryan Christie",
+      "shortName": "R. Christie",
+      "position": "Midfielder",
+      "jersey": "10",
+      "nationality": "Scotland",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "222776",
+      "displayName": "Tyler Adams",
+      "shortName": "T. Adams",
+      "position": "Midfielder",
+      "jersey": "12",
+      "nationality": "USA",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "223452",
+      "displayName": "Lewis Cook",
+      "shortName": "L. Cook",
+      "position": "Midfielder",
+      "jersey": "4",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "243364",
+      "displayName": "Marcus Tavernier",
+      "shortName": "M. Tavernier",
+      "position": "Midfielder",
+      "jersey": "16",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "314790",
+      "displayName": "Alex Scott",
+      "shortName": "A. Scott",
+      "position": "Midfielder",
+      "jersey": "8",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "360149",
+      "displayName": "Alex Tóth",
+      "shortName": "A. Tóth",
+      "position": "Midfielder",
+      "jersey": "27",
+      "nationality": "Hungary",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "102368",
+      "displayName": "Evanilson",
+      "shortName": "Evanilson",
+      "position": "Forward",
+      "jersey": "9",
+      "nationality": "Brazil",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "218122",
+      "displayName": "Enes Ünal",
+      "shortName": "E. Ünal",
+      "position": "Forward",
+      "jersey": "26",
+      "nationality": "Türkiye",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "245916",
+      "displayName": "Justin Kluivert",
+      "shortName": "J. Kluivert",
+      "position": "Forward",
+      "jersey": "19",
+      "nationality": "Netherlands",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "291613",
+      "displayName": "Amine Adli",
+      "shortName": "A. Adli",
+      "position": "Forward",
+      "jersey": "21",
+      "nationality": "Morocco",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "332948",
+      "displayName": "Ben Gannon-Doak",
+      "shortName": "B. Gannon-Doak",
+      "position": "Forward",
+      "jersey": "11",
+      "nationality": "Scotland",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "357719",
+      "displayName": "Rayan",
+      "shortName": "Rayan",
+      "position": "Forward",
+      "jersey": "37",
+      "nationality": "Brazil",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "361809",
+      "displayName": "Junior Kroupi",
+      "shortName": "J. Kroupi",
+      "position": "Forward",
+      "jersey": "22",
+      "nationality": "France",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "398123",
+      "displayName": "Remy Rees-Dottin",
+      "shortName": "R. Rees-Dottin",
+      "position": "Forward",
+      "jersey": "50",
+      "nationality": "England",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    }
+  ],
   "5": [],
   "6": [],
   "7": [],
@@ -722,9 +1134,561 @@
   "9": [],
   "10": [],
   "11": [],
-  "12": [],
+  "12": [
+    {
+      "espnId": "397545",
+      "displayName": "Víctor Muñoz",
+      "shortName": "V. Muñoz",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Spain",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "194121",
+      "displayName": "Freddie Woodman",
+      "shortName": "F. Woodman",
+      "position": "Goalkeeper",
+      "jersey": "28",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "196876",
+      "displayName": "Alisson Becker",
+      "shortName": "A. Becker",
+      "position": "Goalkeeper",
+      "jersey": "1",
+      "nationality": "Brazil",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "274742",
+      "displayName": "Giorgi Mamardashvili",
+      "shortName": "G. Mamardashvili",
+      "position": "Goalkeeper",
+      "jersey": "25",
+      "nationality": "Georgia",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "315879",
+      "displayName": "Harvey Davies",
+      "shortName": "H. Davies",
+      "position": "Goalkeeper",
+      "jersey": "95",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "345673",
+      "displayName": "Ármin Pécsi",
+      "shortName": "Á. Pécsi",
+      "position": "Goalkeeper",
+      "jersey": "41",
+      "nationality": "Hungary",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "102053",
+      "displayName": "Joe Gomez",
+      "shortName": "J. Gomez",
+      "position": "Defender",
+      "jersey": "2",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "157892",
+      "displayName": "Virgil van Dijk",
+      "shortName": "V. van Dijk",
+      "position": "Defender",
+      "jersey": "4",
+      "nationality": "Netherlands",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "250183",
+      "displayName": "Conor Bradley",
+      "shortName": "C. Bradley",
+      "position": "Defender",
+      "jersey": "12",
+      "nationality": "Northern Ireland",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "281119",
+      "displayName": "Jeremie Frimpong",
+      "shortName": "J. Frimpong",
+      "position": "Defender",
+      "jersey": "30",
+      "nationality": "Netherlands",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "291353",
+      "displayName": "Calvin Ramsay",
+      "shortName": "C. Ramsay",
+      "position": "Defender",
+      "jersey": "47",
+      "nationality": "Scotland",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "323110",
+      "displayName": "Milos Kerkez",
+      "shortName": "M. Kerkez",
+      "position": "Defender",
+      "jersey": "6",
+      "nationality": "Hungary",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "380082",
+      "displayName": "Giovanni Leoni",
+      "shortName": "G. Leoni",
+      "position": "Defender",
+      "jersey": "15",
+      "nationality": "Italy",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "414255",
+      "displayName": "Talla Ndiaye",
+      "shortName": "T. Ndiaye",
+      "position": "Defender",
+      "jersey": "75",
+      "nationality": "Senegal",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "152479",
+      "displayName": "Wataru Endo",
+      "shortName": "W. Endo",
+      "position": "Midfielder",
+      "jersey": "3",
+      "nationality": "Japan",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "190257",
+      "displayName": "Curtis Jones",
+      "shortName": "C. Jones",
+      "position": "Midfielder",
+      "jersey": "17",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "249299",
+      "displayName": "Alexis Mac Allister",
+      "shortName": "A. Mac Allister",
+      "position": "Midfielder",
+      "jersey": "10",
+      "nationality": "Argentina",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "257206",
+      "displayName": "Dominik Szoboszlai",
+      "shortName": "D. Szoboszlai",
+      "position": "Midfielder",
+      "jersey": "8",
+      "nationality": "Hungary",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "274632",
+      "displayName": "Ryan Gravenberch",
+      "shortName": "R. Gravenberch",
+      "position": "Midfielder",
+      "jersey": "38",
+      "nationality": "Netherlands",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "303748",
+      "displayName": "Florian Wirtz",
+      "shortName": "F. Wirtz",
+      "position": "Midfielder",
+      "jersey": "7",
+      "nationality": "Germany",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "326230",
+      "displayName": "James McConnell",
+      "shortName": "J. McConnell",
+      "position": "Midfielder",
+      "jersey": "53",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "330605",
+      "displayName": "Stefan Bajcetic",
+      "shortName": "S. Bajcetic",
+      "position": "Midfielder",
+      "jersey": "43",
+      "nationality": "Spain",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "356075",
+      "displayName": "Trey Nyoni",
+      "shortName": "T. Nyoni",
+      "position": "Midfielder",
+      "jersey": "42",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "380624",
+      "displayName": "Michael Laffey",
+      "shortName": "M. Laffey",
+      "position": "Midfielder",
+      "jersey": "94",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "234306",
+      "displayName": "Federico Chiesa",
+      "shortName": "F. Chiesa",
+      "position": "Forward",
+      "jersey": "14",
+      "nationality": "Italy",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "235662",
+      "displayName": "Alexander Isak",
+      "shortName": "A. Isak",
+      "position": "Forward",
+      "jersey": "9",
+      "nationality": "Sweden",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "249524",
+      "displayName": "Cody Gakpo",
+      "shortName": "C. Gakpo",
+      "position": "Forward",
+      "jersey": "18",
+      "nationality": "Netherlands",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "304901",
+      "displayName": "Hugo Ekitike",
+      "shortName": "H. Ekitike",
+      "position": "Forward",
+      "jersey": "22",
+      "nationality": "France",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "354737",
+      "displayName": "Jayden Danns",
+      "shortName": "J. Danns",
+      "position": "Forward",
+      "jersey": "76",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    },
+    {
+      "espnId": "379588",
+      "displayName": "Rio Ngumoha",
+      "shortName": "R. Ngumoha",
+      "position": "Forward",
+      "jersey": "73",
+      "nationality": "England",
+      "espnTeamId": 364,
+      "fplTeamId": 12
+    }
+  ],
   "13": [],
-  "14": [],
+  "14": [
+    {
+      "espnId": "274272",
+      "displayName": "Altay Bayindir",
+      "shortName": "A. Bayindir",
+      "position": "Goalkeeper",
+      "jersey": "1",
+      "nationality": "Türkiye",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "301425",
+      "displayName": "Senne Lammens",
+      "shortName": "S. Lammens",
+      "position": "Goalkeeper",
+      "jersey": "31",
+      "nationality": "Belgium",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "157073",
+      "displayName": "Harry Maguire",
+      "shortName": "H. Maguire",
+      "position": "Defender",
+      "jersey": "5",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "167127",
+      "displayName": "Luke Shaw",
+      "shortName": "L. Shaw",
+      "position": "Defender",
+      "jersey": "23",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "233937",
+      "displayName": "Lisandro Martínez",
+      "shortName": "L. Martínez",
+      "position": "Defender",
+      "jersey": "6",
+      "nationality": "Argentina",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "238902",
+      "displayName": "Diogo Dalot",
+      "shortName": "D. Dalot",
+      "position": "Defender",
+      "jersey": "2",
+      "nationality": "Portugal",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "239349",
+      "displayName": "Matthijs de Ligt",
+      "shortName": "M. de Ligt",
+      "position": "Defender",
+      "jersey": "4",
+      "nationality": "Netherlands",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "239350",
+      "displayName": "Noussair Mazraoui",
+      "shortName": "N. Mazraoui",
+      "position": "Defender",
+      "jersey": "3",
+      "nationality": "Morocco",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "340206",
+      "displayName": "Leny Yoro",
+      "shortName": "L. Yoro",
+      "position": "Defender",
+      "jersey": "15",
+      "nationality": "France",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "347052",
+      "displayName": "Tyler Fredricson",
+      "shortName": "T. Fredricson",
+      "position": "Defender",
+      "jersey": "33",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "356044",
+      "displayName": "Ayden Heaven",
+      "shortName": "A. Heaven",
+      "position": "Defender",
+      "jersey": "26",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "366781",
+      "displayName": "Patrick Dorgu",
+      "shortName": "P. Dorgu",
+      "position": "Defender",
+      "jersey": "13",
+      "nationality": "Denmark",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "387634",
+      "displayName": "Diego León",
+      "shortName": "D. León",
+      "position": "Defender",
+      "jersey": "35",
+      "nationality": "Paraguay",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "124091",
+      "displayName": "Bruno Fernandes",
+      "shortName": "B. Fernandes",
+      "position": "Midfielder",
+      "jersey": "8",
+      "nationality": "Portugal",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "205081",
+      "displayName": "Jack Fletcher",
+      "shortName": "J. Fletcher",
+      "position": "Midfielder",
+      "jersey": "38",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "231167",
+      "displayName": "Mason Mount",
+      "shortName": "M. Mount",
+      "position": "Midfielder",
+      "jersey": "7",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "241468",
+      "displayName": "Manuel Ugarte",
+      "shortName": "M. Ugarte",
+      "position": "Midfielder",
+      "jersey": "25",
+      "nationality": "Uruguay",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "291630",
+      "displayName": "Amad Diallo",
+      "shortName": "A. Diallo",
+      "position": "Midfielder",
+      "jersey": "16",
+      "nationality": "Ivory Coast",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "328466",
+      "displayName": "Kobbie Mainoo",
+      "shortName": "K. Mainoo",
+      "position": "Midfielder",
+      "jersey": "37",
+      "nationality": "England",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "393138",
+      "displayName": "Tyler Fletcher",
+      "shortName": "T. Fletcher",
+      "position": "Midfielder",
+      "jersey": "39",
+      "nationality": "Scotland",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "259902",
+      "displayName": "Matheus Cunha",
+      "shortName": "M. Cunha",
+      "position": "Forward",
+      "jersey": "10",
+      "nationality": "Brazil",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "271170",
+      "displayName": "Bryan Mbeumo",
+      "shortName": "B. Mbeumo",
+      "position": "Forward",
+      "jersey": "19",
+      "nationality": "Cameroon",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "276327",
+      "displayName": "Joshua Zirkzee",
+      "shortName": "J. Zirkzee",
+      "position": "Forward",
+      "jersey": "11",
+      "nationality": "Netherlands",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "289155",
+      "displayName": "Benjamin Sesko",
+      "shortName": "B. Sesko",
+      "position": "Forward",
+      "jersey": "30",
+      "nationality": "Slovenia",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
+      "espnId": "375738",
+      "displayName": "Chido Obi",
+      "shortName": "C. Obi",
+      "position": "Forward",
+      "jersey": "32",
+      "nationality": "Denmark",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    }
+  ],
   "15": [],
   "16": [],
   "17": [],
