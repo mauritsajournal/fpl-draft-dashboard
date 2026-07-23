@@ -1,26 +1,6 @@
 {
   "1": [
     {
-      "espnId": "227794",
-      "displayName": "Reiss Nelson",
-      "shortName": "R. Nelson",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "378457",
-      "displayName": "Ismeal Kabia",
-      "shortName": "I. Kabia",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Netherlands",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "169532",
       "displayName": "Kepa Arrizabalaga",
       "shortName": "K. Arrizabalaga",
@@ -37,6 +17,16 @@
       "position": "Goalkeeper",
       "jersey": "1",
       "nationality": "Spain",
+      "espnTeamId": 359,
+      "fplTeamId": 1
+    },
+    {
+      "espnId": "265921",
+      "displayName": "Illan Meslier",
+      "shortName": "I. Meslier",
+      "position": "Goalkeeper",
+      "jersey": "30",
+      "nationality": "France",
       "espnTeamId": 359,
       "fplTeamId": 1
     },
@@ -105,7 +95,7 @@
       "displayName": "Piero Hincapié",
       "shortName": "P. Hincapié",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "5",
       "nationality": "Ecuador",
       "espnTeamId": 359,
       "fplTeamId": 1
@@ -145,7 +135,7 @@
       "displayName": "Fabio Vieira",
       "shortName": "F. Vieira",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "21",
       "nationality": "Portugal",
       "espnTeamId": 359,
       "fplTeamId": 1
@@ -215,18 +205,8 @@
       "displayName": "Ethan Nwaneri",
       "shortName": "E. Nwaneri",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "22",
       "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
-      "espnId": "174980",
-      "displayName": "Leandro Trossard",
-      "shortName": "L. Trossard",
-      "position": "Forward",
-      "jersey": "19",
-      "nationality": "Belgium",
       "espnTeamId": 359,
       "fplTeamId": 1
     },
@@ -237,6 +217,16 @@
       "position": "Forward",
       "jersey": "9",
       "nationality": "Brazil",
+      "espnTeamId": 359,
+      "fplTeamId": 1
+    },
+    {
+      "espnId": "227794",
+      "displayName": "Reiss Nelson",
+      "shortName": "R. Nelson",
+      "position": "Forward",
+      "jersey": "24",
+      "nationality": "England",
       "espnTeamId": 359,
       "fplTeamId": 1
     },
@@ -287,6 +277,26 @@
       "position": "Forward",
       "jersey": "20",
       "nationality": "England",
+      "espnTeamId": 359,
+      "fplTeamId": 1
+    },
+    {
+      "espnId": "303793",
+      "displayName": "Christos Tzolis",
+      "shortName": "C. Tzolis",
+      "position": "Forward",
+      "jersey": "17",
+      "nationality": "Greece",
+      "espnTeamId": 359,
+      "fplTeamId": 1
+    },
+    {
+      "espnId": "378457",
+      "displayName": "Ismeal Kabia",
+      "shortName": "I. Kabia",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Netherlands",
       "espnTeamId": 359,
       "fplTeamId": 1
     },
@@ -808,7 +818,7 @@
       "espnId": "307657",
       "displayName": "Jaidon Anthony",
       "shortName": "J. Anthony",
-      "position": "Midfielder",
+      "position": "Forward",
       "jersey": "11",
       "nationality": "England",
       "espnTeamId": 379,
@@ -977,16 +987,6 @@
   ],
   "4": [
     {
-      "espnId": "312182",
-      "displayName": "Daniel Jebbison",
-      "shortName": "D. Jebbison",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Canada",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
       "espnId": "93193",
       "displayName": "Fraser Forster",
       "shortName": "F. Forster",
@@ -1013,16 +1013,6 @@
       "position": "Goalkeeper",
       "jersey": "",
       "nationality": "England",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
-      "espnId": "297800",
-      "displayName": "Alex Paulsen",
-      "shortName": "A. Paulsen",
-      "position": "Goalkeeper",
-      "jersey": "",
-      "nationality": "New Zealand",
       "espnTeamId": 349,
       "fplTeamId": 4
     },
@@ -1107,26 +1097,6 @@
       "fplTeamId": 4
     },
     {
-      "espnId": "348298",
-      "displayName": "Owen Bevan",
-      "shortName": "O. Bevan",
-      "position": "Defender",
-      "jersey": "35",
-      "nationality": "Wales",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
-      "espnId": "367861",
-      "displayName": "Álex Jiménez",
-      "shortName": "Á. Jiménez",
-      "position": "Defender",
-      "jersey": "",
-      "nationality": "Spain",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
       "espnId": "377736",
       "displayName": "Veljko Milosavljevic",
       "shortName": "V. Milosavljevic",
@@ -1183,16 +1153,6 @@
       "position": "Midfielder",
       "jersey": "16",
       "nationality": "England",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
-      "espnId": "268591",
-      "displayName": "Romain Faivre",
-      "shortName": "R. Faivre",
-      "position": "Midfielder",
-      "jersey": "",
-      "nationality": "France",
       "espnTeamId": 349,
       "fplTeamId": 4
     },
@@ -1267,12 +1227,32 @@
       "fplTeamId": 4
     },
     {
+      "espnId": "312182",
+      "displayName": "Daniel Jebbison",
+      "shortName": "D. Jebbison",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Canada",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
       "espnId": "332948",
       "displayName": "Ben Gannon-Doak",
       "shortName": "B. Gannon-Doak",
       "position": "Forward",
       "jersey": "11",
       "nationality": "Scotland",
+      "espnTeamId": 349,
+      "fplTeamId": 4
+    },
+    {
+      "espnId": "353151",
+      "displayName": "Álvaro Rodríguez",
+      "shortName": "Á. Rodríguez",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Uruguay",
       "espnTeamId": 349,
       "fplTeamId": 4
     },
@@ -1308,16 +1288,6 @@
     }
   ],
   "5": [
-    {
-      "espnId": "366004",
-      "displayName": "Gustavo Nunes",
-      "shortName": "G. Nunes",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Brazil",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
     {
       "espnId": "249527",
       "displayName": "Ellery Balcombe",
@@ -1390,9 +1360,9 @@
     },
     {
       "espnId": "221694",
-      "displayName": "Conor McManus",
-      "shortName": "C. McManus",
-      "position": "Midfielder",
+      "displayName": "Conor Mcmanus",
+      "shortName": "C. Mcmanus",
+      "position": "Defender",
       "jersey": "51",
       "nationality": "Scotland",
       "espnTeamId": 337,
@@ -1435,16 +1405,6 @@
       "position": "Defender",
       "jersey": "2",
       "nationality": "Scotland",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
-      "espnId": "284490",
-      "displayName": "Keane Lewis-Potter",
-      "shortName": "K. Lewis-Potter",
-      "position": "Defender",
-      "jersey": "23",
-      "nationality": "England",
       "espnTeamId": 337,
       "fplTeamId": 5
     },
@@ -1599,16 +1559,6 @@
       "fplTeamId": 5
     },
     {
-      "espnId": "315530",
-      "displayName": "Dango Ouattara",
-      "shortName": "D. Ouattara",
-      "position": "Midfielder",
-      "jersey": "19",
-      "nationality": "Burkina Faso",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
       "espnId": "321081",
       "displayName": "Antoni Milambo",
       "shortName": "A. Milambo",
@@ -1625,16 +1575,6 @@
       "position": "Midfielder",
       "jersey": "18",
       "nationality": "Ukraine",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
-      "espnId": "357477",
-      "displayName": "Romelle Donovan",
-      "shortName": "R. Donovan",
-      "position": "Midfielder",
-      "jersey": "45",
-      "nationality": "England",
       "espnTeamId": 337,
       "fplTeamId": 5
     },
@@ -1659,11 +1599,61 @@
       "fplTeamId": 5
     },
     {
+      "espnId": "138924",
+      "displayName": "Callum Wilson",
+      "shortName": "C. Wilson",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "England",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
+      "espnId": "284490",
+      "displayName": "Keane Lewis-Potter",
+      "shortName": "K. Lewis-Potter",
+      "position": "Forward",
+      "jersey": "23",
+      "nationality": "England",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
       "espnId": "301894",
       "displayName": "Igor Thiago",
       "shortName": "I. Thiago",
       "position": "Forward",
       "jersey": "9",
+      "nationality": "Brazil",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
+      "espnId": "307657",
+      "displayName": "Jaidon Anthony",
+      "shortName": "J. Anthony",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "England",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
+      "espnId": "315530",
+      "displayName": "Dango Ouattara",
+      "shortName": "D. Ouattara",
+      "position": "Forward",
+      "jersey": "19",
+      "nationality": "Burkina Faso",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
+      "espnId": "366004",
+      "displayName": "Gustavo Nunes",
+      "shortName": "G. Nunes",
+      "position": "Forward",
+      "jersey": "",
       "nationality": "Brazil",
       "espnTeamId": 337,
       "fplTeamId": 5
@@ -4781,26 +4771,6 @@
   ],
   "16": [
     {
-      "espnId": "296321",
-      "displayName": "Arnaud Kalimuendo",
-      "shortName": "A. Kalimuendo",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "France",
-      "espnTeamId": 393,
-      "fplTeamId": 16
-    },
-    {
-      "espnId": "344692",
-      "displayName": "Jota Silva",
-      "shortName": "Jota Silva",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Portugal",
-      "espnTeamId": 393,
-      "fplTeamId": 16
-    },
-    {
       "espnId": "179497",
       "displayName": "Matz Sels",
       "shortName": "M. Sels",
@@ -5031,6 +5001,16 @@
       "fplTeamId": 16
     },
     {
+      "espnId": "296321",
+      "displayName": "Arnaud Kalimuendo",
+      "shortName": "A. Kalimuendo",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "France",
+      "espnTeamId": 393,
+      "fplTeamId": 16
+    },
+    {
       "espnId": "297157",
       "displayName": "Dilane Bakwa",
       "shortName": "D. Bakwa",
@@ -5062,36 +5042,6 @@
     }
   ],
   "17": [
-    {
-      "espnId": "317404",
-      "displayName": "Simon Adingra",
-      "shortName": "S. Adingra",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Ivory Coast",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
-    {
-      "espnId": "364591",
-      "displayName": "Luís Semedo",
-      "shortName": "L. Semedo",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Portugal",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
-    {
-      "espnId": "392107",
-      "displayName": "Trey Ogunsuyi",
-      "shortName": "T. Ogunsuyi",
-      "position": "Forward",
-      "jersey": "",
-      "nationality": "Belgium",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
     {
       "espnId": "138481",
       "displayName": "Simon Moore",
@@ -5139,6 +5089,16 @@
       "position": "Defender",
       "jersey": "",
       "nationality": "Congo DR",
+      "espnTeamId": 366,
+      "fplTeamId": 17
+    },
+    {
+      "espnId": "166473",
+      "displayName": "Thomas Meunier",
+      "shortName": "T. Meunier",
+      "position": "Defender",
+      "jersey": "12",
+      "nationality": "Belgium",
       "espnTeamId": 366,
       "fplTeamId": 17
     },
@@ -5199,16 +5159,6 @@
       "position": "Defender",
       "jersey": "32",
       "nationality": "Northern Ireland",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
-    {
-      "espnId": "297167",
-      "displayName": "Timothee Pembélé",
-      "shortName": "T. Pembélé",
-      "position": "Defender",
-      "jersey": "",
-      "nationality": "France",
       "espnTeamId": 366,
       "fplTeamId": 17
     },
@@ -5283,16 +5233,6 @@
       "fplTeamId": 17
     },
     {
-      "espnId": "318090",
-      "displayName": "Nilson Angulo",
-      "shortName": "N. Angulo",
-      "position": "Midfielder",
-      "jersey": "10",
-      "nationality": "Ecuador",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
-    {
       "espnId": "324991",
       "displayName": "Habib Diarra",
       "shortName": "H. Diarra",
@@ -5353,22 +5293,32 @@
       "fplTeamId": 17
     },
     {
+      "espnId": "317404",
+      "displayName": "Simon Adingra",
+      "shortName": "S. Adingra",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Ivory Coast",
+      "espnTeamId": 366,
+      "fplTeamId": 17
+    },
+    {
+      "espnId": "318090",
+      "displayName": "Nilson Angulo",
+      "shortName": "N. Angulo",
+      "position": "Forward",
+      "jersey": "10",
+      "nationality": "Ecuador",
+      "espnTeamId": 366,
+      "fplTeamId": 17
+    },
+    {
       "espnId": "323084",
       "displayName": "Romaine Mundle",
       "shortName": "R. Mundle",
       "position": "Forward",
       "jersey": "14",
       "nationality": "England",
-      "espnTeamId": 366,
-      "fplTeamId": 17
-    },
-    {
-      "espnId": "332862",
-      "displayName": "Eliezer Mayenda",
-      "shortName": "E. Mayenda",
-      "position": "Forward",
-      "jersey": "12",
-      "nationality": "Spain",
       "espnTeamId": 366,
       "fplTeamId": 17
     },
@@ -5389,6 +5339,26 @@
       "position": "Forward",
       "jersey": "7",
       "nationality": "Morocco",
+      "espnTeamId": 366,
+      "fplTeamId": 17
+    },
+    {
+      "espnId": "364591",
+      "displayName": "Luís Semedo",
+      "shortName": "L. Semedo",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Portugal",
+      "espnTeamId": 366,
+      "fplTeamId": 17
+    },
+    {
+      "espnId": "392107",
+      "displayName": "Trey Ogunsuyi",
+      "shortName": "T. Ogunsuyi",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Belgium",
       "espnTeamId": 366,
       "fplTeamId": 17
     },
@@ -6090,7 +6060,7 @@
       "espnId": "284792",
       "displayName": "Crysencio Summerville",
       "shortName": "C. Summerville",
-      "position": "Midfielder",
+      "position": "Forward",
       "jersey": "7",
       "nationality": "Netherlands",
       "espnTeamId": 371,
