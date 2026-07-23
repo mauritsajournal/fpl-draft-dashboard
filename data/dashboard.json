@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-23T04:10:55.892Z",
+    "lastUpdated": "2026-07-23T09:21:33.707Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -13,7 +13,9 @@
       "fixtures": true,
       "ownership": true
     },
-    "fetchErrors": []
+    "fetchErrors": [
+      "fixtures: fixtures fetch failed after 4 attempts: HTTP 503: OK"
+    ]
   },
   "standings": [
     {
@@ -32067,7 +32069,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-07-23T04:10:55.120Z",
+    "lastUpdated": "2026-07-23T09:21:32.932Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
