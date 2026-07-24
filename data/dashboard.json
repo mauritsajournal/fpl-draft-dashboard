@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-24T14:47:16.793Z",
+    "lastUpdated": "2026-07-24T20:13:06.182Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -32069,7 +32069,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-07-24T14:47:16.007Z",
+    "lastUpdated": "2026-07-24T20:13:05.397Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
@@ -35031,34 +35031,34 @@
         "fantasyRank": 5,
         "fantasyPoints": 1667,
         "squadStats": {
-          "totalGoals": 24,
-          "totalAssists": 11,
-          "totalShots": 163,
-          "shotsOnTarget": 66,
-          "shotAccuracy": 0.4049079754601227,
-          "totalPasses": 6071,
-          "accuratePasses": 5086,
-          "passAccuracy": 0.8377532531708121,
-          "foulsCommitted": 86,
-          "foulsSuffered": 66,
-          "yellowCards": 17,
+          "totalGoals": 20,
+          "totalAssists": 8,
+          "totalShots": 124,
+          "shotsOnTarget": 51,
+          "shotAccuracy": 0.4112903225806452,
+          "totalPasses": 3245,
+          "accuratePasses": 2789,
+          "passAccuracy": 0.8594761171032358,
+          "foulsCommitted": 78,
+          "foulsSuffered": 50,
+          "yellowCards": 11,
           "redCards": 0,
-          "totalCards": 17,
-          "tacklesWon": 88,
-          "tacklesLost": 67,
-          "interceptions": 66,
-          "clearances": 203,
-          "shotsBlocked": 51,
-          "cleanSheets": 29,
-          "goalsConceded": 162,
-          "saves": 98,
-          "totalMinutes": 12794,
-          "appearances": 160,
+          "totalCards": 11,
+          "tacklesWon": 68,
+          "tacklesLost": 56,
+          "interceptions": 51,
+          "clearances": 140,
+          "shotsBlocked": 36,
+          "cleanSheets": 18,
+          "goalsConceded": 71,
+          "saves": 0,
+          "totalMinutes": 6940,
+          "appearances": 93,
           "headedGoals": 5,
-          "goalInvolvement": 35,
-          "minutesPerGoalInvolvement": 365.54285714285714,
-          "disciplinaryPoints": 17,
-          "shotAssists": 135
+          "goalInvolvement": 28,
+          "minutesPerGoalInvolvement": 247.85714285714286,
+          "disciplinaryPoints": 11,
+          "shotAssists": 91
         },
         "plTeamDistribution": [
           {
@@ -35273,47 +35273,47 @@
           },
           {
             "fplName": "Leno",
-            "espnName": "Bernd Leno",
+            "espnName": "Leno",
             "plTeam": "Fulham",
             "plTeamRank": 11,
             "fplPoints": 122,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 3420,
-            "espnYellows": 3,
+            "espnMinutes": 0,
+            "espnYellows": 0,
             "espnReds": 0,
             "espnFouls": 0,
-            "espnPasses": 1394,
-            "espnPassPct": 0.773,
+            "espnPasses": 0,
+            "espnPassPct": 0,
             "espnShots": 0,
             "espnShotsOnTarget": 0,
-            "espnTackles": 4,
-            "espnInterceptions": 1,
-            "espnCleanSheets": 9,
+            "espnTackles": 0,
+            "espnInterceptions": 0,
+            "espnCleanSheets": 0,
             "position": "GK",
-            "isBenchwarmer": false
+            "isBenchwarmer": true
           },
           {
             "fplName": "Iwobi",
-            "espnName": "Alex Iwobi",
+            "espnName": "Iwobi",
             "plTeam": "Fulham",
             "plTeamRank": 11,
             "fplPoints": 103,
-            "espnGoals": 4,
-            "espnAssists": 3,
-            "espnMinutes": 2434,
-            "espnYellows": 3,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 0,
+            "espnYellows": 0,
             "espnReds": 0,
-            "espnFouls": 8,
-            "espnPasses": 1432,
-            "espnPassPct": 0.851,
-            "espnShots": 39,
-            "espnShotsOnTarget": 15,
-            "espnTackles": 27,
-            "espnInterceptions": 14,
-            "espnCleanSheets": 2,
+            "espnFouls": 0,
+            "espnPasses": 0,
+            "espnPassPct": 0,
+            "espnShots": 0,
+            "espnShotsOnTarget": 0,
+            "espnTackles": 0,
+            "espnInterceptions": 0,
+            "espnCleanSheets": 0,
             "position": "MID",
-            "isBenchwarmer": false
+            "isBenchwarmer": true
           },
           {
             "fplName": "Bernardo",
@@ -35506,15 +35506,6 @@
         "verdict": "Punching above weight"
       },
       {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "fantasyRank": 5,
-        "avgPlTeamRank": 10.13,
-        "weightedPlRank": 6.24,
-        "rankDelta": 1.24,
-        "verdict": "Slight overperformer"
-      },
-      {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
         "fantasyRank": 7,
@@ -35522,6 +35513,15 @@
         "weightedPlRank": 6.38,
         "rankDelta": -0.62,
         "verdict": "Right on track"
+      },
+      {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "fantasyRank": 5,
+        "avgPlTeamRank": 10.13,
+        "weightedPlRank": 2.23,
+        "rankDelta": -2.77,
+        "verdict": "Could do better"
       }
     ],
     "cardCollector": [
@@ -35658,10 +35658,10 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "yellows": 17,
+        "yellows": 11,
         "reds": 0,
-        "totalCards": 17,
-        "disciplinaryPoints": 17,
+        "totalCards": 11,
+        "disciplinaryPoints": 11,
         "dirtiest3": [
           {
             "name": "Watkins",
@@ -35736,6 +35736,16 @@
     ],
     "passStyle": [
       {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "passAccuracy": 85.95,
+        "totalPasses": 3245,
+        "accuratePasses": 2789,
+        "longBallRatio": 11.39,
+        "style": "Controlled",
+        "title": "The Strategist"
+      },
+      {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
         "passAccuracy": 84.77,
@@ -35752,16 +35762,6 @@
         "totalPasses": 4422,
         "accuratePasses": 3728,
         "longBallRatio": 10.76,
-        "style": "Controlled",
-        "title": "The Strategist"
-      },
-      {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "passAccuracy": 83.78,
-        "totalPasses": 6071,
-        "accuratePasses": 5086,
-        "longBallRatio": 11.39,
         "style": "Controlled",
         "title": "The Strategist"
       },
@@ -35829,6 +35829,17 @@
         "title": "Clinical Finisher"
       },
       {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "totalShots": 124,
+        "shotsOnTarget": 51,
+        "goals": 20,
+        "shotAccuracy": 41.13,
+        "conversionRate": 16.13,
+        "shotsPerGoal": 6.2,
+        "title": "Clinical Finisher"
+      },
+      {
         "leagueEntryId": 27137,
         "managerName": "Maurits Koot",
         "totalShots": 97,
@@ -35838,17 +35849,6 @@
         "conversionRate": 15.46,
         "shotsPerGoal": 6.47,
         "title": "Clinical Finisher"
-      },
-      {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "totalShots": 163,
-        "shotsOnTarget": 66,
-        "goals": 24,
-        "shotAccuracy": 40.49,
-        "conversionRate": 14.72,
-        "shotsPerGoal": 6.79,
-        "title": "Sharp Shooter"
       },
       {
         "leagueEntryId": 2569,
@@ -35968,18 +35968,6 @@
         "title": "The Great Wall"
       },
       {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "tacklesWon": 88,
-        "interceptions": 66,
-        "clearances": 203,
-        "shotsBlocked": 51,
-        "defensiveActions": 408,
-        "cleanSheets": 29,
-        "goalsConceded": 162,
-        "title": "The Great Wall"
-      },
-      {
         "leagueEntryId": 8630,
         "managerName": "Marc Streng",
         "tacklesWon": 107,
@@ -35989,6 +35977,18 @@
         "defensiveActions": 370,
         "cleanSheets": 15,
         "goalsConceded": 95,
+        "title": "The Great Wall"
+      },
+      {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "tacklesWon": 68,
+        "interceptions": 51,
+        "clearances": 140,
+        "shotsBlocked": 36,
+        "defensiveActions": 295,
+        "cleanSheets": 18,
+        "goalsConceded": 71,
         "title": "The Great Wall"
       },
       {
@@ -36136,9 +36136,9 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "foulsCommitted": 86,
-        "foulsSuffered": 66,
-        "foulRatio": 1.3,
+        "foulsCommitted": 78,
+        "foulsSuffered": 50,
+        "foulRatio": 1.56,
         "dirtiest": [
           {
             "name": "Watkins",
@@ -36302,6 +36302,65 @@
         "title": "Ghost Squad"
       },
       {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "totalPlayers": 15,
+        "playersWithMinutes": 3,
+        "playersWithZeroMinutes": 12,
+        "avgMinutesPerPlayer": 463,
+        "ghosts": [
+          {
+            "name": "Senesi",
+            "team": "West Ham"
+          },
+          {
+            "name": "O'Reilly",
+            "team": "Newcastle"
+          },
+          {
+            "name": "Bruno G.",
+            "team": "Sunderland"
+          },
+          {
+            "name": "Alderete",
+            "team": "Wolves"
+          },
+          {
+            "name": "Petrović",
+            "team": "Burnley"
+          },
+          {
+            "name": "Leno",
+            "team": "Fulham"
+          },
+          {
+            "name": "Iwobi",
+            "team": "Fulham"
+          },
+          {
+            "name": "Bernardo",
+            "team": "Man City"
+          },
+          {
+            "name": "Gordon",
+            "team": "Newcastle"
+          },
+          {
+            "name": "Burn",
+            "team": "Sunderland"
+          },
+          {
+            "name": "Brobbey",
+            "team": "Wolves"
+          },
+          {
+            "name": "Osula",
+            "team": "Sunderland"
+          }
+        ],
+        "title": "Ghost Squad"
+      },
+      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "totalPlayers": 15,
@@ -36399,57 +36458,6 @@
           {
             "name": "Hato",
             "team": "Brighton"
-          }
-        ],
-        "title": "Ghost Squad"
-      },
-      {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "totalPlayers": 15,
-        "playersWithMinutes": 5,
-        "playersWithZeroMinutes": 10,
-        "avgMinutesPerPlayer": 853,
-        "ghosts": [
-          {
-            "name": "Senesi",
-            "team": "West Ham"
-          },
-          {
-            "name": "O'Reilly",
-            "team": "Newcastle"
-          },
-          {
-            "name": "Bruno G.",
-            "team": "Sunderland"
-          },
-          {
-            "name": "Alderete",
-            "team": "Wolves"
-          },
-          {
-            "name": "Petrović",
-            "team": "Burnley"
-          },
-          {
-            "name": "Bernardo",
-            "team": "Man City"
-          },
-          {
-            "name": "Gordon",
-            "team": "Newcastle"
-          },
-          {
-            "name": "Burn",
-            "team": "Sunderland"
-          },
-          {
-            "name": "Brobbey",
-            "team": "Wolves"
-          },
-          {
-            "name": "Osula",
-            "team": "Sunderland"
           }
         ],
         "title": "Ghost Squad"
@@ -37182,10 +37190,10 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "totalGoalInvolvements": 35,
-        "goals": 24,
-        "assists": 11,
-        "minsPerGI": 366,
+        "totalGoalInvolvements": 28,
+        "goals": 20,
+        "assists": 8,
+        "minsPerGI": 248,
         "topContributors": [
           {
             "name": "Watkins",
@@ -37198,12 +37206,6 @@
             "goals": 4,
             "assists": 5,
             "gi": 9
-          },
-          {
-            "name": "Iwobi",
-            "goals": 4,
-            "assists": 3,
-            "gi": 7
           }
         ],
         "title": "Getting There"
@@ -37436,11 +37438,11 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "chaosScore": 120,
-        "yellows": 17,
+        "chaosScore": 100,
+        "yellows": 11,
         "reds": 0,
-        "fouls": 86,
-        "title": "Bit Disruptive"
+        "fouls": 78,
+        "title": "Zen Master"
       },
       {
         "leagueEntryId": 8630,
@@ -37471,17 +37473,6 @@
         "avgMinutesPerPlayer": 930,
         "ironMan": {
           "name": "Pickford",
-          "minutes": 3420
-        },
-        "title": "Squad Rotation"
-      },
-      {
-        "leagueEntryId": 85079,
-        "managerName": "Robert van Gemert",
-        "totalMinutes": 12794,
-        "avgMinutesPerPlayer": 853,
-        "ironMan": {
-          "name": "Leno",
           "minutes": 3420
         },
         "title": "Squad Rotation"
@@ -37518,6 +37509,17 @@
           "minutes": 2635
         },
         "title": "Squad Rotation"
+      },
+      {
+        "leagueEntryId": 85079,
+        "managerName": "Robert van Gemert",
+        "totalMinutes": 6940,
+        "avgMinutesPerPlayer": 463,
+        "ironMan": {
+          "name": "Rice",
+          "minutes": 3099
+        },
+        "title": "Bench Fillers"
       },
       {
         "leagueEntryId": 8630,
@@ -37756,9 +37758,9 @@
       {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
-        "realGI": 35,
+        "realGI": 28,
         "fantasyPoints": 1667,
-        "pointsPerRealGI": 47.63,
+        "pointsPerRealGI": 59.54,
         "overperformers": [
           {
             "name": "Rice",
@@ -37766,14 +37768,14 @@
             "realGI": 9
           },
           {
-            "name": "Iwobi",
-            "fplPts": 103,
-            "realGI": 7
-          },
-          {
             "name": "Watkins",
             "fplPts": 167,
             "realGI": 19
+          },
+          {
+            "name": "Senesi",
+            "fplPts": 175,
+            "realGI": 0
           }
         ],
         "underperformers": [
@@ -38935,9 +38937,9 @@
             "managerName": "Dikke Saka veel grip",
             "leagueEntryId": 27628,
             "fplPoints": 103,
-            "espnGoals": 4,
-            "espnAssists": 3,
-            "espnMinutes": 2434,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 0,
             "rating": "Star"
           },
           {
@@ -38981,7 +38983,7 @@
             "fplPoints": 122,
             "espnGoals": 0,
             "espnAssists": 0,
-            "espnMinutes": 3420,
+            "espnMinutes": 0,
             "rating": "Star"
           },
           {
