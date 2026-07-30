@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-30T09:26:02.200Z",
+    "lastUpdated": "2026-07-30T15:05:07.774Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -32069,7 +32069,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-07-30T09:26:01.698Z",
+    "lastUpdated": "2026-07-30T15:05:07.009Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
@@ -34612,34 +34612,34 @@
         "fantasyRank": 1,
         "fantasyPoints": 1848,
         "squadStats": {
-          "totalGoals": 14,
-          "totalAssists": 13,
-          "totalShots": 142,
-          "shotsOnTarget": 42,
-          "shotAccuracy": 0.29577464788732394,
-          "totalPasses": 6210,
-          "accuratePasses": 5264,
-          "passAccuracy": 0.8476650563607085,
-          "foulsCommitted": 120,
-          "foulsSuffered": 144,
-          "yellowCards": 16,
-          "redCards": 1,
-          "totalCards": 17,
-          "tacklesWon": 139,
-          "tacklesLost": 81,
-          "interceptions": 114,
-          "clearances": 500,
-          "shotsBlocked": 52,
-          "cleanSheets": 42,
-          "goalsConceded": 157,
+          "totalGoals": 13,
+          "totalAssists": 11,
+          "totalShots": 118,
+          "shotsOnTarget": 35,
+          "shotAccuracy": 0.2966101694915254,
+          "totalPasses": 4554,
+          "accuratePasses": 3804,
+          "passAccuracy": 0.8353096179183136,
+          "foulsCommitted": 86,
+          "foulsSuffered": 125,
+          "yellowCards": 12,
+          "redCards": 0,
+          "totalCards": 12,
+          "tacklesWon": 101,
+          "tacklesLost": 59,
+          "interceptions": 69,
+          "clearances": 248,
+          "shotsBlocked": 45,
+          "cleanSheets": 31,
+          "goalsConceded": 112,
           "saves": 55,
-          "totalMinutes": 12382,
-          "appearances": 154,
-          "headedGoals": 3,
-          "goalInvolvement": 27,
-          "minutesPerGoalInvolvement": 458.5925925925926,
-          "disciplinaryPoints": 19,
-          "shotAssists": 69
+          "totalMinutes": 9295,
+          "appearances": 119,
+          "headedGoals": 2,
+          "goalInvolvement": 24,
+          "minutesPerGoalInvolvement": 387.2916666666667,
+          "disciplinaryPoints": 12,
+          "shotAssists": 62
         },
         "plTeamDistribution": [
           {
@@ -34782,25 +34782,25 @@
           },
           {
             "fplName": "Lacroix",
-            "espnName": "Maxence Lacroix",
+            "espnName": "Lacroix",
             "plTeam": "Crystal Palace",
             "plTeamRank": 15,
             "fplPoints": 154,
-            "espnGoals": 1,
-            "espnAssists": 2,
-            "espnMinutes": 3087,
-            "espnYellows": 4,
-            "espnReds": 1,
-            "espnFouls": 34,
-            "espnPasses": 1656,
-            "espnPassPct": 0.882,
-            "espnShots": 24,
-            "espnShotsOnTarget": 7,
-            "espnTackles": 60,
-            "espnInterceptions": 45,
-            "espnCleanSheets": 11,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 0,
+            "espnYellows": 0,
+            "espnReds": 0,
+            "espnFouls": 0,
+            "espnPasses": 0,
+            "espnPassPct": 0,
+            "espnShots": 0,
+            "espnShotsOnTarget": 0,
+            "espnTackles": 0,
+            "espnInterceptions": 0,
+            "espnCleanSheets": 0,
             "position": "DEF",
-            "isBenchwarmer": false
+            "isBenchwarmer": true
           },
           {
             "fplName": "Fernandes",
@@ -35483,8 +35483,8 @@
         "managerName": "Maximiliaan de Goede",
         "fantasyRank": 1,
         "avgPlTeamRank": 13.07,
-        "weightedPlRank": 10.87,
-        "rankDelta": 9.87,
+        "weightedPlRank": 9.49,
+        "rankDelta": 8.49,
         "verdict": "Punching above weight"
       },
       {
@@ -35630,32 +35630,6 @@
         "title": "Light Touch"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "yellows": 16,
-        "reds": 1,
-        "totalCards": 17,
-        "disciplinaryPoints": 19,
-        "dirtiest3": [
-          {
-            "name": "Lacroix",
-            "yellows": 4,
-            "reds": 1
-          },
-          {
-            "name": "Fernandes",
-            "yellows": 7,
-            "reds": 0
-          },
-          {
-            "name": "Gabriel",
-            "yellows": 4,
-            "reds": 0
-          }
-        ],
-        "title": "Light Touch"
-      },
-      {
         "leagueEntryId": 85079,
         "managerName": "Robert van Gemert",
         "yellows": 17,
@@ -35676,6 +35650,32 @@
           {
             "name": "Rice",
             "yellows": 3,
+            "reds": 0
+          }
+        ],
+        "title": "Light Touch"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "yellows": 12,
+        "reds": 0,
+        "totalCards": 12,
+        "disciplinaryPoints": 12,
+        "dirtiest3": [
+          {
+            "name": "Fernandes",
+            "yellows": 7,
+            "reds": 0
+          },
+          {
+            "name": "Gabriel",
+            "yellows": 4,
+            "reds": 0
+          },
+          {
+            "name": "Eze",
+            "yellows": 1,
             "reds": 0
           }
         ],
@@ -35736,16 +35736,6 @@
     ],
     "passStyle": [
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "passAccuracy": 84.77,
-        "totalPasses": 6210,
-        "accuratePasses": 5264,
-        "longBallRatio": 12.24,
-        "style": "Controlled",
-        "title": "The Strategist"
-      },
-      {
         "leagueEntryId": 34059,
         "managerName": "Salomon van Megen",
         "passAccuracy": 84.31,
@@ -35762,6 +35752,16 @@
         "totalPasses": 6071,
         "accuratePasses": 5086,
         "longBallRatio": 11.39,
+        "style": "Controlled",
+        "title": "The Strategist"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "passAccuracy": 83.53,
+        "totalPasses": 4554,
+        "accuratePasses": 3804,
+        "longBallRatio": 12.24,
         "style": "Controlled",
         "title": "The Strategist"
       },
@@ -35873,6 +35873,17 @@
         "title": "Sharp Shooter"
       },
       {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "totalShots": 118,
+        "shotsOnTarget": 35,
+        "goals": 13,
+        "shotAccuracy": 29.66,
+        "conversionRate": 11.02,
+        "shotsPerGoal": 9.08,
+        "title": "Sharp Shooter"
+      },
+      {
         "leagueEntryId": 2273,
         "managerName": "Sam vd V",
         "totalShots": 230,
@@ -35882,17 +35893,6 @@
         "conversionRate": 10.87,
         "shotsPerGoal": 9.2,
         "title": "Sharp Shooter"
-      },
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "totalShots": 142,
-        "shotsOnTarget": 42,
-        "goals": 14,
-        "shotAccuracy": 29.58,
-        "conversionRate": 9.86,
-        "shotsPerGoal": 10.14,
-        "title": "Average Joe"
       },
       {
         "leagueEntryId": 8630,
@@ -35917,18 +35917,6 @@
         "defensiveActions": 810,
         "cleanSheets": 51,
         "goalsConceded": 237,
-        "title": "The Great Wall"
-      },
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "tacklesWon": 139,
-        "interceptions": 114,
-        "clearances": 500,
-        "shotsBlocked": 52,
-        "defensiveActions": 805,
-        "cleanSheets": 42,
-        "goalsConceded": 157,
         "title": "The Great Wall"
       },
       {
@@ -35965,6 +35953,18 @@
         "defensiveActions": 631,
         "cleanSheets": 38,
         "goalsConceded": 155,
+        "title": "The Great Wall"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "tacklesWon": 101,
+        "interceptions": 69,
+        "clearances": 248,
+        "shotsBlocked": 45,
+        "defensiveActions": 463,
+        "cleanSheets": 31,
+        "goalsConceded": 112,
         "title": "The Great Wall"
       },
       {
@@ -36072,28 +36072,6 @@
         "title": "Bit Feisty"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "foulsCommitted": 120,
-        "foulsSuffered": 144,
-        "foulRatio": 0.83,
-        "dirtiest": [
-          {
-            "name": "Fernandes",
-            "fouls": 49
-          },
-          {
-            "name": "Lacroix",
-            "fouls": 34
-          },
-          {
-            "name": "Gabriel",
-            "fouls": 21
-          }
-        ],
-        "title": "Bit Feisty"
-      },
-      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "foulsCommitted": 103,
@@ -36132,6 +36110,28 @@
           }
         ],
         "title": "Bit Feisty"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "foulsCommitted": 86,
+        "foulsSuffered": 125,
+        "foulRatio": 0.69,
+        "dirtiest": [
+          {
+            "name": "Fernandes",
+            "fouls": 49
+          },
+          {
+            "name": "Gabriel",
+            "fouls": 21
+          },
+          {
+            "name": "Eze",
+            "fouls": 16
+          }
+        ],
+        "title": "Squeaky Clean"
       },
       {
         "leagueEntryId": 85079,
@@ -36302,6 +36302,61 @@
         "title": "Ghost Squad"
       },
       {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "totalPlayers": 15,
+        "playersWithMinutes": 4,
+        "playersWithZeroMinutes": 11,
+        "avgMinutesPerPlayer": 620,
+        "ghosts": [
+          {
+            "name": "B.Fernandes",
+            "team": "Nott'm Forest"
+          },
+          {
+            "name": "Thiago",
+            "team": "Bournemouth"
+          },
+          {
+            "name": "João Pedro",
+            "team": "Brighton"
+          },
+          {
+            "name": "Lacroix",
+            "team": "Crystal Palace"
+          },
+          {
+            "name": "J.Palhinha",
+            "team": "Spurs"
+          },
+          {
+            "name": "Van de Ven",
+            "team": "West Ham"
+          },
+          {
+            "name": "Igor Jesus",
+            "team": "Spurs"
+          },
+          {
+            "name": "Lammens",
+            "team": "Nott'm Forest"
+          },
+          {
+            "name": "Rayan",
+            "team": "Burnley"
+          },
+          {
+            "name": "Danso",
+            "team": "West Ham"
+          },
+          {
+            "name": "Hato",
+            "team": "Brighton"
+          }
+        ],
+        "title": "Ghost Squad"
+      },
+      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "totalPlayers": 15,
@@ -36348,57 +36403,6 @@
           {
             "name": "Wood",
             "team": "Spurs"
-          }
-        ],
-        "title": "Ghost Squad"
-      },
-      {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "totalPlayers": 15,
-        "playersWithMinutes": 5,
-        "playersWithZeroMinutes": 10,
-        "avgMinutesPerPlayer": 825,
-        "ghosts": [
-          {
-            "name": "B.Fernandes",
-            "team": "Nott'm Forest"
-          },
-          {
-            "name": "Thiago",
-            "team": "Bournemouth"
-          },
-          {
-            "name": "João Pedro",
-            "team": "Brighton"
-          },
-          {
-            "name": "J.Palhinha",
-            "team": "Spurs"
-          },
-          {
-            "name": "Van de Ven",
-            "team": "West Ham"
-          },
-          {
-            "name": "Igor Jesus",
-            "team": "Spurs"
-          },
-          {
-            "name": "Lammens",
-            "team": "Nott'm Forest"
-          },
-          {
-            "name": "Rayan",
-            "team": "Burnley"
-          },
-          {
-            "name": "Danso",
-            "team": "West Ham"
-          },
-          {
-            "name": "Hato",
-            "team": "Brighton"
           }
         ],
         "title": "Ghost Squad"
@@ -37250,47 +37254,6 @@
         "title": "Getting There"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "totalGoalInvolvements": 27,
-        "goals": 14,
-        "assists": 13,
-        "minsPerGI": 459,
-        "topContributors": [
-          {
-            "name": "Eze",
-            "goals": 7,
-            "assists": 2,
-            "gi": 9
-          },
-          {
-            "name": "Gabriel",
-            "goals": 3,
-            "assists": 4,
-            "gi": 7
-          },
-          {
-            "name": "Fernandes",
-            "goals": 3,
-            "assists": 4,
-            "gi": 7
-          },
-          {
-            "name": "Lacroix",
-            "goals": 1,
-            "assists": 2,
-            "gi": 3
-          },
-          {
-            "name": "Hermansen",
-            "goals": 0,
-            "assists": 1,
-            "gi": 1
-          }
-        ],
-        "title": "Getting There"
-      },
-      {
         "leagueEntryId": 4815,
         "managerName": "Pieter van Gemert",
         "totalGoalInvolvements": 25,
@@ -37321,6 +37284,41 @@
             "goals": 3,
             "assists": 0,
             "gi": 3
+          }
+        ],
+        "title": "Getting There"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "totalGoalInvolvements": 24,
+        "goals": 13,
+        "assists": 11,
+        "minsPerGI": 387,
+        "topContributors": [
+          {
+            "name": "Eze",
+            "goals": 7,
+            "assists": 2,
+            "gi": 9
+          },
+          {
+            "name": "Gabriel",
+            "goals": 3,
+            "assists": 4,
+            "gi": 7
+          },
+          {
+            "name": "Fernandes",
+            "goals": 3,
+            "assists": 4,
+            "gi": 7
+          },
+          {
+            "name": "Hermansen",
+            "goals": 0,
+            "assists": 1,
+            "gi": 1
           }
         ],
         "title": "Getting There"
@@ -37407,15 +37405,6 @@
         "title": "Chaos Merchant"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "chaosScore": 157,
-        "yellows": 16,
-        "reds": 1,
-        "fouls": 120,
-        "title": "Bit Disruptive"
-      },
-      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "chaosScore": 140,
@@ -37441,6 +37430,15 @@
         "reds": 0,
         "fouls": 86,
         "title": "Bit Disruptive"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "chaosScore": 110,
+        "yellows": 12,
+        "reds": 0,
+        "fouls": 86,
+        "title": "Zen Master"
       },
       {
         "leagueEntryId": 8630,
@@ -37487,17 +37485,6 @@
         "title": "Squad Rotation"
       },
       {
-        "leagueEntryId": 75126,
-        "managerName": "Maximiliaan de Goede",
-        "totalMinutes": 12382,
-        "avgMinutesPerPlayer": 825,
-        "ironMan": {
-          "name": "Lacroix",
-          "minutes": 3087
-        },
-        "title": "Squad Rotation"
-      },
-      {
         "leagueEntryId": 2569,
         "managerName": "Tim van Duinen",
         "totalMinutes": 12042,
@@ -37516,6 +37503,17 @@
         "ironMan": {
           "name": "Dewsbury-Hall",
           "minutes": 2635
+        },
+        "title": "Squad Rotation"
+      },
+      {
+        "leagueEntryId": 75126,
+        "managerName": "Maximiliaan de Goede",
+        "totalMinutes": 9295,
+        "avgMinutesPerPlayer": 620,
+        "ironMan": {
+          "name": "Fernandes",
+          "minutes": 3024
         },
         "title": "Squad Rotation"
       },
@@ -37630,9 +37628,9 @@
       {
         "leagueEntryId": 75126,
         "managerName": "Maximiliaan de Goede",
-        "realGI": 27,
+        "realGI": 24,
         "fantasyPoints": 1848,
-        "pointsPerRealGI": 68.44,
+        "pointsPerRealGI": 77,
         "overperformers": [
           {
             "name": "Hermansen",
@@ -37640,13 +37638,13 @@
             "realGI": 1
           },
           {
-            "name": "Lacroix",
-            "fplPts": 154,
-            "realGI": 3
-          },
-          {
             "name": "Gabriel",
             "fplPts": 209,
+            "realGI": 7
+          },
+          {
+            "name": "Fernandes",
+            "fplPts": 135,
             "realGI": 7
           }
         ],
@@ -39112,9 +39110,9 @@
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
             "fplPoints": 154,
-            "espnGoals": 1,
-            "espnAssists": 2,
-            "espnMinutes": 3087,
+            "espnGoals": 0,
+            "espnAssists": 0,
+            "espnMinutes": 0,
             "rating": "Star"
           },
           {
