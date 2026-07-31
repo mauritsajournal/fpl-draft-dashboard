@@ -1,3 +1,6 @@
 [
-  "fixtures: fixtures fetch failed after 4 attempts: HTTP 503: OK"
+  "league: league fetch failed after 4 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+  "bootstrap: bootstrap fetch failed after 4 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+  "element-status: element-status fetch failed after 4 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+  "transactions: transactions fetch failed after 4 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
 ]
