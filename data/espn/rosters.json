@@ -4125,16 +4125,6 @@
       "fplTeamId": 13
     },
     {
-      "espnId": "310695",
-      "displayName": "Trialist",
-      "shortName": "Trialist",
-      "position": "Goalkeeper",
-      "jersey": "",
-      "nationality": "England",
-      "espnTeamId": 382,
-      "fplTeamId": 13
-    },
-    {
       "espnId": "379583",
       "displayName": "Jack Wint",
       "shortName": "J. Wint",
@@ -4491,6 +4481,16 @@
       "position": "Forward",
       "jersey": "26",
       "nationality": "Brazil",
+      "espnTeamId": 382,
+      "fplTeamId": 13
+    },
+    {
+      "espnId": "310695",
+      "displayName": "Trialist",
+      "shortName": "Trialist",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
     },
@@ -5022,9 +5022,9 @@
       "espnId": "106139",
       "displayName": "Lewis Hall",
       "shortName": "L. Hall",
-      "position": "Defender",
+      "position": "Midfielder",
       "jersey": "3",
-      "nationality": "England",
+      "nationality": "Scotland",
       "espnTeamId": 361,
       "fplTeamId": 15
     },
