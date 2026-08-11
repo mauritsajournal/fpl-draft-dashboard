@@ -2825,12 +2825,12 @@
       "fplTeamId": 8
     },
     {
-      "espnId": "291307",
-      "displayName": "Brennan Johnson",
-      "shortName": "B. Johnson",
+      "espnId": "273495",
+      "displayName": "Dwight McNeil",
+      "shortName": "D. McNeil",
       "position": "Forward",
-      "jersey": "23",
-      "nationality": "Wales",
+      "jersey": "",
+      "nationality": "England",
       "espnTeamId": 384,
       "fplTeamId": 8
     },
@@ -3067,22 +3067,22 @@
       "fplTeamId": 9
     },
     {
-      "espnId": "273495",
-      "displayName": "Dwight McNeil",
-      "shortName": "D. McNeil",
-      "position": "Forward",
-      "jersey": "7",
-      "nationality": "England",
-      "espnTeamId": 368,
-      "fplTeamId": 9
-    },
-    {
       "espnId": "289511",
       "displayName": "Beto",
       "shortName": "Beto",
       "position": "Forward",
       "jersey": "9",
       "nationality": "Guinea-Bissau",
+      "espnTeamId": 368,
+      "fplTeamId": 9
+    },
+    {
+      "espnId": "291307",
+      "displayName": "Brennan Johnson",
+      "shortName": "B. Johnson",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Wales",
       "espnTeamId": 368,
       "fplTeamId": 9
     },
@@ -3275,6 +3275,16 @@
       "position": "Midfielder",
       "jersey": "14",
       "nationality": "Norway",
+      "espnTeamId": 370,
+      "fplTeamId": 10
+    },
+    {
+      "espnId": "324164",
+      "displayName": "Shea Charles",
+      "shortName": "S. Charles",
+      "position": "Midfielder",
+      "jersey": "",
+      "nationality": "Northern Ireland",
       "espnTeamId": 370,
       "fplTeamId": 10
     },
@@ -4269,7 +4279,7 @@
       "displayName": "Stephen Mfuni",
       "shortName": "S. Mfuni",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "91",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4279,7 +4289,7 @@
       "displayName": "Matthew Henderson-Hall",
       "shortName": "M. Henderson-Hall",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "89",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4289,7 +4299,7 @@
       "displayName": "Kaden Braithwaite",
       "shortName": "K. Braithwaite",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "61",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4399,7 +4409,7 @@
       "displayName": "Divine Mukasa",
       "shortName": "D. Mukasa",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "63",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4411,16 +4421,6 @@
       "position": "Midfielder",
       "jersey": "30",
       "nationality": "Argentina",
-      "espnTeamId": 382,
-      "fplTeamId": 13
-    },
-    {
-      "espnId": "410320",
-      "displayName": "Floyd Samba",
-      "shortName": "F. Samba",
-      "position": "Midfielder",
-      "jersey": "",
-      "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
     },
@@ -4489,7 +4489,7 @@
       "displayName": "Divin Mubama",
       "shortName": "D. Mubama",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "67",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4499,7 +4499,7 @@
       "displayName": "Jaden Heskey",
       "shortName": "J. Heskey",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "81",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4509,7 +4509,7 @@
       "displayName": "Jeremy Monga",
       "shortName": "J. Monga",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "40",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4529,8 +4529,18 @@
       "displayName": "Mahamadou Sangaré",
       "shortName": "M. Sangaré",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "71",
       "nationality": "France",
+      "espnTeamId": 382,
+      "fplTeamId": 13
+    },
+    {
+      "espnId": "410320",
+      "displayName": "Floyd Samba",
+      "shortName": "F. Samba",
+      "position": "Forward",
+      "jersey": "75",
+      "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
     }
@@ -5069,16 +5079,6 @@
       "fplTeamId": 15
     },
     {
-      "espnId": "346874",
-      "displayName": "Alex Murphy",
-      "shortName": "A. Murphy",
-      "position": "Defender",
-      "jersey": "37",
-      "nationality": "Republic of Ireland",
-      "espnTeamId": 361,
-      "fplTeamId": 15
-    },
-    {
       "espnId": "371334",
       "displayName": "Dylan Charlton",
       "shortName": "D. Charlton",
@@ -5407,6 +5407,16 @@
       "position": "Defender",
       "jersey": "5",
       "nationality": "Brazil",
+      "espnTeamId": 393,
+      "fplTeamId": 16
+    },
+    {
+      "espnId": "343964",
+      "displayName": "Ousmane Diomande",
+      "shortName": "O. Diomande",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "Ivory Coast",
       "espnTeamId": 393,
       "fplTeamId": 16
     },
