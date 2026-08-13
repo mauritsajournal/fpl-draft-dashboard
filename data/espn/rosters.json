@@ -623,16 +623,6 @@
       "fplTeamId": 2
     },
     {
-      "espnId": "288924",
-      "displayName": "Evann Guessand",
-      "shortName": "E. Guessand",
-      "position": "Forward",
-      "jersey": "29",
-      "nationality": "Ivory Coast",
-      "espnTeamId": 362,
-      "fplTeamId": 2
-    },
-    {
       "espnId": "325555",
       "displayName": "Alejandro Garnacho",
       "shortName": "A. Garnacho",
@@ -1050,7 +1040,7 @@
       "espnId": "289824",
       "displayName": "Djordje Petrovic",
       "shortName": "D. Petrovic",
-      "position": "Defender",
+      "position": "Goalkeeper",
       "jersey": "1",
       "nationality": "Serbia",
       "espnTeamId": 349,
@@ -1151,7 +1141,7 @@
       "displayName": "António Silva",
       "shortName": "A. Silva",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "14",
       "nationality": "Portugal",
       "espnTeamId": 349,
       "fplTeamId": 4
@@ -2861,6 +2851,16 @@
       "position": "Forward",
       "jersey": "",
       "nationality": "England",
+      "espnTeamId": 384,
+      "fplTeamId": 8
+    },
+    {
+      "espnId": "288924",
+      "displayName": "Evann Guessand",
+      "shortName": "E. Guessand",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Ivory Coast",
       "espnTeamId": 384,
       "fplTeamId": 8
     },
@@ -4611,7 +4611,7 @@
       "displayName": "Senne Lammens",
       "shortName": "S. Lammens",
       "position": "Goalkeeper",
-      "jersey": "31",
+      "jersey": "1",
       "nationality": "Belgium",
       "espnTeamId": 360,
       "fplTeamId": 14
@@ -6972,7 +6972,7 @@
       "espnId": "345845",
       "displayName": "Ethan Sutherland",
       "shortName": "E. Sutherland",
-      "position": "Midfielder",
+      "position": "Defender",
       "jersey": "60",
       "nationality": "Scotland",
       "espnTeamId": 380,
