@@ -1489,6 +1489,16 @@
       "fplTeamId": 5
     },
     {
+      "espnId": "378277",
+      "displayName": "Luca Picotto",
+      "shortName": "L. Picotto",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "Wales",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
       "espnId": "379123",
       "displayName": "Caelan Avenall",
       "shortName": "C. Avenall",
@@ -1515,6 +1525,16 @@
       "position": "Defender",
       "jersey": "49",
       "nationality": "England",
+      "espnTeamId": 337,
+      "fplTeamId": 5
+    },
+    {
+      "espnId": "3124214",
+      "displayName": "Andre Grey",
+      "shortName": "A. Grey",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "",
       "espnTeamId": 337,
       "fplTeamId": 5
     },
@@ -1619,32 +1639,12 @@
       "fplTeamId": 5
     },
     {
-      "espnId": "378277",
-      "displayName": "Luca Picotto",
-      "shortName": "L. Picotto",
-      "position": "Midfielder",
-      "jersey": "",
-      "nationality": "Wales",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
       "espnId": "418500",
       "displayName": "Luka Bentt",
       "shortName": "L. Bentt",
       "position": "Midfielder",
       "jersey": "48",
       "nationality": "Belgium",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
-      "espnId": "3124214",
-      "displayName": "Andre Grey",
-      "shortName": "A. Grey",
-      "position": "Midfielder",
-      "jersey": "",
-      "nationality": "",
       "espnTeamId": 337,
       "fplTeamId": 5
     },
@@ -4179,7 +4179,7 @@
       "displayName": "Gerónimo Rulli",
       "shortName": "G. Rulli",
       "position": "Goalkeeper",
-      "jersey": "",
+      "jersey": "28",
       "nationality": "Argentina",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4199,7 +4199,7 @@
       "displayName": "Gianluigi Donnarumma",
       "shortName": "G. Donnarumma",
       "position": "Goalkeeper",
-      "jersey": "25",
+      "jersey": "1",
       "nationality": "Italy",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4219,7 +4219,7 @@
       "displayName": "Marc Guéhi",
       "shortName": "M. Guéhi",
       "position": "Defender",
-      "jersey": "15",
+      "jersey": "6",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
@@ -4399,7 +4399,7 @@
       "displayName": "Elliot Anderson",
       "shortName": "E. Anderson",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "5",
       "nationality": "England",
       "espnTeamId": 382,
       "fplTeamId": 13
