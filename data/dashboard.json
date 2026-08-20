@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-20T13:39:27.175Z",
+    "lastUpdated": "2026-08-20T19:24:48.121Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -8204,18 +8204,6 @@
       }
     },
     {
-      "leagueEntryId": 8630,
-      "teamName": "Hannies bal met brie",
-      "playerName": "Marc Streng",
-      "score": 37,
-      "breakdown": {
-        "form": 0,
-        "xGI": 5.2,
-        "totalPoints": 16.6,
-        "fixtureDifficulty": 15
-      }
-    },
-    {
       "leagueEntryId": 27137,
       "teamName": "Dikke Saka veel grip",
       "playerName": "Maurits Koot",
@@ -8224,6 +8212,18 @@
         "form": 0,
         "xGI": 7,
         "totalPoints": 14.9,
+        "fixtureDifficulty": 15
+      }
+    },
+    {
+      "leagueEntryId": 8630,
+      "teamName": "Hannies bal met brie",
+      "playerName": "Marc Streng",
+      "score": 34,
+      "breakdown": {
+        "form": 0,
+        "xGI": 4.6,
+        "totalPoints": 14.8,
         "fixtureDifficulty": 15
       }
     },
@@ -8264,7 +8264,176 @@
       }
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "id": 48321,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 88163,
+      "playerIn": "Kinsky",
+      "playerInId": 496,
+      "playerOut": "Arrizabalaga",
+      "playerOutId": 2,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 48322,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 88163,
+      "playerIn": "Tavernier",
+      "playerInId": 68,
+      "playerOut": "Rodrigo",
+      "playerOutId": 402,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 220290,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Tzolis",
+      "playerInId": 554,
+      "playerOut": "Tielemans",
+      "playerOutId": 43,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 220291,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Garnacho",
+      "playerInId": 160,
+      "playerOut": "Tielemans",
+      "playerOutId": 43,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 220292,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Dorgu",
+      "playerInId": 415,
+      "playerOut": "Manzambi",
+      "playerOutId": 53,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 220293,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Awoniyi",
+      "playerInId": 492,
+      "playerOut": "Beto",
+      "playerOutId": 248,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 521443,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 88267,
+      "playerIn": "David",
+      "playerInId": 593,
+      "playerOut": "Wright",
+      "playerOutId": 193,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 521444,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 88267,
+      "playerIn": "Tzolis",
+      "playerInId": 554,
+      "playerOut": "Cherki",
+      "playerOutId": 399,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 594089,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Konsa",
+      "playerInId": 31,
+      "playerOut": "Lindelöf",
+      "playerOutId": 37,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 594090,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Araujo",
+      "playerInId": 580,
+      "playerOut": "Burn",
+      "playerOutId": 448,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 594091,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Tzolis",
+      "playerInId": 554,
+      "playerOut": "Merino",
+      "playerOutId": 17,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 637438,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Tzolis",
+      "playerInId": 554,
+      "playerOut": "Fernandes",
+      "playerOutId": 525,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 637439,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Konsa",
+      "playerInId": 31,
+      "playerOut": "Hincapie",
+      "playerOutId": 9,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 637440,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Kinsky",
+      "playerInId": 496,
+      "playerOut": "Mamardashvili",
+      "playerOutId": 351,
+      "type": "waiver",
+      "result": "rejected"
+    }
+  ],
   "draftPicks": [
     {
       "round": 1,
@@ -8377,7 +8546,7 @@
     {
       "round": 2,
       "pick": 5,
-      "playerName": "Unknown (596)",
+      "playerName": "Ruggeri",
       "playerId": 596,
       "managerName": "I Baleba I Can Fly",
       "leagueEntryId": 2569,
@@ -8476,7 +8645,7 @@
     {
       "round": 3,
       "pick": 8,
-      "playerName": "Unknown (597)",
+      "playerName": "Suzuki",
       "playerId": 597,
       "managerName": "Oscar is de Bobb",
       "leagueEntryId": 77537,
@@ -13167,7 +13336,7 @@
       {
         "pick": 5,
         "round": 2,
-        "playerName": "Unknown (596)",
+        "playerName": "Ruggeri",
         "playerId": 596,
         "managerName": "I Baleba I Can Fly",
         "leagueEntryId": 2569,
@@ -13277,7 +13446,7 @@
       {
         "pick": 8,
         "round": 3,
-        "playerName": "Unknown (597)",
+        "playerName": "Suzuki",
         "playerId": 597,
         "managerName": "Oscar is de Bobb",
         "leagueEntryId": 77537,
@@ -14247,7 +14416,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-08-20T13:39:26.521Z",
+    "lastUpdated": "2026-08-20T19:24:47.373Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
@@ -15750,7 +15919,7 @@
           },
           {
             "pick": 5,
-            "playerName": "Unknown (596)",
+            "playerName": "Ruggeri",
             "managerName": "I Baleba I Can Fly",
             "leagueEntryId": 2569,
             "fplPoints": 0,
@@ -15877,7 +16046,7 @@
           },
           {
             "pick": 8,
-            "playerName": "Unknown (597)",
+            "playerName": "Suzuki",
             "managerName": "Oscar is de Bobb",
             "leagueEntryId": 77537,
             "fplPoints": 0,
