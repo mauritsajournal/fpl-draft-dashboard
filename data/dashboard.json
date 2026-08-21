@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-21T02:19:14.577Z",
+    "lastUpdated": "2026-08-21T07:35:57.917Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -8432,6 +8432,30 @@
       "playerOutId": 351,
       "type": "waiver",
       "result": "rejected"
+    },
+    {
+      "id": 805851,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "E.Le Fée",
+      "playerInId": 542,
+      "playerOut": "Merino",
+      "playerOutId": 17,
+      "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 805963,
+      "gameweek": 1,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Abraham",
+      "playerInId": 56,
+      "playerOut": "Wood",
+      "playerOutId": 490,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -14416,7 +14440,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-08-21T02:19:13.986Z",
+    "lastUpdated": "2026-08-21T07:35:57.125Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
