@@ -1,9 +1,51 @@
 [
   {
+    "fplId": 1,
+    "fplName": "Raya",
+    "espnId": "196176",
+    "espnName": "David Raya",
+    "fplTeamId": 1
+  },
+  {
     "fplId": 4,
     "fplName": "Gabriel",
     "espnId": "236322",
     "espnName": "Gabriel Magalhães",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 7,
+    "fplName": "Lewis-Skelly",
+    "espnId": "352758",
+    "espnName": "Myles Lewis-Skelly",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 8,
+    "fplName": "Calafiori",
+    "espnId": "298329",
+    "espnName": "Riccardo Calafiori",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 10,
+    "fplName": "White",
+    "espnId": "241077",
+    "espnName": "Ben White",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 11,
+    "fplName": "Mosquera",
+    "espnId": "328497",
+    "espnName": "Cristhian Mosquera",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 12,
+    "fplName": "Saka",
+    "espnId": "280555",
+    "espnName": "Bukayo Saka",
     "fplTeamId": 1
   },
   {
@@ -14,53 +56,39 @@
     "fplTeamId": 1
   },
   {
-    "fplId": 229,
-    "fplName": "Tarkowski",
-    "espnId": "155226",
-    "espnName": "James Tarkowski",
-    "fplTeamId": 9
-  },
-  {
-    "fplId": 260,
-    "fplName": "Wilson",
-    "espnId": "307117",
-    "espnName": "Josh Wilson-Esbrand",
-    "fplTeamId": 13
-  },
-  {
-    "fplId": 55,
-    "fplName": "Watkins",
-    "espnId": "198825",
-    "espnName": "Ollie Watkins",
-    "fplTeamId": 2
-  },
-  {
-    "fplId": 1,
-    "fplName": "Raya",
-    "espnId": "196176",
-    "espnName": "David Raya",
+    "fplId": 15,
+    "fplName": "Ødegaard",
+    "espnId": "203669",
+    "espnName": "Martin Ødegaard",
     "fplTeamId": 1
   },
   {
-    "fplId": 239,
-    "fplName": "Garner",
-    "espnId": "276220",
-    "espnName": "James Garner",
-    "fplTeamId": 9
-  },
-  {
-    "fplId": 12,
-    "fplName": "Saka",
-    "espnId": "280555",
-    "espnName": "Bukayo Saka",
+    "fplId": 26,
+    "fplName": "Havertz",
+    "espnId": "231182",
+    "espnName": "Kai Havertz",
     "fplTeamId": 1
   },
   {
-    "fplId": 236,
-    "fplName": "Dewsbury-Hall",
-    "espnId": "252389",
-    "espnName": "Kiernan Dewsbury-Hall",
-    "fplTeamId": 9
+    "fplId": 554,
+    "fplName": "Tzolis",
+    "espnId": "303793",
+    "espnName": "Christos Tzolis",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 2,
+    "fplName": "Arrizabalaga",
+    "espnId": "169532",
+    "espnName": "Kepa Arrizabalaga",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 3,
+    "fplName": "Meslier",
+    "espnId": "265921",
+    "espnName": "Illan Meslier",
+    "fplTeamId": 1
   },
   {
     "fplId": 5,
@@ -77,31 +105,157 @@
     "fplTeamId": 1
   },
   {
-    "fplId": 201,
-    "fplName": "Muñoz",
-    "espnId": "146679",
-    "espnName": "Daniel Muñoz",
-    "fplTeamId": 8
+    "fplId": 9,
+    "fplName": "Hincapie",
+    "espnId": "292062",
+    "espnName": "Piero Hincapié",
+    "fplTeamId": 1
   },
   {
-    "fplId": 204,
-    "fplName": "Mitchell",
-    "espnId": "300853",
-    "espnName": "Tyrick Mitchell",
-    "fplTeamId": 8
+    "fplId": 14,
+    "fplName": "Eze",
+    "espnId": "251400",
+    "espnName": "Eberechi Eze",
+    "fplTeamId": 1
   },
   {
-    "fplId": 226,
-    "fplName": "Pickford",
-    "espnId": "159443",
-    "espnName": "Jordan Pickford",
+    "fplId": 16,
+    "fplName": "Madueke",
+    "espnId": "293236",
+    "espnName": "Noni Madueke",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 17,
+    "fplName": "Merino",
+    "espnId": "209581",
+    "espnName": "Mikel Merino",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 18,
+    "fplName": "Martinelli",
+    "espnId": "269844",
+    "espnName": "Gabriel Martinelli",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 19,
+    "fplName": "Zubimendi",
+    "espnId": "287266",
+    "espnName": "Martín Zubimendi",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 20,
+    "fplName": "Dowman",
+    "espnId": "397263",
+    "espnName": "Max Dowman",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 21,
+    "fplName": "Nørgaard",
+    "espnId": "178077",
+    "espnName": "Christian Nørgaard",
     "fplTeamId": 9
   },
   {
-    "fplId": 525,
-    "fplName": "Fernandes",
-    "espnId": "346820",
-    "espnName": "Mateus Fernandes",
-    "fplTeamId": 19
+    "fplId": 22,
+    "fplName": "Nwaneri",
+    "espnId": "349733",
+    "espnName": "Ethan Nwaneri",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 23,
+    "fplName": "Fábio Vieira",
+    "espnId": "88865",
+    "espnName": "Fabio Vieira",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 24,
+    "fplName": "Nelson",
+    "espnId": "227794",
+    "espnName": "Reiss Nelson",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 25,
+    "fplName": "Gyökeres",
+    "espnId": "258906",
+    "espnName": "Viktor Gyökeres",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 27,
+    "fplName": "G.Jesus",
+    "espnId": "217289",
+    "espnName": "Gabriel Jesus",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 28,
+    "fplName": "Martinez",
+    "espnId": "158626",
+    "espnName": "Emiliano Martínez",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 29,
+    "fplName": "M.Bizot",
+    "espnId": "132233",
+    "espnName": "Marco Bizot",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 31,
+    "fplName": "Konsa",
+    "espnId": "231859",
+    "espnName": "Ezri Konsa",
+    "fplTeamId": 1
+  },
+  {
+    "fplId": 32,
+    "fplName": "Cash",
+    "espnId": "234698",
+    "espnName": "Matty Cash",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 33,
+    "fplName": "Mings",
+    "espnId": "181312",
+    "espnName": "Tyrone Mings",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 34,
+    "fplName": "Pau",
+    "espnId": "251100",
+    "espnName": "Pau Torres",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 35,
+    "fplName": "Bogarde",
+    "espnId": "310607",
+    "espnName": "Lamare Bogarde",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 36,
+    "fplName": "Maatsen",
+    "espnId": "281125",
+    "espnName": "Ian Maatsen",
+    "fplTeamId": 2
+  },
+  {
+    "fplId": 37,
+    "fplName": "Lindelöf",
+    "espnId": "204679",
+    "espnName": "Victor Lindelöf",
+    "fplTeamId": 2
   }
 ]
