@@ -1007,16 +1007,6 @@
       "fplTeamId": 4
     },
     {
-      "espnId": "291269",
-      "displayName": "William Dennis",
-      "shortName": "W. Dennis",
-      "position": "Goalkeeper",
-      "jersey": "40",
-      "nationality": "England",
-      "espnTeamId": 349,
-      "fplTeamId": 4
-    },
-    {
       "espnId": "122268",
       "displayName": "Adam Smith",
       "shortName": "A. Smith",
@@ -1334,16 +1324,6 @@
       "shortName": "R. Henry",
       "position": "Defender",
       "jersey": "3",
-      "nationality": "Jamaica",
-      "espnTeamId": 337,
-      "fplTeamId": 5
-    },
-    {
-      "espnId": "241093",
-      "displayName": "Ethan Pinnock",
-      "shortName": "E. Pinnock",
-      "position": "Defender",
-      "jersey": "5",
       "nationality": "Jamaica",
       "espnTeamId": 337,
       "fplTeamId": 5
@@ -2046,7 +2026,7 @@
       "espnId": "355433",
       "displayName": "Mamadou Sarr",
       "shortName": "M. Sarr",
-      "position": "Forward",
+      "position": "Defender",
       "jersey": "19",
       "nationality": "Senegal",
       "espnTeamId": 363,
@@ -2351,6 +2331,16 @@
       "position": "Defender",
       "jersey": "24",
       "nationality": "Croatia",
+      "espnTeamId": 384,
+      "fplTeamId": 8
+    },
+    {
+      "espnId": "231718",
+      "displayName": "Axel Disasi",
+      "shortName": "A. Disasi",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "France",
       "espnTeamId": 384,
       "fplTeamId": 8
     },
@@ -2752,6 +2742,16 @@
       "shortName": "H. Armstrong",
       "position": "Midfielder",
       "jersey": "45",
+      "nationality": "England",
+      "espnTeamId": 368,
+      "fplTeamId": 9
+    },
+    {
+      "espnId": "392052",
+      "displayName": "Harvey Foster",
+      "shortName": "H. Foster",
+      "position": "Midfielder",
+      "jersey": "81",
       "nationality": "England",
       "espnTeamId": 368,
       "fplTeamId": 9
@@ -3835,22 +3835,22 @@
       "fplTeamId": 13
     },
     {
-      "espnId": "323986",
-      "displayName": "Nico González",
-      "shortName": "N. González",
-      "position": "Midfielder",
-      "jersey": "14",
-      "nationality": "Spain",
-      "espnTeamId": 382,
-      "fplTeamId": 13
-    },
-    {
       "espnId": "361355",
       "displayName": "Claudio Echeverri",
       "shortName": "C. Echeverri",
       "position": "Midfielder",
       "jersey": "30",
       "nationality": "Argentina",
+      "espnTeamId": 382,
+      "fplTeamId": 13
+    },
+    {
+      "espnId": "373927",
+      "displayName": "Ayyoub Bouaddi",
+      "shortName": "A. Bouaddi",
+      "position": "Midfielder",
+      "jersey": "32",
+      "nationality": "Morocco",
       "espnTeamId": 382,
       "fplTeamId": 13
     },
@@ -4399,6 +4399,16 @@
       "fplTeamId": 15
     },
     {
+      "espnId": "323986",
+      "displayName": "Nico González",
+      "shortName": "N. González",
+      "position": "Midfielder",
+      "jersey": "6",
+      "nationality": "Spain",
+      "espnTeamId": 361,
+      "fplTeamId": 15
+    },
+    {
       "espnId": "349078",
       "displayName": "Lewis Miley",
       "shortName": "L. Miley",
@@ -4741,32 +4751,12 @@
       "fplTeamId": 16
     },
     {
-      "espnId": "297157",
-      "displayName": "Dilane Bakwa",
-      "shortName": "D. Bakwa",
-      "position": "Forward",
-      "jersey": "29",
-      "nationality": "France",
-      "espnTeamId": 393,
-      "fplTeamId": 16
-    },
-    {
       "espnId": "322771",
       "displayName": "Omari Hutchinson",
       "shortName": "O. Hutchinson",
       "position": "Forward",
       "jersey": "20",
       "nationality": "England",
-      "espnTeamId": 393,
-      "fplTeamId": 16
-    },
-    {
-      "espnId": "372025",
-      "displayName": "Eric Da Silva Moreira",
-      "shortName": "E. Da Silva Moreira",
-      "position": "Forward",
-      "jersey": "17",
-      "nationality": "Germany",
       "espnTeamId": 393,
       "fplTeamId": 16
     }
