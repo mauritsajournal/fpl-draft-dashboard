@@ -1821,16 +1821,6 @@
       "fplTeamId": 6
     },
     {
-      "espnId": "338814",
-      "displayName": "Carlos Baleba",
-      "shortName": "C. Baleba",
-      "position": "Midfielder",
-      "jersey": "17",
-      "nationality": "Cameroon",
-      "espnTeamId": 331,
-      "fplTeamId": 6
-    },
-    {
       "espnId": "359097",
       "displayName": "Malick Yalcouyé",
       "shortName": "M. Yalcouyé",
@@ -2056,7 +2046,7 @@
       "espnId": "355433",
       "displayName": "Mamadou Sarr",
       "shortName": "M. Sarr",
-      "position": "Defender",
+      "position": "Forward",
       "jersey": "19",
       "nationality": "Senegal",
       "espnTeamId": 363,
@@ -4137,6 +4127,16 @@
       "fplTeamId": 14
     },
     {
+      "espnId": "338814",
+      "displayName": "Carlos Baleba",
+      "shortName": "C. Baleba",
+      "position": "Midfielder",
+      "jersey": "20",
+      "nationality": "Cameroon",
+      "espnTeamId": 360,
+      "fplTeamId": 14
+    },
+    {
       "espnId": "393138",
       "displayName": "Tyler Fletcher",
       "shortName": "T. Fletcher",
@@ -4274,7 +4274,7 @@
       "shortName": "L. Hall",
       "position": "Defender",
       "jersey": "3",
-      "nationality": "Scotland",
+      "nationality": "England",
       "espnTeamId": 361,
       "fplTeamId": 15
     },
@@ -5336,10 +5336,10 @@
     },
     {
       "espnId": "304470",
-      "displayName": "Savio",
-      "shortName": "Savio",
+      "displayName": "Sávio",
+      "shortName": "Sávio",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "17",
       "nationality": "Brazil",
       "espnTeamId": 367,
       "fplTeamId": 18
