@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-27T10:48:15.635Z",
+    "lastUpdated": "2026-08-27T22:43:08.549Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -8255,9 +8255,9 @@
       "leagueEntryId": 4815,
       "teamName": "Eze come Eze go",
       "playerName": "Pieter van Gemert",
-      "score": 23,
+      "score": 22,
       "breakdown": {
-        "form": 7.8,
+        "form": 7,
         "xGI": 0,
         "totalPoints": 0.2,
         "fixtureDifficulty": 15
@@ -8455,6 +8455,102 @@
       "playerOut": "Wood",
       "playerOutId": 490,
       "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 847748,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 88163,
+      "playerIn": "Cash",
+      "playerInId": 32,
+      "playerOut": "J.Timber",
+      "playerOutId": 5,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 1292927,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Hinshelwood",
+      "playerInId": 123,
+      "playerOut": "E.Le Fée",
+      "playerOutId": 542,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 2046422,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Suzuki",
+      "playerInId": 597,
+      "playerOut": "Mamardashvili",
+      "playerOutId": 351,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 3475308,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "De Cuyper",
+      "playerInId": 115,
+      "playerOut": "F.Kadıoğlu",
+      "playerOutId": 113,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 3475309,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Suzuki",
+      "playerInId": 597,
+      "playerOut": "Henderson",
+      "playerOutId": 198,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 3475310,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Tzolakis",
+      "playerInId": 571,
+      "playerOut": "Henderson",
+      "playerOutId": 198,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 3475311,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Enciso",
+      "playerInId": 591,
+      "playerOut": "Garnacho",
+      "playerOutId": 160,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 3475312,
+      "gameweek": 2,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Delap",
+      "playerInId": 167,
+      "playerOut": "Awoniyi",
+      "playerOutId": 492,
+      "type": "waiver",
       "result": "accepted"
     }
   ],
@@ -14440,7 +14536,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-08-27T10:48:14.995Z",
+    "lastUpdated": "2026-08-27T22:43:07.759Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
