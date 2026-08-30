@@ -303,16 +303,6 @@
       "fplTeamId": 2
     },
     {
-      "espnId": "158626",
-      "displayName": "Emiliano Martínez",
-      "shortName": "E. Martínez",
-      "position": "Goalkeeper",
-      "jersey": "23",
-      "nationality": "Argentina",
-      "espnTeamId": 362,
-      "fplTeamId": 2
-    },
-    {
       "espnId": "235319",
       "displayName": "James Wright",
       "shortName": "J. Wright",
@@ -1001,7 +991,7 @@
       "displayName": "Michele Di Gregorio",
       "shortName": "M. Di Gregorio",
       "position": "Goalkeeper",
-      "jersey": "",
+      "jersey": "20",
       "nationality": "Italy",
       "espnTeamId": 349,
       "fplTeamId": 4
@@ -1953,6 +1943,16 @@
       "fplTeamId": 7
     },
     {
+      "espnId": "158626",
+      "displayName": "Emiliano Martínez",
+      "shortName": "E. Martínez",
+      "position": "Goalkeeper",
+      "jersey": "",
+      "nationality": "Argentina",
+      "espnTeamId": 363,
+      "fplTeamId": 7
+    },
+    {
       "espnId": "286774",
       "displayName": "Gaga Slonina",
       "shortName": "G. Slonina",
@@ -2330,7 +2330,7 @@
       "shortName": "D. Muñoz",
       "position": "Defender",
       "jersey": "2",
-      "nationality": "Spain",
+      "nationality": "Colombia",
       "espnTeamId": 384,
       "fplTeamId": 8
     },
@@ -2349,7 +2349,7 @@
       "displayName": "Axel Disasi",
       "shortName": "A. Disasi",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "5",
       "nationality": "France",
       "espnTeamId": 384,
       "fplTeamId": 8
@@ -4805,7 +4805,7 @@
       "displayName": "Liam Delap",
       "shortName": "L. Delap",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "19",
       "nationality": "England",
       "espnTeamId": 393,
       "fplTeamId": 16
@@ -5379,7 +5379,7 @@
       "displayName": "Omar Marmoush",
       "shortName": "O. Marmoush",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "22",
       "nationality": "Egypt",
       "espnTeamId": 367,
       "fplTeamId": 18
