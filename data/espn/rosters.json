@@ -211,16 +211,6 @@
       "fplTeamId": 1
     },
     {
-      "espnId": "217289",
-      "displayName": "Gabriel Jesus",
-      "shortName": "G. Jesus",
-      "position": "Forward",
-      "jersey": "9",
-      "nationality": "Brazil",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "231182",
       "displayName": "Kai Havertz",
       "shortName": "K. Havertz",
@@ -369,6 +359,16 @@
       "position": "Defender",
       "jersey": "14",
       "nationality": "Spain",
+      "espnTeamId": 362,
+      "fplTeamId": 2
+    },
+    {
+      "espnId": "281121",
+      "displayName": "Taylor Harwood-Bellis",
+      "shortName": "T. Harwood-Bellis",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "England",
       "espnTeamId": 362,
       "fplTeamId": 2
     },
@@ -2395,6 +2395,16 @@
       "fplTeamId": 8
     },
     {
+      "espnId": "388605",
+      "displayName": "Honest Ahanor",
+      "shortName": "H. Ahanor",
+      "position": "Defender",
+      "jersey": "",
+      "nationality": "Italy",
+      "espnTeamId": 384,
+      "fplTeamId": 8
+    },
+    {
       "espnId": "168421",
       "displayName": "Will Hughes",
       "shortName": "W. Hughes",
@@ -3627,7 +3637,7 @@
       "displayName": "Bradley Barcola",
       "shortName": "B. Barcola",
       "position": "Forward",
-      "jersey": "",
+      "jersey": "29",
       "nationality": "France",
       "espnTeamId": 364,
       "fplTeamId": 12
@@ -4292,9 +4302,9 @@
       "espnId": "106139",
       "displayName": "Lewis Hall",
       "shortName": "L. Hall",
-      "position": "Midfielder",
+      "position": "Defender",
       "jersey": "3",
-      "nationality": "Scotland",
+      "nationality": "England",
       "espnTeamId": 361,
       "fplTeamId": 15
     },
@@ -4515,6 +4525,16 @@
       "position": "Forward",
       "jersey": "17",
       "nationality": "Ivory Coast",
+      "espnTeamId": 361,
+      "fplTeamId": 15
+    },
+    {
+      "espnId": "359651",
+      "displayName": "Matias Fernandez-Pardo",
+      "shortName": "M. Fernandez-Pardo",
+      "position": "Forward",
+      "jersey": "",
+      "nationality": "Belgium",
       "espnTeamId": 361,
       "fplTeamId": 15
     }
@@ -5165,16 +5185,6 @@
       "fplTeamId": 18
     },
     {
-      "espnId": "328492",
-      "displayName": "Kota Takai",
-      "shortName": "K. Takai",
-      "position": "Defender",
-      "jersey": "25",
-      "nationality": "Japan",
-      "espnTeamId": 367,
-      "fplTeamId": 18
-    },
-    {
       "espnId": "194450",
       "displayName": "James Maddison",
       "shortName": "J. Maddison",
@@ -5231,16 +5241,6 @@
       "position": "Midfielder",
       "jersey": "21",
       "nationality": "Sweden",
-      "espnTeamId": 367,
-      "fplTeamId": 18
-    },
-    {
-      "espnId": "297337",
-      "displayName": "Pape Matar Sarr",
-      "shortName": "P. Sarr",
-      "position": "Midfielder",
-      "jersey": "29",
-      "nationality": "Senegal",
       "espnTeamId": 367,
       "fplTeamId": 18
     },
