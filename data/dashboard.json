@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-31T23:04:35.911Z",
+    "lastUpdated": "2026-09-01T05:55:34.393Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -5394,6 +5394,28 @@
       "bonus": 1
     },
     {
+      "id": 13,
+      "webName": "Rice",
+      "firstName": "Declan",
+      "lastName": "Rice",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Arsenal",
+      "teamId": 1,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 8,
+      "form": 4,
+      "goalsScored": 0,
+      "assists": 0,
+      "xG": 0.07,
+      "xA": 0.18,
+      "xGI": 0.25,
+      "minutes": 151,
+      "cleanSheets": 2,
+      "bonus": 0
+    },
+    {
       "id": 26,
       "webName": "Havertz",
       "firstName": "Kai",
@@ -5408,9 +5430,9 @@
       "form": 4,
       "goalsScored": 1,
       "assists": 0,
-      "xG": 0.3,
+      "xG": 0.28,
       "xA": 0.06,
-      "xGI": 0.36,
+      "xGI": 0.34,
       "minutes": 180,
       "cleanSheets": 2,
       "bonus": 0
@@ -5896,28 +5918,6 @@
       "xA": 0.13,
       "xGI": 0.26,
       "minutes": 160,
-      "cleanSheets": 2,
-      "bonus": 0
-    },
-    {
-      "id": 13,
-      "webName": "Rice",
-      "firstName": "Declan",
-      "lastName": "Rice",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Arsenal",
-      "teamId": 1,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 6,
-      "form": 3,
-      "goalsScored": 0,
-      "assists": 0,
-      "xG": 0.07,
-      "xA": 0.18,
-      "xGI": 0.25,
-      "minutes": 151,
       "cleanSheets": 2,
       "bonus": 0
     },
@@ -6948,9 +6948,9 @@
       "form": 2,
       "goalsScored": 0,
       "assists": 0,
-      "xG": 0.15,
+      "xG": 0.17,
       "xA": 0.11,
-      "xGI": 0.26,
+      "xGI": 0.28,
       "minutes": 175,
       "cleanSheets": 0,
       "bonus": 0
@@ -14560,7 +14560,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-08-31T23:04:35.311Z",
+    "lastUpdated": "2026-09-01T05:55:33.634Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
