@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-02T11:53:45.842Z",
+    "lastUpdated": "2026-09-02T16:56:15.309Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -4476,8 +4476,8 @@
       "lastName": "Ndiaye",
       "position": "MID",
       "positionId": 3,
-      "team": "Everton",
-      "teamId": 9,
+      "team": "Man City",
+      "teamId": 15,
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 13,
@@ -5637,7 +5637,7 @@
     },
     {
       "id": 551,
-      "webName": "Angulo",
+      "webName": "N.Angulo",
       "firstName": "Nilson",
       "lastName": "Angulo",
       "position": "MID",
@@ -8228,18 +8228,6 @@
       }
     },
     {
-      "leagueEntryId": 8630,
-      "teamName": "Hannies bal met brie",
-      "playerName": "Marc Streng",
-      "score": 25,
-      "breakdown": {
-        "form": 9.4,
-        "xGI": 0.1,
-        "totalPoints": 0.5,
-        "fixtureDifficulty": 15
-      }
-    },
-    {
       "leagueEntryId": 2273,
       "teamName": "Gibbs-White Walkers",
       "playerName": "Sam vd V",
@@ -8247,6 +8235,18 @@
       "breakdown": {
         "form": 8,
         "xGI": 0.4,
+        "totalPoints": 0.4,
+        "fixtureDifficulty": 15
+      }
+    },
+    {
+      "leagueEntryId": 8630,
+      "teamName": "Hannies bal met brie",
+      "playerName": "Marc Streng",
+      "score": 24,
+      "breakdown": {
+        "form": 8.5,
+        "xGI": 0,
         "totalPoints": 0.4,
         "fixtureDifficulty": 15
       }
@@ -14560,7 +14560,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-09-02T11:53:45.248Z",
+    "lastUpdated": "2026-09-02T16:56:14.549Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
