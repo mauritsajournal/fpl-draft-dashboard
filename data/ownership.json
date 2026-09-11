@@ -397,12 +397,6 @@
       "status": "a"
     },
     {
-      "element": 295,
-      "in_accepted_trade": false,
-      "owner": null,
-      "status": "a"
-    },
-    {
       "element": 559,
       "in_accepted_trade": false,
       "owner": null,
@@ -3019,6 +3013,12 @@
       "status": "a"
     },
     {
+      "element": 526,
+      "in_accepted_trade": false,
+      "owner": null,
+      "status": "l"
+    },
+    {
       "element": 591,
       "in_accepted_trade": false,
       "owner": null,
@@ -3133,7 +3133,7 @@
       "status": "o"
     },
     {
-      "element": 526,
+      "element": 295,
       "in_accepted_trade": false,
       "owner": 1960,
       "status": "o"
