@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-20T05:34:45.615Z",
+    "lastUpdated": "2026-09-20T11:56:23.157Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -6296,28 +6296,6 @@
       "bonus": 0
     },
     {
-      "id": 295,
-      "webName": "McBurnie",
-      "firstName": "Oli",
-      "lastName": "McBurnie",
-      "position": "FWD",
-      "positionId": 4,
-      "team": "Hull City",
-      "teamId": 11,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 14,
-      "form": 2.8,
-      "goalsScored": 0,
-      "assists": 2,
-      "xG": 1.23,
-      "xA": 0.13,
-      "xGI": 1.36,
-      "minutes": 441,
-      "cleanSheets": 3,
-      "bonus": 0
-    },
-    {
       "id": 377,
       "webName": "Munoz",
       "firstName": "Victor",
@@ -6513,6 +6491,28 @@
       "xGI": 0.37,
       "minutes": 364,
       "cleanSheets": 0,
+      "bonus": 0
+    },
+    {
+      "id": 295,
+      "webName": "McBurnie",
+      "firstName": "Oli",
+      "lastName": "McBurnie",
+      "position": "FWD",
+      "positionId": 4,
+      "team": "Hull City",
+      "teamId": 11,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 13,
+      "form": 2.6,
+      "goalsScored": 0,
+      "assists": 2,
+      "xG": 1.23,
+      "xA": 0.13,
+      "xGI": 1.36,
+      "minutes": 441,
+      "cleanSheets": 3,
       "bonus": 0
     },
     {
@@ -8173,7 +8173,7 @@
       "playerName": "Salomon van Megen",
       "score": 39,
       "breakdown": {
-        "form": 20.7,
+        "form": 20.5,
         "xGI": 0.9,
         "totalPoints": 2.6,
         "fixtureDifficulty": 15
@@ -14908,7 +14908,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-09-20T05:34:44.853Z",
+    "lastUpdated": "2026-09-20T11:56:22.323Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
