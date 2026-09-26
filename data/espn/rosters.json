@@ -201,16 +201,6 @@
       "fplTeamId": 1
     },
     {
-      "espnId": "397263",
-      "displayName": "Max Dowman",
-      "shortName": "M. Dowman",
-      "position": "Midfielder",
-      "jersey": "56",
-      "nationality": "England",
-      "espnTeamId": 359,
-      "fplTeamId": 1
-    },
-    {
       "espnId": "399894",
       "displayName": "Ife Ibrahim",
       "shortName": "I. Ibrahim",
@@ -267,6 +257,16 @@
       "position": "Forward",
       "jersey": "17",
       "nationality": "Greece",
+      "espnTeamId": 359,
+      "fplTeamId": 1
+    },
+    {
+      "espnId": "397263",
+      "displayName": "Max Dowman",
+      "shortName": "M. Dowman",
+      "position": "Forward",
+      "jersey": "56",
+      "nationality": "England",
       "espnTeamId": 359,
       "fplTeamId": 1
     }
@@ -4787,7 +4787,7 @@
       "displayName": "Jenson Arron Jones",
       "shortName": "J. Jones",
       "position": "Defender",
-      "jersey": "",
+      "jersey": "48",
       "nationality": "England",
       "espnTeamId": 366,
       "fplTeamId": 17
@@ -4867,7 +4867,7 @@
       "displayName": "Jack Whittaker",
       "shortName": "J. Whittaker",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "40",
       "nationality": "England",
       "espnTeamId": 366,
       "fplTeamId": 17
@@ -4917,7 +4917,7 @@
       "displayName": "Tymur Tutierov",
       "shortName": "T. Tutierov",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "57",
       "nationality": "Ukraine",
       "espnTeamId": 366,
       "fplTeamId": 17
@@ -4937,7 +4937,7 @@
       "displayName": "Tom Proctor",
       "shortName": "T. Proctor",
       "position": "Midfielder",
-      "jersey": "",
+      "jersey": "77",
       "nationality": "",
       "espnTeamId": 366,
       "fplTeamId": 17
@@ -4946,9 +4946,9 @@
       "espnId": "48106",
       "displayName": "Juan Angulo",
       "shortName": "J. Angulo",
-      "position": "Defender",
+      "position": "Forward",
       "jersey": "",
-      "nationality": "Colombia",
+      "nationality": "Ecuador",
       "espnTeamId": 366,
       "fplTeamId": 17
     },
