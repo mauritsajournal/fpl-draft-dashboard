@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-27T17:22:32.703Z",
+    "lastUpdated": "2026-09-27T21:45:45.201Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -3865,7 +3865,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 39,
-      "form": 9.2,
+      "form": 8,
       "goalsScored": 5,
       "assists": 0,
       "xG": 4.42,
@@ -3909,7 +3909,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 37,
-      "form": 7,
+      "form": 7.7,
       "goalsScored": 1,
       "assists": 3,
       "xG": 0.22,
@@ -3931,7 +3931,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 34,
-      "form": 6.5,
+      "form": 4,
       "goalsScored": 3,
       "assists": 2,
       "xG": 0.72,
@@ -4019,7 +4019,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 33,
-      "form": 7.8,
+      "form": 8.7,
       "goalsScored": 2,
       "assists": 3,
       "xG": 0.33,
@@ -4239,7 +4239,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 30,
-      "form": 5,
+      "form": 6,
       "goalsScored": 1,
       "assists": 1,
       "xG": 0.95,
@@ -4877,7 +4877,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 24,
-      "form": 5.8,
+      "form": 7.7,
       "goalsScored": 2,
       "assists": 0,
       "xG": 0.77,
@@ -5317,7 +5317,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 21,
-      "form": 4.5,
+      "form": 5.3,
       "goalsScored": 0,
       "assists": 3,
       "xG": 0.47,
@@ -5647,7 +5647,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 19,
-      "form": 4,
+      "form": 5.3,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0,
@@ -5691,7 +5691,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 19,
-      "form": 4.5,
+      "form": 5.3,
       "goalsScored": 1,
       "assists": 0,
       "xG": 0.96,
@@ -5889,7 +5889,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 17,
-      "form": 3.8,
+      "form": 4.3,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0.29,
@@ -6307,7 +6307,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 15,
-      "form": 3.2,
+      "form": 3.3,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0.11,
@@ -6505,7 +6505,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 14,
-      "form": 2.8,
+      "form": 3.7,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0.08,
@@ -6527,7 +6527,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 14,
-      "form": 3.2,
+      "form": 2.7,
       "goalsScored": 0,
       "assists": 2,
       "xG": 0.52,
@@ -6549,7 +6549,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 14,
-      "form": 3.2,
+      "form": 3.7,
       "goalsScored": 1,
       "assists": 0,
       "xG": 0.43,
@@ -7583,7 +7583,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 11,
-      "form": 2.5,
+      "form": 3.3,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0,
@@ -7847,7 +7847,7 @@
       "owner": null,
       "ownerLeagueEntryId": null,
       "totalPoints": 10,
-      "form": 2.2,
+      "form": 3,
       "goalsScored": 0,
       "assists": 0,
       "xG": 0.05,
@@ -8168,26 +8168,26 @@
   ],
   "powerRankings": [
     {
-      "leagueEntryId": 75126,
-      "teamName": "Oscar is de Bobb",
-      "playerName": "Maximiliaan de Goede",
-      "score": 39,
-      "breakdown": {
-        "form": 19.5,
-        "xGI": 1.6,
-        "totalPoints": 2.5,
-        "fixtureDifficulty": 15
-      }
-    },
-    {
       "leagueEntryId": 34059,
       "teamName": "Steen, Papier, Schar",
       "playerName": "Salomon van Megen",
       "score": 38,
       "breakdown": {
-        "form": 19.8,
+        "form": 19.5,
         "xGI": 0.9,
         "totalPoints": 2.6,
+        "fixtureDifficulty": 15
+      }
+    },
+    {
+      "leagueEntryId": 75126,
+      "teamName": "Oscar is de Bobb",
+      "playerName": "Maximiliaan de Goede",
+      "score": 38,
+      "breakdown": {
+        "form": 19.2,
+        "xGI": 1.6,
+        "totalPoints": 2.5,
         "fixtureDifficulty": 15
       }
     },
@@ -8195,11 +8195,23 @@
       "leagueEntryId": 85079,
       "teamName": "Shake Dias",
       "playerName": "Robert van Gemert",
-      "score": 31,
+      "score": 30,
       "breakdown": {
-        "form": 13.3,
+        "form": 12.1,
         "xGI": 1.3,
         "totalPoints": 1.5,
+        "fixtureDifficulty": 15
+      }
+    },
+    {
+      "leagueEntryId": 8630,
+      "teamName": "Hannies bal met brie",
+      "playerName": "Marc Streng",
+      "score": 29,
+      "breakdown": {
+        "form": 12.2,
+        "xGI": 0.1,
+        "totalPoints": 1.3,
         "fixtureDifficulty": 15
       }
     },
@@ -8211,18 +8223,6 @@
       "breakdown": {
         "form": 11.2,
         "xGI": 0.4,
-        "totalPoints": 1.3,
-        "fixtureDifficulty": 15
-      }
-    },
-    {
-      "leagueEntryId": 8630,
-      "teamName": "Hannies bal met brie",
-      "playerName": "Marc Streng",
-      "score": 27,
-      "breakdown": {
-        "form": 11,
-        "xGI": 0.1,
         "totalPoints": 1.3,
         "fixtureDifficulty": 15
       }
@@ -8245,7 +8245,7 @@
       "playerName": "Maurits Koot",
       "score": 23,
       "breakdown": {
-        "form": 6.5,
+        "form": 6.2,
         "xGI": 0.6,
         "totalPoints": 0.9,
         "fixtureDifficulty": 15
@@ -8257,7 +8257,7 @@
       "playerName": "Sam vd V",
       "score": 22,
       "breakdown": {
-        "form": 5.8,
+        "form": 5.7,
         "xGI": 0.7,
         "totalPoints": 0.9,
         "fixtureDifficulty": 15
@@ -14908,7 +14908,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-09-27T17:22:32.105Z",
+    "lastUpdated": "2026-09-27T21:45:44.441Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
