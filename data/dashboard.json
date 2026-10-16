@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-16T05:18:38.565Z",
+    "lastUpdated": "2026-10-16T12:01:42.069Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -8960,6 +8960,90 @@
       "playerOutId": 56,
       "type": "free_agent",
       "result": "accepted"
+    },
+    {
+      "id": 16227110,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Isidor",
+      "playerInId": 553,
+      "playerOut": "Gyökeres",
+      "playerOutId": 25,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 16227111,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "F.Kadıoğlu",
+      "playerInId": 113,
+      "playerOut": "Maguire",
+      "playerOutId": 418,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 16227112,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Colwill",
+      "playerInId": 149,
+      "playerOut": "N.Williams",
+      "playerOutId": 469,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 16349657,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Henderson",
+      "playerInId": 101,
+      "playerOut": "Scott",
+      "playerOutId": 69,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 16349658,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "F.Kadıoğlu",
+      "playerInId": 113,
+      "playerOut": "Mykolenko",
+      "playerOutId": 233,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 16506902,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 88266,
+      "playerIn": "Stach",
+      "playerInId": 335,
+      "playerOut": "Janelt",
+      "playerOutId": 98,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 16742091,
+      "gameweek": 7,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Kluivert",
+      "playerInId": 70,
+      "playerOut": "Xhaka",
+      "playerOutId": 544,
+      "type": "waiver",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -14944,7 +15028,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-10-16T05:18:37.811Z",
+    "lastUpdated": "2026-10-16T12:01:41.268Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
