@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-30T22:44:35.238Z",
+    "lastUpdated": "2026-10-31T06:30:23.415Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -9260,6 +9260,30 @@
       "playerOutId": 78,
       "type": "waiver",
       "result": "rejected"
+    },
+    {
+      "id": 20225048,
+      "gameweek": 9,
+      "managerName": "Unknown",
+      "leagueEntryId": 88267,
+      "playerIn": "Flemming",
+      "playerInId": 646,
+      "playerOut": "Fernandez-Pardo",
+      "playerOutId": 649,
+      "type": "free_agent",
+      "result": "accepted"
+    },
+    {
+      "id": 20228030,
+      "gameweek": 9,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "N.Williams",
+      "playerInId": 469,
+      "playerOut": "F.Kadıoğlu",
+      "playerOutId": 113,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -15244,7 +15268,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-10-30T22:44:34.482Z",
+    "lastUpdated": "2026-10-31T06:30:22.702Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
