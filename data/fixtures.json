@@ -32380,10 +32380,10 @@
     "code": 2645281,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 87,
     "kickoff_time": "2026-11-01T16:30:00Z",
-    "minutes": 75,
+    "minutes": 90,
     "provisional_start_time": false,
     "started": true,
     "team_a": 1,
@@ -32431,6 +32431,14 @@
         "a": [
           {
             "value": 1,
+            "element": 1
+          },
+          {
+            "value": 1,
+            "element": 5
+          },
+          {
+            "value": 1,
             "element": 7
           },
           {
@@ -32441,7 +32449,15 @@
         "h": [
           {
             "value": 1,
+            "element": 356
+          },
+          {
+            "value": 1,
             "element": 358
+          },
+          {
+            "value": 1,
+            "element": 372
           },
           {
             "value": 1,
@@ -32476,11 +32492,7 @@
             "element": 13
           },
           {
-            "value": 1,
-            "element": 4
-          },
-          {
-            "value": 1,
+            "value": 2,
             "element": 31
           }
         ],
@@ -32494,39 +32506,39 @@
             "element": 26
           },
           {
-            "value": 29,
+            "value": 32,
             "element": 13
           },
           {
-            "value": 27,
-            "element": 4
-          },
-          {
-            "value": 27,
+            "value": 32,
             "element": 31
           },
           {
-            "value": 25,
+            "value": 29,
+            "element": 4
+          },
+          {
+            "value": 23,
             "element": 5
           },
           {
-            "value": 22,
-            "element": 1
+            "value": 23,
+            "element": 8
           },
           {
             "value": 21,
-            "element": 8
+            "element": 1
+          },
+          {
+            "value": 17,
+            "element": 15
           },
           {
             "value": 14,
             "element": 557
           },
           {
-            "value": 13,
-            "element": 15
-          },
-          {
-            "value": 10,
+            "value": 11,
             "element": 16
           },
           {
@@ -32536,20 +32548,32 @@
           {
             "value": 4,
             "element": 7
+          },
+          {
+            "value": 4,
+            "element": 17
+          },
+          {
+            "value": 3,
+            "element": 25
+          },
+          {
+            "value": 2,
+            "element": 9
           }
         ],
         "h": [
+          {
+            "value": 14,
+            "element": 362
+          },
           {
             "value": 11,
             "element": 358
           },
           {
-            "value": 11,
-            "element": 366
-          },
-          {
             "value": 10,
-            "element": 362
+            "element": 368
           },
           {
             "value": 10,
@@ -32557,11 +32581,15 @@
           },
           {
             "value": 9,
-            "element": 372
+            "element": 366
           },
           {
             "value": 9,
             "element": 579
+          },
+          {
+            "value": 8,
+            "element": 379
           },
           {
             "value": 7,
@@ -32569,15 +32597,15 @@
           },
           {
             "value": 7,
-            "element": 356
-          },
-          {
-            "value": 7,
             "element": 367
           },
           {
-            "value": 7,
-            "element": 379
+            "value": 6,
+            "element": 356
+          },
+          {
+            "value": 6,
+            "element": 372
           },
           {
             "value": 6,
@@ -32585,11 +32613,19 @@
           },
           {
             "value": 5,
-            "element": 368
+            "element": 369
           },
           {
-            "value": 3,
-            "element": 369
+            "value": 4,
+            "element": 377
+          },
+          {
+            "value": 4,
+            "element": 381
+          },
+          {
+            "value": 2,
+            "element": 364
           }
         ]
       },
@@ -32597,27 +32633,35 @@
         "identifier": "defensive_contribution",
         "a": [
           {
-            "value": 10,
+            "value": 15,
             "element": 31
           },
           {
-            "value": 8,
+            "value": 10,
             "element": 8
           },
           {
-            "value": 6,
-            "element": 5
+            "value": 9,
+            "element": 4
           },
           {
-            "value": 6,
+            "value": 9,
             "element": 13
           },
           {
-            "value": 6,
+            "value": 8,
             "element": 15
           },
           {
-            "value": 6,
+            "value": 7,
+            "element": 5
+          },
+          {
+            "value": 7,
+            "element": 16
+          },
+          {
+            "value": 7,
             "element": 26
           },
           {
@@ -32625,20 +32669,24 @@
             "element": 452
           },
           {
-            "value": 5,
-            "element": 4
-          },
-          {
-            "value": 5,
+            "value": 6,
             "element": 557
           },
           {
-            "value": 4,
-            "element": 16
+            "value": 3,
+            "element": 9
           },
           {
             "value": 2,
             "element": 7
+          },
+          {
+            "value": 2,
+            "element": 25
+          },
+          {
+            "value": 1,
+            "element": 17
           }
         ],
         "h": [
@@ -32647,16 +32695,20 @@
             "element": 579
           },
           {
-            "value": 8,
+            "value": 10,
+            "element": 372
+          },
+          {
+            "value": 9,
             "element": 362
           },
           {
             "value": 7,
-            "element": 372
+            "element": 356
           },
           {
-            "value": 6,
-            "element": 356
+            "value": 7,
+            "element": 368
           },
           {
             "value": 6,
@@ -32665,10 +32717,6 @@
           {
             "value": 6,
             "element": 375
-          },
-          {
-            "value": 5,
-            "element": 368
           },
           {
             "value": 5,
@@ -32683,12 +32731,20 @@
             "element": 367
           },
           {
+            "value": 4,
+            "element": 381
+          },
+          {
             "value": 3,
             "element": 379
           },
           {
-            "value": 1,
+            "value": 2,
             "element": 369
+          },
+          {
+            "value": 1,
+            "element": 377
           }
         ]
       }
