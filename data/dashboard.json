@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-05T07:36:07.299Z",
+    "lastUpdated": "2026-11-05T20:25:13.246Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -9284,6 +9284,66 @@
       "playerOutId": 113,
       "type": "free_agent",
       "result": "accepted"
+    },
+    {
+      "id": 20531476,
+      "gameweek": 10,
+      "managerName": "Unknown",
+      "leagueEntryId": 5482,
+      "playerIn": "Enciso",
+      "playerInId": 591,
+      "playerOut": "Gomez",
+      "playerOutId": 127,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 20757650,
+      "gameweek": 10,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Dunk",
+      "playerInId": 116,
+      "playerOut": "N.Williams",
+      "playerOutId": 469,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 21055712,
+      "gameweek": 10,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Ayari",
+      "playerInId": 129,
+      "playerOut": "McGinn",
+      "playerOutId": 45,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 21055713,
+      "gameweek": 10,
+      "managerName": "Unknown",
+      "leagueEntryId": 21820,
+      "playerIn": "Kroupi.Jr",
+      "playerInId": 78,
+      "playerOut": "McGinn",
+      "playerOutId": 45,
+      "type": "waiver",
+      "result": "rejected"
+    },
+    {
+      "id": 21409302,
+      "gameweek": 10,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Kroupi.Jr",
+      "playerInId": 78,
+      "playerOut": "Semenyo",
+      "playerOutId": 397,
+      "type": "free_agent",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -15268,7 +15328,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-11-05T07:36:06.480Z",
+    "lastUpdated": "2026-11-05T20:25:12.637Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
