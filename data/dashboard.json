@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-08T22:36:30.549Z",
+    "lastUpdated": "2026-11-09T07:30:16.895Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -4595,8 +4595,8 @@
       "goalsScored": 4,
       "assists": 2,
       "xG": 3.94,
-      "xA": 1.9,
-      "xGI": 5.84,
+      "xA": 2.17,
+      "xGI": 6.11,
       "minutes": 810,
       "cleanSheets": 0,
       "bonus": 3
@@ -5012,9 +5012,9 @@
       "form": 5.2,
       "goalsScored": 2,
       "assists": 3,
-      "xG": 1.71,
-      "xA": 0.81,
-      "xGI": 2.52,
+      "xG": 1.67,
+      "xA": 0.87,
+      "xGI": 2.54,
       "minutes": 461,
       "cleanSheets": 2,
       "bonus": 7
@@ -5980,9 +5980,9 @@
       "form": 3.4,
       "goalsScored": 1,
       "assists": 1,
-      "xG": 0.94,
+      "xG": 0.96,
       "xA": 1.16,
-      "xGI": 2.1,
+      "xGI": 2.12,
       "minutes": 653,
       "cleanSheets": 0,
       "bonus": 2
@@ -6288,8 +6288,8 @@
       "form": 1.6,
       "goalsScored": 0,
       "assists": 1,
-      "xG": 0.44,
-      "xA": 0.69,
+      "xG": 0.42,
+      "xA": 0.71,
       "xGI": 1.13,
       "minutes": 566,
       "cleanSheets": 0,
@@ -6552,9 +6552,9 @@
       "form": 4,
       "goalsScored": 2,
       "assists": 2,
-      "xG": 0.44,
+      "xG": 0.48,
       "xA": 0.02,
-      "xGI": 0.46,
+      "xGI": 0.5,
       "minutes": 329,
       "cleanSheets": 0,
       "bonus": 3
@@ -8100,6 +8100,28 @@
       "bonus": 0
     },
     {
+      "id": 415,
+      "webName": "Dorgu",
+      "firstName": "Patrick",
+      "lastName": "Dorgu",
+      "position": "MID",
+      "positionId": 3,
+      "team": "Man Utd",
+      "teamId": 16,
+      "owner": null,
+      "ownerLeagueEntryId": null,
+      "totalPoints": 21,
+      "form": 2.2,
+      "goalsScored": 1,
+      "assists": 2,
+      "xG": 1.13,
+      "xA": 0.25,
+      "xGI": 1.38,
+      "minutes": 195,
+      "cleanSheets": 0,
+      "bonus": 2
+    },
+    {
       "id": 457,
       "webName": "J.Murphy",
       "firstName": "Jacob",
@@ -8141,28 +8163,6 @@
       "xGI": 1.1,
       "minutes": 534,
       "cleanSheets": 2,
-      "bonus": 0
-    },
-    {
-      "id": 563,
-      "webName": "Maeda",
-      "firstName": "Daizen",
-      "lastName": "Maeda",
-      "position": "MID",
-      "positionId": 3,
-      "team": "Ipswich Town",
-      "teamId": 12,
-      "owner": null,
-      "ownerLeagueEntryId": null,
-      "totalPoints": 21,
-      "form": 2.6,
-      "goalsScored": 1,
-      "assists": 0,
-      "xG": 1.2,
-      "xA": 0.05,
-      "xGI": 1.25,
-      "minutes": 510,
-      "cleanSheets": 0,
       "bonus": 0
     }
   ],
@@ -15328,7 +15328,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-11-08T22:36:30.058Z",
+    "lastUpdated": "2026-11-09T07:30:16.155Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
