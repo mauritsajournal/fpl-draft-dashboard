@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-26T09:03:42.133Z",
+    "lastUpdated": "2026-11-26T22:02:24.689Z",
     "currentGameweek": 38,
     "leagueName": "FC Driegangendiner",
     "season": "2025-26",
@@ -9380,6 +9380,30 @@
       "playerOutId": 208,
       "type": "free_agent",
       "result": "accepted"
+    },
+    {
+      "id": 22863516,
+      "gameweek": 12,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Madueke",
+      "playerInId": 16,
+      "playerOut": "Kroupi.Jr",
+      "playerOutId": 78,
+      "type": "waiver",
+      "result": "accepted"
+    },
+    {
+      "id": 22863517,
+      "gameweek": 12,
+      "managerName": "Unknown",
+      "leagueEntryId": 1960,
+      "playerIn": "Georginio",
+      "playerInId": 125,
+      "playerOut": "Gyökeres",
+      "playerOutId": 25,
+      "type": "waiver",
+      "result": "accepted"
     }
   ],
   "draftPicks": [
@@ -15364,7 +15388,7 @@
     ]
   },
   "draftXPL": {
-    "lastUpdated": "2026-11-26T09:03:41.462Z",
+    "lastUpdated": "2026-11-26T22:02:24.091Z",
     "season": "2025",
     "plMatchday": 38,
     "managerProfiles": [
